@@ -23,7 +23,7 @@ book:
       chapters:
         - git/software-comunidad-intro.es.qmd
         - git/software-comunidad-preparacion.es.qmd
-        - git/software-comunidad-git-solo.es.qmd
+        - git/software-comunidad-git-individual.es.qmd
         - git/software-comunidad-git-equipo.es.qmd
         - git/software-comunidad-notas-instructor.es.qmd
         - git/git-historia.es.qmd

@@ -1,0 +1,9 @@
+---
+title: "Git Historia Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Ver https://github.com/ropensci-training/git-historia para el repo fuente de este capítulo.
+:::

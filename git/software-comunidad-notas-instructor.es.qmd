@@ -1,0 +1,9 @@
+---
+title: "Software Comunidad Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Ver https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.
+:::
