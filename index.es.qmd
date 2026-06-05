@@ -1,0 +1,56 @@
+---
+title: "Prefacio"
+---
+
+Este libro reúne el curriculum completo del **Programa de Campeones y Campeonas de rOpenSci**, una iniciativa diseñada para apoyar a personas que contribuyen a la comunidad de R en el desarrollo de paquetes, la revisión de software y la participación en proyectos de código abierto.
+
+La fase de entrenamiento de este programa fue diseñada con una visión integral de lo que significa desarrollar y mantener software científico libre. Aunque las habilidades relacionadas con la programación, el diseño y el mantenimiento de código constituyen una parte importante de la formación, entendemos que el software libre sostenible requiere mucho más que conocimientos de desarrollo de software.
+
+Los proyectos de software científico se construyen y sostienen a través de comunidades de personas que colaboran, comparten conocimientos, toman decisiones colectivas y se comunican de manera efectiva. Por esta razón, la propuesta de entrenamiento aborda también temas vinculados con el trabajo colaborativo, la gestión de comunidades, la comunicación, el liderazgo y otras competencias esenciales para participar y contribuir en proyectos abiertos.
+
+A lo largo del programa, estos diferentes aspectos fueron tratados con la misma relevancia. Nuestro objetivo fue ofrecer una formación equilibrada que prepare a las personas participantes no solo para desarrollar software de calidad, sino también para contribuir a la construcción de comunidades saludables y proyectos sostenibles que puedan generar impacto en el tiempo.
+
+## Sobre este libro
+
+Este libro compila los materiales de formación utilizados en el programa: talleres, diapositivas, ejercicios prácticos y notas para quienes facilitan cada sesión. 
+
+Está pensado tanto para las personas participantes del programa como para cualquier persona que quiera enseñar o aprender estos contenidos de forma independiente o que quiere applicarlos en programas similares.
+
+### Cómo está organizado
+
+El libro se divide en cinco partes que siguen los ejes temáticos del programa:
+
+**Parte I — Mentoría:** Formación para mentoras y mentores que acompañan a las personas campeonas durante el programa. Los contenidos son útiles para mentorear personas en general, incluidas aquellas que quieran contribuir a nuestro software. 
+
+**Parte II — Desarrollo colaborativo de software:** Uso de Git y GitHub para trabajar en equipo en proyectos de código abierto.
+
+**Parte III — Desarrollo de paquetes de R:** Desde los fundamentos hasta técnicas avanzadas, incluyendo calidad de código, testeo, documentación y el uso de herramientas de IA generativa.
+
+**Parte IV — Revisión de software:** El proceso de revisión por pares de rOpenSci, desde la perspectiva de quien revisa y de quien envía un paquete.
+
+**Parte V — Gestión de comunidad y divulgación:** Cómo contribuir a proyectos abiertos, crear presentaciones efectivas y organizar eventos comunitarios.
+
+Cada capítulo incluye contenidos, ejercicios y una sección de **Notas para instructores** con orientaciones pedagógicas y agenda para la modalidad sincrónica.
+
+### Para quién es este libro
+
+Este libro está dirigido a:
+
+- **Personas campeonas** del Programa de Campeones de rOpenSci que quieran consultar los materiales de formación.
+- **Mentoras y mentores** que acompañan a las personas campeonas o personas que van a tener roles de mentoria en otros ámbitos.
+- **Instructoras e instructores** que quieran usar estos materiales en sus propias comunidades.
+- Cualquier persona interesada en el desarrollo de paquetes de R, la revisión de software abierto o la participación en comunidades de código abierto.
+- **Gestores de programas** similares que quieran reutilizar todo o una parte de los materiales.
+
+## Licencia y autoría
+
+A menos que se indique lo contrario, el contenido está disponible bajo licencia [Creative Commons Atribución 4.0 Internacional (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.es).
+Si reutilizás o adaptás estos materiales, te pedimos que cites este libro y que hagas referencia a rOpenSci como fuente.
+
+TODO: agregar cita con DOI.
+
+## Agradecimientos
+
+Este curriculum es el resultado del trabajo colectivo de muchas personas que han participado en el Programa de Campeonas y Campeones de rOpenSci.
+
+Esta version estable de contenidos y formato fue desarrollada y mejorada en las sucesivas iteraciones de las cohortes utilizando como insumo el feedback de todas las personas participantes. 
