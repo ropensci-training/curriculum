@@ -1,0 +1,72 @@
+---
+title: "Sobre el Programa de Campeones de rOpenSci"
+---
+
+## ¿Qué es rOpenSci?
+
+[rOpenSci](https://ropensci.org) es una organización sin fines de lucro que fomenta una cultura de investigación abierta y reproducible utilizando datos compartidos y software reutilizable. Construimos infraestructura social y técnica para el lenguaje R que permite a investigadores, investigadoras, ingenieros e ingenieras a colaborar, compartir y publicar su ciencia, datos y métodos. 
+
+## El Programa de Campeones
+
+El **Programa de Campeones de rOpenSci** es una iniciativa de formación y mentoría diseñada para ampliar la participación en R, en particular de personas de grupos históricamente subrepresentados en las comunidades de código abierto y de ciencia de datos.
+
+El programa tiene una duración aproximada de un año y está organizado en cohortes. 
+
+El programa combina diferentes estrategias de aprendizaje que se complementan entre sí: una serie de talleres estructurados para desarrollar conocimientos y habilidades específicas, mentorías personalizadas con personas expertas en el desarrollo y mantenimiento de paquetes abiertos para la ciencia, y la participación en una comunidad consolidada, acogedora y activa como rOpenSci. 
+
+Además, cada participante desarrolla un proyecto de su propia elección, alineado con sus intereses, necesidades y contexto de trabajo. En lugar de contribuir a un proyecto de rOpenSci o desarrollar software para la organización, las personas participantes trabajan en iniciativas que consideran valiosas para sus instituciones, disciplinas y comunidades locales. Este enfoque busca fomentar el sentido de pertenencia y responsabilidad sobre el proyecto, al tiempo que permite que los conocimientos adquiridos se apliquen directamente a problemas y oportunidades relevantes para cada contexto. 
+
+La combinación de formación, mentoría, trabajo práctico y comunidad permite que las personas participantes no solo adquieran conocimientos teóricos y técnicos, sino que también reciban acompañamiento en sus propios proyectos y encuentren una red de apoyo donde continuar aprendiendo, colaborando y creciendo más allá de la duración formal del programa.
+
+
+### Objetivos del programa
+
+- Formar a personas con las habilidades técnicas y comunitarias para participar activamente en R y en rOpenSci.
+- Proporcionar mentoría individualizada para el desarrollo de un proyecto propio (paquete nuevo, revisión de software, o contribución a un paquete existente).
+- Construir una red de personas embajadoras de rOpenSci y Ciencia Abierta en distintas regiones del mundo.
+- Promover la diversidad y la inclusión en las comunidades de software de código abierto.
+
+### ¿Quiénes participan?
+
+El programa tiene tres roles principales:
+
+**Campeonas y campeones:** Personas seleccionadas por convocatoria abierta que participan en la formación y desarrollan un proyecto durante el programa. Los proyectos pueden ser:
+
+- Crear un nuevo paquete de R y enviarlo al proceso de revisión de rOpenSci.
+- Pasar por el proceso de revisión con un paquete que ya han desarrollado.
+- Realizar una revisión de paquetes para rOpenSci.
+
+**Mentoras y mentores:** personas con experiencia previa en el sistema de revisión o en el desarrollo de paquetes, que acompañan y orientan a las personas campeonas durante el año.
+
+**Equipo de rOpenSci:** El equipo de rOpenSci facilita el programa, organiza los talleres, y acompaña a las cohortes a lo largo de su recorrido.
+
+## Learner personas
+
+Los materiales de este curriculum fueron desarrollados teniendo en cuenta perfiles específicos de participantes. Presentamos aquí las personas modelo que guiaron el diseño pedagógico.
+
+
+TODO: agregar las learner personas del programa
+
+## Estructura del año del programa
+
+El programa se desarrolla aproximadamente de la siguiente manera:
+
+| Período | Actividad |
+|---------|-----------|
+| Mes 1–2 | Selección de la cohorte y emparejamiento con mentoras/es |
+| Mes 2 | Formación de mentoras/es (Parte I de este libro) |
+| Mes 3–4 | Talleres de desarrollo colaborativo y Git (Parte II) |
+| Mes 4–6 | Talleres de desarrollo de paquetes (Parte III) |
+| Mes 6–8 | Talleres de revisión de software (Parte IV) |
+| Mes 4–12 | Desarrollo del proyecto individual con mentoría |
+| Mes 10–11 | Actividades de divulgación (Parte V) |
+| Mes 12 | Presentaciones finales de proyectos, cierre y evaluación de la cohorte |
+
+Las reuniones de mentoría individuales ocurren a lo largo de todo el año, con una frecuencia acordada entre cada dupla campeonas/campeón — mentora/mentor.
+
+## Más información
+
+- Sitio del programa: <https://ropensci.org/champions/>
+- Comunidad de rOpenSci: <https://ropensci.org/community/>
+- Sistema de revisión de software: <https://ropensci.org/software-review/>
+- Guía para desarrolladoras/es: <https://devguide.ropensci.org/>
