@@ -38,5 +38,462 @@
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Prefacio</span>"
     ]
+  },
+  {
+    "objectID": "intro.es.html",
+    "href": "intro.es.html",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "",
+    "text": "2.1 ¿Qué es rOpenSci?\nrOpenSci es una organización sin fines de lucro que fomenta una cultura de investigación abierta y reproducible utilizando datos compartidos y software reutilizable. Construimos infraestructura social y técnica para el lenguaje R que permite a investigadores, investigadoras, ingenieros e ingenieras a colaborar, compartir y publicar su ciencia, datos y métodos.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.es.html#el-programa-de-campeones",
+    "href": "intro.es.html#el-programa-de-campeones",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.2 El Programa de Campeones",
+    "text": "2.2 El Programa de Campeones\nEl Programa de Campeones de rOpenSci es una iniciativa de formación y mentoría diseñada para ampliar la participación en R, en particular de personas de grupos históricamente subrepresentados en las comunidades de código abierto y de ciencia de datos.\nEl programa tiene una duración aproximada de un año y está organizado en cohortes.\nEl programa combina diferentes estrategias de aprendizaje que se complementan entre sí: una serie de talleres estructurados para desarrollar conocimientos y habilidades específicas, mentorías personalizadas con personas expertas en el desarrollo y mantenimiento de paquetes abiertos para la ciencia, y la participación en una comunidad consolidada, acogedora y activa como rOpenSci.\nAdemás, cada participante desarrolla un proyecto de su propia elección, alineado con sus intereses, necesidades y contexto de trabajo. En lugar de contribuir a un proyecto de rOpenSci o desarrollar software para la organización, las personas participantes trabajan en iniciativas que consideran valiosas para sus instituciones, disciplinas y comunidades locales. Este enfoque busca fomentar el sentido de pertenencia y responsabilidad sobre el proyecto, al tiempo que permite que los conocimientos adquiridos se apliquen directamente a problemas y oportunidades relevantes para cada contexto.\nLa combinación de formación, mentoría, trabajo práctico y comunidad permite que las personas participantes no solo adquieran conocimientos teóricos y técnicos, sino que también reciban acompañamiento en sus propios proyectos y encuentren una red de apoyo donde continuar aprendiendo, colaborando y creciendo más allá de la duración formal del programa.\n\n2.2.1 Objetivos del programa\n\nFormar a personas con las habilidades técnicas y comunitarias para participar activamente en R y en rOpenSci.\nProporcionar mentoría individualizada para el desarrollo de un proyecto propio (paquete nuevo, revisión de software, o contribución a un paquete existente).\nConstruir una red de personas embajadoras de rOpenSci y Ciencia Abierta en distintas regiones del mundo.\nPromover la diversidad y la inclusión en las comunidades de software de código abierto.\n\n\n\n2.2.2 ¿Quiénes participan?\nEl programa tiene tres roles principales:\nCampeonas y campeones: Personas seleccionadas por convocatoria abierta que participan en la formación y desarrollan un proyecto durante el programa. Los proyectos pueden ser:\n\nCrear un nuevo paquete de R y enviarlo al proceso de revisión de rOpenSci.\nPasar por el proceso de revisión con un paquete que ya han desarrollado.\nRealizar una revisión de paquetes para rOpenSci.\n\nMentoras y mentores: personas con experiencia previa en el sistema de revisión o en el desarrollo de paquetes, que acompañan y orientan a las personas campeonas durante el año.\nEquipo de rOpenSci: El equipo de rOpenSci facilita el programa, organiza los talleres, y acompaña a las cohortes a lo largo de su recorrido.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.es.html#learner-personas",
+    "href": "intro.es.html#learner-personas",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.3 Learner personas",
+    "text": "2.3 Learner personas\nLos materiales de este curriculum fueron desarrollados teniendo en cuenta perfiles específicos de participantes. Presentamos aquí las personas modelo que guiaron el diseño pedagógico.\nTODO: agregar las learner personas del programa",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.es.html#estructura-del-año-del-programa",
+    "href": "intro.es.html#estructura-del-año-del-programa",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.4 Estructura del año del programa",
+    "text": "2.4 Estructura del año del programa\nEl programa se desarrolla aproximadamente de la siguiente manera:\n\n\n\n\n\n\n\nPeríodo\nActividad\n\n\n\n\nMes 1–2\nSelección de la cohorte y emparejamiento con mentoras/es\n\n\nMes 2\nFormación de mentoras/es (Parte I de este libro)\n\n\nMes 3–4\nTalleres de desarrollo colaborativo y Git (Parte II)\n\n\nMes 4–6\nTalleres de desarrollo de paquetes (Parte III)\n\n\nMes 6–8\nTalleres de revisión de software (Parte IV)\n\n\nMes 4–12\nDesarrollo del proyecto individual con mentoría\n\n\nMes 10–11\nActividades de divulgación (Parte V)\n\n\nMes 12\nPresentaciones finales de proyectos, cierre y evaluación de la cohorte\n\n\n\nLas reuniones de mentoría individuales ocurren a lo largo de todo el año, con una frecuencia acordada entre cada dupla campeonas/campeón — mentora/mentor.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.es.html#más-información",
+    "href": "intro.es.html#más-información",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.5 Más información",
+    "text": "2.5 Más información\n\nSitio del programa: https://ropensci.org/champions/\nComunidad de rOpenSci: https://ropensci.org/community/\nSistema de revisión de software: https://ropensci.org/software-review/\nGuía para desarrolladoras/es: https://devguide.ropensci.org/",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "mentoria/mentores.es.html",
+    "href": "mentoria/mentores.es.html",
+    "title": "5  Mentores",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nEste capítulo proviene del repositorio ropensci-mentors.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Mentores</span>"
+    ]
+  },
+  {
+    "objectID": "mentoria/mentores-agenda.es.html",
+    "href": "mentoria/mentores-agenda.es.html",
+    "title": "6  Mentores Agenda",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nEste capítulo proviene del repositorio ropensci-mentors.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mentores Agenda</span>"
+    ]
+  },
+  {
+    "objectID": "mentoria/mentores-materiales.es.html",
+    "href": "mentoria/mentores-materiales.es.html",
+    "title": "7  Mentores Materiales",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nEste capítulo proviene del repositorio ropensci-mentors.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mentores Materiales</span>"
+    ]
+  },
+  {
+    "objectID": "mentoria/mentores-notas-instructor.es.html",
+    "href": "mentoria/mentores-notas-instructor.es.html",
+    "title": "8  Mentores Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nEste capítulo proviene del repositorio ropensci-mentors.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mentores Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-comunidad-intro.es.html",
+    "href": "git/software-comunidad-intro.es.html",
+    "title": "9  Software Comunidad Intro",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Software Comunidad Intro</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-comunidad-preparacion.es.html",
+    "href": "git/software-comunidad-preparacion.es.html",
+    "title": "10  Software Comunidad Preparacion",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Software Comunidad Preparacion</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-comunidad-git-individual.es.html",
+    "href": "git/software-comunidad-git-individual.es.html",
+    "title": "11  Software Comunidad Git Individual",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Software Comunidad Git Individual</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-comunidad-git-equipo.es.html",
+    "href": "git/software-comunidad-git-equipo.es.html",
+    "title": "12  Software Comunidad Git Equipo",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Software Comunidad Git Equipo</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-comunidad-notas-instructor.es.html",
+    "href": "git/software-comunidad-notas-instructor.es.html",
+    "title": "13  Software Comunidad Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Software Comunidad Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-historia.es.html",
+    "href": "git/git-historia.es.html",
+    "title": "14  Git Historia",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/git-historia para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Git Historia</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-historia-notas-instructor.es.html",
+    "href": "git/git-historia-notas-instructor.es.html",
+    "title": "15  Git Historia Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/git-historia para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Git Historia Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-avanzado.es.html",
+    "href": "git/git-avanzado.es.html",
+    "title": "16  Git Avanzado",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Git Avanzado</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-avanzado-notas-instructor.es.html",
+    "href": "git/git-avanzado-notas-instructor.es.html",
+    "title": "17  Git Avanzado Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Git Avanzado Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/calidad-codigo.es.html",
+    "href": "paquetes/calidad-codigo.es.html",
+    "title": "18  Calidad Codigo",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/calidad-codigo-2026 para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Calidad Codigo</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/calidad-codigo-notas-instructor.es.html",
+    "href": "paquetes/calidad-codigo-notas-instructor.es.html",
+    "title": "19  Calidad Codigo Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/calidad-codigo-2026 para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Calidad Codigo Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/mecanica-prereqs.es.html",
+    "href": "paquetes/mecanica-prereqs.es.html",
+    "title": "20  Mecanica Prereqs",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Mecanica Prereqs</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/mecanica-1.es.html",
+    "href": "paquetes/mecanica-1.es.html",
+    "title": "21  Mecanica 1",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Mecanica 1</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/mecanica-1-notas-instructor.es.html",
+    "href": "paquetes/mecanica-1-notas-instructor.es.html",
+    "title": "22  Mecanica 1 Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Mecanica 1 Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/mecanica-2.es.html",
+    "href": "paquetes/mecanica-2.es.html",
+    "title": "23  Mecanica 2",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Mecanica 2</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/mecanica-2-notas-instructor.es.html",
+    "href": "paquetes/mecanica-2-notas-instructor.es.html",
+    "title": "24  Mecanica 2 Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Mecanica 2 Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/mecanica-3.es.html",
+    "href": "paquetes/mecanica-3.es.html",
+    "title": "25  Mecanica 3",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Mecanica 3</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/mecanica-3-notas-instructor.es.html",
+    "href": "paquetes/mecanica-3-notas-instructor.es.html",
+    "title": "26  Mecanica 3 Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Mecanica 3 Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/avanzado.es.html",
+    "href": "paquetes/avanzado.es.html",
+    "title": "27  Avanzado",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-rocket para el repo fuente de este capítulo (hay mas repos pero con versiones de las cohortes anteriores, la de 2026 es la mas actualizada y que incorpora mejoras y feedback).",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Avanzado</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/avanzado-notas-instructor.es.html",
+    "href": "paquetes/avanzado-notas-instructor.es.html",
+    "title": "28  Avanzado Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nVer https://github.com/ropensci-training/2026-pkg-dev-rocket para el repo fuente de este capítulo (hay mas repos pero con versiones de las cohortes anteriores, la de 2026 es la mas actualizada y que incorpora mejoras y feedback).",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Avanzado Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/genia-paquetes.es.html",
+    "href": "paquetes/genia-paquetes.es.html",
+    "title": "29  GenAI Paquetes",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nEs contenido nuevo, por lo que aun no hay un repo a migrar.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>GenAI Paquetes</span>"
+    ]
+  },
+  {
+    "objectID": "paquetes/genia-paquetes-notas-instructor.es.html",
+    "href": "paquetes/genia-paquetes-notas-instructor.es.html",
+    "title": "30  GenAI Paquetes Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nEs contenido nuevo, por lo que aun no hay un repo a migrar.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>GenAI Paquetes Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "review/proceso-revision.es.html",
+    "href": "review/proceso-revision.es.html",
+    "title": "31  Proceso Revision",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración. Ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Proceso Revision</span>"
+    ]
+  },
+  {
+    "objectID": "review/proceso-revision-notas-instructor.es.html",
+    "href": "review/proceso-revision-notas-instructor.es.html",
+    "title": "32  Proceso Revision Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración. Ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Proceso Revision Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "review/taller-revision.es.html",
+    "href": "review/taller-revision.es.html",
+    "title": "33  Taller Revision",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración. Ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Taller Revision</span>"
+    ]
+  },
+  {
+    "objectID": "review/taller-revision-notas-instructor.es.html",
+    "href": "review/taller-revision-notas-instructor.es.html",
+    "title": "34  Taller Revision Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración. Ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Taller Revision Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "comunidad/oss-contribucion.es.html",
+    "href": "comunidad/oss-contribucion.es.html",
+    "title": "35  Oss Contribucion",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración. Ver https://github.com/ropensci-training/osscontribuir y https://github.com/ropensci-training/osscontribution para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Oss Contribucion</span>"
+    ]
+  },
+  {
+    "objectID": "comunidad/oss-contribucion-notas-instructor.es.html",
+    "href": "comunidad/oss-contribucion-notas-instructor.es.html",
+    "title": "36  Oss Contribucion Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración. Ver Ver https://github.com/ropensci-training/osscontribuir y https://github.com/ropensci-training/osscontribution para el repo fuente de este capítulo. para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Oss Contribucion Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "comunidad/charla-memorable.es.html",
+    "href": "comunidad/charla-memorable.es.html",
+    "title": "37  Charla Memorable",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Charla Memorable</span>"
+    ]
+  },
+  {
+    "objectID": "comunidad/charla-memorable-herramientas.es.html",
+    "href": "comunidad/charla-memorable-herramientas.es.html",
+    "title": "38  Charla Memorable Herramientas",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Charla Memorable Herramientas</span>"
+    ]
+  },
+  {
+    "objectID": "comunidad/charla-memorable-notas-instructor.es.html",
+    "href": "comunidad/charla-memorable-notas-instructor.es.html",
+    "title": "39  Charla Memorable Notas Instructor",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Charla Memorable Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "comunidad/evento-maravilloso.es.html",
+    "href": "comunidad/evento-maravilloso.es.html",
+    "title": "40  Cómo organizar un evento maravilloso",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "comunidad/evento-maravilloso-notas-instructor.es.html",
+    "href": "comunidad/evento-maravilloso-notas-instructor.es.html",
+    "title": "41  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
   }
 ]
