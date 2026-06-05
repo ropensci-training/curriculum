@@ -1,0 +1,9 @@
+---
+title: "Calidad Codigo"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Ver https://github.com/ropensci-training/calidad-codigo-2026 para el repo fuente de este capítulo.
+:::

@@ -1,0 +1,9 @@
+---
+title: "GenAI Paquetes Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Es contenido nuevo, por lo que aun no hay un repo a migrar.
+:::

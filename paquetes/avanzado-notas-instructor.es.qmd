@@ -1,0 +1,9 @@
+---
+title: "Avanzado Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Ver https://github.com/ropensci-training/2026-pkg-dev-rocket para el repo fuente de este capítulo (hay mas repos pero con versiones de las cohortes anteriores, la de 2026 es la mas actualizada y que incorpora mejoras y feedback).
+:::

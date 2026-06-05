@@ -1,0 +1,9 @@
+---
+title: "Mecanica 2"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.
+:::
