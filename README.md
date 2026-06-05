@@ -1,2 +1,2 @@
 # curriculum
-Training material for R package developers and maintainers
+Training material for R package developers and maintainers based on the Champions Program Training.
