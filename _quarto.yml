@@ -1,0 +1,92 @@
+project:
+  type: book
+
+book:
+  title: "Curriculum del Programa de Campeones de rOpenSci"
+  author: "Yanina Bellini Saibene, Maëlle Salmon, Paola Corrales, Mauro Lepore, Alejandra Bellini"
+  date: "2026"
+  repo-url: https://github.com/ropensci-training/curriculum
+  repo-actions: [edit, issue]
+  sharing: [linkedin]
+  chapters:
+    - index.es.qmd
+    - intro.es.qmd
+    - como-usar.es.qmd
+    - como-contribuir.es.qmd
+    - part: "Mentoría"
+      chapters:
+        - mentoria/mentores.es.qmd
+        - mentoria/mentores-agenda.es.qmd
+        - mentoria/mentores-materiales.es.qmd
+        - mentoria/mentores-notas-instructor.es.qmd
+    - part: "Desarrollo colaborativo de software"
+      chapters:
+        - git/software-comunidad-intro.es.qmd
+        - git/software-comunidad-preparacion.es.qmd
+        - git/software-comunidad-git-solo.es.qmd
+        - git/software-comunidad-git-equipo.es.qmd
+        - git/software-comunidad-notas-instructor.es.qmd
+        - git/git-historia.es.qmd
+        - git/git-historia-notas-instructor.es.qmd
+        - git/git-avanzado.es.qmd
+        - git/git-avanzado-notas-instructor.es.qmd
+    - part: "Desarrollo de paquetes de R"
+      chapters:
+        - paquetes/calidad-codigo.es.qmd
+        - paquetes/calidad-codigo-notas-instructor.es.qmd
+        - paquetes/mecanica-prereqs.es.qmd
+        - paquetes/mecanica-1.es.qmd
+        - paquetes/mecanica-1-notas-instructor.es.qmd
+        - paquetes/mecanica-2.es.qmd
+        - paquetes/mecanica-2-notas-instructor.es.qmd
+        - paquetes/mecanica-3.es.qmd
+        - paquetes/mecanica-3-notas-instructor.es.qmd
+        - paquetes/avanzado.es.qmd
+        - paquetes/avanzado-notas-instructor.es.qmd
+        - paquetes/genia-paquetes.es.qmd
+        - paquetes/genia-paquetes-notas-instructor.es.qmd
+    - part: "Revisión de software"
+      chapters:
+        - review/proceso-revision.es.qmd
+        - review/proceso-revision-notas-instructor.es.qmd
+        - review/taller-revision.es.qmd
+        - review/taller-revision-notas-instructor.es.qmd
+    - part: "Gestión de comunidad y divulgación"
+      chapters:
+        - comunidad/oss-contribucion.es.qmd
+        - comunidad/oss-contribucion-notas-instructor.es.qmd
+        - comunidad/charla-memorable.es.qmd
+        - comunidad/charla-memorable-herramientas.es.qmd
+        - comunidad/charla-memorable-notas-instructor.es.qmd
+        - comunidad/evento-maravilloso.es.qmd
+        - comunidad/evento-maravilloso-notas-instructor.es.qmd
+  #   - part: "Apéndices"
+  #     chapters:
+  #       - apendices/apendice-glosario.es.qmd
+  #       - apendices/apendice-entorno.es.qmd
+  #       - apendices/apendice-plantilla-instructor.es.qmd
+  # appendices:
+  #   - references.es.qmd
+
+# bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    lang: es
+  pdf:
+    documentclass: book
+    lang: es
+
+babelquarto:
+  languagecodes:
+    - name: es
+      text: "Español"
+    - name: en
+      text: "English"
+    - name: pt
+      text: "Português"
+  mainlanguage: "es"
+  languages: ["en", "pt"]
