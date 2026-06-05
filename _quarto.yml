@@ -3,7 +3,7 @@ project:
 
 book:
   title: "Curriculum del Programa de Campeones de rOpenSci"
-  author: "Yanina Bellini Saibene, Maëlle Salmon, Paola Corrales, Mauro Lepore, Alejandra Bellini"
+  author: "Yanina Bellini Saibene, Maëlle Salmon, Paola Corrales, Mauro Lepore, Alejandra Bellini, Noam Ross"
   date: "2026"
   repo-url: https://github.com/ropensci-training/curriculum
   repo-actions: [edit, issue]
