@@ -1,0 +1,9 @@
+---
+title: "Mentores Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
+:::
