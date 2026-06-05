@@ -1,0 +1,7 @@
+---
+title: "Charla Memorable"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+:::

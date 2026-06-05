@@ -1,0 +1,7 @@
+---
+title: "Cómo organizar un evento maravilloso"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+:::

@@ -1,0 +1,7 @@
+---
+title: "Charla Memorable Herramientas"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+:::

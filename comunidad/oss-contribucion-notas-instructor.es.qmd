@@ -1,0 +1,7 @@
+---
+title: "Oss Contribucion Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** Ver Ver https://github.com/ropensci-training/osscontribuir y  https://github.com/ropensci-training/osscontribution para el repo fuente de este capítulo. para el repo fuente de este capítulo.
+:::
