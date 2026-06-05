@@ -1,0 +1,7 @@
+---
+title: "Proceso Revision Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** Ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.
+:::
