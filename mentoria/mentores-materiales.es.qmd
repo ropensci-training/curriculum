@@ -1,5 +1,5 @@
 ---
-title: "Mentores Materiales"
+title: "Materiales del curso"
 ---
 
 ::: {.callout-note}
@@ -7,3 +7,18 @@ title: "Mentores Materiales"
 
 Este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
 :::
+
+Estos materiales de capacitación utilizan:
+
+- un juego de [diapositivas](https://docs.google.com/presentation/d/1qAv8IfSMRRGbQlwOkyM7QvnYQSEvL-cUFPj72ixNgN4/edit?usp=sharing),
+- un [documento compartido](https://docs.google.com/document/d/1Grv1yegKh0QmucLqYHLh7tPZCwn3Xhy3paiepzsa9Ow/edit?usp=sharing) con los ejercicios para resolver durante la clase, para tomar notas compartidas y también para compartir recursos.
+- una [encuesta de opinión](https://docs.google.com/document/d/1gDe3IcVLoQTl15pFaCOvchIZJpCi3pBlBMjYeUGfqyY/edit?usp=sharing)
+
+También proporcionamos a los mentores y mentoras herramientas para desempeñar sus funciones:
+
+- [Directrices para mentores/as del Programa rOpenSci Champions](https://ropensci-org.github.io/champions-mentor-guidelines/)
+- [Plantillas de reuniones](https://docs.google.com/document/d/1vjmfbjv9ABJ6fkbtQRMFPydJZ3ypKOIpZ-xf7_iBhvo/edit?usp=sharing)
+- [Formulario de informe de reunión](https://docs.google.com/document/d/1PXYXF5wmrzSiNFylvfGgAvLDh87OZOd7B0qJzeO8VBQ/edit?usp=sharing)
+- [Carta/Acta Mensual de Mentor/a](https://docs.google.com/document/d/1-HZRNp4lc7s0NJhKPfGRe8I9dxohBkDyjUC35KINHCQ/edit?usp=sharing)
+
+
