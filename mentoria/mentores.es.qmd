@@ -1,5 +1,5 @@
 ---
-title: "Mentores"
+title: "Formación y orientación para mentores y mentoras"
 ---
 
 ::: {.callout-note}
@@ -7,3 +7,61 @@ title: "Mentores"
 
 Este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
 :::
+
+Este curso forma parte de la formación y orientación de mentores y mentoras del Programa de Campeon(a|e)s de rOpenSci.
+
+Las mentorías desempeñan un papel vital en el Programa, ayudando a seleccionar la cohorte de participantes y asesorando e inspirándolos. Los mentores y mentoras también **conectan** a sus estudiantes con personas, programas y organizaciones; **recomiendan** recursos, lecturas, formación y experiencias; y proporcionan **feedback** en el projecto de sus campeones/as.
+
+Tras esta formación, los mentor(e|a)s trabajarán con los Campeon(a|e)s para apoyarlos mientras desarrollan su proyecto, que puede ser una de las siguientes opciones:
+
+- Crear un nuevo paquete;
+- Pasar por el proceso de revisión con un paquete R que ya hayan desarrollado;
+- Realizar una revisión para el sistema de revisión por pares de software de rOpenSci.
+
+Las mentoras también pueden ayudar a las Campeon(a|e)s en la realización de otras actividades, como: dar una charla, escribir articulos para un blog y enseñar a otra comunidad.
+
+## ¿Quiénes son nuestros mentores?
+
+Toda la formación se diseña teniendo en cuenta algunas _learner personas_. Como comunidad, también tenemos personas para describir a nuestros participantes.  Cuando creamos este material de formación, pensamos en esta persona:
+
+Fausti
+
+: envió sus paquetes al [Proceso de revisión de rOpenSci](https://ropensci.org/software-review/) hace un par de años. El proceso garantizó la calidad de su software y facilitó su publicación en [JOSS](https://joss.theoj.org/) lo que les dio crédito académico. Además, obtener el distintivo rOpenSci como organización internacional ayudó a otros colegas a tomarse sus productos de software más en serio y como productos de investigación válidos.
+Fausti se ofreció voluntaria para revisar paquetes en español, y aconsejó a otros colegas que enviaran sus paquetes a revisión porque su experiencia fue muy buena.
+Fausti se enteró del [programa de Campeon(a|e)s](https://ropensci.org/champions/) y se ofreció como voluntaria para ser mentora porque puede devolver algo a la comunidad. También es una forma de formarse como mentora, que es una buena habilidad para su función académica y para aumentar su red de contactos.
+
+Durante esta formación y orientación, Fausti adquirirá habilidades de mentoreo (escucha activa, preguntas eficaces, dar feedback), recibirá recursos para su papel de mentora, como las Directrices para Mentores y Mentoras, Plantillas de Reuniones y detalles de la logística del programa.
+
+## Objetivos de aprendizaje
+
+- ¿Qué hace un mentor?
+- ¿Cómo puedo escuchar activamente a mi campeona?
+- ¿Cómo puedo hacer preguntas eficaces?
+- ¿Cómo doy un buen feedback?
+- ¿Cómo establezco expectativas para mí y para el campeon?
+- ¿Cuáles son las herramientas útiles para guiar a alguien en un proyecto?
+- ¿Cómo se organiza el programa?
+
+## Fuentes
+
+Utilizamos diferentes fuentes para construir esta formación y el material. Damos las gracias a estas organizaciones y a sus autores por compartir su material bajo una licencia abierta que podemos reutilizar y remezclar.
+
+- [Mozilla Líderes Abiertos](https://foundation.mozilla.org/en/initiatives/mozilla-open-leaders/)
+- [Enseñar tecnología en comunidad](https://teachtogether.tech/en/index.html)
+- [Formación de Instructores de The Carpentries](https://carpentries.github.io/instructor-training/)
+
+## Cómo utilizar este material
+
+Si quieres utilizar este material para la enseñanza puedes encontrar *Notas para docentes* con un guión para el curso, contenido extra para las diapositivas y una explicación de los ejercicios.
+
+En la sección de material, puedes acceder a las diapositivas y a otros documentos de plantillas que puedes copiar, reutilizar y remezclar para tu capacitación.
+
+### Licencia
+
+Esta obra está bajo licencia [Creative Commons Reconocimiento-NoComercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/) (CC-BY-NC-4.0).
+
+### Cómo citar este trabajo
+
+![](https://zenodo.org/badge/DOI/10.5281/zenodo.7742298.svg)
+
+Yanina Bellini Saibene. (2023, 16 de marzo). Formación y Orientación de Mentores. rOpenSci Champions Program. Zenodo. <https://doi.org/10.5281/zenodo.7742298>
