@@ -1,5 +1,5 @@
 ---
-title: "Mentores Notas Instructor"
+title: "Notas para docentes"
 ---
 
 ::: {.callout-note}
@@ -7,3 +7,178 @@ title: "Mentores Notas Instructor"
 
 Este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
 :::
+
+
+## Previo a la formación
+
+Envía una invitación al calendario con el enlace a la reunión y un enlace a las notas compartidas.
+
+En el archivo de notas compartidas, añade el enlace a la reunión y el resto del material (como diapositivas, vídeos, etc.).
+
+Haz un recordatorio el día anterior y una hora antes.
+
+::: {.callout-tip}
+
+## Recordatorios
+
+Utiliza los diferentes canales que tengas. Por ejemplo, nosotros utilizamos Slack y el correo electrónico.  Intenta utilizar recordatorios independientes de la zona horaria como *"Nos vemos en 50 minutos, aquí (enlace)"*
+:::
+
+## Formación
+
+### Hora de conectarse.
+
+Empieza la reunión unos minutos antes, permite que la gente entre y comprueba el vídeo y el audio. Asegúrate que las personas conectadas pueden escucharte y verte. Hazles saber que no pasa nada si no encienden la cámara. Comparte el documento que utilizarás como notas compartidas en el chat.
+
+Cuando lleguen todos/as, recuérdale a todas las personas conectadas las normas de participación, como el código de conducta y cómo utilizarlo. Menciona un breve orden del día:
+
+> Veremos herramientas para ayudarte en tu rol de mentor/a y logística sobre el programa. También compartiremos recursos que construimos para ti, para ayudarte en tu rol.
+
+::: {.callout-tip}
+
+## Documento compartido
+
+Las personas no pueden ver lo que se compartió en el chat antes de que se sumaran a la reunión. Así que comparte el documento una última vez cuando ya estén todos los asistentes. También comparte el documento antes de cada ejercicio para asegurarte de que todos/as pueden acceder a él.
+:::
+
+::: {.callout-tip}
+
+## Grabación
+
+Si vas a grabar la sesión, éste es un buen momento para pedir permiso. Deja claro cómo utilizarás la grabación y con quién la compartirás.
+:::
+
+### Comienza la formación
+
+Puedes empezar con el primer ejercicio: Reflexión sobre la tutoría. (puedes decidir si quieres compartir las diapositivas con los ejercicios, el documento compartido con los ejercicios, o no compartir la pantalla).
+
+> Empezaremos con un ejercicio: Reflexión sobre la tutoría. Por favor, piensa en una experiencia que hayas tenido como mentor/a o como aprendiz recibiendo mentorías.  Utiliza el documento compartido para responder a las preguntas que aparecen junto a tu nombre (por orden alfabético).
+
+Lee las preguntas en voz alta y da algunos ejemplos más sobre qué pensar para responder:
+
+> ¿Qué salió bien / qué fue útil?" "¿Cómo fue esa relación? ¿En qué te ayudó? ¿Qué cosa útil dijo/hizo tu mentor/a o aprendiz?
+> 
+> ¿Qué no funcionó? ¿Qué necesitabas y tu mentor/a o aprendiz no pudo ayudarte o no te entendió?
+> 
+> Piensa en un problema sobre el que te gustaría recibir tutoría ahora mismo.
+
+::: {.callout-tip}
+
+## Actividades
+
+Aclara siempre al principio de la actividad de cuánto tiempo disponemos para realizarla.
+*"Utilizaremos 10 minutos para este ejercicio".*, *"Haremos una pausa de 10 minutos"*
+:::
+
+Dales uno o dos minutos para escribir en silencio. Luego puedes leer algunas de las respuestas en voz alta o añadir algunos comentarios en el documento en silencio. Anímales a leer las respuestas de sus compañeros/as y a hacer comentarios.
+
+### Funciones y habilidades de los mentores/as
+
+Continúa con la **diapositiva tres** sobre las funciones de los/las mentores/as.
+
+> ¿Qué hacen los mentores? Los mentores aconsejan e inspiran. ¿Cómo lo hacen?
+> Recomienda recursos, lecturas, formación, experiencias. Retroalimentación a tener en cuenta.
+> Conecta con personas, programas y organizaciones.
+
+Deberías dar ejemplos de cada actividad relacionados con el tipo de proyecto del que serán tutores.
+En **diapositiva cuatro** se resumen las habilidades de tutoría que veremos hoy:
+
+> Escuchar activamente, Preguntar eficazmente, Dar feedback.
+
+Mostrar la **diapositiva cinco** ahora sobre la escucha activa. Antes de mostrar algunas viñetas, empieza con una pregunta:
+
+> Por favor, contesta en el chat o activa tu micrófono y contesta: ¿Qué es la escucha activa? ¿Cómo es la escucha activa?
+
+Dales tiempo para pensar y compartir. Lee en voz alta las respuestas en el _chat_  si alguien la comparte por escrito. Repasa lo que han dicho. Podrán mencionar información útil que puedes anotar cuando muestres la viñeta sobre la escucha activa. Por ejemplo, alguien puede compartir que la escucha activa es *cuando la gente hace preguntas buenas y perspicaces. O cuando te prestan atención (no están mirando el teléfono o contestando correos).*.
+
+Ahora sigue con la **diapositiva seis** sobre el interrogatorio eficaz. Antes de mostrar los conceptos y consejos sobre el interrogatorio eficaz, haz las preguntas:
+
+> ¿Por qué son importantes las preguntas en la tutoría? ¿Qué tipo de preguntas son útiles? Por favor, contesta en el chat o activa tu micrófono y contesta
+
+Dales tiempo para pensar y compartir. Lee en voz alta el chat si alguien comparte por escrito. Da prioridad a las personas que no participan en la pregunta anterior. Repite lo que han dicho. Utiliza su respuesta al compartir las viñetas de la diapositiva.
+
+Como parte final de esta sección, pasa a la **diapositiva siete** sobre dar feedback.  Aquí tenemos dos preguntas que pueden orientar la actividad:
+
+> ¿Qué ocurre si sólo das opiniones positivas? Como hicimos anteriormente, por favor, comparte tus pensamientos en el chat o hablando en voz alta.
+
+Después de que dos o tres personas compartan sus ideas, puedes formular la segunda pregunta:
+
+> ¿Qué ocurre si sólo damos opiniones negativas?
+
+Dales tiempo para pensar y compartir.  Lee en voz alta la respuesta si alguien la comparte por escrito.
+
+Ahora muestra el dibujo animado sobre la retroalimentación y las viñetas de la diapositiva. Utiliza una vez más sus respuestas para dar ejemplos o apoyar estos puntos. Menciona que:
+
+> El feedback puede ser la forma de dar consejos. También permite que todos crezcan.
+
+> El material de base para un buen feedback se basa en las dos habilidades anteriores, la escucha activa y el interrogatorio eficaz.
+
+La siguiente diapositiva (número ocho) presenta las Reuniones.
+
+> Las reuniones son uno de los lugares donde tendrá lugar la tutoría y donde los tutores utilizarán la habilidad que mencionamos.
+
+Observa que creamos plantillas para las reuniones como andamiaje para su tarea de mentor. Y, a continuación, presentamos el modelo GROW por sus siglas en inglés.
+
+### Herramientas del mentor. Modelo GROW.
+
+Utiliza las diapositivas nueve y diez para presentar el modelo y luego haz el segundo ejercicio.
+
+> Trabajarán en grupos para el siguiente ejercicio. Dispondrán de 10 minutos para ver el vídeo que aparece en el documento compartido. Es un ejemplo en el que se utiliza el modelo GROW. La idea es que intentes identificar los pasos del modelo. Puedes volver a ver el vídeo o parar, responder y luego continuar. Utiliza el documento compartido en tu espacio de grupo para escribir tus preguntas.\_
+> 
+> Cuando termines, discutiremos tu respuesta con todo el grupo.
+
+Puedes crear grupos al azar, con no más de 3-4 personas en cada grupo. Lee su respuesta durante el ejercicio y elige algunos grupos para compartirla con toda la clase. Elige a cada grupo porque aporta algo interesante o diferente a la discusión. Si tienes varios grupos, dales a todos la oportunidad de compartir su visión.
+
+::: {.callout-note}
+Si estás enseñando la versión de la formación de  *120* minutos, es el momento de hacer una pausa de 5/10 minutos lejos de la pantalla.
+:::
+
+::: {.callout-tip}
+
+## Ejercicio: Practica el modelo GROW
+
+Este es un ejercicio extra para la versión de *120* minutos.
+Encontrarás las instrucciones sobre el ejercicio 2.b en el documento compartido.
+Si enseñas la versión de *90* minutos de la formación, debes eliminar el
+punto 2.b del documento compartido.
+:::
+
+Termina este apartado con la diapositiva *doce* y con  un resumen para el modelo GROW.
+
+### Herramientas para mentores/as. Logística del programa
+
+La siguiente sesión presenta las Directrices para Mentores/as y otras infraestructuras y herramientas que hemos desarrollado para el programa.
+
+La diapositiva compartida **trece** menciona cada herramienta. A continuación, muéstralas. La más importante es la de *Directrices para mentores/as*. Puedes hacer clic en las diapositivas para abrir el documento y recorrerlo, mostrando cada apartado, la lista de recursos y la información que allí recogemos.
+
+Puedes hacer clic en el enlace a los demás recursos dentro de las directrices para mostrárselos: asegúrate de mostrar el google drive y las plantillas de reuniones. Por último, puedes preguntarles si quieren consultar los canales de Slack.
+
+::: {.callout-tip}
+
+## Comprobación de acceso
+
+Este es un momento excelente para comprobar el acceso a estos recursos: ¿están todos en Slack y en los canales adecuados? ¿Tienes acceso a google drive y google docs? ¿Puedes copiar las plantillas de las reuniones y acceder al formulario de informe de la reunión?
+:::
+
+Ahora es el momento del siguiente ejercicio. Con la pregunta "¿Estás preparado para la tutoría?" proporcionamos un espacio para los comentarios, preguntas y aclaraciones que necesiten los y las mentores o mentoras. Permíteles hablar o escribir en el documento compartido o en el chat. Si preguntan en el chat, copia esos comentarios en el documento compartido. Estas preguntas pueden ser útiles para las otras cohortes. El tiempo para esta actividad es de 10 minutos, pero tómate más minutos si tienen buenas preguntas sobre el papel de mentor o el programa. 
+
+El ejercicio final pide a los/las mentores/as que practiquen dando opiniones constructivas rellenando una encuesta anónima sobre la formación. Comparte el enlace al formulario en el chat o menciona que pueden acceder al enlace en la nota compartida. Dales 5 minutos para completar la encuesta.
+
+::: {.callout-tip}
+
+## Comprobación de finalización
+
+Para este ejercicio final, también puedes pedir a los participantes que escriban en el chat *"¡Listo!"* o *"¡Terminado!"* o similar cuando terminen. De este modo, lo sabrás y podrás dar por terminada la actividad cuando todos hayan acabado. A veces esto puede significar que termines antes del tiempo asignado al ejercicio.
+:::
+
+## Después de la formación
+
+Después de la formación, envía un mensaje (correo electrónico, Slack) dando las gracias a los asistentes y volviendo a compartir los recursos esenciales:
+
+- Documento compartido (que tiene enlaces a las diapositivas, guía de tutoría, plantillas de reuniones, etc.).
+- Grabación de la reunión (en caso de que la hayas grabado).
+- La encuesta de opinión (para tener una segunda oportunidad de rellenarla).
+
+Revisa la encuesta de opinión e identifica uno o dos puntos a mejorar para la próxima iteración de formación.
+
+
