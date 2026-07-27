@@ -6,3 +6,47 @@ title: "Notas del instructor — Cómo organizar un evento maravilloso"
 **Contenido pendiente de migración.** 
 :::
 
+## Previo a la formación
+
+Envía una invitación al calendario con el enlace a la reunión y un enlace a las notas compartidas.
+
+En el archivo de notas compartidas, añade el enlace a la reunión y el resto del material (como diapositivas, vídeos, etc.).
+
+Haz un recordatorio el día anterior y una hora antes.
+
+::: {.callout-tip}
+
+## Recordatorios
+
+Utiliza los diferentes canales que tengas. Por ejemplo, nosotros utilizamos Slack y el correo electrónico.  Intenta utilizar recordatorios independientes de la zona horaria como *"Nos vemos en 50 minutos, aquí (enlace)"*
+:::
+
+## Formación
+
+### Hora de conectarse.
+
+Empieza la reunión unos minutos antes, permite que la gente entre y comprueba el vídeo y el audio. Asegúrate que las personas conectadas pueden escucharte y verte. Hazles saber que no pasa nada si no encienden la cámara. Comparte el documento que utilizarás como notas compartidas en el chat.
+
+Cuando todas las personas participantes hayan llegado, recuérdales las normas de participación, como el código de conducta y cómo utilizarlo. Menciona un breve orden del día:
+
+> Hoy vamos a revisar el framework PACTo para planificación de eventos, seguido de una selección de consejos prácticos basados en evidencia desde la ciencia del aprendizaje. Vamos a tener un corte de 10 minutos cuando lleguemos a la hora de curso.
+
+El hilo conductor es que comunicar y divulgar el trabajo propio es parte esencial de la formación en software de investigación, y que cada participante deberá organizar al menos una actividad de difusión antes de terminar el programa.
+
+::: {.callout-tip}
+
+## Documento compartido
+
+Comparte el documento una última vez cuando ya estén todos los asistentes. También comparte el documento antes de cada ejercicio para asegurarte de que todos los y las participantes pueden acceder a él.
+:::
+
+::: {.callout-tip}
+
+## Grabación
+
+Si vas a grabar la sesión, éste es un buen momento para pedir permiso. Deja claro cómo utilizarás la grabación y con quién la compartirás. Explica como remover el nombre de la imagen y deja claro que pueden apagar su camara. 
+:::
+
+### Comienza la formación
+
+Puedes empezar con el primer ejercicio: *Tipo de Actividad*
