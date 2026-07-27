@@ -4,7 +4,8 @@ title: Notas dos(as) instrutores(as)
 
 ::: {.callout-note}
 
-Conteúdo pendente de migração.
+**Conteúdo pendente de migração.**
+
 Este capítulo é proveniente do repositório [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) 
 
 :::
