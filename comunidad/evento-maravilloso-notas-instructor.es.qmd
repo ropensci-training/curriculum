@@ -49,4 +49,22 @@ Si vas a grabar la sesión, éste es un buen momento para pedir permiso. Deja cl
 
 ### Comienza la formación
 
-Puedes empezar con el primer ejercicio: *Tipo de Actividad*
+Puedes empezar con el primer ejercicio llamado *Tipo de Actividad*. Mientras explicas el ejercicio y se realiza puedes decidir si quieres compartir en la pantalla: las diapositivas con los ejercicios, el documento compartido con los ejercicios, o no compartir la pantalla. 
+
+> Vamos a arrancar con un ejercicio. La idea es que entren al documento compartido y que escriban al lado de su nombre, en el ejercicio 1: ¿qué tipo de actividad de difusión o comunicación piensan hacer como parte del programa? Y si son mentores o mentoras, por favor compartan qué tipo de actividad de comunicación y divulgación les gustaría que nuestros campeones y campeonas hicieran.
+
+Puedes aclarar que esta información también el útil para saber qué tipo de herramientas o apoyo podemos dar desde rOpenSci para esta actividad que van a realizar.
+
+::: {.callout-tip}
+
+## Actividades
+
+Aclara siempre al principio de la actividad de cuánto tiempo disponemos para realizarla. Por ejemplo: 
+*"Utilizaremos 10 minutos para este ejercicio".*, *"Haremos una pausa de 10 minutos"*
+:::
+
+Dales uno o dos minutos para escribir en silencio. Luego puedes leer algunas de las respuestas en voz alta o añadir algunos comentarios en el documento en silencio. Anímales a leer las respuestas de sus compañeros/as y a hacer comentarios.
+
+## El Framework PACTo
+
+Continúa con la diapositiva 
