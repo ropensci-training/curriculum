@@ -15,10 +15,10 @@ book:
     - como-contribuir.es.qmd
     - part: "Mentoría"
       chapters:
-        - mentoria/mentors.es.qmd
-        - mentoria/mentors-schedule.es.qmd
-        - mentoria/mentors-materials.es.qmd
-        - mentoria/mentors-instructor-notes.es.qmd
+        - mentoring/mentors.es.qmd
+        - mentoring/mentors-schedule.es.qmd
+        - mentoring/mentors-materials.es.qmd
+        - mentoring/mentors-instructor-notes.es.qmd
     - part: "Desarrollo colaborativo de software"
       chapters:
         - git/software-community-intro.es.qmd
