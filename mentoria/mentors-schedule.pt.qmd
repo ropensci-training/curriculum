@@ -1,0 +1,46 @@
+---
+title: Programação
+---
+
+::: {.callout-note}
+
+**Conteúdo pendente de migração.**
+Este capítulo é proveniente do repositório [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) 
+
+:::
+
+Realizamos o treinamento várias vezes para permitir que os(as) mentores(as) participem no dia e horário mais conveniente, de acordo com seu fuso horário.
+
+Aqui está um exemplo de cronograma com um treinamento pela manhã e um treinamento em horário comercial. *90* minutos de duração, começando às 9:00:
+
+|             | Tópico                                                                                                         | 
+| :---------: | :------------------------------------------------------------------------------------------------------------: |
+| 8:50-9:00   | Hora de se conectar. Verifique o áudio e o vídeo. | 
+| 9:00- 9:05  | Compartilhamento das regras de participação. Código de conduta. Compartilhamento de materiais. | 
+| 9:05-9:15   | Exercício: Reflexão sobre mentoria. Pense em uma experiência que você teve como mentor(a) ou sendo mentorado(a). | 
+| 9:15-9:25   | Funções dos(as) mentores(as). Habilidades de mentoria. | 
+| 9:25-9:40   | Ferramentas do(a) mentor(a). Modelo GROW. | 
+| 9:40-9:55   | Exercício: Trabalhar em grupo com o Modelo GROW. | 
+| 9:55-10:10  | Ferramentas do(a) mentor(a). Logística e infraestrutura do programa. | 
+| 10:10-10:20 | Exercício: Você está pronto para mentorar? Perguntas, comentários. | 
+| 10:20-10:25 | Exercício: feedback prático. | 
+| 10:25-10:30 | Encerramento. | 
+
+Aqui está um exemplo de programação com um treinamento matutino e um treinamento de curta duração. *120* minutos de duração:
+
+|             | Tópico                                                                                                         | 
+| :---------: | :------------------------------------------------------------------------------------------------------------: |
+| 8:50-9:00   | Hora de se conectar. Verifique o áudio e o vídeo. | 
+| 9:00- 9:05  | Compartilhamento das regras de participação. Código de conduta. Compartilhamento de materiais. | 
+| 9:05-9:15   | Exercício: Reflexão sobre mentoria. Pense em uma experiência que você teve como mentor(a) ou sendo mentorado(a). |  
+| 9:15-9:25   | Funções dos(as) mentores(as). Habilidades de mentoria. | 
+| 9:25-9:40   | Ferramentas do(a) mentor(a). Modelo GROW. | 
+| 9:40-9:55   | Exercício: Trabalhar em grupo com o Modelo GROW. | 
+| 9:55-10:05  | Intervalo longe da tela. | 
+| 10:05-10:20 | Exercício: Pratique o modelo GROW orientando seu/sua colega de classe (usando os resultados do exercício 1). | 
+| 10:20-10:35 | Ferramentas do(a) mentor(a). Logística e infraestrutura do programa. | 
+| 10:35-10:45 | Exercício: Você está pronto para mentorar? Perguntas, comentários. | 
+| 10:45-10:55 | Exercício: feedback prático. | 
+| 10:55-11:00 | Encerramento. | 
+
+

@@ -1,0 +1,172 @@
+---
+title: "Instructors Notes"
+---
+
+::: {.callout-note}
+**Content pending migration.**
+
+This chapter originates from the
+ [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) repository.
+:::
+
+## Pre-training
+
+Send a calendar invitation with the link to the meeting and a link to the shared notes.
+
+In the shared notes file add the link to the meeting and the rest of the material (such as slides, videos, etc).
+
+Make a reminder the day before and one hour earlier.
+
+::: {.callout-tip}
+## Reminders
+Use the different channels you have. For example we use Slack and email.  Try to use timezone-independent reminders like  _"See you all in 50 minutes, here (link)"_ 
+:::
+
+## Training
+
+### Time to connect. 
+Start the meeting a few minutes early, allow people to enter, and check the video and audio. Be sure they can listen and see you. Let them know it is ok if they don’t turn on their camera. Share the document you will be using as shared notes on the chat.
+
+When everyone arrives, remember the rules of participation, like the code of conduct and how to use it. Mention a short agenda for the day: 
+
+> We will see tools for your role as mentor and logistic about the program. We will also shared resources we build for you, to help you with your role. 
+
+::: {.callout-tip}
+## Shared document
+People can't access the previous chat when they join a meeting. So share the doc one last time when all the attendees are there. Also, share the doc before each exercise to be sure all students can access it. 
+:::
+
+::: {.callout-tip}
+## Recording
+If you will record the sesion, this is a good time to ask for permission. Be clear on how you will use the recording and with whom you will share it. 
+:::
+
+
+### Start the training
+
+You can start with the first exercise: Mentorship Reflection. (you can decide if you want to share the slides with the exercises, the shared doc with the exercises, or not share the screen).
+
+> We will start with an exercise: Mentorship Reflection. Please think of an experience you've had as a mentor or being mentored.  Use the shared doc to answer the questions next to your name (in alphabetical order).
+
+Read the questions aloud and give some more examples on what to think to answer:
+
+> What went well / what was helpful?” “What was that relationship like? How did it help you? What is one helpful thing your mentor/mentee said/did?
+>
+> What didn’t work? What you needed, and your mentor/mentee couldn't help you?  or didn't understand you?
+>
+> Think of a problem you’d like mentoring on right now.
+
+::: {.callout-tip}
+## Time for activities
+Always clarify at the beggining of the activity how much time we have for doing it. 
+_"We will use 10 minutes for this exercise”_, _"We will take a 10 minutes break"_
+:::
+
+Give them one-two minutes to write in silence. Then you can read some of the answers aloud or add some comments on the doc in silence. Encourage them to read their classmate's answers and do comments. 
+
+
+### Mentors roles. Mentorship skills 
+
+You continue with __slide three__ about the mentors' roles. 
+
+> What do mentors do? Mentors advise and inspire. How do you do this?. 
+> Recommend resources, readings, training, experiences. Feedback to consider.
+> Connect to people, programs, and organizations.
+
+You should give examples of each activity related to the type of project they will be mentoring.
+On __slide four__, you summarise the mentorship skills we will see today: 
+
+> Active Listening, Effective Questioning, Giving Feedback.
+
+Show __slide five__ now about active listening. Before showing some bullets point, you start with a question:
+
+> Please, answer on the chat or unmute yourself and answer: What is active listening? How active listening looks like?
+
+Give them time to think and share. Read aloud the chat if someone shares in writing form. Iterate on what they said. They will be able to mention helpful information you can note when you show the bullet point about active listening. For example, someone can share that active listening is _when people ask good and insightful questions. Or when they pay attention to you (they aren't watching their phone or answering their email)_.
+
+
+Now follows with __slide six__ about effective questioning. Before showing effective questioning concepts and tips, make the questions:
+
+> Why questions are important in mentoring? What kind of questions are helpful?. Please, answer on the chat or unmute yourself and answer
+
+Give them time to think and share. Read aloud the chat if someone shares in writing form. Give priority to the people that don't participate in the previous question. Iterate on what they said. Use their answer when sharing the bullets point on the slide. 
+
+As the final part of this section, you go to __slide seven__ about giving feedback.  Here we have two prompt questions: 
+
+> What happens if you only give positive feedback? As we did previously, please share your thoughts in the chat or by speaking up.
+
+After two or three of them share their thoughts, you can ask the second question:
+
+> What happens if we provide only negative feedback?
+
+Give them time to think and share.  Read aloud the chat if someone shares in writing form.
+
+Now show the cartoon about feedback and the bullets point on the slide. One more time use their answer to give examples or support this points. Mention that:
+
+> Feedback can be the way you provide advice. It also allows everyone to grow. 
+
+> The source material for good feedback is built on the above two skills, active listening and effective questioning. 
+
+The following slide (number eight) present Meetings. 
+
+> Meetings are one of the places where mentoring will happen and where mentors will use the skill we mention.
+
+Note we create templates for meeting as scaffolding for their mentorship task. And then introduce the GROW model.
+
+### Mentor tools. GROW Model.    
+
+Use slides nine and ten to introduce the model and then you do the second exercise.
+
+> You will work in groups for the next exercise. You will have 10 minutes to watch the video linked in the shared doc. It is an example using the GROW model. The idea is you try to identify the steps of the model. You can re-watch the video or stop, answer, and then continue. Please use the shared doc on your group space to write your questions._
+>
+> When you finish, we will discuss your answer with the whole group.
+
+You can create random groups, with no more than 3-4 people in each group. Read their answer during the exercise and choose some groups to share with the whole class. Choose each group because they add something interesting or different to the discussion. If you have a few groups, give all of them a chance to share their insight. 
+
+
+::: {.callout-note}
+If you are teaching the _120_ minutes version of the trainig it is time of a 5/10 minutes break away from the screen. 
+:::
+
+::: {.callout-tip}
+## Exercise: Practice GROW model mentoring your classmate
+This in an extra exercise for the _120_ minutes version of the training. 
+You will find the instruction on the 2.b exercise on the shared doc. 
+If you are teaching the _90_ minutes trainig, then you should remove the
+2.b point on the shared doc.
+:::
+
+Finished this section with slide_ _twelve__ with a summary for GROW model. 
+ 
+### Mentor tools. Program logistics 
+
+The next session introduces the Mentors Guidelines and others infrastructure and tools we developed for the champions program.
+
+Shared slide __thirteen__, mention each tool, and then show the tools. The most important one is the _Mentors Guidelines_. You can click on the slides to open the document and go through it, showing each section, the list of resources, and the information we gather there for them.
+
+You can click on the link to the other resources inside the guidelines to show them: be sure to show the google drive and the meeting templates. Finally, you can ask if they want to check the Slack channels. 
+
+::: {.callout-tip}
+## Checking for Access
+This is an excellent time to check for access to these resources: are all in Slack and the proper channels? Do you have access to google drive and google docs? Can you copy the meeting templates and access the meeting report form?
+:::
+
+Now it is time for the next exercise. With the prompt "Are you ready for mentoring?" we provide space for comments, questions, and clarifications mentors need. Allow them to speak or write on the shared document or the chat. If they ask on the chat, copy those comments on the shared doc. These questions can be useful for the other cohorts. The time for this activity is 10 minutes, but take more minutes if they have good questions about the mentoring role or the program.  
+
+The final exercise calls mentors to practice giving constructive feedback by filling out an anonymous feedback survey about the training. Share the link to the form on the chat or mention they can access the link on the shared note. Give 5 minutes to fill out the survey.
+
+::: {.callout-tip}
+## Checking completion
+For this final exercise, you can also ask students to write on the chat _"Done!"_ or _"Finish!"_ or similar when they finish. This way, you will know, and you can end the activity when all are done. Some times this can mean before the time allocated for the exercise.
+:::
+
+
+## Post-training
+
+After the training, send a message (email, Slack) thanking those who attended and re-sharing essential resources:
+
+- Shared document (which has links to the slides, mentoring guide, meeting templates, etc.).
+- Recording of the meeting (in case you have recorded it).
+- The feedback survey (for a second chance to fill).
+
+Check the feedback survey and identify one or two points to improve for the next training iteration.

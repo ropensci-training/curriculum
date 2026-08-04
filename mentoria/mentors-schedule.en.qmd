@@ -1,0 +1,49 @@
+---
+title: "Schedule"
+---
+
+::: {.callout-note}
+**Content pending migration.**
+
+This chapter originates from the
+ [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) repository.
+:::
+
+We run the training several times to allow mentors attend the best day and time for them according their timezone.
+
+Here is an example schedule with a morning training and _90_ minutes long, starting at 9:00:
+
+
+
+|     |               Topic                 |
+|:---:|:-----------------------------------:|
+|8:50-9:00 | Time to connect. Check audio+video |
+|9:00- 9:05| Sharing rules of participation. Code of Conduct. Sharing materials |
+|9:05-9:15 | Exercise: Mentorship Reflection. Think of an experience you've had as a mentor or being mentored |
+|9:15-9:25| Mentors roles. Mentorship skills |
+|9:25-9:40| Mentor tools. GROW Model.        | 
+|9:40-9:55| Exercise: Work in group with the GROW Model|
+|9:55-10:10| Mentor tools. Program logistics and insfrastructure.|
+|10:10-10:20| Exercise: Are you ready for mentor? Question, Comments|
+|10:20-10:25| Exercise: practice feedback|
+|10:25-10:30| Closing |
+
+
+Here is an example schedule with a morning training and _120_ minutes long:
+
+
+| |                Topic              |
+|:---:|:-----------------------------------:|
+|8:50-9:00 | Time to connect. Check audio+video |
+|9:00- 9:05| Sharing rules of participation. Code of Conduct. Sharing materials |
+|9:05-9:15 | Exercise: Mentorship Reflection. Think of an experience you've had as a mentor or being mentored |
+|9:15-9:25| Mentors roles. Mentorship skills |
+|9:25-9:40| Mentor tools. GROW Model.        | 
+|9:40-9:55| Exercise: Work in group with the GROW Model|
+|9:55-10:05 | Break away from the screen. |
+|10:05-10:20 | Exercise: Practice GROW model mentoring your classmate (using exercise 1 results)|
+|10:20-10:35| Mentor tools. Program logistics and insfrastructure.|
+|10:35-10:45| Exercise: Are you ready for mentor? Question, Comments|
+|10:45-10:55| Exercise: practice feedback|
+|10:55-11:00| Closing |
+
