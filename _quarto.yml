@@ -21,15 +21,15 @@ book:
         - mentoria/mentors-instructor-notes.es.qmd
     - part: "Desarrollo colaborativo de software"
       chapters:
-        - git/software-comunidad-intro.es.qmd
-        - git/software-comunidad-preparacion.es.qmd
-        - git/software-comunidad-git-individual.es.qmd
-        - git/software-comunidad-git-equipo.es.qmd
-        - git/software-comunidad-notas-instructor.es.qmd
-        - git/git-historia.es.qmd
-        - git/git-historia-notas-instructor.es.qmd
-        - git/git-avanzado.es.qmd
-        - git/git-avanzado-notas-instructor.es.qmd
+        - git/software-community-intro.es.qmd
+        - git/software-community-preparation.es.qmd
+        - git/software-community-git-individual.es.qmd
+        - git/software-community-git-team.es.qmd
+        - git/software-community-git-instructor-notes.es.qmd
+        - git/git-history.es.qmd
+        - git/git-history-instructor-notes.es.qmd
+        - git/git-advanced.es.qmd
+        - git/git-advanced-instructor-notes.es.qmd
     - part: "Desarrollo de paquetes de R"
       chapters:
         - paquetes/calidad-codigo.es.qmd
