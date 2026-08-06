@@ -47,19 +47,19 @@ book:
         - packages/packages-genie-instructor-notes.es.qmd
     - part: "Revisión de software"
       chapters:
-        - review/review-process.en.qmd
-        - review/review-process-instructor-notes.en.qmd
-        - review/review-workshop.en.qmd
-        - review/review-workshop-instructor-notes.en.qmd
+        - review/review-process.es.qmd
+        - review/review-process-instructor-notes.es.qmd
+        - review/review-workshop.es.qmd
+        - review/review-workshop-instructor-notes.es.qmd
     - part: "Gestión de comunidad y divulgación"
       chapters:
-        - community/oss-contribution.en.qmd
-        - community/oss-contribution-instructor-notes.en.qmd
-        - community/memorable-talk.en.qmd
-        - community/memorable-talk-tools.en.qmd
-        - community/memorable-talk-instructor-notes.en.qmd
-        - community/wonderful-event.en.qmd
-        - community/wonderful-event-instructor-notes.en.qmd
+        - community/oss-contribution.es.qmd
+        - community/oss-contribution-instructor-notes.es.qmd
+        - community/memorable-talk.es.qmd
+        - community/memorable-talk-tools.es.qmd
+        - community/memorable-talk-instructor-notes.es.qmd
+        - community/wonderful-event.es.qmd
+        - community/wonderful-event-instructor-notes.es.qmd
   #   - part: "Apéndices"
   #     chapters:
   #       - apendices/apendice-glosario.es.qmd
