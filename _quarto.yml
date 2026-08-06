@@ -32,34 +32,34 @@ book:
         - git/git-advanced-instructor-notes.es.qmd
     - part: "Desarrollo de paquetes de R"
       chapters:
-        - paquetes/calidad-codigo.es.qmd
-        - paquetes/calidad-codigo-notas-instructor.es.qmd
-        - paquetes/mecanica-prereqs.es.qmd
-        - paquetes/mecanica-1.es.qmd
-        - paquetes/mecanica-1-notas-instructor.es.qmd
-        - paquetes/mecanica-2.es.qmd
-        - paquetes/mecanica-2-notas-instructor.es.qmd
-        - paquetes/mecanica-3.es.qmd
-        - paquetes/mecanica-3-notas-instructor.es.qmd
-        - paquetes/avanzado.es.qmd
-        - paquetes/avanzado-notas-instructor.es.qmd
-        - paquetes/genia-paquetes.es.qmd
-        - paquetes/genia-paquetes-notas-instructor.es.qmd
+        - packages/code-quality.en.qmd
+        - packages/code-quality-instructor-notes.en.qmd
+        - packages/mechanics-prereqs.en.qmd
+        - packages/mechanics-1.en.qmd
+        - packages/mechanics-1-instructor-notes.en.qmd
+        - packages/mechanics-2.en.qmd
+        - packages/mechanics-2-instructor-notes.en.qmd
+        - packages/mechanics-3.en.qmd
+        - packages/mechanics-3-instructor-notes.en.qmd
+        - packages/advanced.en.qmd
+        - packages/advanced-instructor-notes.en.qmd
+        - packages/packages-genie.en.qmd
+        - packages/packages-genie-instructor-notes.en.qmd
     - part: "Revisión de software"
       chapters:
-        - review/proceso-revision.es.qmd
-        - review/proceso-revision-notas-instructor.es.qmd
-        - review/taller-revision.es.qmd
-        - review/taller-revision-notas-instructor.es.qmd
+        - review/review-process.en.qmd
+        - review/review-process-instructor-notes.en.qmd
+        - review/review-workshop.en.qmd
+        - review/review-workshop-instructor-notes.en.qmd
     - part: "Gestión de comunidad y divulgación"
       chapters:
-        - comunidad/oss-contribucion.es.qmd
-        - comunidad/oss-contribucion-notas-instructor.es.qmd
-        - comunidad/charla-memorable.es.qmd
-        - comunidad/charla-memorable-herramientas.es.qmd
-        - comunidad/charla-memorable-notas-instructor.es.qmd
-        - comunidad/evento-maravilloso.es.qmd
-        - comunidad/evento-maravilloso-notas-instructor.es.qmd
+        - community/oss-contribution.en.qmd
+        - community/oss-contribution-instructor-notes.en.qmd
+        - community/memorable-talk.en.qmd
+        - community/memorable-talk-tools.en.qmd
+        - community/memorable-talk-instructor-notes.en.qmd
+        - community/wonderful-event.en.qmd
+        - community/wonderful-event-instructor-notes.en.qmd
   #   - part: "Apéndices"
   #     chapters:
   #       - apendices/apendice-glosario.es.qmd
