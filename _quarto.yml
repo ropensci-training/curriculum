@@ -32,19 +32,19 @@ book:
         - git/git-advanced-instructor-notes.es.qmd
     - part: "Desarrollo de paquetes de R"
       chapters:
-        - packages/code-quality.en.qmd
-        - packages/code-quality-instructor-notes.en.qmd
-        - packages/mechanics-prereqs.en.qmd
-        - packages/mechanics-1.en.qmd
-        - packages/mechanics-1-instructor-notes.en.qmd
-        - packages/mechanics-2.en.qmd
-        - packages/mechanics-2-instructor-notes.en.qmd
-        - packages/mechanics-3.en.qmd
-        - packages/mechanics-3-instructor-notes.en.qmd
-        - packages/advanced.en.qmd
-        - packages/advanced-instructor-notes.en.qmd
-        - packages/packages-genie.en.qmd
-        - packages/packages-genie-instructor-notes.en.qmd
+        - packages/code-quality.es.qmd
+        - packages/code-quality-instructor-notes.es.qmd
+        - packages/mechanics-prereqs.es.qmd
+        - packages/mechanics-1.es.qmd
+        - packages/mechanics-1-instructor-notes.es.qmd
+        - packages/mechanics-2.es.qmd
+        - packages/mechanics-2-instructor-notes.es.qmd
+        - packages/mechanics-3.es.qmd
+        - packages/mechanics-3-instructor-notes.es.qmd
+        - packages/advanced.es.qmd
+        - packages/advanced-instructor-notes.es.qmd
+        - packages/packages-genie.es.qmd
+        - packages/packages-genie-instructor-notes.es.qmd
     - part: "Revisión de software"
       chapters:
         - review/review-process.en.qmd
