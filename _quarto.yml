@@ -43,8 +43,8 @@ book:
         - packages/mechanics-3-instructor-notes.es.qmd
         - packages/advanced.es.qmd
         - packages/advanced-instructor-notes.es.qmd
-        - packages/packages-genia.es.qmd
-        - packages/packages-genie-instructor-notes.es.qmd
+        - packages/packages-genai.es.qmd
+        - packages/packages-genai-instructor-notes.es.qmd
     - part: "Revisión de software"
       chapters:
         - review/review-process.es.qmd
