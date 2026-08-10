@@ -17,7 +17,7 @@ book:
       chapters:
         - mentoria/mentors.es.qmd
         - mentoria/mentors-schedule.es.qmd
-        - mentoria/mentors-materials.es.qmd
+        - mentoria/mentores-materiales.es.qmd
         - mentoria/mentors-instructor-notes.es.qmd
     - part: "Desarrollo colaborativo de software"
       chapters:
