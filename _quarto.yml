@@ -15,56 +15,56 @@ book:
     - como-contribuir.es.qmd
     - part: "Mentoría"
       chapters:
-        - mentoria/mentores.es.qmd
-        - mentoria/mentores-agenda.es.qmd
-        - mentoria/mentores-materiales.es.qmd
-        - mentoria/mentores-notas-instructor.es.qmd
+        - mentoring/mentors.es.qmd
+        - mentoring/mentors-schedule.es.qmd
+        - mentoring/mentors-materials.es.qmd
+        - mentoring/mentors-instructor-notes.es.qmd
     - part: "Desarrollo colaborativo de software"
       chapters:
-        - git/software-comunidad-intro.es.qmd
-        - git/software-comunidad-preparacion.es.qmd
-        - git/software-comunidad-git-individual.es.qmd
-        - git/software-comunidad-git-equipo.es.qmd
-        - git/software-comunidad-notas-instructor.es.qmd
-        - git/git-historia.es.qmd
-        - git/git-historia-notas-instructor.es.qmd
-        - git/git-avanzado.es.qmd
-        - git/git-avanzado-notas-instructor.es.qmd
+        - git/software-community-intro.es.qmd
+        - git/software-community-preparation.es.qmd
+        - git/software-community-git-individual.es.qmd
+        - git/software-community-git-team.es.qmd
+        - git/software-community-git-instructor-notes.es.qmd
+        - git/git-history.es.qmd
+        - git/git-history-instructor-notes.es.qmd
+        - git/git-advanced.es.qmd
+        - git/git-advanced-instructor-notes.es.qmd
     - part: "Desarrollo de paquetes de R"
       chapters:
-        - paquetes/calidad-codigo.es.qmd
-        - paquetes/calidad-codigo-notas-instructor.es.qmd
-        - paquetes/mecanica-prereqs.es.qmd
-        - paquetes/mecanica-1.es.qmd
-        - paquetes/mecanica-1-notas-instructor.es.qmd
-        - paquetes/mecanica-2.es.qmd
-        - paquetes/mecanica-2-notas-instructor.es.qmd
-        - paquetes/mecanica-3.es.qmd
-        - paquetes/mecanica-3-notas-instructor.es.qmd
-        - paquetes/avanzado.es.qmd
-        - paquetes/avanzado-notas-instructor.es.qmd
-        - paquetes/genia-paquetes.es.qmd
-        - paquetes/genia-paquetes-notas-instructor.es.qmd
+        - packages/code-quality.es.qmd
+        - packages/code-quality-instructor-notes.es.qmd
+        - packages/mechanics-prereqs.es.qmd
+        - packages/mechanics-1.es.qmd
+        - packages/mechanics-1-instructor-notes.es.qmd
+        - packages/mechanics-2.es.qmd
+        - packages/mechanics-2-instructor-notes.es.qmd
+        - packages/mechanics-3.es.qmd
+        - packages/mechanics-3-instructor-notes.es.qmd
+        - packages/advanced.es.qmd
+        - packages/advanced-instructor-notes.es.qmd
+        - packages/packages-genai.es.qmd
+        - packages/packages-genai-instructor-notes.es.qmd
     - part: "Revisión de software"
       chapters:
-        - review/proceso-revision.es.qmd
-        - review/proceso-revision-notas-instructor.es.qmd
-        - review/taller-revision.es.qmd
-        - review/taller-revision-notas-instructor.es.qmd
-    - part: "Gestión de comunidad y divulgación"
-      chapters:
-        - comunidad/oss-contribucion.es.qmd
-        - comunidad/oss-contribucion-notas-instructor.es.qmd
-        - comunidad/charla-memorable.es.qmd
-        - comunidad/charla-memorable-herramientas.es.qmd
-        - comunidad/charla-memorable-notas-instructor.es.qmd
-        - comunidad/evento-maravilloso.es.qmd
-        - comunidad/evento-maravilloso-notas-instructor.es.qmd
-  #   - part: "Apéndices"
+        - review/review-process.es.qmd
+        - review/review-process-instructor-notes.es.qmd
+        - review/review-workshop.es.qmd
+        - review/review-workshop-instructor-notes.es.qmd
+    # - part: "Gestión de comunidad y divulgación"
+    #   chapters:
+    #     - community/oss-contribution.es.qmd
+    #     - community/oss-contribution-instructor-notes.es.qmd
+    #     - community/memorable-talk.es.qmd
+    #     - community/memorable-talk-tools.es.qmd
+    #     - community/memorable-talk-instructor-notes.es.qmd
+    #     - community/wonderful-event.es.qmd
+    #     - community/wonderful-event-instructor-notes.es.qmd
+  #   - part: "Appendices"
   #     chapters:
-  #       - apendices/apendice-glosario.es.qmd
-  #       - apendices/apendice-entorno.es.qmd
-  #       - apendices/apendice-plantilla-instructor.es.qmd
+  #       - appendix/apendice-glosario.es.qmd
+  #       - appendix/apendice-entorno.es.qmd
+  #       - appendix/apendice-plantilla-instructor.es.qmd
   # appendices:
   #   - references.es.qmd
 

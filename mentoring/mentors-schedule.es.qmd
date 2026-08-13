@@ -1,0 +1,45 @@
+---
+title: "Agendas tentativas"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+
+Este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
+:::
+
+Organizamos la formación varias veces para que los mentores puedan asistir el mejor día y hora para ellos según su zona horaria.
+
+Aquí tienes un ejemplo de horario con una formación por la mañana y *90* minutos de duración, a partir de las 9:00:
+
+|             | Tema                                                                                                               | 
+| :---------: | :----------------------------------------------------------------------------------------------------------------: |
+| 8:50-9:00   | Hora de conectarse. Prueba de audio y vídeo                                                                            | 
+| 9:00- 9:05  | Puesta en común de las normas de participación. Código de conducta. Compartir materiales.                           | 
+| 9:05-9:15   | Ejercicio: Reflexión sobre realizar tutorías. Piensa en una experiencia que hayas tenido como mentor/a o siendo la persona quien recibió la mentoría. |
+| 9:15-9:25   | Funciones de los mentores. Habilidades para ser mentor/a.                                                                  | 
+| 9:25-9:40   | Herramientas del mentor/a. Modelo GROW.                                                                              | 
+| 9:40-9:55   | Ejercicio: Trabajo en grupo con el Modelo GROW.                                                                     | 
+| 9:55-10:10  | Herramientas del mentor/a. Logística e infraestructura del programa.                                                 | 
+| 10:10-10:20 | Ejercicio: ¿Estás preparado para ser mentor/a? sesión de preguntas y comentarios.                                                | 
+| 10:20-10:25 | Ejercicio: Practicar _feedback_.                                                                              | 
+| 10:25-10:30 | Cierre.                                                                                                           | 
+
+Aquí tienes un ejemplo de horario con un entrenamiento por la mañana y *120* minutos de duración:
+
+|             | Tema                                                                                                               | 
+| :---------: | :----------------------------------------------------------------------------------------------------------------: |
+| 8:50-9:00   | Hora de conectarse. Comprueba de audio+vídeo                                                                            | 
+| 9:00- 9:05  | Puesta en común de las normas de participación. Código de conducta. Compartir materiales.                           | 
+| 9:05-9:15   | Ejercicio: Reflexión sobre como ser mentor/a. Piensa en una experiencia que hayas tenido como mentor/a o siendo la persona que recibe la mentoría. | 
+| 9:15-9:25   | Funciones de los mentores. Habilidades para ser mentor/a.                                                                 | 
+| 9:25-9:40   | Herramientas del mentor/a. Modelo GROW.                                                                              | 
+| 9:40-9:55   | Ejercicio: Trabajo en grupo con el Modelo GROW.                                                                    | 
+| 9:55-10:05  | Descanso (lejos de la pantalla).                                                                                            | 
+| 10:05-10:20 | Ejercicio: Practica del modelo CRECE orientando a tu compañero de clase (utilizando los resultados del ejercicio 1). | 
+| 10:20-10:35 | Herramientas del mentor/a. Logística e infraestructura del programa.                                                 | 
+| 10:35-10:45 | Ejercicio: ¿Estás preparado para ser mentor/a? sesión de preguntas y comentarios.                                                 | 
+| 10:45-10:55 | Ejercicio: Practica _feedback_.                                                                          | 
+| 10:55-11:00 | Cierre.                                                                                                       | 
+
+
