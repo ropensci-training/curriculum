@@ -51,15 +51,15 @@ book:
         - review/review-process-instructor-notes.es.qmd
         - review/review-workshop.es.qmd
         - review/review-workshop-instructor-notes.es.qmd
-    # - part: "Gestión de comunidad y divulgación"
-    #   chapters:
-    #     - community/oss-contribution.es.qmd
-    #     - community/oss-contribution-instructor-notes.es.qmd
-    #     - community/memorable-talk.es.qmd
-    #     - community/memorable-talk-tools.es.qmd
-    #     - community/memorable-talk-instructor-notes.es.qmd
-    #     - community/wonderful-event.es.qmd
-    #     - community/wonderful-event-instructor-notes.es.qmd
+    - part: "Gestión de comunidad y divulgación"
+      chapters:
+        - community/oss-contribution.es.qmd
+        - community/oss-contribution-instructor-notes.es.qmd
+        - community/memorable-talk.es.qmd
+        - community/memorable-talk-tools.es.qmd
+        - community/memorable-talk-instructor-notes.es.qmd
+        - community/wonderful-event.es.qmd
+        - community/wonderful-event-instructor-notes.es.qmd
   #   - part: "Appendices"
   #     chapters:
   #       - appendix/apendice-glosario.es.qmd
