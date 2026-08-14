@@ -11,8 +11,8 @@ book:
   chapters:
     - index.es.qmd
     - intro.es.qmd
-    - como-usar.es.qmd
-    - como-contribuir.es.qmd
+    - how-to-use.es.qmd
+    - contributing.es.qmd
     - part: "Mentoría"
       chapters:
         - mentoring/mentors.es.qmd
