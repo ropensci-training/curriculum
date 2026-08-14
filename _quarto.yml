@@ -9,57 +9,57 @@ book:
   repo-actions: [edit, issue]
   sharing: [linkedin]
   chapters:
-    - index.es.qmd
-    - intro.es.qmd
-    - how-to-use.es.qmd
-    - contributing.es.qmd
+    - index.qmd
+    - intro.qmd
+    - how-to-use.qmd
+    - contributing.qmd
     - part: "Mentoría"
       chapters:
-        - mentoring/mentors.es.qmd
-        - mentoring/mentors-schedule.es.qmd
-        - mentoring/mentors-materials.es.qmd
-        - mentoring/mentors-instructor-notes.es.qmd
+        - mentoring/mentors.qmd
+        - mentoring/mentors-schedule.qmd
+        - mentoring/mentors-materials.qmd
+        - mentoring/mentors-instructor-notes.qmd
     - part: "Desarrollo colaborativo de software"
       chapters:
-        - git/software-community-intro.es.qmd
-        - git/software-community-preparation.es.qmd
-        - git/software-community-git-individual.es.qmd
-        - git/software-community-git-team.es.qmd
-        - git/software-community-git-instructor-notes.es.qmd
-        - git/git-history.es.qmd
-        - git/git-history-instructor-notes.es.qmd
-        - git/git-advanced.es.qmd
-        - git/git-advanced-instructor-notes.es.qmd
+        - git/software-community-intro.qmd
+        - git/software-community-preparation.qmd
+        - git/software-community-git-individual.qmd
+        - git/software-community-git-team.qmd
+        - git/software-community-git-instructor-notes.qmd
+        - git/git-history.qmd
+        - git/git-history-instructor-notes.qmd
+        - git/git-advanced.qmd
+        - git/git-advanced-instructor-notes.qmd
     - part: "Desarrollo de paquetes de R"
       chapters:
-        - packages/code-quality.es.qmd
-        - packages/code-quality-instructor-notes.es.qmd
-        - packages/mechanics-prereqs.es.qmd
-        - packages/mechanics-1.es.qmd
-        - packages/mechanics-1-instructor-notes.es.qmd
-        - packages/mechanics-2.es.qmd
-        - packages/mechanics-2-instructor-notes.es.qmd
-        - packages/mechanics-3.es.qmd
-        - packages/mechanics-3-instructor-notes.es.qmd
-        - packages/advanced.es.qmd
-        - packages/advanced-instructor-notes.es.qmd
-        - packages/packages-genai.es.qmd
-        - packages/packages-genai-instructor-notes.es.qmd
+        - packages/code-quality.qmd
+        - packages/code-quality-instructor-notes.qmd
+        - packages/mechanics-prereqs.qmd
+        - packages/mechanics-1.qmd
+        - packages/mechanics-1-instructor-notes.qmd
+        - packages/mechanics-2.qmd
+        - packages/mechanics-2-instructor-notes.qmd
+        - packages/mechanics-3.qmd
+        - packages/mechanics-3-instructor-notes.qmd
+        - packages/advanced.qmd
+        - packages/advanced-instructor-notes.qmd
+        - packages/packages-genai.qmd
+        - packages/packages-genai-instructor-notes.qmd
     - part: "Revisión de software"
       chapters:
-        - review/review-process.es.qmd
-        - review/review-process-instructor-notes.es.qmd
-        - review/review-workshop.es.qmd
-        - review/review-workshop-instructor-notes.es.qmd
+        - review/review-process.qmd
+        - review/review-process-instructor-notes.qmd
+        - review/review-workshop.qmd
+        - review/review-workshop-instructor-notes.qmd
     - part: "Gestión de comunidad y divulgación"
       chapters:
-        - community/oss-contribution.es.qmd
-        - community/oss-contribution-instructor-notes.es.qmd
-        - community/memorable-talk.es.qmd
-        - community/memorable-talk-tools.es.qmd
-        - community/memorable-talk-instructor-notes.es.qmd
-        - community/wonderful-event.es.qmd
-        - community/wonderful-event-instructor-notes.es.qmd
+        - community/oss-contribution.qmd
+        - community/oss-contribution-instructor-notes.qmd
+        - community/memorable-talk.qmd
+        - community/memorable-talk-tools.qmd
+        - community/memorable-talk-instructor-notes.qmd
+        - community/wonderful-event.qmd
+        - community/wonderful-event-instructor-notes.qmd
   #   - part: "Appendices"
   #     chapters:
   #       - appendix/apendice-glosario.es.qmd
