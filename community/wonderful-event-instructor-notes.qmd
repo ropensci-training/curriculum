@@ -119,3 +119,55 @@ Termina la presentación del marco con la sección de tecnología. Presenta las 
 
 Durante el ejercicio ve tomando las respuestas para comentar, invita a los asistentes a participar y conversen sobre acuerdos o diferencias.
 
+::: {.callout-tip}
+
+Este es un buen momento para realizar un corte de 10 minutos.
+
+:::
+
+## Consejos prácticos para todo tipo de eventos
+
+Presenta los 8 consejos que son utiles para eventos online o presenciales. 
+
+### Ejercicio 6 - Ejercicio en grupos
+
+Divide a los asistentes en grupos de no mas de 3-4 personas. 
+Antes de enviarlos a los grupos comparte la consiga en el chat y tambien en la pantalla. Pregunta si hay dudas y resuelvelas.
+
+> En grupo charlen entre ustedes para contestar estas preguntas: ¿Cuáles de los consejos anteriores podrías aplicar en tu evento? ¿Cómo lo harías?
+Usen el documento compartido y resuman su intercambio en el ejercicio 5, en la seccion que corresponde a su sala de grupo.
+
+## Consejos prácticos para eventos online
+
+Presenta los 8 consejos que son utiles para eventos online.
+
+Divide a los asistentes en grupos de no mas de 3-4 personas. 
+Antes de enviarlos a los grupos comparte la consiga en el chat y tambien en la pantalla. Pregunta si hay dudas y resuelvelas.
+
+::: {.callout-tip}
+
+Mantener los mismos grupos ayuda a que las cosas fluyan mas rapido, pero mezclar las personas les da oportunidad de interactuar con otras personas.
+
+:::
+
+> Ejercicio 7: Trabajo en grupo
+> ¿Cuáles de los consejos anteriores hemos usado en este y en los otros talleres de rOpenSci?
+> Cuales de todos los consejos te gusto mas?
+Repasen todos los consejos e identifiquen cuáles se usaron en este taller hasta el momento
+Sinteticen el intercambio en el documento compartido en la seccion de su sala de grupo.
+
+## Pide devoluciones
+
+Muestra este consejo final y comparte el formulario de feedback para que lo completen.
+
+## Después de la formación
+
+Después de la formación, envía un mensaje (correo electrónico, Slack) dando las gracias a los asistentes y volviendo a compartir los recursos esenciales:
+
+- Documento compartido (que tiene enlaces a las diapositivas, guía de tutoría, plantillas de reuniones, etc.).
+- Grabación de la reunión (en caso de que la hayas grabado).
+- La encuesta de opinión (para tener una segunda oportunidad de rellenarla).
+
+Revisa la encuesta de opinión e identifica uno o dos puntos a mejorar para la próxima iteración de formación.
+
+
