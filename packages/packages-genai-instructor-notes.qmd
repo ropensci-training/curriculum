@@ -1,9 +1,12 @@
 ---
-title: "GenAI Paquetes Notas Instructor"
+title: "Notas para docentes"
 ---
 
 ::: {.callout-note}
-**Contenido pendiente de migración.** 
 
-Es contenido nuevo, por lo que aun no hay un repo a migrar.
+## Borrador
+
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.
+
+Este capítulo es actualmente un borrador de ideas y no recomendamos su lectura.
 :::

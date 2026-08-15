@@ -3,5 +3,11 @@ title: "Taller Revision Notas Instructor"
 ---
 
 ::: {.callout-note}
-**Contenido pendiente de migración.** Ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.
+## Migración
+
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de rOpenSci. 
+
+Este capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.
+
+*Contenido pendiente de migración:* ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.
 :::

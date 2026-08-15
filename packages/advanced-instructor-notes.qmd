@@ -1,9 +1,13 @@
 ---
-title: "Avanzado Notas Instructor"
+title: "Notas para docentes"
 ---
 
 ::: {.callout-note}
-**Contenido pendiente de migración.** 
+## Migración
 
-Ver https://github.com/ropensci-training/2026-pkg-dev-rocket para el repo fuente de este capítulo (hay mas repos pero con versiones de las cohortes anteriores, la de 2026 es la mas actualizada y que incorpora mejoras y feedback).
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.
+
+Este capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.
+
+*Fuente del contenido:* ver https://github.com/ropensci-training/2026-pkg-dev-rocket para el repo fuente de este capítulo (hay mas repos pero con versiones de las cohortes anteriores, la de 2026 es la mas actualizada y que incorpora mejoras y feedback).
 :::
