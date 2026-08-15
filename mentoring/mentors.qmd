@@ -3,9 +3,12 @@ title: "Formación y orientación para mentores y mentoras"
 ---
 
 ::: {.callout-note}
-**Contenido pendiente de migración.** 
+## En revisión
 
-Este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci. 
+Este capítulo debería ser legible, pero está siendo objeto de un pulido final.
+
+**Fuente del contenido migrado:** este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
 :::
 
 Este curso forma parte de la formación y orientación de mentores y mentoras del Programa de Campeon(a|e)s de rOpenSci.
