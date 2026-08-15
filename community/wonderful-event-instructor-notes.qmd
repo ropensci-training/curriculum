@@ -67,6 +67,14 @@ Dales uno o dos minutos para escribir en silencio. Luego puedes leer algunas de 
 
 ## El Framework PACTo
 
+::: {.callout-tip}
+
+### Ejercicios
+
+Esta sección tiene 4 ejercicios que invitan a refleccionar sobre los temas presentación en relación de la experiencia de cada asistente. Si tienen que remover contenido porque no alcanza el tiempo, puedes quitar uno o dos ejercicios de esta sección.
+:::
+
+
 Continúa con la diapositiva 3 Marco de trabajo para eventos virtuales - PACTo y explica que es para eventos virtuales y fue desarrollado por el Centro de Community Management (CSCCE).
 
 Aclara que el framework se llama PACT en inglés, que por suerte traduce bastante bien al castellano como "pacto" —un acuerdo que uno hace para organizar los eventos. 
@@ -80,11 +88,34 @@ Menciona los 4 aspectos para organizarlo de forma eficiente:
  
 ### Propósito
 
-Explica este aspecto con las preguntas correspondientes que ayudan a reflexionar sobre el mismo.  Luego presenta el ejercicio 2:
+Explica este aspecto con las preguntas correspondientes que ayudan a reflexionar sobre el mismo. Presenta ejemplos cuando te sea posible. Luego presenta el ejercicio 2:
 
 > Usando la Community Call “Software Libre de Investigacion en America Latina” vamos a contestar las tres preguntas del Propósito, usen el chat para compartir sus respuestas.
 
 Por el chat comparte el link a la pagina del evento "conversaciones con la comunidad" y tambien comparte en pantalla esa misma pagina para ayudar a los asistentes a encontrar la informacion que deben utilizar.
 
+### Asistentes
 
+Continua con la explicacion sobre los Asistentes compartiendo las tres preguntas guias para este aspecto, dando ejemplos cuando las expliques y luego presenta el ejercicio 3.
+
+> Usando la Conferencia LatinR, contestar las tres preguntas sobre Asistentes, usen el chat para compartir sus respuestas.
+
+Por el chat comparte el link a la pagina de LatinR y tambien comparte en pantalla esa misma pagina para ayudar a los asistentes a encontrar la informacion que deben utilizar.
+
+
+### Comunidad
+
+A continuación presenta 3 preguntas guías para el aspecto de Comunidad, nuevamente con ejemplos cuando sea posible, seguido por la propuesta del ejercicio 4
+
+> En el documento compartido, busca este ejercicio y al lado de tu nombre, comparte alguna estrategia para mantener la concentración o la participación que consideres efectivo. Lee las respuestas del resto y comenta las mismas (si las usaste, si tambien te dieron resultado o alguna variante)
+
+Durante el ejercicio ve tomando las respuestas para comentar, invita a los asistentes a participar y conversen sobre acuerdos o diferencias.
+
+### Tecnología
+
+Termina la presentación del marco con la sección de tecnología. Presenta las tres preguntas que ayudan a refleccionar sobre este aspecto, dando ejemplos concretos y luego presenta el ejercicio 5.
+
+> Todos hemos usado herramientas para reuniones. Algunos tuvieron éxito, otros no. Rápido: denme ejemplos. ¿Qué herramienta usaron que funcionó bien? ¿Y otra que no fue útil?
+
+Durante el ejercicio ve tomando las respuestas para comentar, invita a los asistentes a participar y conversen sobre acuerdos o diferencias.
 
