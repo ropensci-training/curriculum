@@ -76,9 +76,9 @@ format:
     toc: true
     toc-depth: 3
     lang: es
-  pdf:
-    documentclass: book
-    lang: es
+  # pdf:
+  #   documentclass: book
+  #   lang: es
 
 babelquarto:
   languagecodes:
