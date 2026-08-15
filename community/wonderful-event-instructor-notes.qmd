@@ -67,4 +67,24 @@ Dales uno o dos minutos para escribir en silencio. Luego puedes leer algunas de 
 
 ## El Framework PACTo
 
-Continúa con la diapositiva 
+Continúa con la diapositiva 3 Marco de trabajo para eventos virtuales - PACTo y explica que es para eventos virtuales y fue desarrollado por el Centro de Community Management (CSCCE).
+
+Aclara que el framework se llama PACT en inglés, que por suerte traduce bastante bien al castellano como "pacto" —un acuerdo que uno hace para organizar los eventos. 
+
+Menciona los 4 aspectos para organizarlo de forma eficiente:
+
+- **P** de Propósito
+- **A** de Asistentes
+- **C** de Comunidad (gestión de la comunidad)
+- **T** de herramientas tecnológicas, de Tecnología que vamos a usar en esa reunión
+ 
+### Propósito
+
+Explica este aspecto con las preguntas correspondientes que ayudan a reflexionar sobre el mismo.  Luego presenta el ejercicio 2:
+
+> Usando la Community Call “Software Libre de Investigacion en America Latina” vamos a contestar las tres preguntas del Propósito, usen el chat para compartir sus respuestas.
+
+Por el chat comparte el link a la pagina del evento "conversaciones con la comunidad" y tambien comparte en pantalla esa misma pagina para ayudar a los asistentes a encontrar la informacion que deben utilizar.
+
+
+
