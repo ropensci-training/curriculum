@@ -1,9 +1,13 @@
 ---
-title: "Git Historia Notas Instructor"
+title: "Notas para docentes"
 ---
 
 ::: {.callout-note}
-**Contenido pendiente de migración.** 
+## Migración
 
-Ver https://github.com/ropensci-training/git-historia para el repo fuente de este capítulo.
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de rOpenSci. 
+
+Este capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.
+
+*Contenido pendiente de migración:* ver https://github.com/ropensci-training/git-historia para el repo fuente de este capítulo.
 :::
