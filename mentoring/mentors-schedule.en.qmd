@@ -3,9 +3,12 @@ title: "Schedule"
 ---
 
 ::: {.callout-note}
-**Content pending migration.**
+## Being refined
 
-This chapter originates from the
+You are reading the **first edition in progress and in Spanish** of this book, based on the training curriculum of the rOpenSci Champions Program. 
+This chapter should be readable, but it is undergoing final polishing.
+
+*Source of the migrated content:* this chapter originates from the
  [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) repository.
 :::
 

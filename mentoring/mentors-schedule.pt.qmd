@@ -3,9 +3,14 @@ title: Programação
 ---
 
 ::: {.callout-note}
+## Em revisão
 
-**Conteúdo pendente de migração.**
-Este capítulo é proveniente do repositório [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) 
+Você está lendo a **primeira edição em andamento e em português** deste livro, baseada no currículo de formação do programa de Campeões/ãs da rOpenSci.
+
+
+Este capítulo deve ser legível, mas está passando por um refinamento final.
+
+*Fonte do conteúdo migrado:* este capítulo é proveniente do repositório [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) 
 
 :::
 

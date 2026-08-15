@@ -2,6 +2,14 @@
 title: "Sobre el Programa de Campeones de rOpenSci"
 ---
 
+::: {.callout-note}
+## En revisión
+
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci. 
+Este capítulo debería ser legible, pero está siendo objeto de un pulido final.
+
+:::
+
 ## ¿Qué es rOpenSci?
 
 [rOpenSci](https://ropensci.org) es una organización sin fines de lucro que fomenta una cultura de investigación abierta y reproducible utilizando datos compartidos y software reutilizable. Construimos infraestructura social y técnica para el lenguaje R que permite a investigadores, investigadoras, ingenieros e ingenieras a colaborar, compartir y publicar su ciencia, datos y métodos. 
