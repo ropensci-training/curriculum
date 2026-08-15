@@ -3,7 +3,6 @@ title: "Git Avanzado Notas Instructor"
 ---
 
 ::: {.callout-note}
-**Contenido pendiente de migración.** 
 
-Ver https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.
+*Contenido pendiente de migración:* ver https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.
 :::
