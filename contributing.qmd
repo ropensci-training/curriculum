@@ -1,3 +1,11 @@
 ---
 title: "Cómo contribuir"
 ---
+
+::: {.callout-note}
+
+## Borrador
+
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.
+
+:::
