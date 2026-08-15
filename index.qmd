@@ -2,6 +2,14 @@
 title: "Prefacio"
 ---
 
+::: {.callout-note}
+## En revisión
+
+Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci. 
+Este capítulo debería ser legible, pero está siendo objeto de un pulido final.
+
+:::
+
 Este libro reúne el curriculum completo del **Programa de Campeones y Campeonas de rOpenSci**, una iniciativa diseñada para apoyar a personas que contribuyen a la comunidad de R en el desarrollo de paquetes, la revisión de software y la participación en proyectos de código abierto.
 
 La fase de entrenamiento de este programa fue diseñada con una visión integral de lo que significa desarrollar y mantener software científico libre. Aunque las habilidades relacionadas con la programación, el diseño y el mantenimiento de código constituyen una parte importante de la formación, entendemos que el software libre sostenible requiere mucho más que conocimientos de desarrollo de software.
