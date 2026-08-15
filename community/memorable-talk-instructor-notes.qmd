@@ -1,0 +1,23 @@
+---
+title: "Charla Memorable Notas Instructor"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+:::
+
+
+## Previo a la formación
+
+Envía una invitación al calendario con el enlace a la reunión y un enlace a las notas compartidas.
+
+En el archivo de notas compartidas, añade el enlace a la reunión y el resto del material (como diapositivas, vídeos, etc.).
+
+Haz un recordatorio el día anterior y una hora antes.
+
+::: {.callout-tip}
+
+## Recordatorios
+
+Utiliza los diferentes canales que tengas. Por ejemplo, nosotros utilizamos Slack y el correo electrónico.  Intenta utilizar recordatorios independientes de la zona horaria como *"Nos vemos en 50 minutos, aquí (enlace)"*
+:::

@@ -1,8 +1,0 @@
----
-title: "Notas del instructor — Cómo organizar un evento maravilloso"
----
-
-::: {.callout-note}
-**Contenido pendiente de migración.** 
-:::
-

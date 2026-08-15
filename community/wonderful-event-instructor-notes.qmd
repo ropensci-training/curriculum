@@ -1,0 +1,173 @@
+---
+title: "Notas del instructor — Cómo organizar un evento maravilloso"
+---
+
+::: {.callout-note}
+**Contenido pendiente de migración.** 
+:::
+
+## Previo a la formación
+
+Envía una invitación al calendario con el enlace a la reunión y un enlace a las notas compartidas.
+
+En el archivo de notas compartidas, añade el enlace a la reunión y el resto del material (como diapositivas, vídeos, etc.).
+
+Haz un recordatorio el día anterior y una hora antes.
+
+::: {.callout-tip}
+
+## Recordatorios
+
+Utiliza los diferentes canales que tengas. Por ejemplo, nosotros utilizamos Slack y el correo electrónico.  Intenta utilizar recordatorios independientes de la zona horaria como *"Nos vemos en 50 minutos, aquí (enlace)"*
+:::
+
+## Formación
+
+### Hora de conectarse.
+
+Empieza la reunión unos minutos antes, permite que la gente entre y comprueba el vídeo y el audio. Asegúrate que las personas conectadas pueden escucharte y verte. Hazles saber que no pasa nada si no encienden la cámara. Comparte el documento que utilizarás como notas compartidas en el chat.
+
+Cuando todas las personas participantes hayan llegado, recuérdales las normas de participación, como el código de conducta y cómo utilizarlo. Menciona un breve orden del día:
+
+> Hoy vamos a revisar el framework PACTo para planificación de eventos, seguido de una selección de consejos prácticos basados en evidencia desde la ciencia del aprendizaje. Vamos a tener un corte de 10 minutos cuando lleguemos a la hora de curso.
+
+El hilo conductor es que comunicar y divulgar el trabajo propio es parte esencial de la formación en software de investigación, y que cada participante deberá organizar al menos una actividad de difusión antes de terminar el programa.
+
+::: {.callout-tip}
+
+## Documento compartido
+
+Comparte el documento una última vez cuando ya estén todos los asistentes. También comparte el documento antes de cada ejercicio para asegurarte de que todos los y las participantes pueden acceder a él.
+:::
+
+::: {.callout-tip}
+
+## Grabación
+
+Si vas a grabar la sesión, éste es un buen momento para pedir permiso. Deja claro cómo utilizarás la grabación y con quién la compartirás. Explica como remover el nombre de la imagen y deja claro que pueden apagar su camara. 
+:::
+
+### Comienza la formación
+
+Puedes empezar con el primer ejercicio llamado *Tipo de Actividad*. Mientras explicas el ejercicio y se realiza puedes decidir si quieres compartir en la pantalla: las diapositivas con los ejercicios, el documento compartido con los ejercicios, o no compartir la pantalla. 
+
+> Vamos a arrancar con un ejercicio. La idea es que entren al documento compartido y que escriban al lado de su nombre, en el ejercicio 1: ¿qué tipo de actividad de difusión o comunicación piensan hacer como parte del programa? Y si son mentores o mentoras, por favor compartan qué tipo de actividad de comunicación y divulgación les gustaría que nuestros campeones y campeonas hicieran.
+
+Puedes aclarar que esta información también el útil para saber qué tipo de herramientas o apoyo podemos dar desde rOpenSci para esta actividad que van a realizar.
+
+::: {.callout-tip}
+
+## Actividades
+
+Aclara siempre al principio de la actividad de cuánto tiempo disponemos para realizarla. Por ejemplo: 
+*"Utilizaremos 10 minutos para este ejercicio".*, *"Haremos una pausa de 10 minutos"*
+:::
+
+Dales uno o dos minutos para escribir en silencio. Luego puedes leer algunas de las respuestas en voz alta o añadir algunos comentarios en el documento en silencio. Anímales a leer las respuestas de sus compañeros/as y a hacer comentarios.
+
+## El Framework PACTo
+
+::: {.callout-tip}
+
+### Ejercicios
+
+Esta sección tiene 4 ejercicios que invitan a refleccionar sobre los temas presentación en relación de la experiencia de cada asistente. Si tienen que remover contenido porque no alcanza el tiempo, puedes quitar uno o dos ejercicios de esta sección.
+:::
+
+
+Continúa con la diapositiva 3 Marco de trabajo para eventos virtuales - PACTo y explica que es para eventos virtuales y fue desarrollado por el Centro de Community Management (CSCCE).
+
+Aclara que el framework se llama PACT en inglés, que por suerte traduce bastante bien al castellano como "pacto" —un acuerdo que uno hace para organizar los eventos. 
+
+Menciona los 4 aspectos para organizarlo de forma eficiente:
+
+- **P** de Propósito
+- **A** de Asistentes
+- **C** de Comunidad (gestión de la comunidad)
+- **T** de herramientas tecnológicas, de Tecnología que vamos a usar en esa reunión
+ 
+### Propósito
+
+Explica este aspecto con las preguntas correspondientes que ayudan a reflexionar sobre el mismo. Presenta ejemplos cuando te sea posible. Luego presenta el ejercicio 2:
+
+> Usando la Community Call “Software Libre de Investigacion en America Latina” vamos a contestar las tres preguntas del Propósito, usen el chat para compartir sus respuestas.
+
+Por el chat comparte el link a la pagina del evento "conversaciones con la comunidad" y tambien comparte en pantalla esa misma pagina para ayudar a los asistentes a encontrar la informacion que deben utilizar.
+
+### Asistentes
+
+Continua con la explicacion sobre los Asistentes compartiendo las tres preguntas guias para este aspecto, dando ejemplos cuando las expliques y luego presenta el ejercicio 3.
+
+> Usando la Conferencia LatinR, contestar las tres preguntas sobre Asistentes, usen el chat para compartir sus respuestas.
+
+Por el chat comparte el link a la pagina de LatinR y tambien comparte en pantalla esa misma pagina para ayudar a los asistentes a encontrar la informacion que deben utilizar.
+
+
+### Comunidad
+
+A continuación presenta 3 preguntas guías para el aspecto de Comunidad, nuevamente con ejemplos cuando sea posible, seguido por la propuesta del ejercicio 4
+
+> En el documento compartido, busca este ejercicio y al lado de tu nombre, comparte alguna estrategia para mantener la concentración o la participación que consideres efectivo. Lee las respuestas del resto y comenta las mismas (si las usaste, si tambien te dieron resultado o alguna variante)
+
+Durante el ejercicio ve tomando las respuestas para comentar, invita a los asistentes a participar y conversen sobre acuerdos o diferencias.
+
+### Tecnología
+
+Termina la presentación del marco con la sección de tecnología. Presenta las tres preguntas que ayudan a refleccionar sobre este aspecto, dando ejemplos concretos y luego presenta el ejercicio 5.
+
+> Todos hemos usado herramientas para reuniones. Algunos tuvieron éxito, otros no. Rápido: denme ejemplos. ¿Qué herramienta usaron que funcionó bien? ¿Y otra que no fue útil?
+
+Durante el ejercicio ve tomando las respuestas para comentar, invita a los asistentes a participar y conversen sobre acuerdos o diferencias.
+
+::: {.callout-tip}
+
+Este es un buen momento para realizar un corte de 10 minutos.
+
+:::
+
+## Consejos prácticos para todo tipo de eventos
+
+Presenta los 8 consejos que son utiles para eventos online o presenciales. 
+
+### Ejercicio 6 - Ejercicio en grupos
+
+Divide a los asistentes en grupos de no mas de 3-4 personas. 
+Antes de enviarlos a los grupos comparte la consiga en el chat y tambien en la pantalla. Pregunta si hay dudas y resuelvelas.
+
+> En grupo charlen entre ustedes para contestar estas preguntas: ¿Cuáles de los consejos anteriores podrías aplicar en tu evento? ¿Cómo lo harías?
+Usen el documento compartido y resuman su intercambio en el ejercicio 5, en la seccion que corresponde a su sala de grupo.
+
+## Consejos prácticos para eventos online
+
+Presenta los 8 consejos que son utiles para eventos online.
+
+Divide a los asistentes en grupos de no mas de 3-4 personas. 
+Antes de enviarlos a los grupos comparte la consiga en el chat y tambien en la pantalla. Pregunta si hay dudas y resuelvelas.
+
+::: {.callout-tip}
+
+Mantener los mismos grupos ayuda a que las cosas fluyan mas rapido, pero mezclar las personas les da oportunidad de interactuar con otras personas.
+
+:::
+
+> Ejercicio 7: Trabajo en grupo
+> ¿Cuáles de los consejos anteriores hemos usado en este y en los otros talleres de rOpenSci?
+> Cuales de todos los consejos te gusto mas?
+Repasen todos los consejos e identifiquen cuáles se usaron en este taller hasta el momento
+Sinteticen el intercambio en el documento compartido en la seccion de su sala de grupo.
+
+## Pide devoluciones
+
+Muestra este consejo final y comparte el formulario de feedback para que lo completen.
+
+## Después de la formación
+
+Después de la formación, envía un mensaje (correo electrónico, Slack) dando las gracias a los asistentes y volviendo a compartir los recursos esenciales:
+
+- Documento compartido (que tiene enlaces a las diapositivas, guía de tutoría, plantillas de reuniones, etc.).
+- Grabación de la reunión (en caso de que la hayas grabado).
+- La encuesta de opinión (para tener una segunda oportunidad de rellenarla).
+
+Revisa la encuesta de opinión e identifica uno o dos puntos a mejorar para la próxima iteración de formación.
+
+
