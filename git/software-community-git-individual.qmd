@@ -21,6 +21,17 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 -   Aplicar el proceso de modificación-add-commit como el flujo de trabajo de Git para el seguimiento de los cambios y ver el historial de commits de un repositorio.
 -   Publicar repositorios en GitHub y coordinar versiones remotas y locales.
 
+## Mis slides
+
+```{=html}
+<iframe src="git/slides/git_initial.html" 
+        width="100%" 
+        height="500px"
+        style="border:none;">
+</iframe>
+
+```
+
 ## ¿Por qué git?
 
 ¿Tenés algo así en tu computadora?
