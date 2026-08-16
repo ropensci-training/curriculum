@@ -2,6 +2,16 @@
 title: "Getting the most of git (and RStudio)"
 ---
 
+::: {.callout-note}
+## Migration
+
+You are reading the **first work-in-progress edition in Spanish** of this book, based on the training curriculum developed for the rOpenSci program.
+
+This chapter is currently being migrated from the curriculum materials into the book format and may not yet reflect the final version of the content.
+
+*Content pending migration:* see https://github.com/ropensci-training/git-developing-software-together and https://github.com/ropensci-training/git-desarrollo-software for the source repositories for this chapter.
+:::
+
 ## Why git?
 
 Do you have something like this in your computer?
