@@ -1,5 +1,6 @@
 project:
   type: book
+  pre-render: quarto render git/slides/git_inicial.qmd
 
 book:
   title: "Curriculum del Programa de Campeones de rOpenSci"
