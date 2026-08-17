@@ -1,5 +1,5 @@
 ---
-title: "Oss Contribucion"
+title: "Cómo contribuir a proyectos y comunidades abiertas"
 ---
 
 ::: {.callout-note}
