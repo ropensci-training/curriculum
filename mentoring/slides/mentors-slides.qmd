@@ -1,0 +1,318 @@
+---
+pagetitle: "rOpenSci — Orientación y Capacitación para Mentor(a|e)s"
+lang: es
+format:
+  revealjs:
+    css: theme.css
+    slide-number: c/t
+    transition: none
+    controls: true
+    center: false
+    embed-resources: true
+---
+
+::: {.title-slide-eyebrow style="text-align:center; margin-bottom:0;"}
+*rOpenSci*\
+**Programa de Campeon(a\|e)s**
+:::
+
+::: {style="text-align:center; margin-top:0.3em;"}
+**Orientación y Capacitación para Mentor(a\|e)s**
+
+Moderada por **Yani Bellini Saibene**
+:::
+
+<hr>
+
+::: {style="display:flex; align-items:center; gap:1em; margin-top:2em;"}
+<img src="images/logo-ropensci.png" alt="" style="height:1.6em;">
+
+**Fuentes: Mozilla Open Leaders, The Carpentries & Enseñar Tecnología en Comunidad - CC-BY-NC**
+:::
+
+::: {.notes}
+Pide permiso para grabar la reunión
+:::
+
+---
+
+## Reflexión sobre la mentoría {background-color="#447BCD"}
+
+:::: {.columns}
+::: {.column width="58%"}
+**Duración:** ~10 minutos
+
+- Piensa en una experiencia que hayas tenido en una relación de mentoría.
+- Utiliza el documento compartido para responder a las preguntas que aparecen junto a tu nombre.
+:::
+::: {.column width="35%"}
+<img src="images/ilustracion-mentoria-reflexion.png" alt="A person holds a cat in their office">
+:::
+::::
+
+::: {.notes}
+¿Cómo fue esa relación? ¿En qué te ayudó? ¿En qué cambiaron las cosas para ti gracias a esa relación?
+¿Qué le dijo o hizo su mentor que le resultó útil?
+¿Qué fue bien / qué fue útil?
+¿Qué no funcionó?
+Piensa en un problema sobre el que te gustaría recibir asesoramiento ahora mismo.
+:::
+
+## ¿Qué hacen les mentores?
+
+:::: {.columns}
+::: {.column width="30%"}
+<img src="images/ilustracion-mentores.png" alt="Women with a butterfly net who is wearing a headscarf">
+:::
+::: {.column width="68%"}
+Las personas que mentorean **aconsejan** e **inspiran**.
+
+- **Recomendar** recursos, lecturas, formación, experiencias
+- **Dar feedback** a tener en cuenta
+- **Conectar** con personas, programas y organizaciones
+:::
+::::
+
+## Habilidades de mentoría
+
+Resumen de las habilidades que veremos hoy
+
+:::: {.columns}
+::: {.column width="30%"}
+<img src="images/ilustracion-escucha.png" alt="A man waving with a long sight in his hand.">
+:::
+::: {.column width="68%" style="text-align:center; font-size:1.3em; margin-top:1.5em;"}
+Escucha activa\
+Preguntas efectivas\
+Dar feedback
+:::
+::::
+
+## Escucha Activa
+
+:::: {.columns}
+::: {.column width="30%"}
+<img src="images/ilustracion-escucha.png" alt="A man waving with a long sight in his hand.">
+:::
+::: {.column width="68%"}
+- Deja de juzgar y escucha.
+- Presta toda tu atención a quien habla (no ensayes lo que vas a decir/contestar).
+- Anima a la quien habla con señales verbales y no verbales.
+:::
+::::
+
+::: {.notes}
+¿Qué es la escucha activa?
+¿Cómo es la escucha activa?
+Escucha activa: la gente hace preguntas buenas y perspicaces. Puedes repetir lo que han dicho.
+:::
+
+## Preguntas efectivas
+
+:::: {.columns}
+::: {.column width="30%"}
+<img src="images/ilustracion-escucha.png" alt="A man waving with a long sight in his hand.">
+:::
+::: {.column width="68%"}
+- Acceder a información y analizarla
+- Estimular el pensamiento y la creatividad
+- Aprender a través del debate
+:::
+::::
+
+::: {.notes}
+¿Por qué son importantes las preguntas en la tutoría?
+
+Las preguntas nos permiten: ayudar a clarificar la comprensión, dan un esquema de la discusión, incitan a la creatividad.
+:::
+
+## Dar feedback
+
+:::: {.columns}
+::: {.column width="44%"}
+<img src="images/ilustracion-feedback-comic.png" alt="Cómo dar feedback (historieta)">
+:::
+::: {.column width="54%"}
+- Intenta ser útil
+- Ve a lo concreto. Céntrate en comportamientos observables
+- Habla por tí
+- Equilibra los elogios y las críticas
+:::
+::::
+
+::: {.notes}
+El feedback puede ser la forma de dar consejos. También permite que todo el mundo crezca.
+¿Qué ocurre si sólo se da feedback positivo?, ¿y si sólo damos feedback negativo?
+:::
+
+## Herramientas - Reuniones
+
+:::: {.columns}
+::: {.column width="30%"}
+<img src="images/ilustracion-herramientas.png" alt="A man with a laptop and a dog sitting beside him">
+:::
+::: {.column width="68%"}
+- Establecer expectativas
+  - ¿Cuáles son los objetivos del programa para ambas personas?
+- Herramientas para explorar y reflexionar
+- Modelo GROW (crecer)
+:::
+::::
+
+::: {.notes}
+Tema propuesto para la primera reunión (plantilla)
+Tema propuesto para la última reunión (plantilla)
+Ejemplos por proyecto para las demás reuniones (plantilla)
+:::
+
+## Modelo GROW
+
+<img src="images/ilustracion-herramientas.png" alt="A man with a laptop and a dog sitting beside him" style="width:13%; float:right; margin:0 0 0.5em 0.8em;">
+
+- **Goal (objetivo):** Acordar un tema y un objetivo o metas a largo plazo
+- **Reality (realidad):** autoevaluación, ejemplos concretos
+- **Options (opciones):** sugerencias ofrecidas y opciones elegidas
+- **Way forward (como seguimos):** próximos pasos
+
+## Modelo GROW
+
+:::: {.columns style="font-size:0.62em;"}
+::: {.column width="49%"}
+**GOAL - OBJETIVO**
+
+- ¿Qué quieres conseguir?
+- ¿Qué ocurrirá cuando lo hayas conseguido?
+- Los OBJETIVOS pueden ser SMART (Específicos, Mensurables, Alcanzables, Realistas, Limitados en el tiempo).
+
+**REALITY - REALIDAD**
+
+- ¿Qué ocurre en este momento?
+- ¿Qué te impide seguir adelante?
+- ¿Qué has intentado?
+- ¿Qué ha pasado?
+- ¿Qué has aprendido?
+:::
+::: {.column width="49%"}
+**OPTIONS - OPCIONES**
+
+- ¿Qué podrías hacer? ¿Qué otra cosa?
+- ¿Cuáles son las ventajas/desventajas de cada opción?
+- ¿Quieres que te haga sugerencias?
+- ¿Qué opciones te gustan más?
+
+**WAY FORWARD - COMO SEGUIMOS**
+
+- ¿Qué vas a hacer?
+- ¿Cuál será el primer paso?
+- ¿Cuándo empezarás y terminarás cada paso?
+- ¿Qué apoyo necesitas y de quién?
+:::
+::::
+
+## Modelo GROW {background-color="#447BCD"}
+
+:::: {.columns}
+::: {.column width="58%"}
+**Duración:** ~10 minutos
+
+- Van a trabajar en grupos.
+- Miren el video linkeado en el documento compartido de un ejemplo de uso del modelo GROW. Identifiquen en el video los pasos del modelo.
+:::
+::: {.column width="35%"}
+<img src="images/ilustracion-mentoria-reflexion.png" alt="A person holds a cat in their office">
+:::
+::::
+
+## Modelo GROW {background-color="#447BCD"}
+
+:::: {.columns}
+::: {.column width="58%"}
+**Duración:** ~10 minutos
+
+- Van a trabajar en grupos.
+- Practiquen el modelo GROW. Uno de ustedes sera mentor-a, la otra persona campeon-a. Usa el tema sobre el que dijiste que necesitas ayuda en la primera pregunta.
+:::
+::: {.column width="35%"}
+<img src="images/ilustracion-mentoria-reflexion.png" alt="A person holds a cat in their office">
+:::
+::::
+
+## Consejos para el modelo GROW
+
+:::: {.columns}
+::: {.column width="30%"}
+<img src="images/ilustracion-herramientas.png" alt="A man with a laptop and a dog sitting beside him">
+:::
+::: {.column width="68%"}
+- 'Pregunta' en vez de 'contar'
+- Explicar y comprobar la comprensión
+- Aunque seas la persona experta, actúas como facilitador/a.
+:::
+::::
+
+## Consejos de mentor(a|e)s anteriores
+
+::: {style="font-size:0.75em;"}
+- *Deja que tu aprendiz hable más que tú y, sobre todo, empújalo en la dirección que necesiten.*
+- *Probablemente intentaría aprovechar más los chats asíncronos de Slack. Encontrar momentos para reunirnos y tener una conexión a Internet lo suficientemente buena como para hacer videoconferencias fue todo un reto.*
+- *Hablar más con las otras personas mentoras.*
+- *Fomenta una conexión regular con tu mentee. Habla a menudo y sobre otras cosas aparte del programa.*
+:::
+
+## Consejos de mentor(a|e)s anteriores
+
+::: {style="font-size:0.62em;"}
+- *Yo recomendaría a los mentores que asistieran al mayor número posible de sesiones de formación y de coworking. Si es posible, conocer a su mentee en persona también puede ser increíblemente beneficioso para construir una mejor relación.*
+- *Utiliza el documento del calendario mensual*
+- *No te preocupes por saber lo suficiente, hay recursos disponibles sobre todos los aspectos de la mentoría en los que podrás confiar.*
+- *Mantenga una relación enriquecedora con su aprendiz, tanto desde el punto de vista técnico como no técnico.*
+- *Los conocimientos técnicos son importantes, pero a menudo son menos importantes que dedicar tiempo a comprender de verdad el proyecto y los objetivos de su mentee. Concéntrese en apoyar su éxito escuchando atentamente y ayudándole a encontrar el mejor camino a seguir.*
+:::
+
+## Herramientas
+
+:::: {.columns}
+::: {.column width="30%"}
+<img src="images/ilustracion-mentores.png" alt="Women with a butterfly net who is wearing a headscarf">
+:::
+::: {.column width="65%"}
+### [Guía para Mentor(ae)s](https://ropensci-org.github.io/champions-mentor-guidelines/)
+
+- [Plantilla de reuniones](https://docs.google.com/document/d/1VtNYfDNYRS7xAbs1Ajf2S5wsv3mOQ0BcTn93cXAv6sc/)
+- [Calendario mensual](https://docs.google.com/document/d/14Q-8sJTtKyGIZTGSIP13iWKyHmCzAyJo_BiDlwj15s8/)
+- [Calendario compartido](https://calendar.google.com/calendar/embed?src=c_73ae7d17e0d4742c6c3f3ee4f852938ceb6e76a85d98e18e4f92098f690217b5%40group.calendar.google.com&ctz=America%2FArgentina%2FCordoba)
+- [Reporte de reuniones](https://airtable.com/appF6OXmxkk8VmR8a/shrV3SruqtGwe1Bdj)
+- [Código de Conducta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
+- Canales en Slack
+- [Google Drive](https://drive.google.com/drive/folders/1W_qXERn2-i-aLqb-Lb9wJFvFYdGLgH4v)
+:::
+::::
+
+## Preguntas y Respuestas {background-color="#447BCD"}
+
+:::: {.columns}
+::: {.column width="58%"}
+**Duración:** ~10 minutos
+
+En el documento compartido, junto a tu nombre, responde a
+
+**¿Te sientes preparade para ser mentor/a/e?**
+:::
+::: {.column width="35%"}
+<img src="images/ilustracion-mentoria-reflexion.png" alt="A person holds a cat in their office">
+:::
+::::
+
+## Feedback sobre este taller {background-color="#447BCD"}
+
+:::: {.columns}
+::: {.column width="58%"}
+**Duración:** ~5 minutos
+
+- Practiquemos dar nuestra opinión: responde nuestra encuesta anónima sobre este taller.
+- Ayúdanos a mejorarlo.
+:::
+::: {.column width="35%"}
+<img src="images/ilustracion-mentoria-reflexion.png" alt="A person holds a cat in their office">
+:::
+::::
