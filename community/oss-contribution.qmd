@@ -14,10 +14,6 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 
 :::
 
----
-title: Cómo contribuir a proyectos y comunidades abiertas
----
-
 ## Objetivos de aprendizaje
 
 -   Reconocer que una contribución a un proyecto o comunidad de código abierto va mucho más allá de escribir código.
@@ -30,7 +26,7 @@ title: Cómo contribuir a proyectos y comunidades abiertas
 
 Cuando alguien dice "hice una contribución a un proyecto de código abierto", lo primero que solemos imaginar es a una persona programando: alguien que aportó código de forma significativa y que, para eso, tiene que saber "un montón". Esta asociación es tan común que muchas personas la dan por sentada, y sin embargo es una idea incompleta que puede terminar siendo una barrera de entrada.
 
-Hay muchísimas otras formas de contribuir y de participar en un proyecto, y esas contribuciones son igual de significativas e importantes para que el proyecto avance. Por ejemplo, cuando rOpenSci organizó mini-hackathons para ayudar a que la gente contribuyera por primera vez, se ofrecían tareas de traducción, de documentación, y de arreglar configuraciones (como GitHub Actions) que no implicaban tocar el código de los paquetes. Aun así, la mayoría de las personas elegía igualmente una tarea relacionada con código —en parte porque ese espacio, con mentoría disponible, se sentía seguro para intentarlo—.
+Hay muchísimas otras formas de contribuir y de participar en un proyecto, y esas contribuciones son igual de significativas e importantes para que el proyecto avance. Por ejemplo, cuando rOpenSci organizó mini-hackathons para ayudar a que la gente contribuyera por primera vez, se ofrecían tareas de traducción, de documentación, y de arreglar configuraciones (como GitHub Actions) que no implicaban tocar el código de los paquetes. Aun así, la mayoría de las personas elegía igualmente una tarea relacionada con código, en parte porque ese espacio, con mentoría disponible, se sentía seguro para intentarlo.
 
 ::: callout-tip
 ## Para tener en cuenta
@@ -84,16 +80,16 @@ Si querés ver estas herramientas en funcionamiento, visitá la sección de [cas
 
 ## El Modelo de Participación Comunitaria (CSCCE)
 
-Mientras que el Camino hacia la Inclusión explica cómo alguien *llega a formar parte* de una comunidad, el **Modelo de Participación Comunitaria** del CSCCE (Center for Scientific Collaboration and Community Engagement) describe cómo esa persona *participa* una vez que ya es parte. El modelo, construido a partir del estudio de numerosas comunidades de práctica con foco en STEM, propone cuatro formas de participación:
+Mientras que el Camino hacia la Inclusión explica cómo alguien *llega a formar parte* de una comunidad, el [**Modelo de Participación Comunitaria**](https://www.cscce.org/resources/cpm/) del [CSCCE (Center for Scientific Collaboration and Community Engagement)](https://www.cscce.org/) describe cómo esa persona *participa* una vez que ya es parte. El modelo, construido a partir del estudio de numerosas comunidades de práctica con foco en STEM, propone cuatro formas de participación:
 
 -   **Transmitir / Consumir**: la comunidad transmite contenido (un newsletter, un blog, un canal de Slack) y las personas lo consumen, sin necesariamente escribir ni responder. Es, para la gran mayoría de las personas, la puerta de entrada natural: para poder identificarse con algo, primero hay que conocerlo y entenderlo, y eso pasa por consumir información.
 -   **Contribuir**: la persona aporta algo de forma individual —traduce un texto, escribe un blog post, hace de mentor o mentora, revisa un paquete, sugiere a alguien para dar una charla—. Es importante notar que, otra vez, esto no se limita al código.
 -   **Colaborar**: es similar a contribuir, pero se hace en conjunto con otras personas. Un programa como el de Campeones/as de rOpenSci se ubica más del lado de colaborar que de contribuir, justamente porque se trabaja en grupo.
 -   **Co-crear**: las personas se encuentran en el espacio de la comunidad para generar algo nuevo que, probablemente, no habría surgido si no se hubieran encontrado ahí —y que muchas veces termina teniendo valor incluso fuera de esa comunidad—.
 
-![Modelo de Participación Comunitaria del CSCCE: representa un espectro que va desde consumir/transmitir, pasando por contribuir y colaborar, hasta co-crear.](../cscce.png)
+![Modelo de Participación Comunitaria del CSCCE: representa un espectro que va desde consumir/transmitir, pasando por contribuir y colaborar, hasta co-crear.](images/cscce.png)
 
-Ninguna de estas formas de participación vale "más" que otra: todas son necesarias para que una comunidad funcione, y es normal —y esperable— que la mayoría de las personas esté, la mayor parte del tiempo, del lado del consumo. Lo interesante es que muchas intervenciones (como un programa de mentoría o de embajadores) pueden recorrer, para una misma persona, todo el espectro a lo largo del tiempo.
+Ninguna de estas formas de participación vale "más" que otra: todas son necesarias para que una comunidad funcione. Es normal y esperable que la mayoría de las personas esté, la mayor parte del tiempo, del lado del consumo. Lo interesante es que muchas intervenciones (como un programa de mentoría o de embajadores) pueden recorrer, para una misma persona, todo el espectro a lo largo del tiempo.
 
 ### Un ejemplo: Joel y Mo
 
@@ -133,8 +129,8 @@ Una vez entendidos estos dos modelos, la pregunta natural es: ¿cómo se traduce
 -   [**R-universe**](https://ropensci.org/blog/2021/06/22/setup-runiverse/): crear un universo genera automáticamente los binarios de tu paquete para que se pueda instalar con `install.packages()` de la misma forma que si estuviera en CRAN, además de generar artículos, exponer datasets y llevar estadísticas de uso.
 -   **Sitio web de documentación con `pkgdown`**: si tu paquete pasa a ser parte de la suite de rOpenSci, este sitio se genera de forma automática; si no, podés configurarlo igual para tu propio paquete.
 -   **Difusión en redes y foros específicos de R**: Mastodon, LinkedIn, [R-bloggers](https://www.r-bloggers.com/) y [R Weekly](https://rweekly.org/) suelen tener secciones para anunciar nuevos paquetes.
--   **Charlas y Community Calls**: presentar tu paquete en un grupo de usuarios de R, un capítulo de R-Ladies, una conferencia de tu disciplina o una conferencia específica de R (como LatinR) ayuda a que se conozca.
--   **CRAN Task Views**: si tu paquete encaja temáticamente en una de estas listas oficiales de CRAN, podés proponer con un *pull request* que se agregue.
+-   **Charlas y Community Calls**: presentar tu paquete en un grupo de usuarios de R, un capítulo de [RLadies+](https://rladies.org), una conferencia de tu disciplina o una conferencia específica de R (como [LatinR](https://latinr.org)) ayuda a que se conozca.
+-   [**CRAN Task Views**](https://cran.r-project.org/web/views/): si tu paquete encaja temáticamente en una de estas listas oficiales de CRAN, podés proponer con un *pull request* que se agregue.
 
 ### Contribuir y colaborar: hacer tu repositorio amigable
 
@@ -179,6 +175,6 @@ Una vez que el repositorio invita a la participación, conviene facilitar que es
 -   Contribuir no es sinónimo de programar: hay muchas formas igual de valiosas de participar en un proyecto o comunidad.
 -   El Camino hacia la Inclusión (conciencia, comprensión, identificación, acceso, pertenencia, apropiación) ayuda a entender en qué punto puede estar quedándose una persona que quiere sumarse a tu proyecto, y qué barrera concreta habría que trabajar.
 -   El Modelo de Participación Comunitaria del CSCCE (transmitir/consumir, contribuir, colaborar, co-crear) ayuda a pensar en qué modo está participando alguien, y que ese modo puede cambiar con el tiempo, tanto a nivel individual como entre organizaciones.
--   Ninguna decisión sobre cómo recibir contribuciones está escrita en piedra: podés empezar con una forma que te resulte cómoda y ajustarla —ampliarla o achicarla— más adelante.
+-   Ninguna decisión sobre cómo recibir contribuciones está escrita en piedra: podés empezar con una forma que te resulte cómoda y ajustarla más adelante.
 
 
