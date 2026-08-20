@@ -220,9 +220,9 @@ Ejemplos de actividades de campeones
 
 * Aprovecha plataformas como Mastodon, LinkedIn y foros específicos de R como [R-bloggers](https://www.r-bloggers.com/) y [R Weekly](https://rweekly.org/) para anunciar el lanzamiento de tu paquete.
 
-* Si te gusta dar charlas, puedes presentar en un Grupo de Usuarios de R o [Capítulo de R-Ladies](https://www.meetup.com/pro/rladies/).
+* Si te gusta dar charlas, puedes presentar en un Grupo de Usuarios de R o [Capítulo de RLadies+](https://rladies.org/chapters/).
 
-* Presentar tu paquete en una **conferencia específica del dominio** o en conferencias específicas de R (LatinR ;-)).
+* Presentar tu paquete en una **conferencia específica del dominio** o en conferencias específicas de R ([LatinR](https://latinr.org) ;-)).
 
 * Si tu paquete encaja en una [Vista de Tareas de CRAN](https://cran.r-project.org/web/views/) puedes proponer su adición.
 

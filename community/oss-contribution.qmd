@@ -124,8 +124,8 @@ Una vez entendidos estos dos modelos, la pregunta natural es: ¿cómo se traduce
 
 ### Transmitir: que la gente sepa que tu paquete existe
 
--   **README completo**: explicá con claridad qué hace tu paquete, cómo se instala y cómo se empieza a usar. Incluí ejemplos o casos de uso, y enlaces a publicaciones, charlas o proyectos donde ya se haya usado.
--   **Repositorio fijado (*pinned*) en tu perfil de GitHub**: para que quien visite tu perfil pueda encontrarlo rápidamente entre el resto de tus repositorios.
+-   [**README completo**](https://blog.r-hub.io/2019/12/03/readmes/): explicá con claridad qué hace tu paquete, cómo se instala y cómo se empieza a usar. Incluí ejemplos o casos de uso, y enlaces a publicaciones, charlas o proyectos donde ya se haya usado.
+-   [**Repositorio fijado (*pinned*) en tu perfil de GitHub**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile): para que quien visite tu perfil pueda encontrarlo rápidamente entre el resto de tus repositorios.
 -   [**R-universe**](https://ropensci.org/blog/2021/06/22/setup-runiverse/): crear un universo genera automáticamente los binarios de tu paquete para que se pueda instalar con `install.packages()` de la misma forma que si estuviera en CRAN, además de generar artículos, exponer datasets y llevar estadísticas de uso.
 -   **Sitio web de documentación con `pkgdown`**: si tu paquete pasa a ser parte de la suite de rOpenSci, este sitio se genera de forma automática; si no, podés configurarlo igual para tu propio paquete.
 -   **Difusión en redes y foros específicos de R**: Mastodon, LinkedIn, [R-bloggers](https://www.r-bloggers.com/) y [R Weekly](https://rweekly.org/) suelen tener secciones para anunciar nuevos paquetes.
@@ -159,9 +159,9 @@ Este mismo criterio aplica incluso cuando el paquete está construido sobre un d
 
 Una vez que el repositorio invita a la participación, conviene facilitar que esas contribuciones lleguen de forma ordenada:
 
--   **Plantillas de issue**: ayudan a que quien reporta un error o pide una funcionalidad complete la información que necesitás para poder ayudar.
--   **Etiquetado de issues**: etiquetas como *help wanted* o *good first issue* funcionan como una señal explícita hacia potenciales colaboradores, especialmente hacia quienes están dando sus primeros pasos.
--   **Fijar (*pin*) issues**: de la misma manera que se puede fijar un repositorio en el perfil, se pueden fijar hasta tres issues en la parte superior de un repositorio, lo cual ayuda a comunicar cuáles son las prioridades del proyecto.
+-   [**Plantillas de issue**](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-templates): ayudan a que quien reporta un error o pide una funcionalidad complete la información que necesitás para poder ayudar.
+-   [**Etiquetado de issues**](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/): etiquetas como *help wanted* o *good first issue* funcionan como una señal explícita hacia potenciales colaboradores, especialmente hacia quienes están dando sus primeros pasos.
+-   [**Fijar (*pin*) issues**](https://docs.github.com/en/articles/pinning-an-issue-to-your-repository): de la misma manera que se puede fijar un repositorio en el perfil, se pueden fijar hasta tres issues en la parte superior de un repositorio, lo cual ayuda a comunicar cuáles son las prioridades del proyecto.
 
 ### Recursos adicionales para colaborar y co-crear
 
