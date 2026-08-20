@@ -200,7 +200,7 @@ Recordá que estos recursos están en constante mejora, y que el feedback de qui
 
 A partir de acá el foco pasa del ejemplo de rOpenSci al paquete o proyecto propio de cada participante. Recorré la diapositiva de "Transmitir" mostrando en vivo:
 
-- Tu perfil de GitHub y los repositorios anclados, como ejemplo de cómo facilitar que encuentren tu trabajo.
+- Tu perfil de GitHub y los repositorios fijados, como ejemplo de cómo facilitar que encuentren tu trabajo.
 - Un README bien armado de un paquete de rOpenSci (qué hace, cómo se instala, ejemplos de uso, cómo reportar incidentes).
 - R-universe: cómo instalar un paquete con `install.packages()` apuntando al universo correspondiente, y cómo buscar paquetes por tema, autor o datasets.
 - Una CRAN Task View, mostrando cómo se listan los paquetes de un tema y cómo se puede proponer agregar uno nuevo.
