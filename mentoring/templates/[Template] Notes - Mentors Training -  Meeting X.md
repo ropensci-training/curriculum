@@ -1,8 +1,8 @@
-## rOpenSci Champions Program 2023
+## rOpenSci Champions Program [year]
 
 ## Date | Link calendar invite
 
-Shared document for exercises, notes and questions. This document will be available for those who attend the course after the training.
+Shared document for exercises, notes and questions. This document will be available for those who attend the workshop after the training.
 
 Attendees: *List of names with link to the contact to the attendees*
 
@@ -10,9 +10,9 @@ Zoom link: *add the link to the meeting videoconference platform.*
 
 ## Resources
 
-* Slides: [https://docs.google.com/presentation/d/1qAv8IfSMRRGbQlwOkyM7QvnYQSEvL-cUFPj72ixNgN4/edit?usp=sharing](https://docs.google.com/presentation/d/1qAv8IfSMRRGbQlwOkyM7QvnYQSEvL-cUFPj72ixNgN4/edit?usp=sharing)   
-* Mentor guidelines: [https://docs.google.com/document/d/1J67zeuh7Akmr0wPxq3yArT-ACsTI2Yfh-LylWyV-on0/edit?usp=sharing](https://docs.google.com/document/d/1J67zeuh7Akmr0wPxq3yArT-ACsTI2Yfh-LylWyV-on0/edit?usp=sharing)   
-* Templates: [https://docs.google.com/document/d/1vjmfbjv9ABJ6fkbtQRMFPydJZ3ypKOIpZ-xf7\_iBhvo/edit?usp=sharing](https://docs.google.com/document/d/1vjmfbjv9ABJ6fkbtQRMFPydJZ3ypKOIpZ-xf7_iBhvo/edit?usp=sharing) 
+* Slides:   
+* Mentor guidelines: 
+* Templates: 
 
 ### Agenda
 
