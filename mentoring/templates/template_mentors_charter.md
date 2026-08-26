@@ -1,6 +1,5 @@
-# Mentors Monthly Charter 
+# Mentors Monthly Charter (version 2027)
 
-> This template is an example. 
 > For activities that require a meeting we add the link to join the meeting. 
 > For activites that involve picking a date and time we include the link to the pool o calendar tool.
 > For review of documents or articles, we include the link to that document or Pull Request
