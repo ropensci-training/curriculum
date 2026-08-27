@@ -19,3 +19,5 @@ You can use the name of the meeting
 In a scale from 1-worst to 5-best.
 
 All the questions mark with \* are mandatory.
+
+_rOpenSci Champions Program. Mentors training. Feedback Survey. Yani Bellini Saibene (2023) - CC-BY-SA._
