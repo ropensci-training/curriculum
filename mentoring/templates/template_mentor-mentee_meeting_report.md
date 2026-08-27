@@ -19,4 +19,4 @@ Indicate the status of the meeting. This also help us to provide support.
 
 Any comment you want to add. If you have a minute or agenda, you can link here.
 
-*rOpenSci Champions Program Templates \- Adapted by Yani Bellini Saibene from Mozilla Open Leaders \- CC-BY*
+*rOpenSci Champions Program Templates \- Adapted by Yani Bellini Saibene from Mozilla Open Leaders \- CC-BY \- version 2022-2023*
