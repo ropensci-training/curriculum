@@ -97,3 +97,4 @@ Room n: Name 1, Name 2, Name n
 
 *Link to the anonymous survey*
 
+_rOpenSci Champions Program. Mentors training. Shared document. Yani Bellini Saibene (2023) - CC-BY-SA. Version 2023-2024_
