@@ -104,3 +104,5 @@ Agenda
 * Next steps  
   *    
   * 
+  
+> *rOpenSci Champions Program Templates \- Adapted by Yani Bellini Saibene from Mozilla Open Leaders \- CC-BY \- version 2022-2023* 

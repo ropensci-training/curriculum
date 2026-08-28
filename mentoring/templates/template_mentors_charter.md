@@ -103,3 +103,5 @@ You can create a copy of this document (google doc) to edit by selecting **File 
 - [ ] Attend the final cohort meeting. Program closing.
 - [ ] Complete the final anonymous survey.
 - [ ] Attend a discussion group to give your feedback on the champions program.
+
+*rOpenSci Champions Program Templates \- Adapted by Yani Bellini Saibene from Mozilla Open Leaders \- CC-BY \- version 2026-2027*
