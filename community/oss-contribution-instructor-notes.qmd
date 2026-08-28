@@ -1,5 +1,5 @@
 ---
-title: "Oss Contribucion Notas Instructor"
+title: "Notas para docentes"
 ---
 
 ::: {.callout-note}
@@ -11,3 +11,240 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 
 *Contenido pendiente de migración:* ver  https://github.com/ropensci-training/osscontribuir y  https://github.com/ropensci-training/osscontribution para los repos fuente de este capítulo. 
 :::
+
+## Previo a la formación
+
+Envía una invitación al calendario con el enlace a la reunión y un enlace al documento compartido que van a usar durante el taller (para las preguntas de reflexión y los ejercicios).
+
+En el documento compartido, agrega el enlace a la reunión y el resto del material (diapositivas, grabación de la sesión anterior si corresponde, etc.).
+
+Haz un recordatorio el día anterior y una hora antes.
+
+::: {.callout-tip}
+
+## Recordatorios
+
+Utiliza los diferentes canales que tengas disponibles (por ejemplo, Slack y correo electrónico). Intenta usar recordatorios independientes de la zona horaria, del estilo *"Nos vemos en 50 minutos, aquí (enlace)"*.
+:::
+
+Antes de la sesión, revisa que el sitio web de casos de uso de rOpenSci, R-universe, la guía de contribución de la comunidad rOpenSci y una CRAN Task View de ejemplo carguen bien, porque vas a navegarlos en vivo durante la sesión.
+
+## Formación
+
+### Hora de conectarse
+
+Empieza la reunión unos minutos antes, permite que la gente entre y comprueba el vídeo y el audio. Comparte el documento que utilizarás como notas y preguntas compartidas en el chat.
+
+Cuando lleguen todas las personas, recuerda las normas de participación: el código de conducta aplica a este encuentro y explica brevemente dónde está publicado el proceso para hacer un reporte o comunicarse con el comité.
+
+::: {.callout-tip}
+
+## Grabación
+
+Si vas a grabar la sesión, este es un buen momento para pedir permiso. Deja claro cómo vas a usar la grabación y con quién la vas a compartir.
+:::
+
+Presenta la agenda de la sesión con tus propias palabras, por ejemplo:
+
+> Hoy la idea es hablar sobre contribuciones a proyectos y comunidades abiertas pensando en sus propios proyectos. Vamos a reflexionar sobre estas practicas y a presentarles ejemplos de cómo rOpenSci maneja las contribuciones, enmarcados en dos modelos de participación formales. Después vamos a bajar todo esto a lo que ustedes están desarrollando en su propio paquete.
+
+Avisa la duración estimada del taller (2 horas).
+
+::: {.callout-tip}
+
+## Formato de participación
+
+Aclara desde el inicio que pueden participar prendiendo el micrófono o usando el chat, y que vas a estar prestado atención a los dos canales. Si el grupo es chico, fomenta que se animen a hablar.
+:::
+
+### Diapositiva 2 — Contribuciones: pregunta inicial
+
+Antes de mostrar las respuestas, pregunta y da tiempo para que piensen y compartan:
+
+> Cuando escuchan "hice una contribución a un proyecto" o "hice una contribución a una comunidad de código abierto", ¿qué es lo primero que se les viene a la cabeza? ¿Qué se imaginan que hizo esa persona?
+
+Deja que dos o tres personas compartan antes de intervenir. Es muy probable que las respuestas giren en torno a "programar" o "aportar código de forma significativa" — esto es esperable, y es justamente el punto de partida de la reflexión.
+
+Después de escuchar las respuestas, señala la sobrevaloración habitual del código y adelanta que van a ver que hay muchas otras formas válidas de contribuir. Podés usar el ejemplo de los mini-hackathons de rOpenSci: aunque se ofrecían tareas de traducción, documentación o configuración (GitHub Actions), la mayoría de las personas igual elegía tareas de código, en parte porque era un espacio seguro con mentoría disponible.
+
+### Comunidad de práctica
+
+Presenta la definición formal de Etienne Wenger (diapositiva "Comunidad de Práctica") y humanízala con un ejemplo personal, por ejemplo tu equipo de natación o tu club de tejido, para mostrar que una comunidad de práctica no tiene que estar relacionada con programación, y que no hace falta ser una persona experta para participar. Invita a quienes participan a pensar en sus propias comunidades de práctica no técnicas mientras avanzás.
+
+### Camino hacia la Inclusión (los 6 pasos)
+
+Presenta el modelo *Pathway to Inclusion* de Alex Bayley. Vale la pena anticipar por qué este modelo es útil, con una anécdota propia (por ejemplo, cuando invitaste a mucha gente a alguna de tus comunidades y no todas las personas terminaron formando parte, y la pregunta de "¿qué pasó en el medio?").
+
+Recorré los seis pasos uno por uno, usando la primera diapositiva de "Camino hacia la Inclusión" (definiciones) y de forma inmediata la segunda (ejemplos de rOpenSci para cada paso), para que cada paso quede asociado a un ejemplo concreto:
+
+::: {.callout-tip}
+
+## Los seis pasos
+
+1. **Conciencia**: escuché hablar de esto (por ejemplo, sé que un paquete o que rOpenSci existen).
+2. **Comprensión**: entiendo qué es y cómo sería involucrarme.
+3. **Identificación**: me imagino haciendo esto, siendo parte.
+4. **Acceso**: puedo hacerlo (física, financiera y logísticamente).
+5. **Pertenencia**: siento que encajo, ya no es potencial sino real.
+6. **Apropiación**: me importa tanto que asumo responsabilidad.
+:::
+
+Para el paso de **acceso**, es un buen momento para volver a mencionar el código de conducta como una de las herramientas que ayuda a que las personas se sientan seguras, y para nombrar las barreras físicas, financieras y logísticas (zonas horarias, por ejemplo).
+
+Para el paso de **apropiación**, conecta con la sostenibilidad del software libre: quién va a reemplazar a quienes en algún momento dejen de participar, y por qué llegar a este último paso importa tanto en comunidades con un fuerte componente voluntario.
+
+Cierra el bloque señalando que la identificación y el acceso fueron, y siguen siendo, un obstáculo particular para personas de Latinoamérica y para mujeres u otras minorías de género, y que por eso el Programa de Campeon(a|e)s se dicta en castellano:
+
+> Reconocer las barreras es el primer paso para empezar a pensar y desarrollar estrategias para, en algún momento, ir sacándolas. El hecho de que este Programa esté en castellano tiene que ver con eso.
+
+::: {.callout-tip}
+
+## Preguntas o comentarios
+
+Antes de seguir, dejá un espacio abierto: *"¿Que preguntas o comentarios tienen?"*. En esta parte suele surgir conversación espontánea sobre las barreras de acceso e inclusión en distintas comunidades; dale espacio, son ejemplos que enriquecen la charla y podés retomarlos más adelante.
+:::
+
+### Herramientas de rOpenSci para cada paso del camino
+
+Recorré, paso por paso, ejemplos concretos de rOpenSci:
+
+- **Conciencia**: redes sociales (campañas como "un paquete al día"), conferencias, *meetups* y *coworkings* con otras organizaciones (RLadies+, R User Groups, Carpentries, Data Science Learning Community).
+- **Comprensión**: el sitio web y, sobre todo, el README de cada paquete; la documentación automática con pkgdown.
+- **Identificación**: la sección de "casos de uso" en la web de rOpenSci (mostrala en vivo) y la serie de entrevistas/blog posts de usuarios de R-universe (también podés mostrar un ejemplo en vivo).
+- **Acceso**: código de conducta y rotación de zonas horarias en los eventos recurrentes.
+- **Pertenencia**: contenidos y procesos en distintos idiomas (peer review y Programa de Campeon(a|e)s en español).
+- **Apropiación**: issues etiquetados como "se busca ayuda" / "good first issue" en la web de rOpenSci (mostrá en vivo cómo se filtran por paquete).
+
+::: {.callout-tip}
+
+## Demostraciones en vivo
+
+Este bloque tiene varias navegaciones en vivo (casos de uso, R-universe, issues etiquetados). Tené las pestañas abiertas de antemano para no perder tiempo buscándolas durante la sesión.
+:::
+
+Si el grupo lo pide, podés cerrar con una referencia a recursos propios más extensos sobre el tema, aclarando siempre si están en inglés y que contenido extra aportan (como mas ejemplos).
+
+### Ejercicio de reflexión: comunidades de práctica propias
+
+Presenta las preguntas (podés dejarlas también en el documento compartido):
+
+> ¿Cuáles son sus comunidades de práctica relacionadas con R? ¿Qué actividad o herramienta les ayudó a integrarse en esa comunidad? ¿En qué etapa de los seis pasos se encuentran ahora? ¿Cuánto tiempo les tomó pasar de una etapa a otra?
+
+Dales tiempo para pensar y compartir, ya sea de palabra, en el chat o en el documento. Aporta tu propio ejemplo para modelar el tipo de respuesta esperado, y toma nota de lo que compartan en el documento para poder retomarlo.
+
+::: {.callout-tip}
+
+## Sostener la conversación
+
+Es habitual que en esta ronda surjan reflexiones sobre motivación, disponibilidad de tiempo y *burnout*. Es un buen momento para transmitir que las ganas y posibilidades de participación cambian con el tiempo, y que eso no significa que la persona "pierda su lugar" en la comunidad — es una idea que suele resonar mucho y vale la pena dejarla explícita.
+:::
+
+### El Modelo de Participación Comunitaria (CSCCE) - Slide N.XXX
+
+Aclara la diferencia entre este modelo y el anterior: el primero explica cómo alguien *llega a formar parte* de una comunidad; este explica cómo alguien *participa* una vez que ya es parte.
+
+Presenta las cuatro formas de participación con ejemplos concretos, mostrando el diagrama:
+
+- **Transmitir / Consumir**: leer el newsletter o el blog sin escribir ni responder.
+- **Contribuir**: aportar de forma individual (traducir, escribir un blog post, ser mentor/a o revisor/a) — remarca que esto no es solo código.
+- **Colaborar**: lo mismo, pero en conjunto con otras personas (el Programa de Campeon(a|e)s entra más en esta categoría).
+- **Co-crear**: generar algo nuevo que no existiría si las personas no se hubieran encontrado en ese espacio.
+
+### Ejemplo: Joel y Mo - Diapositiva N.XX
+
+Contá la historia de Joel Nitta y Mo con tus propias palabras, marcando en qué momento cada persona estaba en un modo de participación distinto:
+
+> En la Community Call, Joel estaba contribuyendo porque fue disertante, y Mo estaba en consumo, participó y escuchó. En el blog post que escribieron juntos, estaban colaborando. Y el taller que armaron con el formato de Carpentries fue co-creación, porque generaron algo nuevo que no existía antes.
+
+Cierra remarcando que la colaboración se puede pensar tanto a nivel individual como entre organizaciones (RLadies+, The Carpentries, LatinR, rOpenSci).
+
+::: {.callout-note}
+Este es un buen punto para el recreo. Aclara la duración (por ejemplo, diez minutos) y retomá con las preguntas de reflexión sobre formas de participación.
+:::
+
+::: {.callout-tip}
+
+## Recreo
+
+Avisa con antelación cuándo va a haber una pausa y cuánto va a durar: *"Cortemos diez minutos, recargamos, y en diez minutos volvemos y seguimos"*. Pausa la grabación para no tener tiempo muerto en el video.
+:::
+
+### Retomando: formas de participar y el Programa de Campeon(a|e)s
+
+Mientras el grupo se reincorpora, relanza las preguntas (podés dejarlas también en el documento):
+
+> ¿Cuál es la forma más habitual de participar en su comunidad? ¿Dónde ubicarían el Programa de Campeones en ese espectro de consumir, contribuir, colaborar o co-crear?
+
+Da tiempo para que compartan y aporta tu propio ejemplo si el grupo tarda en animarse (por ejemplo, comunidades en las que solo consumís contenido). Cuando alguien se ubique del lado del "consumo", podés tranquilizar remarcando que el consumo es la puerta de entrada natural y que un Programa de Campeon(a|e)s, en realidad, suele recorrer todo el espectro.
+
+Si el grupo lo permite, podés profundizar en la distinción entre participación "transaccional" y "transformacional" que menciona el modelo, y en la idea de las "tres monedas" (bolsillo, corazón, cabeza) con las que se recompensa el trabajo comunitario voluntario — es un tema que suele generar buena conversación, pero es opcional según el tiempo disponible.
+
+Aprovecha para comentar el origen del nombre "campeones/as" (viene de *champion*, más cercano a "embajador/a" que al sentido deportivo) y qué se espera de este rol: ayudar a que más personas se sumen, contando sobre la comunidad, invitando, presentando gente entre sí.
+
+Repasa ejemplos de actividades de campeon(a|e)s, ligados a los cuatro modos de participación (transmitir, contribuir, colaborar, co-crear), y aclara que buscamos también personas fuera de la propia comunidad de rOpenSci para sumar voces y miradas distintas.
+
+### Recursos de rOpenSci para participar
+
+Recorré brevemente los recursos de la diapositiva "Ejemplos de rOpenSci" (guía de contribución, *tips sheet*/machete, guía del blog, guía de paquetes, guía de localización y traducción), explicando para qué sirve cada uno y por qué documentar estos procesos es valioso (facilita el onboarding, evita reinventar la rueda, sirve de ejemplo a otras comunidades).
+
+Pregunta si ya participaron de alguna de estas opciones (podés mencionar ejemplos concretos si los conocés del grupo, como quién participó en los mini-hackathons o en algún coworking) y qué les gustaría probar. Aclara que cualquiera de estas actividades es válida como la actividad de *outreach* que se pide en el programa.
+
+::: {.callout-tip}
+
+## Feedback abierto
+
+Recordá que estos recursos están en constante mejora, y que el feedback de quienes los difunden o los usan siempre es bienvenido — es un buen gesto dejarlo dicho explícitamente.
+:::
+
+### Aplicándolo al propio paquete: Transmitir
+
+A partir de acá el foco pasa del ejemplo de rOpenSci al paquete o proyecto propio de cada participante. Recorré la diapositiva de "Transmitir" mostrando en vivo:
+
+- Tu perfil de GitHub y los repositorios fijados, como ejemplo de cómo facilitar que encuentren tu trabajo.
+- Un README bien armado de un paquete de rOpenSci (qué hace, cómo se instala, ejemplos de uso, cómo reportar incidentes).
+- R-universe: cómo instalar un paquete con `install.packages()` apuntando al universo correspondiente, y cómo buscar paquetes por tema, autor o datasets.
+- Una CRAN Task View, mostrando cómo se listan los paquetes de un tema y cómo se puede proponer agregar uno nuevo.
+
+Completa con los puntos de la segunda diapositiva de "Transmitir": sitio web con pkgdown, redes como Mastodon/LinkedIn, foros como R-bloggers y R Weekly, charlas en RUGs o capítulos de RLadies+, Community Calls temáticas y conferencias de dominio o específicas de R.
+
+### Aplicándolo al propio paquete: Contribuir / Colaborar
+
+Presenta los tres elementos básicos para que un repositorio sea amigable a la contribución: código de conducta (`use_code_of_conduct()` de `usethis`), licencia compatible con software libre, y guía de contribución (`CONTRIBUTING.md`, con `use_tidy_contributing()` como punto de partida).
+
+::: {.callout-tip}
+
+## Ejercicio: agregar código de conducta y guía de contribución
+
+Si no alcanza el tiempo, este ejercicio se deja como tarea para después de la sesión: en su propio paquete (o en el paquete usado en las capacitaciones anteriores), agregar un código de conducta y una guía de contribución usando las funciones de `usethis`. Si se hace como tarea, pedí que compartan cómo les fue por Slack.
+:::
+
+Al presentar la diapositiva "Guía de contribución", enfatiza que hay decisiones de preferencia personal que cada quien debe tomar (estilo de código, flujo de trabajo issue-antes-de-PR, cómo se reconocen las contribuciones) y el valor de una declaración de alcance y de una declaración de ciclo de vida — la idea de "claridad es amabilidad" es un buen cierre para este punto.
+
+En "Gestión de issues", mostrá en vivo un ejemplo de plantilla de issue para ilustrar cómo una plantilla guía a quien reporta hacia la información que necesitás, y recordá la utilidad de etiquetar y fijar (*pin*) los issues más importantes.
+
+Cierra con los "Recursos adicionales" de colaborar/co-crear (sección de la guía de desarrollo sobre trabajar con colaboradores, blog de marketing de paquetes, Community Call sobre configurar el paquete para fomentar comunidad, y respuestas guardadas de GitHub para no repetir texto).
+
+::: {.callout-note}
+Si surge una pregunta sobre paquetes que no pueden o no quieren aceptar contribuciones de código es útil recordar que las contribuciones pueden orientarse hacia nuevas funciones sobre esos datos o sobre aspectos de documentacion. 
+:::
+
+### Cierre
+
+Deja un espacio final para preguntas o comentarios. Comparte (o comprometé a compartir después, por ejemplo por Slack) el enlace a las diapositivas.
+
+Pide el feedback de la sesión a través de la encuesta habitual del programa, agradeciendo explícitamente los aportes anteriores:
+
+> Muchas gracias por todo lo que nos han ido marcando en las encuestas, siempre es muy útil.
+
+Cierra con calidez, mencionando la próxima fecha de encuentro si ya está definida.
+
+## Después de la formación
+
+Después de la formación, envía un mensaje (correo electrónico, Slack) agradeciendo a las personas asistentes y compartiendo nuevamente los recursos esenciales:
+
+- El enlace a las diapositivas (y a la grabación, si corresponde).
+- El documento compartido con las preguntas de reflexión y los enlaces mencionados durante la sesión.
+- El enlace a la encuesta de feedback.
+- Un recordatorio del ejercicio propuesto (agregar código de conducta y guía de contribución al propio paquete).
+
+Revisa la encuesta de feedback e identifica uno o dos puntos a mejorar para la próxima iteración de la formación.

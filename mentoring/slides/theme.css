@@ -1,0 +1,80 @@
+/* ============================================================
+   theme.css — tema simple para presentaciones Quarto revealjs
+   ------------------------------------------------------------
+   Define únicamente tipografías y colores (nada de layout), para
+   poder reutilizarlo en otras presentaciones: alcanza con cambiar
+   los valores de las variables en :root.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Tipografías */
+  --font-heading: "Arvo", Georgia, "Times New Roman", serif;
+  --font-body: "Raleway", "Helvetica Neue", Arial, sans-serif;
+
+  /* Colores */
+  --color-bg: #ffffff;
+  --color-bg-accent: #447bcd; /* fondo usado en slides de actividad */
+  --color-text: #000000;
+  --color-text-inverse: #ffffff;
+  --color-link: #0097a7;
+  --color-accent: #4285f4;
+  --color-muted: #595959;
+}
+
+/* Fondo y tipografía base */
+.reveal {
+  background-color: var(--color-bg);
+}
+
+.reveal,
+.reveal p,
+.reveal li,
+.reveal div,
+.reveal .columns {
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+/* Encabezados */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: none;
+}
+
+/* Slides con fondo de color: reveal.js agrega automáticamente la
+   clase has-dark-background y ajusta el contraste del texto. Acá
+   solo afinamos el color de los links dentro de esas slides. */
+.reveal section.has-dark-background a {
+  color: var(--color-text-inverse);
+}
+
+/* Enlaces */
+.reveal a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+.reveal a:hover {
+  opacity: 0.8;
+}
+
+.reveal strong {
+  font-weight: 700;
+}
+
+/* Utilidades reutilizables */
+.text-muted {
+  color: var(--color-muted);
+}
+.small-text {
+  font-size: 0.6em;
+}
+.lead-italic {
+  font-style: italic;
+}
