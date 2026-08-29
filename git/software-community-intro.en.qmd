@@ -13,4 +13,4 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 
 :::
 
-Es un curso de 2 encuentros de 2 horas cada uno sobre cómo utilizar **Git** y **GitHub** para desarrollar de forma colaborativa software de código abierto con R, es decir, paquetes de R!
+It is a three-hour course on how to use **Git** and **GitHub** to collaboratively develop open source software with the R language.
