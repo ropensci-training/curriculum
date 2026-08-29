@@ -1,5 +1,5 @@
 ---
-title: "Proceso Revision"
+title: "Taller de revisión de software por pares de rOpenSci"
 ---
 
 ::: {.callout-note}
@@ -12,12 +12,6 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 *Contenido pendiente de migración:* ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.
 :::
 
-
----
-title: Taller de revisión de software por pares de rOpenSci
-date: 2025-11-25
-author: Mauro Lepore
----
 
 # Introducción al taller
 
