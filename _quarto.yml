@@ -49,8 +49,6 @@ book:
       chapters:
         - review/review-process.qmd
         - review/review-process-instructor-notes.qmd
-        - review/review-workshop.qmd
-        - review/review-workshop-instructor-notes.qmd
     - part: "Gestión de comunidad y divulgación"
       chapters:
         - community/oss-contribution.qmd
