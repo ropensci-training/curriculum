@@ -1,0 +1,155 @@
+/* ============================================================
+   memorable-talk-theme.css — simple theme for Quarto revealjs
+   ------------------------------------------------------------
+   Style for "Creando y dando una charla inolvidable". Defines
+   only typography, colors and the small reusable components used
+   by this deck (hexagon badge, highlighted keywords), so it can
+   be reused in other presentations: just change the variables in
+   :root.
+   ============================================================ */
+
+:root {
+  /* Typography */
+  --font-body: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --font-body-medium: "Poppins Medium", "Poppins", sans-serif;
+  --font-heading: "Poppins SemiBold", "Poppins", sans-serif;
+
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-bg-soft: #f3f3f3;    /* exercise slides */
+  --color-bg-light-blue: #c9daf8; /* example / Inicio-Cuerpo slides */
+  --color-bg-medium-blue: #a4c2f4; /* step / statement / closing slides */
+  --color-text: #00506f;      /* primary text color */
+  --color-text-inverse: #ffffff;
+  --color-highlight: #3c78d8; /* highlighted keyword blue */
+  --color-accent: #058dc7;    /* accent1 (hexagon badge border, links) */
+  --color-label: #6d9eeb;     /* lighter blue label, formula slides */
+}
+
+/* Base background and typography */
+.reveal {
+  background-color: var(--color-bg);
+}
+
+.reveal,
+.reveal p,
+.reveal li,
+.reveal div,
+.reveal .columns {
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+/* Headings */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--color-text);
+  text-transform: none;
+}
+
+/* Slides with a colored background: reveal.js automatically adds
+   the has-dark-background class and adjusts text contrast. This
+   deck's accent backgrounds are light, so we keep the same dark
+   text color on them. */
+.reveal section.has-dark-background,
+.reveal section.has-dark-background h1,
+.reveal section.has-dark-background h2,
+.reveal section.has-dark-background h3 {
+  color: var(--color-text);
+}
+
+/* Links */
+.reveal a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+.reveal a:hover {
+  opacity: 0.8;
+}
+
+.reveal strong {
+  font-weight: 600;
+}
+
+/* Reusable utilities */
+.text-muted {
+  color: #595959;
+}
+.small-text {
+  font-size: 0.6em;
+}
+.lead-italic {
+  font-style: italic;
+}
+
+/* Highlighted keyword: bold word/phrase in the accent blue,
+   used inline within otherwise plain-colored paragraphs */
+.highlight {
+  color: var(--color-highlight);
+  font-weight: 600;
+}
+
+/* Lighter-blue label highlight, used on the "formula" slides
+   (e.g. "idea", "Guía de Trabajo") */
+.highlight-label {
+  color: var(--color-label);
+  font-weight: 600;
+}
+
+/* Accent-colored text/callouts (theme accent1) */
+.accent-text {
+  color: var(--color-accent);
+}
+
+/* Hexagon badge: reproduces the white hexagon shape with an
+   accent-colored border and a bold label, used to mark the
+   "Inicio / Cuerpo / Cierre" sections of a talk */
+.hex-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.6em;
+  width: fit-content;
+  height: 2.5em;
+  background: #ffffff;
+  border: 0.09em solid var(--color-accent);
+  clip-path: polygon(50% 0%, 100% 22%, 100% 78%, 50% 100%, 0% 78%, 0% 22%);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85em;
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.1;
+  padding: 0 0.8em;
+  white-space: nowrap;
+}
+
+/* Formula-building slides: "IDEA + Estructura + Oratoria" */
+.formula-term {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.6em;
+  color: var(--color-text);
+}
+.formula-term small {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.5em;
+}
+.formula-term.is-label {
+  color: var(--color-label);
+}
+.formula-plus {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.8em;
+  color: var(--color-text);
+  padding: 0 0.3em;
+}
