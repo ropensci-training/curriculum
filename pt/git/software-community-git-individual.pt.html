@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<link rel="alternate" hreflang="es" href="/git/software-community-git-individual.html" />
+<link rel="alternate" hreflang="en" href="/en/git/software-community-git-individual.en.html" />
+<link rel="alternate" hreflang="pt" href="/pt/git/software-community-git-individual.pt.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>11  Git para trabajar individualmente – Curriculum del Programa de Campeon(a|e)s de rOpenSci</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<link href="../git/software-community-git-team.pt.html" rel="next">
+<link href="../git/software-community-preparation.pt.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d5b4e69c7e37b49c6591bcc5116dd748.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3d497cff885f6278d37568d0ef0763f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+</head>
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../git/software-community-intro.pt.html">Desarrollo colaborativo de software</a></li>
+<li class="breadcrumb-item"><a href="../git/software-community-git-individual.pt.html"><span class="chapter-number">11</span>  <span class="chapter-title">Git para trabajar individualmente</span></a></li>
+</ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Curriculum del Programa de Campeon(a|e)s de rOpenSci</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/ropensci-training/curriculum" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=%7Curl%7C" title="LinkedIn" class="quarto-navigation-tool px-1" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Português</button><ul class="dropdown-menu" id="languages-links">
+<li><a class="dropdown-item" href="/en/git/software-community-git-individual.en.html" id="language-link-en">English</a></li>
+<li><a class="dropdown-item" href="/git/software-community-git-individual.html" id="language-link-es">Español</a></li>
+</ul>
+</div>
+<div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">Prefacio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../intro.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">Sobre el Programa de Campeones de rOpenSci</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-use.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">Cómo usar este libro</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contributing.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">Cómo contribuir</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mentoría</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">Treinamento e orientação de mentores e mentoras</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors-schedule.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">Programação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors-materials.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>  <span class="chapter-title">Materiales del curso</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>  <span class="chapter-title">Notas dos(as) instrutores(as)</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Desarrollo colaborativo de software</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-intro.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>  <span class="chapter-title">Software Comunidad Intro</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-preparation.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>  <span class="chapter-title">Lo que necesitas hacer antes del taller</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-git-individual.pt.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>  <span class="chapter-title">Git para trabajar individualmente</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-git-team.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>  <span class="chapter-title">Git para trabajar en equipo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-git-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-history.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>  <span class="chapter-title">Git Historia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-history-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-advanced.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>  <span class="chapter-title">Git Avanzado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-advanced-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Desarrollo de paquetes de R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/code-quality.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>  <span class="chapter-title">Calidad Codigo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/code-quality-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-prereqs.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>  <span class="chapter-title">Mecanica Prereqs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-1.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>  <span class="chapter-title">Mecanica 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-1-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-2.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>  <span class="chapter-title">Mecanica 2</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-2-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-3.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>  <span class="chapter-title">Mecanica 3</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-3-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/advanced.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>  <span class="chapter-title">Avanzado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/advanced-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/packages-genai.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>  <span class="chapter-title">GenAI Paquetes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/packages-genai-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Revisión de software</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../review/review-process.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>  <span class="chapter-title">Taller de revisión de software por pares de rOpenSci</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../review/review-process-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Gestión de comunidad y divulgación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/oss-contribution.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>  <span class="chapter-title">Cómo contribuir a proyectos y comunidades abiertas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/oss-contribution-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/memorable-talk.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>  <span class="chapter-title">Charla Memorable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/memorable-talk-tools.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>  <span class="chapter-title">Charla Memorable Herramientas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/memorable-talk-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>  <span class="chapter-title">Charla Memorable Notas Instructor</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/wonderful-event.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>  <span class="chapter-title">Cómo organizar un evento maravilloso</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/wonderful-event-instructor-notes.pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>  <span class="chapter-title">Notas del instructor — Cómo organizar un evento maravilloso</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Apêndices</span></span>
+  </li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+<li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link active" data-scroll-target="#objetivos-de-aprendizaje"><span class="header-section-number">11.1</span> Objetivos de aprendizaje</a></li>
+  <li><a href="#mis-slides" id="toc-mis-slides" class="nav-link" data-scroll-target="#mis-slides"><span class="header-section-number">11.2</span> Mis slides</a></li>
+  <li><a href="#por-qu%C3%A9-git" id="toc-por-qué-git" class="nav-link" data-scroll-target="#por-qué-git"><span class="header-section-number">11.3</span> ¿Por qué git?</a></li>
+  <li><a href="#pero-qu%C3%A9-entendemos-por-control-de-versiones" id="toc-pero-qué-entendemos-por-control-de-versiones" class="nav-link" data-scroll-target="#pero-qué-entendemos-por-control-de-versiones"><span class="header-section-number">11.4</span> Pero, ¿qué entendemos por control de versiones?</a></li>
+  <li><a href="#ya-mencionamos-repositorio-remoto" id="toc-ya-mencionamos-repositorio-remoto" class="nav-link" data-scroll-target="#ya-mencionamos-repositorio-remoto"><span class="header-section-number">11.5</span> ¿Ya mencionamos “repositorio remoto”?</a></li>
+  <li><a href="#configuraci%C3%B3n-inicial" id="toc-configuración-inicial" class="nav-link" data-scroll-target="#configuración-inicial"><span class="header-section-number">11.6</span> Configuración inicial</a></li>
+  <li>
+<a href="#nuevo-repositorio" id="toc-nuevo-repositorio" class="nav-link" data-scroll-target="#nuevo-repositorio"><span class="header-section-number">11.7</span> Nuevo repositorio</a>
+  <ul class="collapse">
+<li><a href="#github-repo-primero-proyecto-de-rstudio-despues" id="toc-github-repo-primero-proyecto-de-rstudio-despues" class="nav-link" data-scroll-target="#github-repo-primero-proyecto-de-rstudio-despues"><span class="header-section-number">11.7.1</span> GitHub repo primero, proyecto de RStudio despues</a></li>
+  <li><a href="#proyecto-de-rstudio-primero-repositorio-de-github-despu%C3%A9s" id="toc-proyecto-de-rstudio-primero-repositorio-de-github-después" class="nav-link" data-scroll-target="#proyecto-de-rstudio-primero-repositorio-de-github-después"><span class="header-section-number">11.7.2</span> Proyecto de RStudio primero, repositorio de GitHub después</a></li>
+  </ul>
+</li>
+  <li><a href="#cambios-locales" id="toc-cambios-locales" class="nav-link" data-scroll-target="#cambios-locales"><span class="header-section-number">11.8</span> Cambios locales</a></li>
+  <li><a href="#cambios-remotos" id="toc-cambios-remotos" class="nav-link" data-scroll-target="#cambios-remotos"><span class="header-section-number">11.9</span> Cambios remotos</a></li>
+  <li><a href="#anatom%C3%ADa-de-un-repositorio-de-github" id="toc-anatomía-de-un-repositorio-de-github" class="nav-link" data-scroll-target="#anatomía-de-un-repositorio-de-github"><span class="header-section-number">11.10</span> Anatomía de un repositorio de GitHub</a></li>
+  </ul>
+<div class="toc-actions"><ul>
+<li><a href="https://github.com/ropensci-training/curriculum/edit/main/git/software-community-git-individual.pt.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li>
+<li><a href="https://github.com/ropensci-training/curriculum/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li>
+</ul></div></nav>
+</div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../git/software-community-intro.pt.html">Desarrollo colaborativo de software</a></li>
+<li class="breadcrumb-item"><a href="../git/software-community-git-individual.pt.html"><span class="chapter-number">11</span>  <span class="chapter-title">Git para trabajar individualmente</span></a></li>
+</ol></nav><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">11</span>  <span class="chapter-title">Git para trabajar individualmente</span>
+</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Migración
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Estás leyendo la <strong>primera edición en progreso y en castellano</strong> de este libro, basada en el currículum de formación del programa de rOpenSci.</p>
+<p>Este capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.</p>
+<p><em>Contenido pendiente de migración:</em> ver https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.</p>
+</div>
+</div>
+<section id="objetivos-de-aprendizaje" class="level2" data-number="11.1"><h2 data-number="11.1" class="anchored" data-anchor-id="objetivos-de-aprendizaje">
+<span class="header-section-number">11.1</span> Objetivos de aprendizaje</h2>
+<ul>
+<li>Identificar por qué el control de versiones, específicamente Git, es importante para el desarrollo de software y análisis de datos.</li>
+<li>Diferenciar métodos para trabajar con Git y R: integración con RStudio y usethis.</li>
+<li>Aplicar el proceso de modificación-add-commit como el flujo de trabajo de Git para el seguimiento de los cambios y ver el historial de commits de un repositorio.</li>
+<li>Publicar repositorios en GitHub y coordinar versiones remotas y locales.</li>
+</ul></section><section id="mis-slides" class="level2" data-number="11.2"><h2 data-number="11.2" class="anchored" data-anchor-id="mis-slides">
+<span class="header-section-number">11.2</span> Mis slides</h2>
+<iframe src="git/slides/git_initial.html" width="100%" height="500px" style="border:none;">
+</iframe>
+
+</section><section id="por-qué-git" class="level2" data-number="11.3"><h2 data-number="11.3" class="anchored" data-anchor-id="por-qué-git">
+<span class="header-section-number">11.3</span> ¿Por qué git?</h2>
+<p>¿Tenés algo así en tu computadora?</p>
+<pre><code>/home/pao/Documents/Clases/progrmacion
+├── script.R
+├── tp.Rmd
+├── tp_corregido.Rmd
+├── tp_corregido2.Rmd
+├── tp_final.Rmd
+├── tp_finalfinal.Rmd
+├── este_es_el_final.Rmd
+├── juro_que_esta_es_la_ultima_version_del_tp.Rmd
+└── FINAL.Rmd</code></pre>
+<p>Probablemente todas las personas lo tenemos, o tuvimos algo así en algún momento, porque necesitamos guardar nuestro trabajo pero seguir teniendo acceso a versiones anteriores. Existe una solución para esto. Los sistemas de control de versiones gestionan la evolución y los cambios de un conjunto de archivos que llamaremos <strong>repositorio</strong>. Si alguna vez revisaste el historial de un archivo de Google Docs, el control de versiones es similar pero de una forma muy controlada. Git es un sistema de control de versiones muy popular, pero hay otros.</p>
+<p>Si trabajas de manera individual, git es genial para hacer un seguimiento de los cambios y recuperar versiones anteriores de tus archivos. También podés utilizar un <strong>repositorio remoto</strong> (que veremos más adelante) para tener una copia de seguridad y compartir tu trabajo.</p>
+<p>Si trabajas en equipo, podés aprovechar todo lo anterior y utilizar también el control de versiones como herramienta para colaborar y organizar las distintas versiones de un mismo archivo presentes en las múltiples computadoras que vos y las otras personas usen.</p>
+</section><section id="pero-qué-entendemos-por-control-de-versiones" class="level2" data-number="11.4"><h2 data-number="11.4" class="anchored" data-anchor-id="pero-qué-entendemos-por-control-de-versiones">
+<span class="header-section-number">11.4</span> Pero, ¿qué entendemos por control de versiones?</h2>
+<p>Imaginemos que tenemos un repositorio funcionando (<a href="04-git-1/#crear-un-nuevo-repositorio">más adelante</a> veremos cómo crear uno). Cuando creas un nuevo archivo como parte del repositorio (o <em>repo</em>), ese archivo inicialmente no es <strong>trackeado/rastreado</strong> o <strong>no está versionado</strong>. Esto significa que git ignorará el archivo y cualquier cambio que hayas hecho hasta que lo <em>agregues</em> al repositorio (<em>add</em> en inglés) y empieces a registrar los cambios que hagas en el contenido. En ese momento el archivo está en el area <strong>staging</strong> (que podemos imagina como una sala de espera de git) y está listo para entrar en el repositorio. Para eso hay que <em>confirmar</em> o registrar (<em>commit</em> en inglés) esa versión del archivo en el repositorio. Este flujo de trabajo <code>modify --&gt; add --&gt; commit</code> se repetirá cada vez que quieras guardar una versión del archivo.</p>
+<div class="tip">
+<p>No recomendamos hacer un <em>commit</em> cada vez que guardes el archivo o cambies una coma, y tampoco es buena idea hacer un <em>commit</em> con mil millones de cambios. Con la práctica y dependiendo de cómo trabajes, encontrarás un punto medio cómodo.</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/file_cycle2.png" class="img-fluid figure-img"></p>
+<figcaption>La figura muestra el ciclo de cambios en un archivo: versionado o sin versional. Cuando es versionado y forma parte del repositorio, las acciones son add, commit, y modificar. Con la acción add, el archivo se “prepara”; con la acción de commit, el archivo se “guarda” en el repositorio. Este ciclo se repite cada vez que se modifica el archivo.</figcaption></figure>
+</div>
+<p>Mencionamos las acciones <code>add</code> y <code>commit</code> que son los nombres de dos comandos de git. Si tenes experiencia trabajando con la terminal podés utilizar git desde ahí, pero los mismos comandos pueden ejecutarse desde una GUI como <a href="https://desktop.github.com/">GitHub Desktop</a> o <a href="https://www.gitkraken.com/">GitKraken</a>. Durante este curso utilizaremos RStudio.</p>
+</section><section id="ya-mencionamos-repositorio-remoto" class="level2" data-number="11.5"><h2 data-number="11.5" class="anchored" data-anchor-id="ya-mencionamos-repositorio-remoto">
+<span class="header-section-number">11.5</span> ¿Ya mencionamos “repositorio remoto”?</h2>
+<p>Antes revisamos el <strong>flujo de trabajo local</strong>. El repositorio (una carpeta oculta llamada <code>.git</code>) vive en tu computadora y con eso ya estas usando control de versiones. Pero, también podrías conectar el <strong>repositorio local</strong> con un <strong>repositorio remoto</strong>. En este curso vamos a utilizar <a href="https://www.github.com">GitHub</a> para alojar repositorios remotos, pero hay otras opciones que podrías explorar, como <a href="https://about.gitlab.com/">GitLab</a> o <a href="https://codeberg.org">Codeberg</a>.</p>
+<p>Si usas un repositorio remoto, tendrás que agregar un paso más al flujo de trabajo local (<code>modify --&gt; add --&gt; commit</code>) para asegurarte que la copia del repositorio en tu computadora es la misma que la copia en GitHub y vise versa.</p>
+<p>Luego, otra persona de tu equipo hace un cambio en un archivo en su repositorio local y lo sube al repositorio remoto. Ahora, tu repositorio local está “desactualizado” y necesitas descargar esos nuevos commits del repositorio remoto a tu computadora. Necesitas hacer <strong>pull</strong>.</p>
+<p>Si luego, otra persona de tu equipo hace un cambio en un archivo en su repositorio local y lo sube al repositorio remoto. Ahora, tu repositorio local está “desactualizado” respecto del repositorio remoto. Necesitas descargar esos nuevos commits del repositorio remoto a tu computadora. Necesitas hacer <strong>pull</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/local_remote.png" class="img-fluid figure-img"></p>
+<figcaption>Modelo conceptual de un flujo de trabajo utilizando proyectos RStudio y git. Los archivos se añaden al área de <em>staging</em> (o preparación) y luego se envían al repositorio local. Puedes enviar (push) <em>commits</em> al repositorio remoto y bajar (pull) nuevos <em>commits</em> a tu computadora.</figcaption></figure>
+</div>
+<p>Herramientas como GitHub también incluyen funciones que te ayudan a colaborar y gestionar repositorios. Por ejemplo, puedes modificar archivos y hacer <em>commits</em> con esos cambios utilizando la interfaz web.</p>
+</section><section id="configuración-inicial" class="level2" data-number="11.6"><h2 data-number="11.6" class="anchored" data-anchor-id="configuración-inicial">
+<span class="header-section-number">11.6</span> Configuración inicial</h2>
+<p>Antes de crear tu primer repositorio es importante revisar que git esté configurado correctamente en tu computadora y que tengas permisos para modificar cosas en GitHub. Si seguiste las instrucciones <a href="preparacion.html">instrucciones previas al curso</a> deberías tener todo listo, pero podemos revisar el estado de situación con <code>usethis::git_sitrep()</code> para comprobarlo.</p>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> usethis<span class="sc">::</span><span class="fu">git_sitrep</span>()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>── Git <span class="fu">global</span> (user) </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>• Name<span class="sc">:</span> <span class="st">"Pao Corrales"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>• Email<span class="sc">:</span> <span class="st">"micorreo@gmail.com"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>• <span class="fu">Global</span> (user<span class="sc">-</span>level) gitignore file<span class="sc">:</span> <span class="er">~/</span>.gitignore</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>• Vaccinated<span class="sc">:</span> <span class="cn">TRUE</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>• Default Git protocol<span class="sc">:</span> <span class="st">"https"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>• Default initial branch name<span class="sc">:</span> <span class="st">"main"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>── GitHub user </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>• Default GitHub host<span class="sc">:</span> <span class="st">"https://github.com"</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>• Personal access token <span class="cf">for</span> <span class="st">"https://github.com"</span><span class="sc">:</span> <span class="er">&lt;</span>discovered<span class="sc">&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>• GitHub user<span class="sc">:</span> <span class="st">"paocorrales"</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>• Token scopes<span class="sc">:</span> <span class="st">"gist"</span>, <span class="st">"repo"</span>, <span class="st">"user"</span>, and <span class="st">"workflow"</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>• <span class="fu">Email</span>(s)<span class="sc">:</span> <span class="st">"micorreo@gmail.com (primary)"</span>, <span class="st">"paocorrales@users.noreply.github.com"</span>, and</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"otro correo@gmail.com"</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>ℹ No active usethis project.</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<p>Revisá que la información sea correcta y que <code>Personal access token for "https://github.com":</code> sea igual a <code>&lt;discovered&gt;</code>. Eso te garantizará que puedas trabajar con git y GitHub. Si vez alguna diferencia, es útil revisar las instrucciones de instalación en “<a href="preparacion.html">Lo que necesitas hacer antes del curso</a>”.</p>
+</section><section id="nuevo-repositorio" class="level2" data-number="11.7"><h2 data-number="11.7" class="anchored" data-anchor-id="nuevo-repositorio">
+<span class="header-section-number">11.7</span> Nuevo repositorio</h2>
+<section id="github-repo-primero-proyecto-de-rstudio-despues" class="level3" data-number="11.7.1"><h3 data-number="11.7.1" class="anchored" data-anchor-id="github-repo-primero-proyecto-de-rstudio-despues">
+<span class="header-section-number">11.7.1</span> GitHub repo primero, proyecto de RStudio despues</h3>
+<p>Hay muchas formas de iniciar un nuevo repositorio, localmente en tu computadora utilizando la terminal, desde GitHub (o sus amigos) ¡o desde RStudio!. Aca te mostraremos cómo crear un repositorio desde GitHub, asociarlo a un proyecto de RStudio y trabajar con él. Pero tené en cuenta que hay muchas otras formas de trabajar con git.</p>
+<div class="ejercicio">
+<p><strong>1. Creá un repositorio online.</strong></p>
+<ul>
+<li>Entrá en <a href="https://github.com">github.com</a> e inicia sesión.</li>
+<li>En la esquina superior derecha, hacé click en el botón “+” y luego en “New repository”.</li>
+</ul>
+<p>A continuación completá la información del repositorio:</p>
+<ul>
+<li>Repository template: No template.</li>
+<li>Repository name: como quieras llamar a tu nuevo proyecto.</li>
+<li>Description: Una descripción breve del proyecto. Escribila para que la entiendan personas.</li>
+<li>Visibilidad: Public.</li>
+<li>Initialize this repository with: nada (podemos configurarlo todo desde R).</li>
+</ul>
+<p>Antes de volver a RStudio, copia la url del repositorio. Por ejemplo <code>https://github.com/paocorrales/myrepo.git</code></p>
+<p>Ya tenés tu repositorio local!</p>
+</div>
+<div class="ejercicio">
+<p><strong>2. En RStudio, inicia un nuevo Proyecto:</strong></p>
+<ul>
+<li>
+<code>File &gt; New Project &gt; Version Control &gt; Git</code>. En la “URL del repositorio” pegá la URL de tu nuevo repositorio de GitHub, tiene que tener esta pinta: <code>https://github.com/paocorrales/myrepo.git</code>.</li>
+<li>Elejí la carpeta en tu disco donde querés crear el proyecto.</li>
+<li>Elejí “Open in new sesion”.</li>
+<li>Y hacé clic en “Create project”.</li>
+</ul>
+</div>
+<p>La nueva carpeta en tu computadora será un repositorio git, vinculado a un repositorio remoto de GitHub y un proyecto de RStudio al mismo tiempo. Este flujo de trabajo también se asegura de que toda la configuración entre los repositorios local y remoto se realice correctamente.</p>
+<p>También agrega un archivo llamado <code>.gitignore</code> que incluye una lista de archivos que no queremos sumar al repositorio (por ejemplo <code>.Rhistory</code>).</p>
+</section><section id="proyecto-de-rstudio-primero-repositorio-de-github-después" class="level3" data-number="11.7.2"><h3 data-number="11.7.2" class="anchored" data-anchor-id="proyecto-de-rstudio-primero-repositorio-de-github-después">
+<span class="header-section-number">11.7.2</span> Proyecto de RStudio primero, repositorio de GitHub después</h3>
+<p>Supongamos que ya tenes un proyecto de RStudio existente y ahora que conoces todas las bondades del control de versiones queres empezar a usarlo.</p>
+<p>Podemos utilizar el paquete <em>usethis</em> para que nos ayude a empezar a versionar ese proyecto.</p>
+<p>Para eso, primero tenes que asegurarte de que el proyecto ya sea un repositorio git. Si tenes el tab de Git en RStudio entonces tu proyecto ya es un repositorio git. Si no lo es, podes usar la funcion <code>usethis::use_git()</code> para inicializarlo como un repositorio git.</p>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> usethis<span class="sc">::</span><span class="fu">use_git</span>()</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>✔ Setting active project to <span class="st">"/Users/yabellini/Documents/GitHub/ControlDeVersiones"</span>.</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>✔ Initialising Git repo.</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>✔ Adding <span class="st">".Rproj.user"</span>, <span class="st">".Rhistory"</span>, <span class="st">".Rdata"</span>, <span class="st">".httr-oauth"</span>, <span class="st">".DS_Store"</span>, and <span class="st">".quarto"</span> to</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  .gitignore.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>ℹ There are <span class="dv">2</span> uncommitted files<span class="sc">:</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>• .gitignore</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>• ControlDeVersiones.Rproj</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span> Is it ok to commit them?</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span> Not now</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">:</span> Negative</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="sc">:</span> Yes</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<p>Cuando elegimos la opcion afirmativa nos mostrara un mensaje como el siguiente:</p>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>✔ Adding files.</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>✔ Making a commit with message <span class="st">"Initial commit"</span>.</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>A restart of RStudio is required to activate the Git pane.</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>Restart now?</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span> Not now</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">:</span> Nope</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="sc">:</span> Yeah</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<p>El siguiente paso es asociar el repositorio local con un repositorio remoto en GitHub. Para eso se usa la funcion <code>usethis::use_github()</code>.</p>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> usethis<span class="sc">::</span><span class="fu">use_github</span>()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>ℹ Defaulting to <span class="st">"https"</span> Git protocol.</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>✔ Setting active project to <span class="st">"/Users/yabellini/Documents/GitHub/ControlDeVersiones"</span>.</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>✔ Creating GitHub repository <span class="st">"yabellini/ControlDeVersiones"</span>.</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>✔ Setting remote <span class="st">"origin"</span> to <span class="st">"https://github.com/yabellini/ControlDeVersiones.git"</span>.</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>✔ Pushing <span class="st">"main"</span> branch to GitHub and setting <span class="st">"origin/main"</span> as upstream branch.</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>✔ Opening URL <span class="sc">&lt;</span>https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>yabellini<span class="sc">/</span>ControlDeVersiones<span class="sc">&gt;</span>.</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<p>Esta funcion toma un proyecto local y realiza una serie de chequeos y acciones, entre las cuales se encuentran:</p>
+<ul>
+<li><p>Verificar que el proyecto ya es un repositorio Git.</p></li>
+<li><p>Chequear que la rama actual es la rama predeterminada, por ejemplo, <em>main</em>.</p></li>
+<li><p>Verificar que no hay ningún origen remoto preexistente.</p></li>
+<li><p>Crear un repositorio asociado en GitHub.</p></li>
+<li><p>Añadir ese repositorio de GitHub a tu repositorio local como origen remoto.</p></li>
+<li><p>Realiza un <em>push</em> inicial a GitHub para sincronizar repos.</p></li>
+</ul></section></section><section id="cambios-locales" class="level2" data-number="11.8"><h2 data-number="11.8" class="anchored" data-anchor-id="cambios-locales">
+<span class="header-section-number">11.8</span> Cambios locales</h2>
+<p>Es hora de poner en práctica algunas de las cosas de las que hemos estado hablando.</p>
+<div class="ejercicio">
+<p><strong>Add, commit</strong></p>
+<ol type="1">
+<li>Creá un nuevo archivo RMarkdown y guardalo.</li>
+<li>Agregalo al área de preparación con <em>add</em> y luego hace un <em>commit</em>. ¡Vas a tener que pensar un mensaje descriptivo!</li>
+<li>Hace un cambio en el archivo, puede ser cualquier cosa. Guardalo.</li>
+<li>Repetí el paso 2.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/add1.png" class="img-fluid figure-img"></p>
+<figcaption>Panel Git con 3 archivos sin seguimiento.</figcaption></figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/add2.png" class="img-fluid figure-img"></p>
+<figcaption>Panel Git con 3 archivos con seguimiento añadidos al área de preparación.</figcaption></figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/add3.png" class="img-fluid figure-img"></p>
+<figcaption>Interfaz RStudio para ver las diferencias entre archivos, escribir el mensaje para el commit y enviarlo al repositorio remoto.</figcaption></figure>
+</div>
+</div>
+<p>Si todo salió bien, empezaste a rastrear archivos, hiciste cambios y commits para guardar esa versión en el repositorio local. Puede que veas un mensaje en la pestaña de git diciendo que el repositorio local “is ahead of ’origin/master` by 2 commits”. No verás ningún cambio en GitHub hasta que hagas <strong>push</strong> y envíes esos commits al repositorio remoto. Podés hacer esto al final del día si preferis, pero si trabajas con otras personas puede ser una buena idea hacer <em>push</em> luego de cada <em>commit</em>.</p>
+<div class="ejercicio">
+<p><strong>¡Push!</strong></p>
+<ol type="1">
+<li>Ahora, hacé <em>push</em> para enviar los commits al repositorio remoto utilizando el botón con la flecha verde apuntando hacia arriba.</li>
+</ol>
+</div>
+</section><section id="cambios-remotos" class="level2" data-number="11.9"><h2 data-number="11.9" class="anchored" data-anchor-id="cambios-remotos">
+<span class="header-section-number">11.9</span> Cambios remotos</h2>
+<p>Volvamos a GitHub. Si actualizas la página, ahora verás los archivos que acabas sumar al repositorio o modificar. Hagamos click en “Commits” para ver la historia del repositorio. Desde esta página, podés explorar el repositorio en el “estado” en el que estaba con cada commit y ver las diferencias entre las distintas versiones.</p>
+<p>Ahora, podemos intentar hacer cambios aquí.</p>
+<div class="ejercicio">
+<p><strong>Crear un README</strong></p>
+<ol type="1">
+<li>En la página principal, hacé click en el botón verde que dice “Add a README”.</li>
+<li>Agregá algo en el archivo. Los README suelen estar escritos en Markdown y contienen información sobre el repositorio.</li>
+<li>Al final de la página añadí un mensaje y hacé click en “Confirm changes…”.</li>
+<li>Volvé a la página principal para ver el README.</li>
+</ol>
+</div>
+<p>El nuevo archivo y los cambios que hagas en GitHub sólo estarán en el repositorio remoto hasta que hagas un <strong>pull</strong> en el repositorio local. Si realizas cambios en el repositorio local mientras no está actualizado, podés encontrarte con conflictos cuando intentes unir las 2 versiones, lo que suele generar dolores de cabeza. Esto ocurre cuando la versión de un archivo en el repositorio local no es compatible con su versión en el repositorio remoto. En esos casos, git no puede decidir qué versión es la correcta y tenés que hacerlo vos.</p>
+<p>Para evitar este problema (lo más posible), tenes que hacer un pull antes de empezar a hacer cualquier otra cosa. La mayoría de las veces RStudio mostrará el mensaje “Already up to date”, pero es bueno hacerlo un hábito.</p>
+<div class="ejercicio">
+<p><strong>Pull desde GitHub</strong></p>
+<ol type="1">
+<li>Volvé a RStudio.</li>
+<li>Revisá panel de Git.</li>
+<li>Hacé click en la flecha azul que dice “Pull”.</li>
+<li>Revisá el archivo README en la pestaña Archivos.</li>
+</ol>
+</div>
+</section><section id="anatomía-de-un-repositorio-de-github" class="level2" data-number="11.10"><h2 data-number="11.10" class="anchored" data-anchor-id="anatomía-de-un-repositorio-de-github">
+<span class="header-section-number">11.10</span> Anatomía de un repositorio de GitHub</h2>
+<ul>
+<li><p><em>Archivos README.</em> Utilizá un <code>README.md</code> para explicar de que se trata es tu proyecto y cómo utilizarlo. <code>README.md</code> es el archivo que se muestra automáticamente cuando abrís un repositorio de GitHub.</p></li>
+<li>
+<p><em>Licencia.</em> La licencia le indica a las personas cómo puede utilizar el contenido de tu repositorio. Generalmente, utilizamos licencias permisivas para que las personas pueda utilizar los materiales de cualquier manera. Algunos ejemplos son la Licencia MIT o Apache. Podés revisar algunos recursos extra:</p>
+<ul>
+<li>
+<a href="https://choosealicense.com/">Elejí una licencia para proyectos de código</a>.</li>
+<li>
+<a href="https://tldrlegal.com/">Licencias de software en lenguaje sencillo</a>: explica la jerga legal de las licencias en términos sencillos</li>
+</ul>
+</li>
+<li><p><em>Guía para colaborar.</em> Un archivo llamado <code>CONTRIBUTING.md</code> que incluye las instrucciones que personas que quieren conlaborar en tu proyecto sepan lo que deben hacer si quieren ayudarte.</p></li>
+<li><p><em>Código de conducta.</em> Los buenos proyectos tienen códigos de conducta para garantizar un ambiente amigable donde las personas pueden colaborar. Github tiene atajos para agregar Código de Conducta facilmente.</p></li>
+<li><p><em>Issues.</em> Te permiten gestionar el proyecto, discutir problemas y mejoras con otras personas.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Mas detalle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En los talleres de Desarrollo de Paquetes de R veremos como agregar todas estas partes del repositorio en R y con foco en un paquete de R.</p>
+</div>
+</div>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("\/pt");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../git/software-community-preparation.pt.html" class="pagination-link" aria-label="Lo que necesitas hacer antes del taller">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>  <span class="chapter-title">Lo que necesitas hacer antes del taller</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../git/software-community-git-team.pt.html" class="pagination-link" aria-label="Git para trabajar en equipo">
+        <span class="nav-page-text"><span class="chapter-number">12</span>  <span class="chapter-title">Git para trabajar en equipo</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
+<li><a href="https://github.com/ropensci-training/curriculum/edit/main/git/software-community-git-individual.pt.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li>
+<li><a href="https://github.com/ropensci-training/curriculum/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li>
+</ul></div></div></div></footer>
+</body>
+</html>

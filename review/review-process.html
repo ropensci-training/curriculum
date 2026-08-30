@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<link rel="alternate" hreflang="es" href="/review/review-process.html" />
+<link rel="alternate" hreflang="en" href="/en/review/review-process.en.html" />
+<link rel="alternate" hreflang="pt" href="/pt/review/review-process.pt.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>31  Taller de revisión de software por pares de rOpenSci – Curriculum del Programa de Campeon(a|e)s de rOpenSci</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<link href="../review/review-process-instructor-notes.html" rel="next">
+<link href="../packages/packages-genai-instructor-notes.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d5b4e69c7e37b49c6591bcc5116dd748.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3d497cff885f6278d37568d0ef0763f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script><script src="../site_libs/quarto-diagram/mermaid.min.js"></script><script src="../site_libs/quarto-diagram/mermaid-init.js"></script><link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+</head>
+<body class="nav-sidebar floating slimcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../review/review-process.html">Revisión de software</a></li>
+<li class="breadcrumb-item"><a href="../review/review-process.html"><span class="chapter-number">31</span>  <span class="chapter-title">Taller de revisión de software por pares de rOpenSci</span></a></li>
+</ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Curriculum del Programa de Campeon(a|e)s de rOpenSci</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/ropensci-training/curriculum" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=%7Curl%7C" title="LinkedIn" class="quarto-navigation-tool px-1" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Español</button><ul class="dropdown-menu" id="languages-links">
+<li><a class="dropdown-item" href="/pt/review/review-process.pt.html" id="language-link-pt">Português</a></li>
+<li><a class="dropdown-item" href="/en/review/review-process.en.html" id="language-link-en">English</a></li>
+</ul>
+</div>
+<div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">Prefacio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">Sobre el Programa de Campeones de rOpenSci</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">Cómo usar este libro</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contributing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">Cómo contribuir</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Mentoría</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">Formación y orientación para mentores y mentoras</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors-schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">Agendas tentativas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors-materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>  <span class="chapter-title">Materiales del curso</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentoring/mentors-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Desarrollo colaborativo de software</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>  <span class="chapter-title">Software Comunidad Intro</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-preparation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>  <span class="chapter-title">Lo que necesitas hacer antes del taller</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-git-individual.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>  <span class="chapter-title">Git para trabajar individualmente</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-git-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>  <span class="chapter-title">Git para trabajar en equipo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/software-community-git-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>  <span class="chapter-title">Git Historia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-history-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-advanced.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>  <span class="chapter-title">Git Avanzado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../git/git-advanced-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Desarrollo de paquetes de R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/code-quality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>  <span class="chapter-title">Calidad Codigo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/code-quality-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-prereqs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>  <span class="chapter-title">Mecanica Prereqs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>  <span class="chapter-title">Mecanica 1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-1-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>  <span class="chapter-title">Mecanica 2</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-2-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>  <span class="chapter-title">Mecanica 3</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/mechanics-3-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/advanced.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>  <span class="chapter-title">Avanzado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/advanced-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/packages-genai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>  <span class="chapter-title">GenAI Paquetes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../packages/packages-genai-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Revisión de software</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../review/review-process.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">31</span>  <span class="chapter-title">Taller de revisión de software por pares de rOpenSci</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../review/review-process-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Gestión de comunidad y divulgación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/oss-contribution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>  <span class="chapter-title">Cómo contribuir a proyectos y comunidades abiertas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/oss-contribution-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>  <span class="chapter-title">Notas para docentes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/memorable-talk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>  <span class="chapter-title">Charla Memorable</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/memorable-talk-tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>  <span class="chapter-title">Charla Memorable Herramientas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/memorable-talk-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>  <span class="chapter-title">Charla Memorable Notas Instructor</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/wonderful-event.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>  <span class="chapter-title">Cómo organizar un evento maravilloso</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../community/wonderful-event-instructor-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>  <span class="chapter-title">Notas del instructor — Cómo organizar un evento maravilloso</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+<li>
+<a href="#introducci%C3%B3n-al-taller" id="toc-introducción-al-taller" class="nav-link active" data-scroll-target="#introducción-al-taller"><span class="header-section-number">32</span> Introducción al taller</a>
+  <ul class="collapse">
+<li><a href="#objetivos-principales" id="toc-objetivos-principales" class="nav-link" data-scroll-target="#objetivos-principales"><span class="header-section-number">32.1</span> Objetivos principales</a></li>
+  <li><a href="#plan-para-el-dia-1" id="toc-plan-para-el-dia-1" class="nav-link" data-scroll-target="#plan-para-el-dia-1"><span class="header-section-number">32.2</span> Plan para el dia 1</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#introducci%C3%B3n-al-proceso-de-punta-a-punta" id="toc-introducción-al-proceso-de-punta-a-punta" class="nav-link" data-scroll-target="#introducción-al-proceso-de-punta-a-punta"><span class="header-section-number">33</span> Introducción al proceso de punta a punta</a>
+  <ul class="collapse">
+<li><a href="#proponer-software-para-revisi%C3%B3n" id="toc-proponer-software-para-revisión" class="nav-link" data-scroll-target="#proponer-software-para-revisión"><span class="header-section-number">33.1</span> Proponer software para revisión</a></li>
+  <li><a href="#enviar-software-para-revisi%C3%B3n" id="toc-enviar-software-para-revisión" class="nav-link" data-scroll-target="#enviar-software-para-revisión"><span class="header-section-number">33.2</span> Enviar software para revisión</a></li>
+  <li><a href="#pkgcheck-uso-en-un-issue" id="toc-pkgcheck-uso-en-un-issue" class="nav-link" data-scroll-target="#pkgcheck-uso-en-un-issue"><span class="header-section-number">33.3</span> {pkgcheck}: Uso en un “issue”</a></li>
+  <li><a href="#pkgcheck-uso-local" id="toc-pkgcheck-uso-local" class="nav-link" data-scroll-target="#pkgcheck-uso-local"><span class="header-section-number">33.4</span> {pkgcheck}: Uso local</a></li>
+  <li><a href="#c%C3%B3digo-de-conducta" id="toc-código-de-conducta" class="nav-link" data-scroll-target="#código-de-conducta"><span class="header-section-number">33.5</span> Código de Conducta</a></li>
+  <li><a href="#comunicaci%C3%B3n-amable-y-constructiva" id="toc-comunicación-amable-y-constructiva" class="nav-link" data-scroll-target="#comunicación-amable-y-constructiva"><span class="header-section-number">33.6</span> Comunicación amable y constructiva</a></li>
+  <li><a href="#comunicaci%C3%B3n-amable-y-constructiva-1" id="toc-comunicación-amable-y-constructiva-1" class="nav-link" data-scroll-target="#comunicación-amable-y-constructiva-1"><span class="header-section-number">33.7</span> Comunicación amable y constructiva</a></li>
+  </ul>
+</li>
+  <li><a href="#pausa-10" id="toc-pausa-10" class="nav-link" data-scroll-target="#pausa-10"><span class="header-section-number">34</span> Pausa 10’</a></li>
+  <li><a href="#proponer-software-para-revisi%C3%B3n-1" id="toc-proponer-software-para-revisión-1" class="nav-link" data-scroll-target="#proponer-software-para-revisión-1"><span class="header-section-number">35</span> Proponer software para revisión</a></li>
+  <li><a href="#preguntas-y-comentarios" id="toc-preguntas-y-comentarios" class="nav-link" data-scroll-target="#preguntas-y-comentarios"><span class="header-section-number">36</span> Preguntas y comentarios</a></li>
+  <li>
+<a href="#introducci%C3%B3n-al-d%C3%ADa-2" id="toc-introducción-al-día-2" class="nav-link" data-scroll-target="#introducción-al-día-2"><span class="header-section-number">37</span> Introducción al día 2</a>
+  <ul class="collapse">
+<li><a href="#plan-para-el-d%C3%ADa-2" id="toc-plan-para-el-día-2" class="nav-link" data-scroll-target="#plan-para-el-día-2"><span class="header-section-number">37.1</span> Plan para el día 2</a></li>
+  <li><a href="#repaso-proponer-software" id="toc-repaso-proponer-software" class="nav-link" data-scroll-target="#repaso-proponer-software"><span class="header-section-number">37.2</span> Repaso: Proponer software</a></li>
+  <li><a href="#repaso-comunicaci%C3%B3n" id="toc-repaso-comunicación" class="nav-link" data-scroll-target="#repaso-comunicación"><span class="header-section-number">37.3</span> Repaso: Comunicación</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#enviar-software-para-revisi%C3%B3n-1" id="toc-enviar-software-para-revisión-1" class="nav-link" data-scroll-target="#enviar-software-para-revisión-1"><span class="header-section-number">38</span> Enviar software para revisión</a>
+  <ul class="collapse">
+<li><a href="#revisar-un-paquete" id="toc-revisar-un-paquete" class="nav-link" data-scroll-target="#revisar-un-paquete"><span class="header-section-number">38.1</span> Revisar un paquete</a></li>
+  <li><a href="#responder-a-una-revisi%C3%B3n" id="toc-responder-a-una-revisión" class="nav-link" data-scroll-target="#responder-a-una-revisión"><span class="header-section-number">38.2</span> Responder a una revisión</a></li>
+  </ul>
+</li>
+  <li><a href="#preguntas-y-comentarios-1" id="toc-preguntas-y-comentarios-1" class="nav-link" data-scroll-target="#preguntas-y-comentarios-1"><span class="header-section-number">39</span> Preguntas y comentarios</a></li>
+  <li><a href="#gracias" id="toc-gracias" class="nav-link" data-scroll-target="#gracias"><span class="header-section-number">40</span> ¡Gracias!</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos"><span class="header-section-number">41</span> Recursos</a></li>
+  </ul>
+<div class="toc-actions"><ul>
+<li><a href="https://github.com/ropensci-training/curriculum/edit/main/review/review-process.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li>
+<li><a href="https://github.com/ropensci-training/curriculum/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li>
+</ul></div></nav>
+</div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../review/review-process.html">Revisión de software</a></li>
+<li class="breadcrumb-item"><a href="../review/review-process.html"><span class="chapter-number">31</span>  <span class="chapter-title">Taller de revisión de software por pares de rOpenSci</span></a></li>
+</ol></nav><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">31</span>  <span class="chapter-title">Taller de revisión de software por pares de rOpenSci</span>
+</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Migración
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Estás leyendo la <strong>primera edición en progreso y en castellano</strong> de este libro, basada en el currículum de formación del programa de rOpenSci.</p>
+<p>Este capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.</p>
+<p><em>Contenido pendiente de migración:</em> ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.</p>
+</div>
+</div>
+<section id="introducción-al-taller" class="level1" data-number="32"><h1 data-number="32">
+<span class="header-section-number">32</span> Introducción al taller</h1>
+<p>Sobre <a href="https://ropensci.org/es/champions/">ustedes</a> 🏅🇪🇸 y sobre <a href="https://ropensci.org/author/mauro-lepore/">mí</a> 👋.</p>
+<p><sub> Licencia: <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">Atribución/Reconocimiento-NoComercial 4.0 Internacional</a> </sub></p>
+<section id="objetivos-principales" class="level2" data-number="32.1"><h2 data-number="32.1" class="anchored" data-anchor-id="objetivos-principales">
+<span class="header-section-number">32.1</span> Objetivos principales</h2>
+<p>Día 1</p>
+<ul>
+<li>Familiarizarse con las etapas y cualidades del proceso</li>
+<li>Practicar proponer software para revisión</li>
+</ul>
+<p>Día 2</p>
+<ul>
+<li>Practicar enviar software para revisión</li>
+</ul></section><section id="plan-para-el-dia-1" class="level2" data-number="32.2"><h2 data-number="32.2" class="anchored" data-anchor-id="plan-para-el-dia-1">
+<span class="header-section-number">32.2</span> Plan para el dia 1</h2>
+<ul>
+<li>Introducción al taller</li>
+<li>Introducción al proceso de punta a punta
+<ul>
+<li>Comparación con la academia</li>
+<li>Proponer y enviar software para revisión</li>
+<li>{pkgcheck}</li>
+<li>Código de conducta y comunicación</li>
+</ul>
+</li>
+<li>Pausa</li>
+<li>Proponer software para revisión
+<ul>
+<li>Abrir un “issue”</li>
+<li>Comunicación amable y constructiva</li>
+</ul>
+</li>
+<li>Preguntas y comentarios</li>
+</ul></section></section><section id="introducción-al-proceso-de-punta-a-punta" class="level1 page-columns page-full" data-number="33"><h1 data-number="33">
+<span class="header-section-number">33</span> Introducción al proceso de punta a punta</h1>
+<p>Sobre cómo trabajamos con <a href="https://devguide.ropensci.org/es/index.es.html">software</a> y <a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">personas</a></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Comparación con la academia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>¿Cómo describirías la comunicación entre autora/es y revisora/es en la academia y rOpenSci?</p>
+</div>
+</div>
+<section id="proponer-software-para-revisión" class="level2" data-number="33.1"><h2 data-number="33.1" class="anchored" data-anchor-id="proponer-software-para-revisión">
+<span class="header-section-number">33.1</span> <a href="https://github.com/ropensci/software-review/issues?q=is%3Aissue%20state%3Aopen%20label%3A0%2Fpresubmission">Proponer software para revisión</a>
+</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p>
+<figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    B((1-Abrir issue))
+    B --&gt; C{2-¿Dentro del alcance?}
+    C --&gt;|No| E{3-¿Excepción?}
+    C --&gt;|Sí| D[4-Enviar]
+    E --&gt;|Sí| D
+    E --&gt;|No| G((5-Cerrar issue))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section><section id="enviar-software-para-revisión" class="level2" data-number="33.2"><h2 data-number="33.2" class="anchored" data-anchor-id="enviar-software-para-revisión">
+<span class="header-section-number">33.2</span> <a href="https://github.com/ropensci/software-review/issues?q=is%3Aissue%20state%3Aopen%20-label%3A0%2Fpresubmission">Enviar software para revisión</a>
+</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p>
+<figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    B((1-Abrir issue))
+    B --&gt; C[2-Revisar]
+    C --&gt; D{3-¿Listo?}
+    D --&gt;|No| C
+    D --&gt;|Sí| E((Publicar))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section><section id="pkgcheck-uso-en-un-issue" class="level2 page-columns page-full" data-number="33.3"><h2 data-number="33.3" class="anchored" data-anchor-id="pkgcheck-uso-en-un-issue">
+<span class="header-section-number">33.3</span> {pkgcheck}: Uso en un “issue”</h2>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">@</span>ropensci<span class="sc">-</span>review<span class="sc">-</span>bot check package</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<p><a href="https://github.com/ropensci/software-review/issues/593#issuecomment-1608404055">Ejemplo</a></p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><a href="https://devguide.ropensci.org/es/bot_cheatsheet.es.html">Comandos del bot</a></p>
+</div></div></section><section id="pkgcheck-uso-local" class="level2 page-columns page-full" data-number="33.4"><h2 data-number="33.4" class="anchored" data-anchor-id="pkgcheck-uso-local">
+<span class="header-section-number">33.4</span> {pkgcheck}: Uso local</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Instalación
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">options</span> (<span class="at">repos =</span> <span class="fu">c</span> (</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">ropenscireviewtools =</span> <span class="st">"https://ropensci-review-tools.r-universe.dev"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">CRAN =</span> <span class="st">"https://cloud.r-project.org"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"pkgcheck"</span>)</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<p>También vas a necesitar ejecutar <code>pkgstats::ctags_install()</code> en Linux, o <code>brew install global</code> desde la terminal en MacOS.</p>
+</div>
+</div>
+<p>Uso</p>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  paquete <span class="ot">&lt;-</span> <span class="st">"/camino/al/paquete"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  resultados <span class="ot">&lt;-</span> pkgcheck<span class="sc">::</span><span class="fu">pkgcheck</span>(paquete)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  resultados</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>(resultados)</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><a href="https://docs.ropensci.org/pkgcheck/">Documentación de {pkgcheck}</a></p>
+</div></div></section><section id="código-de-conducta" class="level2 page-columns page-full" data-number="33.5"><h2 data-number="33.5" class="anchored" data-anchor-id="código-de-conducta">
+<span class="header-section-number">33.5</span> Código de Conducta</h2>
+<ul>
+<li>La comunidad de rOpenSci es lo más importante.</li>
+<li>Nuestro objetivo es que las revisiones sean
+<ul>
+<li>abiertas,</li>
+<li>no conflictivas,<br>
+</li>
+<li>y con el objetivo de mejorar la calidad del software.<br>
+</li>
+</ul>
+</li>
+<li>¡Sé amable! y comportate con respeto.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><a href="https://devguide.ropensci.org/es/softwarereview_reviewer.es.html">Guía para quienes hacen una revisión</a><br><a href="https://devguide.ropensci.org/es/softwarereview_editor.es.html">Guía para el equipo editorial</a><br><a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">Código de Conducta</a></p>
+</div></div></section><section id="comunicación-amable-y-constructiva" class="level2 page-columns page-full" data-number="33.6"><h2 data-number="33.6" class="anchored" data-anchor-id="comunicación-amable-y-constructiva">
+<span class="header-section-number">33.6</span> Comunicación amable y constructiva</h2>
+<p>Ofrecer</p>
+<ul>
+<li>Seguridad</li>
+<li>Sugerencia/Decisión</li>
+<li>Seguimiento</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><a href="https://www.amazon.com/-/es/influir-personas-Friends-Influence-Spanish/dp/164473009X">Cómo ganar amigos e influir sobre las personas</a><br><a href="https://www.amazon.com/Conversaciones-Cruciales-Edici%C3%B3n-revisada-conocimiento-ebook/dp/B01EX1TZQG/ref=sr_1_1?adgrpid=167955646707&amp;dib=eyJ2IjoiMSJ9.Ws1WzIBF0cC2Dm2-H47hguDVuXRPmMy9rZLGRYA4t3ER8EP9QL1L1dPW8a2l0c2aI65gElZhBVvYTfIcqtuaBVQcnOAmIBffgVzFQKm44rUISeaXgEIVBBw4-muztHHDiwE9jwRJSFYtSDFMAq4h9Rvb-GvpCxfZNzbfBApAjBAXNIQ63XVjTnFrOly1C-YCBSC8uEVyOljvl5CfMMfShGRKX-fYLjSLXyU0CJW-xuk.LRH-a9xfbt1VH_6O1wTX-6nxoUp_g1gSKmBPfElISuA&amp;dib_tag=se&amp;hvadid=730129623296&amp;hvdev=c&amp;hvlocphy=9070297&amp;hvnetw=g&amp;hvqmt=e&amp;hvrand=357311298508997420&amp;hvtargid=kwd-319512755646&amp;hydadcr=23800_13790585&amp;keywords=conversaciones+cruciales&amp;mcid=bd94c27aa7253eda9e137472f79bfcd2&amp;qid=1763123775&amp;sr=8-1">Conversaciones Cruciales: herramientas para comunicar mejor cuando más se necesita</a></p>
+</div></div></section><section id="comunicación-amable-y-constructiva-1" class="level2 page-columns page-full" data-number="33.7"><h2 data-number="33.7" class="anchored" data-anchor-id="comunicación-amable-y-constructiva-1">
+<span class="header-section-number">33.7</span> Comunicación amable y constructiva</h2>
+<p>De parte de una autoría:</p>
+<blockquote class="blockquote">
+<p>No encontré una categoría que se ajustara perfectamente, por lo que creé una categoría nueva.</p>
+</blockquote>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>¿Qué puntaje le darías a cada respuesta de la editoría (1-10)?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<details><summary>
+Respuesta 1
+</summary><p><code>@editor/a</code>:</p>
+<blockquote class="blockquote">
+<p><span class="citation" data-cites="autor/a">@autor/a</span>,<br>
+Lamentablemente nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.</p>
+</blockquote>
+</details><details><summary>
+Respuesta 2
+</summary><p><code>@editor/a</code>:</p>
+<blockquote class="blockquote">
+<p><span class="citation" data-cites="autor/a">@autor/a</span> gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorías actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.</p>
+</blockquote>
+</details><details><summary>
+Respuesta 3
+</summary><p><code>@editor/a</code>:</p>
+<blockquote class="blockquote">
+<p><span class="citation" data-cites="autor/a">@autor/a</span> gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorías actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Te recomendaría revisar y publicar el paquete en el <a href="https://joss.theoj.org/">Journal of Open Source Software</a>.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Espero que pronto podamos trabajar con vos en algún otro paquete.</p>
+</blockquote>
+</details>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><a href="https://devdevguide.netlify.app/es/softwarereview_editor.es#decidir-el-alcance-y-el-solapamiento">Decidir el alcance y el solapamiento</a></p>
+</div></div></section></section><section id="pausa-10" class="level1" data-number="34"><h1 data-number="34">
+<span class="header-section-number">34</span> Pausa 10’</h1>
+</section><section id="proponer-software-para-revisión-1" class="level1 page-columns page-full" data-number="35"><h1 data-number="35">
+<span class="header-section-number">35</span> Proponer software para revisión</h1>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Abrir un issue para proponer software para revisión en el <a href="https://github.com/ropensci-training/software-review/issues">repositorio de práctica</a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Usá tu propio paquete o cualquiera de estos:</p>
+<ul>
+<li>
+<a href="https://github.com/ropensci/software-review/issues/599">{agroclimatico}</a>: Índices y Estadísticos Climáticos e Hidrológicos</li>
+<li>
+<a href="https://github.com/ropensci/software-review/issues/593">{eph}</a>: Encuesta Permanente de Hogares de Argentina</li>
+<li>
+<a href="https://github.com/ropensci/software-review/issues/620">{karel}</a>: Aprendiendo programación en R</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Uso de IA
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Recibimos varios paquetes desarrollados con IA y con un historial de commits muy corto. Para hacer frente a este desafío, JOSS requiere un historial de commits de al menos seis meses.</p>
+<ul>
+<li>Contanos si/cómo usás IA</li>
+<li>Compartí tu opinión sobre si rOpenSci debería imitar la política de JOSS.</li>
+</ul>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><a href="https://joss.readthedocs.io/en/latest/submitting.html#scope-and-significance"><em>Los proyectos desarrollados de forma privada no son elegibles hasta que exista un historial público de … al menos seis meses – JOSS</em></a></p>
+</div></div></section><section id="preguntas-y-comentarios" class="level1" data-number="36"><h1 data-number="36">
+<span class="header-section-number">36</span> Preguntas y comentarios</h1>
+</section><section id="introducción-al-día-2" class="level1" data-number="37"><h1 data-number="37">
+<span class="header-section-number">37</span> Introducción al día 2</h1>
+<p>¿Qué vimos en el día 1? ¿Qué vamos a ver hoy?</p>
+<section id="plan-para-el-día-2" class="level2" data-number="37.1"><h2 data-number="37.1" class="anchored" data-anchor-id="plan-para-el-día-2">
+<span class="header-section-number">37.1</span> Plan para el día 2</h2>
+<ul>
+<li>Repaso</li>
+<li>Preparar un paquete</li>
+<li>Revisar un paquete: Introducción</li>
+<li>Pausa</li>
+<li>Revisar un paquete: Actividad</li>
+<li>Responder a una revisión</li>
+<li>Preguntas y respuestas</li>
+</ul></section><section id="repaso-proponer-software" class="level2" data-number="37.2"><h2 data-number="37.2" class="anchored" data-anchor-id="repaso-proponer-software">
+<span class="header-section-number">37.2</span> Repaso: Proponer software</h2>
+<p>El paquete <a href="https://github.com/ropensci/software-review/issues/620">karel</a> enseña a programar. Su objetivo está fuera del alcance de rOpenSci. Fue propuesto para revisión en 2023, durante el programa de campeones/as.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>¿Es correcto que haya sido revisado en rOpenSci?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>No porque no encaja en el alcance</li>
+<li>Sí porque aunque no encaja en el alcance es una excepción</li>
+<li>Sí porque rOpenSci no rechaza paquetes</li>
+</ol>
+</div>
+</div>
+<details><summary><a href="https://github.com/ropensci/software-review/issues">Proponer software para revisión</a>
+</summary><div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p>
+<figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    B((1-Abrir issue))
+    B --&gt; C{2-¿Dentro del alcance?}
+    C --&gt;|No| E{3-¿Excepción?}
+    C --&gt;|Sí| D[4-Enviar]
+    E --&gt;|Sí| D
+    E --&gt;|No| G((5-Cerrar issue))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</details></section><section id="repaso-comunicación" class="level2" data-number="37.3"><h2 data-number="37.3" class="anchored" data-anchor-id="repaso-comunicación">
+<span class="header-section-number">37.3</span> Repaso: Comunicación</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>¿Por qué preferimos la segunda respuesta?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>De hecho preferimos la primera porque comunica la misma decisión pero es más corta.</li>
+<li>Porque es más políticamente correcta.</li>
+<li>Porque demuestra que rOpenSci es un espacio seguro para hacer consultas, sugiere un foro alternativo, e invita futuras contribuciones.</li>
+</ol>
+<details><summary>
+Respuesta 1
+</summary><blockquote class="blockquote">
+<p><span class="citation" data-cites="autor/a">@autor/a</span>, Lamentablemente este paquete está fuera del alcance actual de rOpenSci.</p>
+</blockquote>
+</details><details><summary>
+Respuesta 2
+</summary><blockquote class="blockquote">
+<p><span class="citation" data-cites="autor/a">@autor/a</span>, Gracias por tu consulta. Tu paquete se ve muy interesante, pero lamentablemente parece no encajar en las categorías actuales de rOpenSci. Te recomendaría publicarlo en el <a href="https://joss.theoj.org/">Journal of Open Source Software</a>, el <a href="https://r-multiverse.org/overview.html">r-multiverse</a> u <a href="https://r-multiverse.org/overview.html#other-repositories">otros repositorios</a>. Y si tenés otro paquete o querés <a href="https://contributing.ropensci.org/">explorar cómo contribuir de otra forma</a>, será un gusto guiarte.</p>
+</blockquote>
+</details>
+</div>
+</div>
+</section></section><section id="enviar-software-para-revisión-1" class="level1" data-number="38"><h1 data-number="38">
+<span class="header-section-number">38</span> Enviar software para revisión</h1>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Preparar un paquete
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Generá, interpretá, y respondé a los resultados de <a href="https://docs.ropensci.org/pkgcheck/">{pkgcheck}</a></p>
+<details><summary>
+Instalación
+</summary><div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">options</span> (<span class="at">repos =</span> <span class="fu">c</span> (</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">ropenscireviewtools =</span> <span class="st">"https://ropensci-review-tools.r-universe.dev"</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">CRAN =</span> <span class="st">"https://cloud.r-project.org"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"pkgcheck"</span>)</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+</details><p>Usa cualquier paquete, e.g. <a href="https://github.com/ropensci-training/saperlipopette">{saperlipopette v0.1.0}</a></p>
+<details><summary>
+Clonálo y retrocede a v0.1.0
+</summary><div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/ropensci-training/saperlipopette</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> saperlipopette</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout v0.1.0</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+</details><div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pak::pak()</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>out <span class="ot">&lt;-</span> pkgcheck<span class="sc">::</span><span class="fu">pkgcheck</span>()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(out)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>out</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+</div>
+</div>
+<details><summary>
+Ejemplo
+</summary><div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("usethis")</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ✖ does not have a 'contributing' file.</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_tidy_contributing</span>()</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># ✖ Package has no HTML vignettes</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_article</span>(<span class="st">"saperlipopette"</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># ✖ These functions do not have examples: [create_all_exercises].</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># From https://github.com/ropensci-training/saperlipopette/blob/main/R/create-all.R</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">#' @examplesIf interactive()</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">#' parent_path &lt;- withr::local_tempdir()</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">#' path &lt;- create_all_exercises(parent_path = parent_path)</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::document()</span></span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+</details><section id="revisar-un-paquete" class="level2" data-number="38.1"><h2 data-number="38.1" class="anchored" data-anchor-id="revisar-un-paquete">
+<span class="header-section-number">38.1</span> Revisar un paquete</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Proponé (solo) una mejora. Usá la <a href="https://devdevguide.netlify.app/es/reviewtemplate.es.html">plantilla de revisión</a>.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Podés usar tu paquete o alguno de estos – <strong>antes de la revisión</strong>:</p>
+<details><summary><a href="https://github.com/ropensci/agroclimatico">{agroclimatico}</a>: Índices y Estadísticos Climáticos e Hidrológicos
+</summary><div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/ropensci/agroclimatico</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> agroclimatico</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> antes d537dd20</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+</details><details><summary><a href="https://github.com/ropensci/eph">{eph}</a>: Encuesta Permanente de Hogares de Argentina
+</summary><div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/ropensci/eph</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> eph</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> antes 707cd24c</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+</details><details><summary><a href="https://github.com/ropensci/karel">{karel}</a>: Aprendiendo programación en R
+</summary><div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/ropensci/karel</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> karel</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> antes 4b057e67</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+</details>
+</div>
+</div>
+<details><summary>
+Ejemplos
+</summary><p>{eph}: Usar un estilizador de código automático (<a href="https://github.com/ropensci/software-review/issues/593#issuecomment-1624466962">revisión</a> - <a href="https://github.com/ropensci/eph/commit/eca3401fb59ad9d9cdb14abcea7b96565fff6161">commit</a>).</p>
+<p><img src="examples/es/593_eph/style_else_review.png" class="img-fluid"></p>
+<p><img src="examples/es/593_eph/style_else_diff.png" class="img-fluid"></p>
+<p>{eph}: Mostrar el output de los ejemplos en README (<a href="https://github.com/ropensci/software-review/issues/593#issuecomment-1624466962">revisión</a> - <a href="https://github.com/ropensci/eph/commit/322d7003fccdf06e68e03cc4aa0a034fda3a4721">commit</a>).</p>
+<blockquote class="blockquote">
+<p>En la sección “Modo de uso”, por favor mostrar los resultados así se ven sin necesidad de instalar el paquete y correr el código.</p>
+</blockquote>
+<p><img src="examples/es/593_eph/readme_examples_diff.png" class="img-fluid"></p>
+<p>{agroclimatico}: Renombrar funciones (<a href="https://github.com/ropensci/software-review/issues/599#issuecomment-1704935695">revisión</a> - <a href="https://github.com/ropensci/agroclimatico/commit/8b64da7f0c41ef1d87a621d2c506f7af75adeb79">commit</a>).</p>
+<blockquote class="blockquote">
+<p>podría plantearse un ligero cambio de nombre para evitar la confusión</p>
+</blockquote>
+<p><img src="examples/es/599_agroclimatico/api_rename_diff.png" class="img-fluid"></p>
+<p>{agroclimatico}: Agrupar funciones (<a href="https://github.com/ropensci/software-review/issues/599#issuecomment-1941871544">revisión</a> - <a href="https://github.com/ropensci/agroclimatico/commit/d9473">commit</a>).</p>
+<blockquote class="blockquote">
+<p>Una sugerencia para que quede más clara la funcionalidad global del paquete es agrupar las funciones en el índice por temáticas.</p>
+</blockquote>
+<p><img src="examples/es/599_agroclimatico/reference_group_diff.png" class="img-fluid"></p>
+<p>{karel}: Expresar la necesidad del paquete en README (<a href="https://github.com/ropensci/software-review/issues/620#issuecomment-2033093650">revisión</a> - <a href="https://github.com/ropensci/karel/commit/d07dfcbaebdb15c85068264e7fda4c534a2c456a">commit</a>).</p>
+<blockquote class="blockquote">
+<p>Add statement of need. The <code>Who is Karel?</code> section of the README hints at the need but does not describe it explicitly.</p>
+</blockquote>
+<p><img src="examples/es/620_karel/readme_need_diff.png" class="img-fluid"></p>
+</details></section><section id="responder-a-una-revisión" class="level2" data-number="38.2"><h2 data-number="38.2" class="anchored" data-anchor-id="responder-a-una-revisión">
+<span class="header-section-number">38.2</span> Responder a una revisión</h2>
+<p>Combina habilidades que ya practicamos.</p>
+<p>Ejemplos de revisión y respuesta en {agroclimatico}</p>
+<details><summary><a href="https://github.com/ropensci/software-review/issues/599#issuecomment-1936698026">Revisión de <code>@VeruGHub</code> (revisora)</a>
+</summary><p>Seguridad</p>
+<blockquote class="blockquote">
+<p>En primer lugar, quiero agradecer la oportunidad de revisar este paquete y espero que los comentarios sirvan para mejorar en los puntos que los autores consideren oportunos.</p>
+</blockquote>
+<p>Sugerencia/Decisión</p>
+<blockquote class="blockquote">
+<p>Creo que algunos aspectos formales de la documentación pueden ser mejorados. Para empezar, la funcionalidad del paquete no está completamente definida en la documentación (Readme) … Mejorar estas descripciones e incluir programación defensiva relativa a los argumentos (en general faltante) ayudaría mucho a los usuarios.</p>
+</blockquote>
+</details><details><summary><a href="https://github.com/ropensci/software-review/issues/599#issuecomment-2143389578">Respuesta de <code>@paocorrales</code> (autora)</a>
+</summary><p>Seguridad</p>
+<blockquote class="blockquote">
+<p>En primer lugar, muchas gracias <span class="citation" data-cites="pmnatural">@pmnatural</span> y <span class="citation" data-cites="VeruGHub">@VeruGHub</span> por la revisión y los comentarios.</p>
+</blockquote>
+<p>Sugerencia/Decisión</p>
+<blockquote class="blockquote">
+<p>Incorporé los comentarios y sugerencias al paquete.</p>
+</blockquote>
+<p>Seguimiento</p>
+<blockquote class="blockquote">
+<p>Espero no haberme olvidado de nada, ¡aguardo sus comentarios!</p>
+</blockquote>
+</details><p>Ejemplo de oposición a una sugerencia en {eph}</p>
+<details><summary><a href="https://github.com/ropensci/software-review/issues/593#issuecomment-1714421144">Respuesta de <code>@caropradier</code> (autora)</a>
+</summary><p>Seguridad</p>
+<blockquote class="blockquote">
+<p><span class="citation" data-cites="lidefi87">@lidefi87</span> ¡gracias de nuevo por tus esfuerzos!</p>
+</blockquote>
+<p>Sugerencia/Decisión</p>
+<blockquote class="blockquote">
+<p>Respecto al nombre de las funciones, intentaría no hacer modificaciones mayores para no perturbar el flujo de trabajo de nuestros usuarios actuales (aproximadamente 30 mil personas usan el paquete y quisiera evitar generarles inconvenientes si no se trata de algo fundamental para el funcionamiento del paquete). No obstante, estoy de acuerdo con que se trata de una buena práctica, y lo tendré presente al incorporar nuevas funciones.</p>
+</blockquote>
+</details><p><sub><a href="https://devdevguide.netlify.app/es/softwarereview_editor.es#reviewersupport">Responder a las preguntas del equipo de revisión</a> </sub></p>
+</section></section><section id="preguntas-y-comentarios-1" class="level1" data-number="39"><h1 data-number="39">
+<span class="header-section-number">39</span> Preguntas y comentarios</h1>
+</section><section id="gracias" class="level1" data-number="40"><h1 data-number="40">
+<span class="header-section-number">40</span> ¡Gracias!</h1>
+<p>¿Querés revisar un paquete? <a href="https://devdevguide.netlify.app/es/softwarereview_reviewer.es#volunteering-as-a-reviewer">Postulate acá</a></p>
+</section><section id="recursos" class="level1" data-number="41"><h1 data-number="41">
+<span class="header-section-number">41</span> Recursos</h1>
+<p>Taller</p>
+<ul>
+<li><a href="https://github.com/ropensci-training/software-review" class="uri">https://github.com/ropensci-training/software-review</a></li>
+</ul>
+<p>Comunicación</p>
+<ul>
+<li><a href="https://ropensci.org/es/c%C3%B3digo-de-conducta/">Código de Conducta</a></li>
+</ul>
+<p>Revisión</p>
+<ul>
+<li><a href="https://github.com/ropensci/software-review/issues/new/choose">Propone o enviá software para revisión</a></li>
+<li>Guía de desarrollo <a href="https://devdevguide.netlify.app/es/index.es">standard</a> y <a href="https://stats-devguide.ropensci.org">estadistico</a>
+<ul>
+<li>Categorías de paquetes <a href="https://devdevguide.netlify.app/es/softwarereview_policies.es.html#package-categories">standard</a> y <a href="https://stats-devguide.ropensci.org/overview.html#overview-categories">estadistico</a>
+</li>
+<li><a href="https://devdevguide.netlify.app/es/softwarereview_author.es">Para quienes crean paquetes</a></li>
+<li><a href="https://devdevguide.netlify.app/es/softwarereview_reviewer.es">Para quienes hacen una revisión</a></li>
+</ul>
+</li>
+<li><a href="https://stats-devguide.ropensci.org/">Guía de software estadístico</a></li>
+<li><a href="https://docs.ropensci.org/pkgcheck/">pkgcheck</a></li>
+<li>
+<a href="https://docs.ropensci.org/pkgmatch">pkgmatch</a> (<a href="https://github.com/ropensci/software-review/issues/766#issuecomment-4660730235">ejemplo</a>)</li>
+<li><a href="https://devdevguide.netlify.app/es/reviewtemplate.es">Plantilla de revisión</a></li>
+<li><a href="https://r-multiverse.org/">r-multiverse</a></li>
+</ul>
+<p>Blogs sobre el proceso de revisión</p>
+<ul>
+<li><a href="https://ropensci.org/es/blog/2025/03/25/r-package-review/">Revisión del software, perspectivas de un académico</a></li>
+<li><a href="https://ropensci.org/es/blog/2017/09/08/first-review-experiences/">Experiencias revisando paquetes de rOpenSci por primera vez</a></li>
+<li><a href="https://ropensci.org/es/blog/2017/08/22/first-package-review/">Así que (no) crees que puedas revisar un paquete</a></li>
+</ul>
+<p>Paquetes de campeones/as en español</p>
+<ul>
+<li><a href="https://github.com/ropensci/software-review/issues/593">eph</a></li>
+<li><a href="https://github.com/ropensci/software-review/issues/599">agroclimatico</a></li>
+<li><a href="https://github.com/ropensci/software-review/issues/620">karel</a></li>
+</ul>
+<p><a href="https://devdevguide.netlify.app/es/softwarereview_reviewer.es#volunteering-as-a-reviewer">Ofrecerte como voluntario/a para revisar</a></p>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../packages/packages-genai-instructor-notes.html" class="pagination-link" aria-label="Notas para docentes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">30</span>  <span class="chapter-title">Notas para docentes</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../review/review-process-instructor-notes.html" class="pagination-link" aria-label="Notas para docentes">
+        <span class="nav-page-text"><span class="chapter-number">32</span>  <span class="chapter-title">Notas para docentes</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
+<li><a href="https://github.com/ropensci-training/curriculum/edit/main/review/review-process.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li>
+<li><a href="https://github.com/ropensci-training/curriculum/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li>
+</ul></div></div></div></footer>
+</body>
+</html>
