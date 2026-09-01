@@ -1,0 +1,49 @@
+---
+title: "¡Desarrollá paquetes!"
+---
+
+# Desarrollo de paquetes
+
+```{r, echo=FALSE}
+library("magrittr")
+get_pic <- function(id, alt, width) {
+  info <- httr::GET(
+    paste0("https://api.pexels.com/v1/photos/", id),
+    httr::add_headers(Authorization = Sys.getenv("PEXELS_KEY"))
+  ) %>%
+    httr::content()
+  download.file(info$src$large, paste0(id, ".jpeg"))
+  cat("```{=html}\n")
+  cat(paste0(
+    '{',
+    '{< figure src="',
+    paste0(id, ".jpeg"),
+    '" alt="',
+    alt,
+    '" caption="Foto de [',
+    info$photographer,
+    ' en Pexels](',
+    info$url,
+    ')." width="',
+    width,
+    '" >}',
+    '}'
+  ))
+  cat("\n```\n")
+}
+```
+```{r repair, results="asis", cache=TRUE, echo=FALSE}
+get_pic(id = 132682, alt = "Bicicleta en reparación", 400)
+```
+
+***
+
+## ¿Qué preguntas tenés desde el último encuentro?
+
+***
+
+## Hoy: ¡documentación!
+
+***
+
+## ¿Preguntas?
