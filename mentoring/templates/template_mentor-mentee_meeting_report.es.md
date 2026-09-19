@@ -1,24 +1,26 @@
 # 
 
-# **Programa de Campeon(a|e)s de rOpenSci |** Reporte de Reuniones
+# **Programa de Campeões e Campeãs do rOpenSci |**    Relatório de Reuniões
 
-Este formulario registra reuniones entre campeones/as y mentores/as.  
-Nos ayuda a hacer un seguimiento de las actividades y ofrecer apoyo si lo necesitan.
+Este formulário registra as reuniões entre campeões e mentores.  
+   Isso nos ajuda a acompanhar as atividades e oferecer apoio, caso seja necessário.
 
-Mes de la reunión   
-Te pedimos que celebres al menos una reunión al mes. Indica el mes de la reunión que estas informando. No hay problema si tienen más de una reunión al mes.
+Mês da reunião  
+   Pedimos que você realize pelo menos uma reunião por mês. Indique o mês da reunião que você está relatando. Não há problema se houver mais de uma reunião por mês.
 
-Mentor/a/e  
-Selecciona tu nombre de la lista
+Mentor(a)  
+   Selecione seu nome na lista
 
-Estado de la reunion  
-Indica el estado de la reunión.  Esto también nos ayudará a prestar apoyo.
+Statusdareunião  
+   Indique o status da reunião. Isso também nos ajudará a oferecer apoio.
 
 Notas  
-Cualquier comentario que quieras añadir.  Si tienes un minuto o agenda, puedes enlazar aquí. Si tienes alguna preocupación o necesitas ayuda con algo también puedes indicarlo aqui.
+   Qualquer comentário que você queira acrescentar.  Se você tiver uma ata ou uma pauta, pode colocar o link aqui. Se tiver alguma preocupação ou precisar de ajuda com alguma coisa, também pode indicar aqui.
 
-Cohorte  
-Selecciona a que cohorte pertenece este reporte
+Coorte  
+   Selecione a qual coorte este relatório pertence
 
-*rOpenSci Champions Program Templates \- Adapted by Yani Bellini Saibene from Mozilla Open Leaders \- CC-BY*  
-*Version 2026-2027*
+*Modelos do Programa rOpenSci Champions – Adaptados por Yani Bellini Saibene a partir do Mozilla Open Leaders – CC-BY*  
+*     Versão 2026-2027*
+
+
