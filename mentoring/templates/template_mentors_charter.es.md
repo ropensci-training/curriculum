@@ -1,107 +1,117 @@
-# Calendario mensual de mentor(a|e)s (version 2027)
+# Calendário mensal dos mentores (versão 2027)
 
-> Para las actividades que requieren una reunión, añadimos el enlace para unirse a la reunión.
-> Para las actividades que implican elegir una fecha y hora, incluimos el enlace a la encuesta de disponibilidad o a la herramienta de calendario.
-> Para la revisión de documentos o artículos, incluimos el enlace a dicho documento o *Pull Request*.
-> Para los informes o reportes, incluimos el enlace al formulario correspondiente.
+> Para as atividades que exigem uma reunião, adicionamos o link para participar da reunião.
+>      Para as atividades que envolvem a escolha de uma data e horário, incluímos o link para a pesquisa de disponibilidade ou para a ferramenta de calendário.
+> Para a revisão de documentos ou artigos, incluímos o link para o respectivo documento ou 
+ *       Pull Request*     .
+>      Para relatórios, incluímos o link para o formulário correspondente.
 
-Este documento enumera las actividades mensuales para mentoras y mentores. Las actividades pueden cambiar en función de las necesidades de sus campeones y campeonas y de su proyecto. También podemos añadir o eliminar actividades en función de sus comentarios y de la evolución del programa.   
-Puede crear una copia de este documento para editarlo seleccionando **Archivo \-\> Hacer una copia (File \-\> Make a copy).** 
+Este documento lista as atividades mensais para mentoras e mentores. As atividades podem mudar de acordo com as necessidades de seus campeões e campeãs e de seu projeto. Também podemos adicionar ou remover atividades com base em seus comentários e na evolução do programa.  
+Você pode criar uma cópia deste documento para editá-lo selecionando 
+ **     Arquivo -> Fazer uma cópia (File -> Make a copy).**
 
-# Marzo 2026
+# Março de 2026
 
-- [ ] Confirmar tu participación en el programa.  
-- [ ] Revisar las solicitudes al programa asignadas.  
-- [ ] Compartir disponibilidad para la primera reunión del programa.  
-- [ ] [Asistir a una de las reuniones iniciales para mentores/as.]()  
-- [ ] [Compartir disponibilidad para el entrenamiento sobre mentoría.]()
+- [ ] Confirme sua participação no programa.
+- [ ] Revisar as inscrições no programa que lhe foram atribuídas.
+- [ ] Informar sua disponibilidade para a primeira reunião do programa.
+- [ ] [Participar de uma das reuniões iniciais para mentores e mentoras.]()
+- [ ] [Informar sua disponibilidade para o treinamento sobre mentoria.]()
 
-# Abril 2026
+# Abril de 2026
 
-- [ ] [Revisar blog post de introducción de mentoras/es]()  
-- [ ] Seleccionar la lista definitiva de campeones.   
-- [ ] Asistir al entrenamiento de mentoría.  
-- [ ] *\[Opcional\]* Asistir a la reunión de inicio de Campeones/a
+- [ ] [Analisar a postagem do blog de apresentação dos mentores]()
+- [ ] Selecionar a lista definitiva de campeões.
+- [ ] Participar do treinamento de mentoria.
+- [ ] *[Opcional]*        Participar da reunião de lançamento dos Campeões/as
 
-# Mayo 2026
+# Maio de 2026
 
-- [ ] Iniciar el contacto con campeón/a que va a mentorear (después de que la Directora del Programa haya hecho las presentaciones por correo electrónico).  
-- [ ] [Reportar sobre la primera reunión.]()  
-- [ ] *\[Opcional\]* Estilo y calidad de código \- [Mayo 5 a las 9:00 AM UTC-3]()  
-- [ ] *\[Opcional\]* Asistir al taller Introducción a git y GitHub ([Mayo 12]() y [19 a las 19:00]() UTC-3).  
-- [ ] *\[Opcional\]* Asistir a la formación para principiantes sobre paquetes, partes 1 ([Martes Mayo 26 a las 9:00 AM UTC-3]()).
+- [ ] Iniciar o contato com o(a) campeão(ã) que irá orientar (após a diretora do programa ter feito as apresentações por e-mail).
+- [ ] [Relatar sobre a primeira reunião.]()
+- [ ] *[Opcional]*        Estilo e qualidade do código - 
+ [         5 de maio às 9h UTC-3]()
+- [ ] *[Opcional]*        Participar da oficina “Introdução ao Git e ao GitHub” ([         12 de maio]()        e 
+ [         19 de maio às 19h]() 
+        
+         UTC-3).
+- [ ] *[Opcional]*        Participar do treinamento para iniciantes sobre pacotes, parte 1 ([         terça-feira, 26 de maio, às 9h UTC-3]()       ).
 
-# Junio 2026
+# Junho de 2026
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()  
-- [ ] *\[Opcional\]* Asistir a la formación para principiantes sobre paquetes, partes 2 y 3 ([Martes Junio 2]() y [9 a las 9:00 AM UTC-3]()).  
-- [ ] *\[Opcional\]* Asistir a la formación de El desarrollo de paquetes no es ciencia espacial
+- [ ] Organize e realize a reunião com seu representante.
+- [ ] [Relatar o que ocorreu na reunião.]()
+- [ ] *[Opcional]*        Participar do treinamento para iniciantes sobre pacotes, partes 2 e 3 ([         terça-feira, 2 de junho]() 
+        
+         e 
+ [         9, às 9h UTC-3]()       ).
+- [ ] *[Opcional]*        Participar do treinamento “O desenvolvimento de pacotes não é ciência espacial”
 
- ([Martes 23 a las 9:00 AM UTC-3]())
+([     terça-feira, dia 23, às 9h UTC-3]()   )
 
-- [ ] *\[Opcional\]* Asisitir al taller de Git Avanzado: ¡Miércoles Git\! ([Martes 30 de Junio a las 9:00 AM UTC-3]())
+- [ ] *[Opcional]*        Participar da oficina “Git Avançado: Quarta-feira do Git!” ([         terça-feira, 30 de junho, às 9h UTC-3]())
 
-# Julio 2026
+# Julho de 2026
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()  
-- [ ] *\[Opcional\]* Asisitir al taller de Git Avanzado: Usar y mejorar tu historial de Git ([Martes 7 de julio a las 9:00 AM UTC-3]())  
-- [ ] Votar para tener la segunda reunión de cohorte de Mentor(a|e)s
+- [ ] Organize e realize a reunião com seu representante.
+- [ ] [Relatar o resultado da reunião.]()
+- [ ] *[Opcional]*        Participar do workshop de Git Avançado: Como usar e melhorar seu histórico do Git ([         terça-feira, 7 de julho, às 9h UTC-3]())
+- [ ] Votar para realizar a segunda reunião do grupo de mentores
 
-# Agosto 2026
+# agosto de 2026
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()  
-- [ ] Asistir a la reunión de cohorte de de Mentor(a|e)s.  
-- [ ] *\[Opcional\]* Asistir al taller Cómo hacer revisión por pares de código 101 ([Martes 4 de Agosto a las 9:00 AM UTC-3]())  
-- [ ] *\[Opcional\]* Asistir al taller Cómo hacer revisión por pares de código avanzado ([Martes 11 de Agosto a las 9:00 AM UTC-3]())  
-- [ ] *\[Opcional\]* Asistir al taller Cómo contribuir a proyectos de código abierto ([Martes 18 de Agosto a las 9:00 AM UTC-3]())  
-- [ ] *\[Opcional\]* Asistir al taller Cómo organizar reuniones y eventos geniales ([Martes 25 de Agosto a las 16:00 UTC-3]())
+- [ ] Organizar e realizar a reunião com seu mentor(a).
+- [ ] [Relatar o resultado da reunião.]()
+- [ ] Participar da reunião do grupo de mentores.
+- [ ] *[Opcional]*        Participar do workshop “Como fazer revisão de código por pares 101” ([         terça-feira, 4 de agosto, às 9h UTC-3]())
+- [ ] *[Opcional]*        Participar do workshop “Como fazer revisão de código por pares – Nível avançado” ([         terça-feira, 11 de agosto, às 9h UTC-3]())
+- [ ] *[Opcional]*        Participar do workshop “Como contribuir para projetos de código aberto” ([         terça-feira, 18 de agosto, às 9h UTC-3]()       )
+- [ ] *[Opcional]*        Participar do workshop “Como organizar reuniões e eventos incríveis” ([         terça-feira, 25 de agosto, às 16h UTC-3]()       )
 
-# Septiembre 2026
+# Setembro de 2026
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()  
-- [ ] *\[Opcional\]* Asistir a la primera reunión de cohorte de campeon(a|e)s   
-- [ ] *\[Opcional\]* Asistir al taller Creando y dando una charla inolvidable ([Martes Septiembre 1, 16:00 UTC-3]())
+- [ ] Organizar e realizar a reunião com seu defensor(a).
+- [ ] [Relatar o que ocorreu na reunião.]()
+- [ ] *[Opcional]*        Participar da primeira reunião do grupo de defensores
+- [ ] *[Opcional]*        Participar do workshop “Criando e ministrando uma palestra inesquecível” ([         Terça-feira, 1º de setembro, às 16h UTC-3]()       )
 
-# Octubre 2026
+# Outubro de 2026
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()
+- [ ] Organize e realize a reunião com seu representante.
+- [ ] [Relatar o que ocorreu na reunião.]()
 
-# Noviembre 2026
+# Novembro de 2026
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()  
-- [ ] *\[Opcional\]* Asistir a la reunión de cohorte de campeon(a|e)s 
+- [ ] Organize e realize a reunião com seu defensor(a).
+- [ ] [Relatar o que ocorreu na reunião.]()
+- [ ] *[Opcional]*        Participar da reunião da turma de defensores
 
-# Diciembre 2026
+# Dezembro de 2026
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()
+- [ ] Organizar e realizar a reunião com seu campeão(ã).
+- [ ] [Relatar o que ocorreu na reunião.]()
 
-# Enero 2027
+# Janeiro de 2027
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()  
-- [ ] Votar para elegir las fechas de una reunión de la cohorte de mentores.
+- [ ] Organizar e realizar a reunião com seu campeão(ã).
+- [ ] [Relatar o que ocorreu na reunião.]()
+- [ ] Votar para definir as datas de uma reunião do grupo de mentores.
 
-# Febrero 2027
+# Fevereiro de 2027
 
-- [ ] Organizar y tener la reunión con tu campeón/a.  
-- [ ] [Reportar sobre la reunión.]()  
-- [ ] Asistir a la reunion de mentores/as.
+- [ ] Organizar e realizar a reunião com seu mentor(a).
+- [ ] [Relatar o que ocorreu na reunião.]()
+- [ ] Participar da reunião de mentores.
 
-# Marzo 2027
+# Março de 2027
 
-- [ ] Organizar y tener la última reunión con tu campeón/a.  
-- [ ] [Reportar sobre la última reunión.]()
+- [ ] Organizar e realizar a última reunião com seu representante.
+- [ ] [Relatar o que ocorreu na última reunião.]()
 
-# Abril 2027
+# Abril de 2027
 
-- [ ] Asistir a la reunión final de la cohorte. Cierre del programa.  
-- [ ] Contestar la encuesta anónima final.  
-- [ ] Asistir a un grupo de discusión para dar su opinión sobre el programa de campeones.
+- [ ] Participar da reunião final do grupo. Encerramento do programa.
+- [ ] Responder à pesquisa anônima final.
+- [ ] Participar de um grupo de discussão para dar sua opinião sobre o programa de campeões.
+
 
