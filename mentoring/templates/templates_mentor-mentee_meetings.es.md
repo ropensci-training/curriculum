@@ -1,6 +1,6 @@
 # [Nome do(a) campeão(ã)] [Título do projeto]
 
-### Programa de Campeões e Campeãs do rOpenSci, coorte (ano)
+### Programa de Campeões e Campeãs da rOpenSci, coorte (ano)
 
 [Adicione aqui os links relevantes: GitHub do projeto, site, postagem no blog, artigos, etc.]
 
@@ -12,9 +12,9 @@
 
 ### Pauta
 
-- Apresentações: conhecer uns aos outros
+- Apresentações: conhecer-se mutuamente
 
-- Momento para que os Campeões e Campeãs falem sobre seus projetos com seus mentores e mentoras.  
+- Momento para que os Campeões e as Campeãs falem sobre os seus projetos com os mentores e as mentoras.  
          \*  
          \*  
    
@@ -22,15 +22,15 @@
 
 - Defina 1 ou 2 objetivos para o seu projeto
   
-  - Onde você quer que seu projeto esteja ao final do programa? (daqui a 10 meses)
+  - Onde você quer que o seu projeto esteja ao final do programa? (daqui a 10 meses)
   - 
 - Áreas sobre as quais você pode refletir e discutir:
   
-  - *Para um novo projeto de pacote:*            uma primeira versão funcional do pacote seguindo as recomendações do guia de desenvolvimento do rOpenSci. Aprimorar as funções, os testes, a documentação, o repositório e as funcionalidades. Criar o site do pacote ou aprimorá-lo.
-  - *Para um pacote que será enviado para revisão:*            preparar o pacote para enviá-lo ao processo de revisão, enviar o pacote para revisão e concluir o processo. Aprimorar as funções, os testes, a documentação, o repositório, as funcionalidades e a governança. Escreva um artigo para a JOSS ou a JOSE sobre o pacote.
-  - *Para se tornar um revisor:* [             preencha o formulário para revisão](https://airtable.com/app8dssb6a7PG6Vwj/shrnfDI2S9uuyxtDw)           , depois verifique [             a lista de pacotes que estão aguardando revisão](https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 
+  - *Para um novo projeto de pacote:* uma primeira versão funcional do pacote seguindo as recomendações do guia de desenvolvimento da rOpenSci. Aprimorar as funções, os testes, a documentação, o repositório e as funcionalidades. Criar o site do pacote ou aprimorá-lo.
+  - *Para um pacote que será enviado para a revisão:* preparar o pacote para enviá-lo ao processo de revisão, enviá-lo para revisão e concluir o processo. Aprimorar as funções, os testes, a documentação, o repositório, as funcionalidades e a governança. Escreva um artigo sobre o pacote para a JOSS ou a JOSE.
+  - *Para se tornar uma pessoa revisora:* [preencha o formulário para revisão](https://airtable.com/app8dssb6a7PG6Vwj/shrnfDI2S9uuyxtDw), depois verifique [a lista de pacotes que estão aguardando revisão](https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 
             
-             e converse sobre quais podem ser boas opções para revisão. Comente essas preferências com o Community Manager, que entrará em contato com a equipe editorial para acertar a revisão. [             Leia o guia de revisão de pacotes da rOpenSci](https://devguide.ropensci.org/es/index.es.html)           
+             e converse sobre quais podem ser boas opções para a revisão. Comente essas preferências com o/a Community Manager, que entrará em contato com a equipe editorial para acertar a revisão. [Leia o guia de revisão de pacotes da rOpenSci](https://devguide.ropensci.org/es/index.es.html)           
             . Revise pelo menos um pacote designado.
   - 
 - Objetivos  
@@ -43,7 +43,7 @@
 
 - Lembretes e logística das reuniões
 
-- Esse horário mensal é bom para todos?
+- Esse horário mensal é bom todos(as)?
 
 - Mais alguma coisa?  
          \*
@@ -69,8 +69,8 @@ Agenda
   
   - Estamos progredindo? Precisamos ajustar alguma coisa?
   - Na reunião de 
- **             janeiro/fevereiro**            Definir 1 ou 2 objetivos para as atividades de divulgação.
-  - Analisar as possíveis contribuições por tipo (eventos como “conversas com a comunidade”, webinars, reuniões, conferências (uma palestra ou oficina no useR!, Posit, LatinR), artigo no blog, tutorial, oficina, palestra, sessão de coworking)), por número, levando em conta quando e com quem (outra comunidade, grupo de R-Ladies, universidade, instituições), por objetivo (desenvolver uma nova habilidade, experimentar algo novo, praticar uma habilidade, organizar algo com outra comunidade).
+ **janeiro/fevereiro** Definir 1 ou 2 objetivos para as atividades de divulgação.
+  - Analisar as possíveis contribuições por tipo (eventos como “conversas com a comunidade”, webinários, reuniões, conferências (uma palestra ou oficina no useR!, Posit, LatinR), artigo no blog, tutorial, oficina, palestra, sessão de coworking)), por número, levando em conta quando e com quem (outra comunidade, grupo de R-Ladies, universidade, instituições), por objetivo (desenvolver uma nova habilidade, experimentar algo novo, praticar uma habilidade, organizar algo com outra comunidade).
 
 - Quando houver uma reunião mensal da coorte: revise essa reunião: alguma reflexão/pergunta/comentário após a última chamada?  
          \*  
@@ -123,6 +123,6 @@ Agenda
          \*  
          \*
 
-*Modelos do programa de campeões do rOpenSci — Adaptados e traduzidos por Yani Bellini Saibene a partir de material do Mozilla Open Leaders — CC-BY-NC — Versão 2026-2027*
+*Modelos do programa de campeões e campeãs da rOpenSci — Adaptados e traduzidos por Yani Bellini Saibene a partir de material do Mozilla Open Leaders — CC-BY-NC — Versão 2026-2027*
 
 
