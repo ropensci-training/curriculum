@@ -1,0 +1,1135 @@
+[
+  {
+    "objectID": "index.pt.html",
+    "href": "index.pt.html",
+    "title": "Curriculum del Programa de Campeon(a|e)s de rOpenSci",
+    "section": "",
+    "text": "0.1 Sobre este libro\nEste libro reúne el curriculum completo del Programa de Campeones y Campeonas de rOpenSci, una iniciativa diseñada para apoyar a personas que contribuyen a la comunidad de R en el desarrollo de paquetes, la revisión de software y la participación en proyectos de código abierto.\nLa fase de entrenamiento de este programa fue diseñada con una visión integral de lo que significa desarrollar y mantener software científico libre. Aunque las habilidades relacionadas con la programación, el diseño y el mantenimiento de código constituyen una parte importante de la formación, entendemos que el software libre sostenible requiere mucho más que conocimientos de desarrollo de software.\nLos proyectos de software científico se construyen y sostienen a través de comunidades de personas que colaboran, comparten conocimientos, toman decisiones colectivas y se comunican de manera efectiva. Por esta razón, la propuesta de entrenamiento aborda también temas vinculados con el trabajo colaborativo, la gestión de comunidades, la comunicación, el liderazgo y otras competencias esenciales para participar y contribuir en proyectos abiertos.\nA lo largo del programa, estos diferentes aspectos fueron tratados con la misma relevancia. Nuestro objetivo fue ofrecer una formación equilibrada que prepare a las personas participantes no solo para desarrollar software de calidad, sino también para contribuir a la construcción de comunidades saludables y proyectos sostenibles que puedan generar impacto en el tiempo.\nEste libro compila los materiales de formación utilizados en el programa: talleres, diapositivas, ejercicios prácticos y notas para quienes facilitan cada sesión.\nEstá pensado tanto para las personas participantes del programa como para cualquier persona que quiera enseñar o aprender estos contenidos de forma independiente o que quiere applicarlos en programas similares.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Prefacio</span>"
+    ]
+  },
+  {
+    "objectID": "index.pt.html#sobre-este-libro",
+    "href": "index.pt.html#sobre-este-libro",
+    "title": "Curriculum del Programa de Campeon(a|e)s de rOpenSci",
+    "section": "",
+    "text": "0.1.1 Cómo está organizado\nEl libro se divide en cinco partes que siguen los ejes temáticos del programa:\nParte I — Mentoría: Formación para mentoras y mentores que acompañan a las personas campeonas durante el programa. Los contenidos son útiles para mentorear personas en general, incluidas aquellas que quieran contribuir a nuestro software.\nParte II — Desarrollo colaborativo de software: Uso de Git y GitHub para trabajar en equipo en proyectos de código abierto.\nParte III — Desarrollo de paquetes de R: Desde los fundamentos hasta técnicas avanzadas, incluyendo calidad de código, testeo, documentación y el uso de herramientas de IA generativa.\nParte IV — Revisión de software: El proceso de revisión por pares de rOpenSci, desde la perspectiva de quien revisa y de quien envía un paquete.\nParte V — Gestión de comunidad y divulgación: Cómo contribuir a proyectos abiertos, crear presentaciones efectivas y organizar eventos comunitarios.\nCada capítulo incluye contenidos, ejercicios y una sección de Notas para instructores con orientaciones pedagógicas y agenda para la modalidad sincrónica.\n\n\n0.1.2 Para quién es este libro\nEste libro está dirigido a:\n\nPersonas campeonas del Programa de Campeones de rOpenSci que quieran consultar los materiales de formación.\nMentoras y mentores que acompañan a las personas campeonas o personas que van a tener roles de mentoria en otros ámbitos.\nInstructoras e instructores que quieran usar estos materiales en sus propias comunidades.\nCualquier persona interesada en el desarrollo de paquetes de R, la revisión de software abierto o la participación en comunidades de código abierto.\nGestores de programas similares que quieran reutilizar todo o una parte de los materiales.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Prefacio</span>"
+    ]
+  },
+  {
+    "objectID": "index.pt.html#licencia-y-autoría",
+    "href": "index.pt.html#licencia-y-autoría",
+    "title": "Curriculum del Programa de Campeon(a|e)s de rOpenSci",
+    "section": "0.2 Licencia y autoría",
+    "text": "0.2 Licencia y autoría\nA menos que se indique lo contrario, el contenido está disponible bajo licencia Creative Commons Atribución 4.0 Internacional (CC-BY 4.0). Si reutilizás o adaptás estos materiales, te pedimos que cites este libro y que hagas referencia a rOpenSci como fuente.\nTODO: agregar cita con DOI.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Prefacio</span>"
+    ]
+  },
+  {
+    "objectID": "index.pt.html#agradecimientos",
+    "href": "index.pt.html#agradecimientos",
+    "title": "Curriculum del Programa de Campeon(a|e)s de rOpenSci",
+    "section": "0.3 Agradecimientos",
+    "text": "0.3 Agradecimientos\nEste curriculum es el resultado del trabajo colectivo de muchas personas que han participado en el Programa de Campeonas y Campeones de rOpenSci.\nEsta version estable de contenidos y formato fue desarrollada y mejorada en las sucesivas iteraciones de las cohortes utilizando como insumo el feedback de todas las personas participantes.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Prefacio</span>"
+    ]
+  },
+  {
+    "objectID": "intro.pt.html",
+    "href": "intro.pt.html",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "",
+    "text": "2.1 ¿Qué es rOpenSci?\nrOpenSci es una organización sin fines de lucro que fomenta una cultura de investigación abierta y reproducible utilizando datos compartidos y software reutilizable. Construimos infraestructura social y técnica para el lenguaje R que permite a investigadores, investigadoras, ingenieros e ingenieras a colaborar, compartir y publicar su ciencia, datos y métodos.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.pt.html#el-programa-de-campeones",
+    "href": "intro.pt.html#el-programa-de-campeones",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.2 El Programa de Campeones",
+    "text": "2.2 El Programa de Campeones\nEl Programa de Campeones de rOpenSci es una iniciativa de formación y mentoría diseñada para ampliar la participación en R, en particular de personas de grupos históricamente subrepresentados en las comunidades de código abierto y de ciencia de datos.\nEl programa tiene una duración aproximada de un año y está organizado en cohortes.\nEl programa combina diferentes estrategias de aprendizaje que se complementan entre sí: una serie de talleres estructurados para desarrollar conocimientos y habilidades específicas, mentorías personalizadas con personas expertas en el desarrollo y mantenimiento de paquetes abiertos para la ciencia, y la participación en una comunidad consolidada, acogedora y activa como rOpenSci.\nAdemás, cada participante desarrolla un proyecto de su propia elección, alineado con sus intereses, necesidades y contexto de trabajo. En lugar de contribuir a un proyecto de rOpenSci o desarrollar software para la organización, las personas participantes trabajan en iniciativas que consideran valiosas para sus instituciones, disciplinas y comunidades locales. Este enfoque busca fomentar el sentido de pertenencia y responsabilidad sobre el proyecto, al tiempo que permite que los conocimientos adquiridos se apliquen directamente a problemas y oportunidades relevantes para cada contexto.\nLa combinación de formación, mentoría, trabajo práctico y comunidad permite que las personas participantes no solo adquieran conocimientos teóricos y técnicos, sino que también reciban acompañamiento en sus propios proyectos y encuentren una red de apoyo donde continuar aprendiendo, colaborando y creciendo más allá de la duración formal del programa.\n\n2.2.1 Objetivos del programa\n\nFormar a personas con las habilidades técnicas y comunitarias para participar activamente en R y en rOpenSci.\nProporcionar mentoría individualizada para el desarrollo de un proyecto propio (paquete nuevo, revisión de software, o contribución a un paquete existente).\nConstruir una red de personas embajadoras de rOpenSci y Ciencia Abierta en distintas regiones del mundo.\nPromover la diversidad y la inclusión en las comunidades de software de código abierto.\n\n\n\n2.2.2 ¿Quiénes participan?\nEl programa tiene tres roles principales:\nCampeonas y campeones: Personas seleccionadas por convocatoria abierta que participan en la formación y desarrollan un proyecto durante el programa. Los proyectos pueden ser:\n\nCrear un nuevo paquete de R y enviarlo al proceso de revisión de rOpenSci.\nPasar por el proceso de revisión con un paquete que ya han desarrollado.\nRealizar una revisión de paquetes para rOpenSci.\n\nMentoras y mentores: personas con experiencia previa en el sistema de revisión o en el desarrollo de paquetes, que acompañan y orientan a las personas campeonas durante el año.\nEquipo de rOpenSci: El equipo de rOpenSci facilita el programa, organiza los talleres, y acompaña a las cohortes a lo largo de su recorrido.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.pt.html#learner-personas",
+    "href": "intro.pt.html#learner-personas",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.3 Learner personas",
+    "text": "2.3 Learner personas\nLos materiales de este curriculum fueron desarrollados teniendo en cuenta perfiles específicos de participantes. Presentamos aquí las personas modelo que guiaron el diseño pedagógico.\nTODO: agregar las learner personas del programa",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.pt.html#estructura-del-año-del-programa",
+    "href": "intro.pt.html#estructura-del-año-del-programa",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.4 Estructura del año del programa",
+    "text": "2.4 Estructura del año del programa\nEl programa se desarrolla aproximadamente de la siguiente manera:\n\n\n\n\n\n\n\nPeríodo\nActividad\n\n\n\n\nMes 1–2\nSelección de la cohorte y emparejamiento con mentoras/es\n\n\nMes 2\nFormación de mentoras/es (Parte I de este libro)\n\n\nMes 3–4\nTalleres de desarrollo colaborativo y Git (Parte II)\n\n\nMes 4–6\nTalleres de desarrollo de paquetes (Parte III)\n\n\nMes 6–8\nTalleres de revisión de software (Parte IV)\n\n\nMes 4–12\nDesarrollo del proyecto individual con mentoría\n\n\nMes 10–11\nActividades de divulgación (Parte V)\n\n\nMes 12\nPresentaciones finales de proyectos, cierre y evaluación de la cohorte\n\n\n\nLas reuniones de mentoría individuales ocurren a lo largo de todo el año, con una frecuencia acordada entre cada dupla campeonas/campeón — mentora/mentor.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "intro.pt.html#más-información",
+    "href": "intro.pt.html#más-información",
+    "title": "2  Sobre el Programa de Campeones de rOpenSci",
+    "section": "2.5 Más información",
+    "text": "2.5 Más información\n\nSitio del programa: https://ropensci.org/champions/\nComunidad de rOpenSci: https://ropensci.org/community/\nSistema de revisión de software: https://ropensci.org/software-review/\nGuía para desarrolladoras/es: https://devguide.ropensci.org/",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sobre el Programa de Campeones de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "how-to-use.pt.html",
+    "href": "how-to-use.pt.html",
+    "title": "3  Cómo usar este libro",
+    "section": "",
+    "text": "NotaBorrador\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo es actualmente un borrador de ideas y no recomendamos su lectura.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cómo usar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "contributing.pt.html",
+    "href": "contributing.pt.html",
+    "title": "4  Cómo contribuir",
+    "section": "",
+    "text": "NotaBorrador\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Cómo contribuir</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors.pt.html",
+    "href": "mentoring/mentors.pt.html",
+    "title": "5  Treinamento e orientação de mentores e mentoras",
+    "section": "",
+    "text": "5.1 Quem são nossos mentores e mentoras?\nEste curso faz parte do treinamento e da orientação de mentores e mentoras do Programa de Campeões(ãs) da rOpenSci.\nOs mentores e mentoras desempenham um papel fundamental no Programa de Campeões(ãs) da rOpenSci, ajudando a selecionar o grupo de Campeões(ãs) e os aconselhando e inspirando seus mentorados(as). Os mentores e mentoras também conectam seus mentorados(as) a pessoas, programas e organizações; recomendam recursos, leituras, treinamentos e experiências; e fornecem feedback sobre o projeto de seus mentorados(as).\nApós esse treinamento, os mentores e mentoras trabalharão com os Campeões e Campeãs para apoiar enquanto desenvolvem seu projeto, que pode ser uma das seguintes opções:\nOs mentores e mentoras também podem ajudar os Campeões e Campeãs a realizar outras atividades, incluindo: dar palestras, escrever publicações em blogs e ensinar outras comunidades.\nTodos os treinamentos são elaborados com algumas personas de aprendizes (learner personas) em mente. Como comunidade, também temos personas para descrever as pessoas participantes. Quando criamos esse material de treinamento, pensamos nessa persona:\nDurante esse treinamento e orientação, Fausti adquirirá habilidades de mentoria (escuta ativa, questionamento eficaz, feedback), receberá recursos para sua função de mentorar, como as Diretrizes para Mentores(as), Modelos de Reunião e detalhes da logística do Programa de Campeões(ãs).",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Treinamento e orientação de mentores e mentoras</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors.pt.html#quem-são-nossos-mentores-e-mentoras",
+    "href": "mentoring/mentors.pt.html#quem-são-nossos-mentores-e-mentoras",
+    "title": "5  Treinamento e orientação de mentores e mentoras",
+    "section": "",
+    "text": "Fausti\n\nenviou seu pacote para o Processo de revisão da rOpenSci há alguns anos. O processo garantiu a qualidade de seus software e facilitou sua publicação no JOSS, o que lhe deu crédito acadêmico. Além disso, a obtenção do selo rOpenSci como uma organização internacional ajudou outros(as) colegas a levar seus produtos de software mais a sério e como produtos de pesquisa válidos. Fausti se ofereceu para revisar pacotes em espanhol e aconselhou outros(as) colegas a enviar seus pacotes para revisão, pois sua experiência foi muito boa. Fausti ficou sabendo sobre a Programa de Campeões(ãs) e se ofereceu para mentorar porque pode retribuir à comunidade. É também uma maneira de receber um treinamento sobre como mentorar, o que é uma boa habilidade para sua atividade acadêmica e para aumentar sua rede de contatos.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Treinamento e orientação de mentores e mentoras</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors.pt.html#metas-de-aprendizado",
+    "href": "mentoring/mentors.pt.html#metas-de-aprendizado",
+    "title": "5  Treinamento e orientação de mentores e mentoras",
+    "section": "5.2 Metas de aprendizado",
+    "text": "5.2 Metas de aprendizado\n\nO que um(a) mentor(a) faz?\nComo posso ouvir ativamente a pessoa que estou mentorando?\nComo posso fazer perguntas eficazes?\nComo posso dar um bom feedback?\nComo estabeleço expectativas para mim e para a pessoa que estou mentorando?\nQuais são as ferramentas úteis quando você orienta alguém em um projeto?\nComo o programa é organizado?",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Treinamento e orientação de mentores e mentoras</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors.pt.html#fontes",
+    "href": "mentoring/mentors.pt.html#fontes",
+    "title": "5  Treinamento e orientação de mentores e mentoras",
+    "section": "5.3 Fontes",
+    "text": "5.3 Fontes\nUsamos diferentes fontes para criar este treinamento e o material. Agradecemos a essas organizações e seus autores e autoras por compartilharem seus materiais sob uma licença aberta que podemos reutilizar e remixar.\n\nMozilla Open Leaders (em inglês)\nEnsinando tecnologia juntos (em inglês e espanhol)\nTreinamento de instrutores da Carpentries (em inglês)",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Treinamento e orientação de mentores e mentoras</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors.pt.html#como-você-pode-usar-este-material",
+    "href": "mentoring/mentors.pt.html#como-você-pode-usar-este-material",
+    "title": "5  Treinamento e orientação de mentores e mentoras",
+    "section": "5.4 Como você pode usar este material",
+    "text": "5.4 Como você pode usar este material\nSe quiser usar este material para ensinar, você pode encontrar Notas para docentes com um roteiro para o curso, conteúdo extra para os slides e uma explicação dos exercícios.\nNa seção de material, você pode acessar os slides e outros modelos de documentos que podem ser copiados, reutilizados e remixados para o seu treinamento.\n\n5.4.1 Licença\nEste trabalho está licenciado sob a licença Creative Commons Attribution-NonCommercial 4.0 (CC-BY-NC-4.0).\n\n\n5.4.2 Como citar este trabalho\n\nYanina Bellini Saibene. (2023, 16 de março). Treinamento e orientação de mentores e mentoras. Programa de Campeões(ãs) da rOpenSci. Zenodo. https://doi.org/10.5281/zenodo.7742298",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Treinamento e orientação de mentores e mentoras</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors-schedule.pt.html",
+    "href": "mentoring/mentors-schedule.pt.html",
+    "title": "6  Programação",
+    "section": "",
+    "text": "NotaEm revisão\n\n\n\nVocê está lendo a primeira edição em andamento e em português deste livro, baseada no currículo de formação do programa de Campeões/ãs da rOpenSci.\nEste capítulo deve ser legível, mas está passando por um refinamento final.\nFonte do conteúdo migrado: este capítulo é proveniente do repositório ropensci-mentors\n\n\nRealizamos o treinamento várias vezes para permitir que os(as) mentores(as) participem no dia e horário mais conveniente, de acordo com seu fuso horário.\nAqui está um exemplo de cronograma com um treinamento pela manhã e um treinamento em horário comercial. 90 minutos de duração, começando às 9:00:\n\n\n\n\n\n\n\n\nTópico\n\n\n\n\n8:50-9:00\nHora de se conectar. Verifique o áudio e o vídeo.\n\n\n9:00- 9:05\nCompartilhamento das regras de participação. Código de conduta. Compartilhamento de materiais.\n\n\n9:05-9:15\nExercício: Reflexão sobre mentoria. Pense em uma experiência que você teve como mentor(a) ou sendo mentorado(a).\n\n\n9:15-9:25\nFunções dos(as) mentores(as). Habilidades de mentoria.\n\n\n9:25-9:40\nFerramentas do(a) mentor(a). Modelo GROW.\n\n\n9:40-9:55\nExercício: Trabalhar em grupo com o Modelo GROW.\n\n\n9:55-10:10\nFerramentas do(a) mentor(a). Logística e infraestrutura do programa.\n\n\n10:10-10:20\nExercício: Você está pronto para mentorar? Perguntas, comentários.\n\n\n10:20-10:25\nExercício: feedback prático.\n\n\n10:25-10:30\nEncerramento.\n\n\n\nAqui está um exemplo de programação com um treinamento matutino e um treinamento de curta duração. 120 minutos de duração:\n\n\n\n\n\n\n\n\nTópico\n\n\n\n\n8:50-9:00\nHora de se conectar. Verifique o áudio e o vídeo.\n\n\n9:00- 9:05\nCompartilhamento das regras de participação. Código de conduta. Compartilhamento de materiais.\n\n\n9:05-9:15\nExercício: Reflexão sobre mentoria. Pense em uma experiência que você teve como mentor(a) ou sendo mentorado(a).\n\n\n9:15-9:25\nFunções dos(as) mentores(as). Habilidades de mentoria.\n\n\n9:25-9:40\nFerramentas do(a) mentor(a). Modelo GROW.\n\n\n9:40-9:55\nExercício: Trabalhar em grupo com o Modelo GROW.\n\n\n9:55-10:05\nIntervalo longe da tela.\n\n\n10:05-10:20\nExercício: Pratique o modelo GROW orientando seu/sua colega de classe (usando os resultados do exercício 1).\n\n\n10:20-10:35\nFerramentas do(a) mentor(a). Logística e infraestrutura do programa.\n\n\n10:35-10:45\nExercício: Você está pronto para mentorar? Perguntas, comentários.\n\n\n10:45-10:55\nExercício: feedback prático.\n\n\n10:55-11:00\nEncerramento.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Programação</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors-materials.pt.html",
+    "href": "mentoring/mentors-materials.pt.html",
+    "title": "7  Materiales del curso",
+    "section": "",
+    "text": "NotaEn revisión\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci. Este capítulo debería ser legible, pero está siendo objeto de un pulido final.\nFuente del contenido migrado: este capítulo proviene del repositorio ropensci-mentors.\n\n\nEstos materiales de capacitación utilizan:\n\nun juego de diapositivas,\nun documento compartido con los ejercicios para resolver durante la clase, para tomar notas compartidas y también para compartir recursos.\nuna encuesta de opinión\n\nTambién proporcionamos a los mentores y mentoras herramientas para desempeñar sus funciones:\n\nDirectrices para mentores/as del Programa rOpenSci Champions\nPlantillas de reuniones\nFormulario de informe de reunión\nCarta/Acta Mensual de Mentor/a",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Materiales del curso</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors-instructor-notes.pt.html",
+    "href": "mentoring/mentors-instructor-notes.pt.html",
+    "title": "8  Notas dos(as) instrutores(as)",
+    "section": "",
+    "text": "8.1 Pré-treinamento\nEnvie um convite de calendário com os links para a reunião e para as anotações compartilhadas.\nNo arquivo de anotações compartilhadas, adicione o link para a reunião e o restante do material (como slides, vídeos, etc.).\nFaça um lembrete no dia anterior e outro uma hora antes da reunião.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Notas dos(as) instrutores(as)</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors-instructor-notes.pt.html#pré-treinamento",
+    "href": "mentoring/mentors-instructor-notes.pt.html#pré-treinamento",
+    "title": "8  Notas dos(as) instrutores(as)",
+    "section": "",
+    "text": "TipLembretes\n\n\n\nUse os diferentes canais que você tem. Por exemplo, usamos o Slack e o e-mail. Tente usar lembretes independentes de fuso horário, como “Vejo vocês em 50 minutos, aqui (link)”",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Notas dos(as) instrutores(as)</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors-instructor-notes.pt.html#treinamento",
+    "href": "mentoring/mentors-instructor-notes.pt.html#treinamento",
+    "title": "8  Notas dos(as) instrutores(as)",
+    "section": "8.2 Treinamento",
+    "text": "8.2 Treinamento\n\n8.2.1 É hora de você se conectar\nInicie a reunião com alguns minutos de antecedência, permita que as pessoas entrem e verifiquem o vídeo e o áudio. Certifique-se de que elas possam ouvir e ver você. Informe que não há problema se elas não ligarem a câmera. Compartilhe o documento com as anotações compartilhadas no bate-papo.\nQuando todas as pessoas chegarem, lembre-se das regras de participação, como o código de conduta e como usá-lo. Mencione uma breve agenda para o dia:\n\nVeremos as ferramentas para você desempenhar a função de mentor(a) e a logística do programa. Também compartilharemos os recursos que criamos para ajudá-lo(a) em sua função.\n\n\n\n\n\n\n\nTipDocumento compartilhado\n\n\n\nAs pessoas não podem acessar o bate-papo anterior quando entram em uma reunião. Portanto, compartilhe o documento uma última vez quando todas as pessoas participantes estiverem presentes. Além disso, compartilhe o documento antes de cada exercício para garantir que todos as pessoas participantes possam acessá-lo.\n\n\n\n\n\n\n\n\nTipGravação\n\n\n\nSe você for gravar a sessão, este é um bom momento para pedir a permissão. Deixe claro sobre como usará a gravação e com quem a compartilhará.\n\n\n\n\n8.2.2 Comece o treinamento\nVocê pode começar com o primeiro exercício: Reflexão sobre a mentoria (você pode decidir se deseja compartilhar os slides com os exercícios, o documento compartilhado com os exercícios ou não compartilhar a tela).\n\nComeçaremos com um exercício: Reflexão sobre a mentoria. Pense em uma experiência que você teve como mentor(a) ou sendo mentorado(a). Use o documento compartilhado para responder às perguntas ao lado de seu nome (em ordem alfabética).\n\nLeia as perguntas em voz alta e dê mais alguns exemplos de como respondê-las:\n\nO que deu certo / o que foi útil?” “Como foi esse relacionamento? De que forma te ajudou? O que a pessoa mentora/mentorada disse/fez de útil?\nO que não funcionou? O que você precisou e a pessoa mentora/mentoranda não pôde ajudá-lo(a) ou não entendeu?\nPense em um problema para o qual você gostaria de receber orientação agora mesmo.\n\n\n\n\n\n\n\nTipTempo para atividades\n\n\n\nSempre esclareça no início da atividade quanto tempo tem para realizá-la. “Usaremos 10 minutos para este exercício”, “Faremos um intervalo de 10 minutos”\n\n\nDê um ou dois minutos para as pessoas escreverem em silêncio. Em seguida, você pode ler algumas das respostas em voz alta ou acrescentar alguns comentários ao documento em silêncio. Incentive-as a ler as respostas de seus/suas colegas e a fazer comentários.\n\n\n8.2.3 Funções dos(as) mentores(as). Habilidades de mentoria\nVocê continua com o slide três sobre as funções das pessoas mentoras.\n\nO que as pessoas mentoras fazem? Elas aconselham e inspiram. Como fazer isso? Recomende recursos, leituras, treinamentos e experiências. Faça comentários. Conecte-se a pessoas, programas e organizações.\n\nDê exemplos de cada atividade relacionada ao tipo de projeto que você será mentorado. No slide quatro, resuma as habilidades de mentoria que veremos hoje:\n\nEscuta ativa, questionamento eficaz e comentários.\n\nMostre agora o slide cinco sobre escuta ativa. Antes de mostrar alguns marcadores, comece com uma pergunta:\n\nPor favor, responda no bate-papo ou ative o microfone e responda: O que é a escuta ativa? Como a escuta ativa se manifesta na prática?\n\nDê tempo para as pessoas pensarem e compartilharem. Leia o bate-papo em voz alta se alguém compartilhar algo por escrito. Repita o que foi dito. Elas poderão mencionar informações úteis que você pode anotar ao mostrar o tópico sobre a escuta ativa. Por exemplo, alguém pode dizer que a escuta ativa é quando as pessoas fazem perguntas boas e perspicazes ou quando elas prestam atenção em você (e não estão olhando o telefone ou respondendo ao e-mail).\nAgora você segue com o slide seis sobre perguntas eficazes. Antes de mostrar os conceitos e as dicas de perguntas eficazes, faça as perguntas:\n\nPor que as perguntas são importantes na mentoria? Que tipos de perguntas são úteis? Por favor, escreva no bate-papo ou ligue o microfone e responda.\n\nDê tempo para as pessoas pensarem e compartilharem. Leia o bate-papo em voz alta se alguém compartilhar algo por escrito. Dê prioridade às pessoas que não participaram da pergunta anterior. Reveja o que elas disseram. Use a resposta delas ao compartilhar os pontos de destaque no slide.\nComo parte final desta seção, vá para o slide sete sobre como fazer os comentários. Aqui você tem duas perguntas rápidas:\n\nO que acontece se você só fizer comentários positivos? Assim como fizemos anteriormente, compartilhe as suas ideias no bate-papo ou pelo microfone.\n\nDepois que duas ou três pessoas compartilharem os seus pensamentos, você pode fazer a segunda pergunta:\n\nO que acontece se fornecermos somente comentários negativos?\n\nDê tempo para as pessoas pensarem e compartilharem. Leia o bate-papo em voz alta se alguém compartilhar algo por escrito.\nAgora, ilustre os comentários e os pontos de destaque no slide. Mais uma vez, use a resposta das pessoas para dar exemplos ou apoiar esses pontos. Mencione que:\n\nOs comentários são uma forma de dar conselhos. Eles também permitem que todas as pessoas cresçam.\n\n\nO material de origem para um bom comentário é construído com base nas duas habilidades acima, escuta ativa e questionamento eficaz.\n\nO slide a seguir (número oito) apresenta as reuniões.\n\nAs reuniões são um dos ambientes onde a mentoria ocorrerá e onde as pessoas mentoras usarão as habilidades que mencionamos.\n\nObserve que criamos modelos para as reuniões como um andaime para a tarefa de mentoria. E, em seguida, apresentamos o modelo GROW.\n\n\n8.2.4 Ferramentas da pessoa mentora. Modelo GROW.\nUse os slides nove e dez para apresentar o modelo e, em seguida, faça o segundo exercício.\n\nTrabalhe em grupos para o próximo exercício. Você terá 10 minutos para assistir ao vídeo vinculado no documento compartilhado. É um exemplo que usa o modelo GROW. A ideia é que você tente identificar as etapas do modelo. Você pode assistir novamente ao vídeo ou parar, responder e depois continuar. Use o documento compartilhado no espaço do grupo para escrever as suas perguntas.\nQuando terminar, discutiremos a sua resposta com todo o grupo.\n\nCrie grupos aleatórios, com no máximo 3-4 pessoas em cada grupo. Leia a resposta de cada grupo durante o exercício e escolha alguns deles para compartilhar com toda a classe. Escolha cada grupo porque eles acrescentam algo interessante ou diferente à discussão. Se você tiver alguns grupos, dê a todos eles a chance de compartilhar as suas ideias.\n\n\n\n\n\n\nNota\n\n\n\nCaso esteja ministrando um treinamento de 120 minutos, é hora de fazer um intervalo de 5/10 minutos longe da tela.\n\n\n\n\n\n\n\n\nTipExercício: Pratique o modelo GROW orientando seu/sua colega de classe\n\n\n\nEste é um exercício extra para o treinamento de 120 minutos. Encontre as instruções sobre o exercício 2.b no documento compartilhado. Caso esteja ministrando o treinamento de 90 minutos, remova o exercício 2.b do documento compartilhado.\n\n\nTermine esta seção com o slide doze que contém um resumo do modelo GROW.\n\n\n8.2.5 Ferramentas da pessoa mentora. Logística do programa\nA próxima sessão apresenta as Diretrizes para Mentores(as) e outras infraestruturas e ferramentas que desenvolvemos para o programa campeãs e campeões.\nCompartilhe o slide treze, mencione cada ferramenta e, em seguida, mostre-as. A mais importante delas é a Diretrizes para Mentores(as). Você pode clicar nos slides para abrir o documento e navegar por ele, visualizando cada seção, a lista de recursos e as informações reunidas.\nClique no link para os outros recursos dentro das diretrizes para mostrá-los: certifique-se de mostrar o Google Drive e os modelos de reunião. Por fim, você pode perguntar se as pessoas querem consultar os canais do Slack.\n\n\n\n\n\n\nTipVerificação de acesso\n\n\n\nEste é um excelente momento para verificar o acesso a esses recursos: todas as pessoas estão no Slack e nos canais adequados? Elas têm acesso ao Google Drive e ao Google Docs? Conseguem copiar os modelos de reunião e acessar o formulário de relatório de reunião?\n\n\nAgora é a hora do próximo exercício. Com a pergunta “Você está pronto(a) para mentorar?”, damos espaço para os comentários, as perguntas e os esclarecimentos que as pessoas mentoras precisarem. Permita que elas falem ou escrevam no documento compartilhado ou no bate-papo. Se elas escreverem no bate-papo, copie esses comentários no documento compartilhado. Essas perguntas podem ser úteis para os outros grupos. O tempo para essa atividade é de 10 minutos, mas reserve mais minutos se elas tiverem boas perguntas sobre o programa ou sobre a função da pessoa mentora.\nO exercício final pede que as pessoas mentoras pratiquem o comentário construtivo por meio de uma pesquisa anônima sobre o treinamento. Compartilhe o link para o formulário no chat ou mencione que o link pode ser acessado na nota compartilhada. Dê 5 minutos para as pessoas participantes preencherem a pesquisa.\n\n\n\n\n\n\nTipVerificação de conclusão\n\n\n\nPara este exercício final, peça as pessoas participantes que escrevam no bate-papo “Feito!”, “Concluído!” ou algo semelhante quando elas terminarem. Dessa forma, você saberá e poderá encerrar a atividade quando todas as pessoas tiverem terminado. Em alguns casos, isso pode terminar antes do tempo alocado para o exercício.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Notas dos(as) instrutores(as)</span>"
+    ]
+  },
+  {
+    "objectID": "mentoring/mentors-instructor-notes.pt.html#pós-treinamento",
+    "href": "mentoring/mentors-instructor-notes.pt.html#pós-treinamento",
+    "title": "8  Notas dos(as) instrutores(as)",
+    "section": "8.3 Pós-treinamento",
+    "text": "8.3 Pós-treinamento\nApós o treinamento, envie uma mensagem (e-mail, Slack) agradecendo as pessoas participantes e compartilhando novamente os recursos essenciais:\n\nDocumento compartilhado (que tem os links para os slides, o guia de mentoria, os modelos de reunião, etc.).\nGravação da reunião (caso você a tenha gravado).\nA pesquisa de avaliação (para uma segunda chance de preenchimento).\n\nVerifique a pesquisa de avaliação e identifique um ou dois pontos a serem melhorados para a próxima edição do treinamento.",
+    "crumbs": [
+      "Mentoría",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Notas dos(as) instrutores(as)</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-intro.pt.html",
+    "href": "git/software-community-intro.pt.html",
+    "title": "9  Software Comunidad Intro",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nContenido pendiente de migración: ver https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.\n\n\nEs un curso de 2 encuentros de 2 horas cada uno sobre cómo utilizar Git y GitHub para desarrollar de forma colaborativa software de código abierto con R, es decir, paquetes de R!",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Software Comunidad Intro</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-preparation.pt.html",
+    "href": "git/software-community-preparation.pt.html",
+    "title": "10  Lo que necesitas hacer antes del taller",
+    "section": "",
+    "text": "Instalá R y RStudio\nPor favor sigue estas instrucciones para asegurarte que tienes todo lo necesario para el curso.\nPosiblemente tengas instalada algunas de las herramientas, si hace mucho que no las usas, asegurate de actualizarlas.\nVamos a utilizar R (lenguaje de programación) y RStudio como IDE (Integrated Development Environment). Si no los tenés instalados, por favor seguí las instrucciones en esta página de Posit (en Ingles) para hacerlo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lo que necesitas hacer antes del taller</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-preparation.pt.html#instalá-git",
+    "href": "git/software-community-preparation.pt.html#instalá-git",
+    "title": "10  Lo que necesitas hacer antes del taller",
+    "section": "Instalá Git",
+    "text": "Instalá Git\nGit es una herramienta para control de versiones, vamos a utilizarla para trabajar colaborativamente.\nEn la pagina de Git podrás descargar el instalador para tu sistema operativo.\nEn esa misma pagina hay una guia de instalacion para cada sistema operativo en castellano.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lo que necesitas hacer antes del taller</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-preparation.pt.html#creá-una-cuenta-en-github",
+    "href": "git/software-community-preparation.pt.html#creá-una-cuenta-en-github",
+    "title": "10  Lo que necesitas hacer antes del taller",
+    "section": "Creá una cuenta en GitHub",
+    "text": "Creá una cuenta en GitHub\nGitHub es una de las interfaces y repositorios mundiales mas conocidos y utilizados por quienes desarrollan software. Vamos a utilizarlo para publicar nuestro código.\n\nEntrá a https://github.com/.\nHace click en Registrarse or Sign up.\nSeguí las indicaciones para crear la cuenta personal.\nUno de los pasos implica chequear que sos una persona y luego validar la direccion de email que usaste para crear la cuenta.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lo que necesitas hacer antes del taller</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-preparation.pt.html#configuración-de-git-y-github",
+    "href": "git/software-community-preparation.pt.html#configuración-de-git-y-github",
+    "title": "10  Lo que necesitas hacer antes del taller",
+    "section": "Configuración de Git y GitHub",
+    "text": "Configuración de Git y GitHub\nAhora que ya tenés git instalado y una cuenta en GitHub, es importante completar la configuración necesaria para que puedas trabajar.\nHay varias maneras de hacerlo, en este caso lo haremos desde R usando el paquete usethis * y gitcreds*.\n\nAbrí RStudio e instalá usethis corriendo el siguiente código en la consola:\n\ninstall.packages(\"usethis\")\n\nConfigurá tu nombre y correo electrónico:\n\nusethis::use_git_config(user.name = \"Juan Perez\",\n               user.email = \"juan@ejemplo.org\")\nSustituyéndolo por tu nombre y el correo electrónico asociado a tu cuenta de GitHub. git usará esta información para registrar quien hizo cambios en un archivo.\nVeremos esto durante los talleres de git y Github, desarrollo de paquetes y revision de código.\n\nConfigurá tu PAT\n\nEl PAT o “personal access token”, mejor conocido como token es una especie de contraseña que deberás setear en tu computadora para poder hacer cambios en GitHub.\nPrimero tendrás que crear el token:\nusethis::create_github_token()\nSe abrirá la ventana de GitHub y ahí tendrás que seguir los pasos para crear el token y copiarlo (muy importante!). Por las dudas no cierres esta ventana.\nAhora corré el siguiente código para setear el token en tu computadora:\ngitcreds::gitcreds_set()\nElegí crear/guardar el token. Si tenés Ubuntu esto no termina acá, tendrás que seguir los pasos en esta guia para guardar el token de manera permanente.\n\nVacuná tu instalación de git:\n\nusethis::git_vaccinate() \nEsta función agrega algunos archivos y configuraciones que se consideran buenas prácticas.\nVamos a ver mas detalle durante el taller de desarrollo de paquetes. También podés leer la documentación de la función para aprender más.\n\nChequeá que todo esté en orden:\n\nusethis::git_sitrep() \nEsta función devuelve el estado de situación de tu configuración de git y GitHub.\nRevisá que aparezca tu nombre y mail, que aparezca Vaccinated: TRUE y que Personal access token for \"https://github.com\": &lt;discovered&gt; esté tal cual ese mensaje.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lo que necesitas hacer antes del taller</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html",
+    "href": "git/software-community-git-individual.pt.html",
+    "title": "11  Git para trabajar individualmente",
+    "section": "",
+    "text": "11.1 Objetivos de aprendizaje",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#objetivos-de-aprendizaje",
+    "href": "git/software-community-git-individual.pt.html#objetivos-de-aprendizaje",
+    "title": "11  Git para trabajar individualmente",
+    "section": "",
+    "text": "Identificar por qué el control de versiones, específicamente Git, es importante para el desarrollo de software y análisis de datos.\nDiferenciar métodos para trabajar con Git y R: integración con RStudio y usethis.\nAplicar el proceso de modificación-add-commit como el flujo de trabajo de Git para el seguimiento de los cambios y ver el historial de commits de un repositorio.\nPublicar repositorios en GitHub y coordinar versiones remotas y locales.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#mis-slides",
+    "href": "git/software-community-git-individual.pt.html#mis-slides",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.2 Mis slides",
+    "text": "11.2 Mis slides",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#por-qué-git",
+    "href": "git/software-community-git-individual.pt.html#por-qué-git",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.3 ¿Por qué git?",
+    "text": "11.3 ¿Por qué git?\n¿Tenés algo así en tu computadora?\n/home/pao/Documents/Clases/progrmacion\n├── script.R\n├── tp.Rmd\n├── tp_corregido.Rmd\n├── tp_corregido2.Rmd\n├── tp_final.Rmd\n├── tp_finalfinal.Rmd\n├── este_es_el_final.Rmd\n├── juro_que_esta_es_la_ultima_version_del_tp.Rmd\n└── FINAL.Rmd\nProbablemente todas las personas lo tenemos, o tuvimos algo así en algún momento, porque necesitamos guardar nuestro trabajo pero seguir teniendo acceso a versiones anteriores. Existe una solución para esto. Los sistemas de control de versiones gestionan la evolución y los cambios de un conjunto de archivos que llamaremos repositorio. Si alguna vez revisaste el historial de un archivo de Google Docs, el control de versiones es similar pero de una forma muy controlada. Git es un sistema de control de versiones muy popular, pero hay otros.\nSi trabajas de manera individual, git es genial para hacer un seguimiento de los cambios y recuperar versiones anteriores de tus archivos. También podés utilizar un repositorio remoto (que veremos más adelante) para tener una copia de seguridad y compartir tu trabajo.\nSi trabajas en equipo, podés aprovechar todo lo anterior y utilizar también el control de versiones como herramienta para colaborar y organizar las distintas versiones de un mismo archivo presentes en las múltiples computadoras que vos y las otras personas usen.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#pero-qué-entendemos-por-control-de-versiones",
+    "href": "git/software-community-git-individual.pt.html#pero-qué-entendemos-por-control-de-versiones",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.4 Pero, ¿qué entendemos por control de versiones?",
+    "text": "11.4 Pero, ¿qué entendemos por control de versiones?\nImaginemos que tenemos un repositorio funcionando (más adelante veremos cómo crear uno). Cuando creas un nuevo archivo como parte del repositorio (o repo), ese archivo inicialmente no es trackeado/rastreado o no está versionado. Esto significa que git ignorará el archivo y cualquier cambio que hayas hecho hasta que lo agregues al repositorio (add en inglés) y empieces a registrar los cambios que hagas en el contenido. En ese momento el archivo está en el area staging (que podemos imagina como una sala de espera de git) y está listo para entrar en el repositorio. Para eso hay que confirmar o registrar (commit en inglés) esa versión del archivo en el repositorio. Este flujo de trabajo modify --&gt; add --&gt; commit se repetirá cada vez que quieras guardar una versión del archivo.\n\nNo recomendamos hacer un commit cada vez que guardes el archivo o cambies una coma, y tampoco es buena idea hacer un commit con mil millones de cambios. Con la práctica y dependiendo de cómo trabajes, encontrarás un punto medio cómodo.\n\n\n\n\nLa figura muestra el ciclo de cambios en un archivo: versionado o sin versional. Cuando es versionado y forma parte del repositorio, las acciones son add, commit, y modificar. Con la acción add, el archivo se “prepara”; con la acción de commit, el archivo se “guarda” en el repositorio. Este ciclo se repite cada vez que se modifica el archivo.\n\n\nMencionamos las acciones add y commit que son los nombres de dos comandos de git. Si tenes experiencia trabajando con la terminal podés utilizar git desde ahí, pero los mismos comandos pueden ejecutarse desde una GUI como GitHub Desktop o GitKraken. Durante este curso utilizaremos RStudio.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#ya-mencionamos-repositorio-remoto",
+    "href": "git/software-community-git-individual.pt.html#ya-mencionamos-repositorio-remoto",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.5 ¿Ya mencionamos “repositorio remoto”?",
+    "text": "11.5 ¿Ya mencionamos “repositorio remoto”?\nAntes revisamos el flujo de trabajo local. El repositorio (una carpeta oculta llamada .git) vive en tu computadora y con eso ya estas usando control de versiones. Pero, también podrías conectar el repositorio local con un repositorio remoto. En este curso vamos a utilizar GitHub para alojar repositorios remotos, pero hay otras opciones que podrías explorar, como GitLab o Codeberg.\nSi usas un repositorio remoto, tendrás que agregar un paso más al flujo de trabajo local (modify --&gt; add --&gt; commit) para asegurarte que la copia del repositorio en tu computadora es la misma que la copia en GitHub y vise versa.\nLuego, otra persona de tu equipo hace un cambio en un archivo en su repositorio local y lo sube al repositorio remoto. Ahora, tu repositorio local está “desactualizado” y necesitas descargar esos nuevos commits del repositorio remoto a tu computadora. Necesitas hacer pull.\nSi luego, otra persona de tu equipo hace un cambio en un archivo en su repositorio local y lo sube al repositorio remoto. Ahora, tu repositorio local está “desactualizado” respecto del repositorio remoto. Necesitas descargar esos nuevos commits del repositorio remoto a tu computadora. Necesitas hacer pull.\n\n\n\nModelo conceptual de un flujo de trabajo utilizando proyectos RStudio y git. Los archivos se añaden al área de staging (o preparación) y luego se envían al repositorio local. Puedes enviar (push) commits al repositorio remoto y bajar (pull) nuevos commits a tu computadora.\n\n\nHerramientas como GitHub también incluyen funciones que te ayudan a colaborar y gestionar repositorios. Por ejemplo, puedes modificar archivos y hacer commits con esos cambios utilizando la interfaz web.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#configuración-inicial",
+    "href": "git/software-community-git-individual.pt.html#configuración-inicial",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.6 Configuración inicial",
+    "text": "11.6 Configuración inicial\nAntes de crear tu primer repositorio es importante revisar que git esté configurado correctamente en tu computadora y que tengas permisos para modificar cosas en GitHub. Si seguiste las instrucciones instrucciones previas al curso deberías tener todo listo, pero podemos revisar el estado de situación con usethis::git_sitrep() para comprobarlo.\n&gt; usethis::git_sitrep()\n\n── Git global (user) \n• Name: \"Pao Corrales\"\n• Email: \"micorreo@gmail.com\"\n• Global (user-level) gitignore file: ~/.gitignore\n• Vaccinated: TRUE\n• Default Git protocol: \"https\"\n• Default initial branch name: \"main\"\n\n── GitHub user \n• Default GitHub host: \"https://github.com\"\n• Personal access token for \"https://github.com\": &lt;discovered&gt;\n• GitHub user: \"paocorrales\"\n• Token scopes: \"gist\", \"repo\", \"user\", and \"workflow\"\n• Email(s): \"micorreo@gmail.com (primary)\", \"paocorrales@users.noreply.github.com\", and\n  \"otro correo@gmail.com\"\nℹ No active usethis project.\nRevisá que la información sea correcta y que Personal access token for \"https://github.com\": sea igual a &lt;discovered&gt;. Eso te garantizará que puedas trabajar con git y GitHub. Si vez alguna diferencia, es útil revisar las instrucciones de instalación en “Lo que necesitas hacer antes del curso”.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#nuevo-repositorio",
+    "href": "git/software-community-git-individual.pt.html#nuevo-repositorio",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.7 Nuevo repositorio",
+    "text": "11.7 Nuevo repositorio\n\n11.7.1 GitHub repo primero, proyecto de RStudio despues\nHay muchas formas de iniciar un nuevo repositorio, localmente en tu computadora utilizando la terminal, desde GitHub (o sus amigos) ¡o desde RStudio!. Aca te mostraremos cómo crear un repositorio desde GitHub, asociarlo a un proyecto de RStudio y trabajar con él. Pero tené en cuenta que hay muchas otras formas de trabajar con git.\n\n1. Creá un repositorio online.\n\nEntrá en github.com e inicia sesión.\nEn la esquina superior derecha, hacé click en el botón “+” y luego en “New repository”.\n\nA continuación completá la información del repositorio:\n\nRepository template: No template.\nRepository name: como quieras llamar a tu nuevo proyecto.\nDescription: Una descripción breve del proyecto. Escribila para que la entiendan personas.\nVisibilidad: Public.\nInitialize this repository with: nada (podemos configurarlo todo desde R).\n\nAntes de volver a RStudio, copia la url del repositorio. Por ejemplo https://github.com/paocorrales/myrepo.git\nYa tenés tu repositorio local!\n\n\n2. En RStudio, inicia un nuevo Proyecto:\n\nFile &gt; New Project &gt; Version Control &gt; Git. En la “URL del repositorio” pegá la URL de tu nuevo repositorio de GitHub, tiene que tener esta pinta: https://github.com/paocorrales/myrepo.git.\nElejí la carpeta en tu disco donde querés crear el proyecto.\nElejí “Open in new sesion”.\nY hacé clic en “Create project”.\n\n\nLa nueva carpeta en tu computadora será un repositorio git, vinculado a un repositorio remoto de GitHub y un proyecto de RStudio al mismo tiempo. Este flujo de trabajo también se asegura de que toda la configuración entre los repositorios local y remoto se realice correctamente.\nTambién agrega un archivo llamado .gitignore que incluye una lista de archivos que no queremos sumar al repositorio (por ejemplo .Rhistory).\n\n\n11.7.2 Proyecto de RStudio primero, repositorio de GitHub después\nSupongamos que ya tenes un proyecto de RStudio existente y ahora que conoces todas las bondades del control de versiones queres empezar a usarlo.\nPodemos utilizar el paquete usethis para que nos ayude a empezar a versionar ese proyecto.\nPara eso, primero tenes que asegurarte de que el proyecto ya sea un repositorio git. Si tenes el tab de Git en RStudio entonces tu proyecto ya es un repositorio git. Si no lo es, podes usar la funcion usethis::use_git() para inicializarlo como un repositorio git.\n&gt; usethis::use_git()\n\n✔ Setting active project to \"/Users/yabellini/Documents/GitHub/ControlDeVersiones\".\n✔ Initialising Git repo.\n✔ Adding \".Rproj.user\", \".Rhistory\", \".Rdata\", \".httr-oauth\", \".DS_Store\", and \".quarto\" to\n  .gitignore.\nℹ There are 2 uncommitted files:\n• .gitignore\n• ControlDeVersiones.Rproj\n! Is it ok to commit them?\n\n1: Not now\n2: Negative\n3: Yes\nCuando elegimos la opcion afirmativa nos mostrara un mensaje como el siguiente:\n✔ Adding files.\n✔ Making a commit with message \"Initial commit\".\nA restart of RStudio is required to activate the Git pane.\nRestart now?\n\n1: Not now\n2: Nope\n3: Yeah\nEl siguiente paso es asociar el repositorio local con un repositorio remoto en GitHub. Para eso se usa la funcion usethis::use_github().\n&gt; usethis::use_github()\n\nℹ Defaulting to \"https\" Git protocol.\n✔ Setting active project to \"/Users/yabellini/Documents/GitHub/ControlDeVersiones\".\n✔ Creating GitHub repository \"yabellini/ControlDeVersiones\".\n✔ Setting remote \"origin\" to \"https://github.com/yabellini/ControlDeVersiones.git\".\n✔ Pushing \"main\" branch to GitHub and setting \"origin/main\" as upstream branch.\n✔ Opening URL &lt;https://github.com/yabellini/ControlDeVersiones&gt;.\nEsta funcion toma un proyecto local y realiza una serie de chequeos y acciones, entre las cuales se encuentran:\n\nVerificar que el proyecto ya es un repositorio Git.\nChequear que la rama actual es la rama predeterminada, por ejemplo, main.\nVerificar que no hay ningún origen remoto preexistente.\nCrear un repositorio asociado en GitHub.\nAñadir ese repositorio de GitHub a tu repositorio local como origen remoto.\nRealiza un push inicial a GitHub para sincronizar repos.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#cambios-locales",
+    "href": "git/software-community-git-individual.pt.html#cambios-locales",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.8 Cambios locales",
+    "text": "11.8 Cambios locales\nEs hora de poner en práctica algunas de las cosas de las que hemos estado hablando.\n\nAdd, commit\n\nCreá un nuevo archivo RMarkdown y guardalo.\nAgregalo al área de preparación con add y luego hace un commit. ¡Vas a tener que pensar un mensaje descriptivo!\nHace un cambio en el archivo, puede ser cualquier cosa. Guardalo.\nRepetí el paso 2.\n\n\n\n\nPanel Git con 3 archivos sin seguimiento.\n\n\n\n\n\nPanel Git con 3 archivos con seguimiento añadidos al área de preparación.\n\n\n\n\n\nInterfaz RStudio para ver las diferencias entre archivos, escribir el mensaje para el commit y enviarlo al repositorio remoto.\n\n\n\nSi todo salió bien, empezaste a rastrear archivos, hiciste cambios y commits para guardar esa versión en el repositorio local. Puede que veas un mensaje en la pestaña de git diciendo que el repositorio local “is ahead of ’origin/master` by 2 commits”. No verás ningún cambio en GitHub hasta que hagas push y envíes esos commits al repositorio remoto. Podés hacer esto al final del día si preferis, pero si trabajas con otras personas puede ser una buena idea hacer push luego de cada commit.\n\n¡Push!\n\nAhora, hacé push para enviar los commits al repositorio remoto utilizando el botón con la flecha verde apuntando hacia arriba.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#cambios-remotos",
+    "href": "git/software-community-git-individual.pt.html#cambios-remotos",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.9 Cambios remotos",
+    "text": "11.9 Cambios remotos\nVolvamos a GitHub. Si actualizas la página, ahora verás los archivos que acabas sumar al repositorio o modificar. Hagamos click en “Commits” para ver la historia del repositorio. Desde esta página, podés explorar el repositorio en el “estado” en el que estaba con cada commit y ver las diferencias entre las distintas versiones.\nAhora, podemos intentar hacer cambios aquí.\n\nCrear un README\n\nEn la página principal, hacé click en el botón verde que dice “Add a README”.\nAgregá algo en el archivo. Los README suelen estar escritos en Markdown y contienen información sobre el repositorio.\nAl final de la página añadí un mensaje y hacé click en “Confirm changes…”.\nVolvé a la página principal para ver el README.\n\n\nEl nuevo archivo y los cambios que hagas en GitHub sólo estarán en el repositorio remoto hasta que hagas un pull en el repositorio local. Si realizas cambios en el repositorio local mientras no está actualizado, podés encontrarte con conflictos cuando intentes unir las 2 versiones, lo que suele generar dolores de cabeza. Esto ocurre cuando la versión de un archivo en el repositorio local no es compatible con su versión en el repositorio remoto. En esos casos, git no puede decidir qué versión es la correcta y tenés que hacerlo vos.\nPara evitar este problema (lo más posible), tenes que hacer un pull antes de empezar a hacer cualquier otra cosa. La mayoría de las veces RStudio mostrará el mensaje “Already up to date”, pero es bueno hacerlo un hábito.\n\nPull desde GitHub\n\nVolvé a RStudio.\nRevisá panel de Git.\nHacé click en la flecha azul que dice “Pull”.\nRevisá el archivo README en la pestaña Archivos.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-individual.pt.html#anatomía-de-un-repositorio-de-github",
+    "href": "git/software-community-git-individual.pt.html#anatomía-de-un-repositorio-de-github",
+    "title": "11  Git para trabajar individualmente",
+    "section": "11.10 Anatomía de un repositorio de GitHub",
+    "text": "11.10 Anatomía de un repositorio de GitHub\n\nArchivos README. Utilizá un README.md para explicar de que se trata es tu proyecto y cómo utilizarlo. README.md es el archivo que se muestra automáticamente cuando abrís un repositorio de GitHub.\nLicencia. La licencia le indica a las personas cómo puede utilizar el contenido de tu repositorio. Generalmente, utilizamos licencias permisivas para que las personas pueda utilizar los materiales de cualquier manera. Algunos ejemplos son la Licencia MIT o Apache. Podés revisar algunos recursos extra:\n\nElejí una licencia para proyectos de código.\nLicencias de software en lenguaje sencillo: explica la jerga legal de las licencias en términos sencillos\n\nGuía para colaborar. Un archivo llamado CONTRIBUTING.md que incluye las instrucciones que personas que quieren conlaborar en tu proyecto sepan lo que deben hacer si quieren ayudarte.\nCódigo de conducta. Los buenos proyectos tienen códigos de conducta para garantizar un ambiente amigable donde las personas pueden colaborar. Github tiene atajos para agregar Código de Conducta facilmente.\nIssues. Te permiten gestionar el proyecto, discutir problemas y mejoras con otras personas.\n\n\n\n\n\n\n\nTipMas detalle\n\n\n\nEn los talleres de Desarrollo de Paquetes de R veremos como agregar todas estas partes del repositorio en R y con foco en un paquete de R.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Git para trabajar individualmente</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-team.pt.html",
+    "href": "git/software-community-git-team.pt.html",
+    "title": "12  Git para trabajar en equipo",
+    "section": "",
+    "text": "12.1 Objetivos de aprendizaje",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Git para trabajar en equipo</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-team.pt.html#objetivos-de-aprendizaje",
+    "href": "git/software-community-git-team.pt.html#objetivos-de-aprendizaje",
+    "title": "12  Git para trabajar en equipo",
+    "section": "",
+    "text": "Aplicar conceptos de flujos de trabajo usando Git básicos al trabajo colaborativo utilizando GitHub.\nComprender como los conflictos de versiones se generan y como resolverlos.\nIdentificar las diferencias entre branchs y forks e identificar situaciones en las que utilizar cada una.\nComprender el uso y el rol de las branchs y los pull requests en la colaboración en un proyecto.\nGestiona pull requests como responsable o líder de un proyecto.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Git para trabajar en equipo</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-team.pt.html#colaborando-con-otras-personas",
+    "href": "git/software-community-git-team.pt.html#colaborando-con-otras-personas",
+    "title": "12  Git para trabajar en equipo",
+    "section": "12.2 Colaborando con otras personas",
+    "text": "12.2 Colaborando con otras personas\nEn este encuentro vamos a ver como es el flujo de trabajo colaborativo entre personas para desarrollar software. En el taller anterior vimos como trabajar con git de manera individual:\nModificar un archivo --&gt; Add --&gt; Commit --&gt; Push\nAsí que cada vez hagas un push, git comparará los archivos en el repositorio remoto con la versión que actualizaste localmente y actualizará el repo remoto para que todo esté sincronizado.\nPero cuando se trabaja con otras personas hay casos que potencialmente pueden crear conflictos de merge o versiones. Aunque el nombre sugiera lo contrario, un conflicto de merge no es necesariamente un error, ocurre cuando la versión de un archivo en el repositorio local no es compatible con su versión en el repositorio remoto. A veces, Git es capaz de combinar los dos conjuntos de cambios sin ningún problema. Pero a veces esto no es posible, y requiere que una persona intervenga y decida cómo deben combinarse los múltiples cambios, ¿mantiene la versión A, la versión B o una combinación de ambas?",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Git para trabajar en equipo</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-team.pt.html#identificando-conflictos-de-versiones",
+    "href": "git/software-community-git-team.pt.html#identificando-conflictos-de-versiones",
+    "title": "12  Git para trabajar en equipo",
+    "section": "12.3 Identificando conflictos de versiones",
+    "text": "12.3 Identificando conflictos de versiones\nImaginá que alguien en tu equipo trabaja sobre el archivo 01_lectura-limpieza-datos.R en un proyecto/repositorio donde estan trabajando a la par:\n# Carga de librerias\nlibrary(readr)\nlibrary(dplyr)\n\n# Lectura de datos \ntemperatura_raw &lt;- read.csv(\"datos/temperatura_La-Pampa.csv\") |&gt;\n  filter(temp_max &gt; 45) # filtro valores incorrectos\nAl mismo tiempo, vos también decidiste trabajar en la limpieza de los datos pero en vez de leer el archivo con read.csv(), usaste la función read_csv() que está en el paquete readr. Cuando intentás hacer push de la nueva versión del archivo al repositorio remoto te encontrás con este mensaje:\n&gt;&gt;&gt; /usr/bin/git push origin HEAD:refs/heads/master\nTo github.com:paocorrales/taller-git.git\n ! [rejected]        HEAD -&gt; master (fetch first)\nerror: failed to push some refs to 'github.com:paocorrales/taller-git.git'\nhint: Updates were rejected because the remote contains work that you do not\nhint: have locally. This is usually caused by another repository pushing to\nhint: the same ref. If you want to integrate the remote changes, use\nhint: 'git pull' before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.\nEl mensaje nos aconseja hacer pull antes de intentar hacer push para actualizar el repositorio primero el repositorio local antes de enviar los cambios an GitHub. Al hacer pull nos encontramos con el siguiente problema:\n&gt;&gt;&gt; /usr/bin/git pull\nFrom github.com:paocorrales/taller-git\n   6e63458..d7d2a6c  master     -&gt; origin/master\nAuto-merging 01_lectura-limpieza-datos.R\nCONFLICT (content): Merge conflict in 01_lectura-limpieza-datos.R\nAutomatic merge failed; fix conflicts and then commit the result.\nEl mensaje dice que hay conflictos con el contenido de 01_lectura-limpieza-datos.R y que el merge automático falló. La buena noticia es que ya sabemos cuál es el archivo que da problemas. Aquí, hacer commits con pequeños cambios ayuda mucho.\nAhora, si revisamos el archivo 01_lectura-limpieza-datos.R, el contenido cambió:\n# Carga de librerias\nlibrary(readr)\nlibrary(dplyr)\n\n# Lectura de datos \n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\n      temperatura_raw &lt;- read_csv(\"datos/temperatura_La-Pampa.csv\") |&gt;\n=======\n      temperatura_raw &lt;- read.csv(\"datos/temperatura_La-Pampa.csv\") |&gt;\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; d7d2a6cf0e03652e1ff52e7cf5eb2da96fe69312\n  filter(temp_max &gt; 45) # filtro valores incorrectos\nEstos simbolos &lt;&lt;&lt;&lt;&lt;&lt;&lt;, ======= y &gt;&gt;&gt;&gt;&gt;&gt;&gt; fueron agregados por git para resaltar el contenido que está generando conflictos. Todo lo que hay entre &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD y ======= corresponde a la versión local, y el contenido entre ======= y &gt;&gt;&gt;&gt;&gt;&gt;&gt; es la versión actualmente en GitHub. La cadena larga es el identificador del commit en Github y HEAD refiere al último commit en el repo local.\nPara arreglar el conflicto será necesario:\n\nEliminar las lineas que agrego git.\nElegir una de las 2 versiones en conflicto o generar una nueva versión que incluya todos los cambios.\nGuardar el archivo y hacer un nuevo commit, que normalmente tiene como mensaje “arregla conflicto de merge” o algo similar.\n\nAlgunas herramientas como GitHub Desktop y GitKraken tienen una interfaz gráfica que permite resolver estos conflictos de manera rápida, sin embargo el mecanismo en el fondo es el mismo.\nLos conflictos de merge pueden suceder aún si no estás trabajando con otras personas. Por ejemplo, si cambiaste algo en GitHub, olvidaste hacer pull localmente y luego cambiaste el mismo archivo en tu compu. Cuando intentes hacer push te vas a encontrar con problemas. Aunque los conflictos son parte de trabajar con control de versiones, vamos a tratar de evitarlos en la medida de lo posible.\nA continuación veremos algunas estrategías para trabajar incluyendo el uso de branches (ramas) y pull requests (solicitudes de cambios).\n\n12.3.1 1. Primero, hace pull\nEs recomendable hacer pull antes de empezar a trabajar con los archivos de un repositorio, ya que así empezarás a trabajar con la versión más actualizada del repositorio.\n\n\n12.3.2 2. Cada persona trabaja en archivos diferentes\nSi trabajas en equipo, la forma más fácil de evitar conflictos de merge es pedir a cada persona que trabaje en archivos diferentes y que no editen los archivos asignados a otras personas. Esto funciona pero tiene limitaciones.\nA largo plazo, es posible que tengas que trabajar en el código de otra persona y, en esos casos, la comunicación entre los miembros del equipo es fundamental.\n\n\n12.3.3 3. Las personas se turnan\nEs posible que más de una persona esté trabajando en el mismo archivo, ya sea un script o documentación. Por lo general, ese será un trabajo que requiere tiempo y se puede dividir entre muchas personas. Una solución es turnarse: vos trabajás en el archivo por la mañana y tu compañero/a lo hace por la tarde. De nuevo, esto tiene limitaciones y no va en línea con el espíritu de trabajar con git.\n\n\n12.3.4 4. Las personas trabajan en branchs\nAquí es donde aprovechamos al máximo lo que git tiene para ofrecer.\nLas branchs (ramas en inglés) parecen un concepto nuevo, pero en realidad, siempre estás trabajando en una rama sin darte cuenta. La branch “predeterminada” en general se llama main (o master en configuraciones mas viejas) porque es la principal, y todo este tiempo estuviste “agregando commits a la branch main”.\nUna branch en git es una etiqueta que apunta a un commit específico en el repositorio a partir de la cual se crean otras versiones paralelas. Trabajar en una branch te permite modificar archivos sin modificar los mismos archivos en otras branchs, porque esencialmente estás trabajando en un conjunto de archivos independientes (como una realidad paralela). Cuando quieras pasar los cambios de tu branch a la branch main, tendrás que hacer un merge para combinar las ramas.\n\n\n\n“Diagrama de un árbol git que muestra la branch principal con 4 commits y una branch secundaria llamada función que comienza desde el commit 2 en la branch main y tiene 2 nuevos commits, independientes de la principal.”\n\n\nHay diferentes formas de utilizar branchs. Quizás cada persona del equipo tiene una branch y trabaja en ella hasta que llega el momento de hacer un merge a la branch main. O quizás, y esto es más común, cada branch represente un nuevo desarrollo que se agrega al paquete. Por ejemplo, si agregás una nueva función, creás una branch, desarrollas el código y luego haces un merge para incorporar la función al paquete.\nTrabajar con branchs no eliminará los conflictos del todo. Es posible que estos aparezcan cuando intentes hacer merge entre tu branch con la branch principal. Pero esto pasará una sola vez y solo cuando lo decidas.\nAntes de revisar cómo es el flujo de trabajo con branchs, hay un nuevo concepto que debemos mencionar: un pull request o PR es una herramienta de GitHub que te permite realizar cambios en una branch y luego solicitar a quien mantiene el repositorio que haga merge de esos cambios en la branch principal. Los pull request pueden surgir de forks (que presentaremos más adelante) o de otras branchs dentro del repositorio. Permiten a quienes mantienen y colaboran en un proyecto, revisar, discutir, solicitar y aprobar los cambios y sumarlos al repositorio cuando estan listos.\n\n\n12.3.5 Escenario 1: Usamos branchs\nLa primera situación es la más común cuando se trabaja en equipo en un proyecto a largo plazo. Puedes clonar el repositorio siguiendo estas mismas instrucciones y utilizar el mismo flujo de trabajo que antes. Cuando intentes enviar tus cambios al repositorio remoto, GitHub comprobará si tienes permisos para modificar el repositorio. Hasta acá estamos en la situación anterior, donde la comunicación es clave para no pisar el trabajo de otras personas (y para trabajar en general!) y evitar conflictos de merge.\nSin embargo es posible incorporar branches para trabajar de manera paralela. Este diagrama muestra el flujo de trabajo cuando se desea contribuir al repositorio utilizando branchs y además, asumimos que tenés permisos de escritura en el repositorio remoto:\n\n\nCloná el repositorio en tu computadora\nCrear una nueva branch.\nEdita archivos, agregalos y hacé commits en esa branch.\nCuando los cambios estén hechos y listos, envía un pull request al repositorio remoto para comparar tus cambios en tu branch con main.\nEl pull request es aceptado y se hace merge o hay que hacer nuevos cambios (vuelve al paso 3).\nUna vez que el PR es aceptado y se hace merge, la branch principal tiene los cambios actualizados y ya se puede eliminar la branch donde estabas trabajando (hay complementos del naveador como Refined GitHub para que esto ocurra de forma automatica).\nEl proceso puede repetirse varias veces, en paralelo o en secuencia dependiendo del tamaño del equipo.\n\nPuedes leer más sobre las ramas en el capítulo 22 de Happy git with R. Y vamos a ver mas sobre esto en los proximos talleres.\n\n\n12.3.6 Escenario 2: Usamos forks y branchs.\nSi no tenés permisos de escritura en el repositorio remoto, tendrás que utilizar forks. Esto es muy habitual cuando querés colaborar en un proyecto del que no formas parte.\nLa segunda situación es habitual cuando se contribuye a proyectos de desconocidos, como la corrección de errores en paquetes de código abierto.\nUn fork es una copia del repositorio de otra persona o equipo que se almacenará en tu cuenta de GitHub. Tanto el repositorio original como el fork se encuentran en GitHub, la diferencia es que puedes modificar y actualizar la versión que se encuentra en tu cuenta.\n\n\nCrear un fork del repositorio principal (si aún no lo tenés).\nClonar el repositorio en tu computadora.\nCrear una nueva branch en tu copia del repositorio.\nRealizar ediciones y cambios en los archivos y envíalos (add -&gt; commit -&gt; push) a la nueva branch.\nCuando esté todo listo, abrí el pull request. Si te piden nuevos cambios tendrás que volver al paso 4.\nSi el PR aceptado y fusionado, la branch principal en el repositorio principal se actualizará y la nueva branch se puede borrar.\nFinalmente podés sincronizar tu fork del repositorio con el repositorio principal.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Git para trabajar en equipo</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-team.pt.html#cómo-trabajar",
+    "href": "git/software-community-git-team.pt.html#cómo-trabajar",
+    "title": "12  Git para trabajar en equipo",
+    "section": "12.4 Cómo trabajar",
+    "text": "12.4 Cómo trabajar\nUn reto que surge a menudo es saber cómo y cuándo usar branchs. ¿Hacés todos cambios cambios allí y luego abris un PR a la branch main? ¿creás una branch, haces PR y y la borras inmediatamente después? ¿Qué cambios haces en la nueva branch? La respuesta a estas preguntas dependen del contexto, del equipo, del paquete en el que estés trabajando, de cuáles sean tus objetivos para el paquete, etc. Sin embargo, te damos algunos consejos:\n\nCuando haces cambios pequeños y enfocados con un error u objetivo específico (por ejemplo, actualizar la documentación para arreglar un error de tipeo) creá un nueva branch y abrí un PR. Cuanto más pequeños sean los cambios más fácil será revisarlos y aceptarlos.\nSi hacés grandes cambios, lo mejor es que estén relacionados a un problema u objetivo, de modo que al revisar el PR sea más fácil seguirlo y entenderlo. Dividí tus contribuciones por problema u objetivo.\nHaz cambios relacionados con un issue específico y agregá comentarios en el issue para mantener a todo el mundo al tanto.\n\nVamos a mostrar algunos ejemplos de cómo utilizar los flujos de trabajo que vimos recién en distintas situaciones.\n\nDesarrollando software de manera individual En este caso, probablemente tengas que pensar si tenés que hacer una branch, ya que podés trabajar fácilmente con git sin hacer nunca una branch. Sin embargo, si quisieras experimentar con el código (o texto) sin modificar la branch main, estarás en el escenario 1.\nDesarrollando software de manera individual pero otras personas colaboran Si estás trabajando en un paquete R de código abierto y hay personas que ocacionalmente contribuyen a tu paquete, como resposanble de mantenerlo y desarrollarlo recibirás issues y PR que tendrás que revisar y responder. En este caso es muy importante utilizar branches para reducir la posibilidad de que hagas un cambio en main que puedan afectar a usuarios de tu paquete.\nColaborando en un proyecto del que no sos parte Si contribuís ocasionalmente con un paquete de R, tendrás que usar el flujo de trabajo del escenario 2. Tendrás que hacer un fork del repositorio del paquete, hacer cambios en nuevas branchs, y abrir PR para proponer esos cambios en el paquete. Este escenario es el más habitual en el mundo de los paquetes R de código abierto, ya que la mayoría de los paquetes son mantenidos por una o varias personas.\nComo miembro de un equipo Si tenés permisos de escritura en el repositorio y formás parte de un equipo que trabaja en ese repositorio, podés trabajar siguiendo el flujo de trabajo en el escenario 1. Harás cambios en los archivos creando primero una branch y, cuando el cambio esté listo, enviarás los cambios al repositorio remoto abriendo un PR para que otras personas en el equipo puedan revisar tu propuesta.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Git para trabajar en equipo</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-team.pt.html#plantemos-árboles",
+    "href": "git/software-community-git-team.pt.html#plantemos-árboles",
+    "title": "12  Git para trabajar en equipo",
+    "section": "12.5 Plantemos árboles!",
+    "text": "12.5 Plantemos árboles!\nComo ejemplo y ejercicio colaboraremos con la recientemente abierta galeria de arte Flametree, y haremos PRs en el camino.\n\nFork del repositorio\n\nIngresá a github.com/paocorrales/flametree_gallery\nHacé un fork del repositorio utilizando el botón “Fork” de la esquina superior derecha.\n\n\n\n\nCaptura de pantalla de un repositorio mostrando dónde está el botón “Fork”.\n\n\nAhora tenés una copia del repositorio en tu cuenta de GitHub.\n\nCopia la url del repositorio y clónalo en tu computadora siguiendo las instrucciones para crear un nuevo repositorio que vimos en la sección de git trabajando de manera individual.\n\n\n\n\nCaptura de pantalla de un repositorio forkeado mostrando dónde copiar la url para clonar el repositorio.\n\n\n\nAhora tenés un proyecto RStudio (que también es un repositorio) que es una copia del que está en el repositorio original. Es un proyecto muy pequeño con unos pocos archivos. template_script.R incluye el código necesario para crear bellas imágenes como ésta:\n\n\n\nImagen de árboles creada con R\n\n\nUtiliza el paquete de R flametree creado por Danielle Navarro. No vamos a discutir en profundidad cómo funciona este paquete, pero es una buena excusa para practicar pull requests.\nCrea tu branch de trabajo\n\nEn la pestaña de git en RStudio, hace click en el botón “New Branch”\nEscribí el nombre de la nueva branch y creala. El nombre puede ser cualquier cosa pero sin espacios!\nAutomáticamente RStudio va a cambiar a la nueva branch para que puedas trabajar.\n\nSiempre podés navegar entre branches usando el menu desplegable a la derecha de “New Branch”.\n\nHacé un cambio en el repositorio local\n\nHacé una copia del archivo template_script.R y cámbiale el nombre a &lt;tu-nombre.R&gt;\nCambiá el valor de las 3 primeras variables del script:\n\n\nname: tu nombre.\nseed: porque hay cosas aleatorias en el código.\nshades: elegí 4 colores que te gusten.\n\nPodés ejecutar el código si querés ver tu árbol (necesitarás instalar el paquete).\n\nGuardá el archivo, add al área de preparación y hacé un commit (incluí sólo el archivo .R que creaste).\nHacé push a tu repositorio remoto.\n\n\nHasta este punto hiciste el cambio en tu repositorio local (que es una copia del repositorio principal) y subiste esos cambios a tu repositorio remoto en GitHub. El repositorio original no se enteró de estos cambios porque hasta este punto todo el trabajo lo hiciste en tu repositorio.\nSi querés contribuir con los cambios que hiciste (el archivo .R con el código para crear tu árbol) en el repositorio original, es hora de hacer un pull request.\n\nHacé un pull request\n\nEntrá a tu repositorio en GitHub, ahí encontrarás tu último commit y un mensaje como este:\n\n\n\n\nCaptura de pantalla de un repositorio bifurcado en GitHub con un nuevo commit. Muestra cómo iniciar un nuevo pull request.\n\n\n\nHacé click en “Open pull request”.\nY hacé click en “Create pull request”.\nAhora completá el pull request con un título y un mensaje y luego termina el PR.\n\n\n\n\nCaptura de pantalla de GitHub que muestra cómo añadir un título, un mensaje y finalizar un pull request\n\n\n¡Listo!\n\nQuien esté a cargo del repositorio recibirá un correo electrónico. Pueden revisar el pull request, hacer comentarios y, finalmente, aceptar la contribución. Cuando esto ocurra, los cambios que hayas hecho aparecerán en el repositorio.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Git para trabajar en equipo</span>"
+    ]
+  },
+  {
+    "objectID": "git/software-community-git-instructor-notes.pt.html",
+    "href": "git/software-community-git-instructor-notes.pt.html",
+    "title": "13  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nContenido pendiente de migración: ver https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-history.pt.html",
+    "href": "git/git-history.pt.html",
+    "title": "14  Git Historia",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nContenido pendiente de migración: ver https://github.com/ropensci-training/git-historia para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Git Historia</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-history-instructor-notes.pt.html",
+    "href": "git/git-history-instructor-notes.pt.html",
+    "title": "15  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nContenido pendiente de migración: ver https://github.com/ropensci-training/git-historia para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-advanced.pt.html",
+    "href": "git/git-advanced.pt.html",
+    "title": "16  Git Avanzado",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nContenido pendiente de migración: ver https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Git Avanzado</span>"
+    ]
+  },
+  {
+    "objectID": "git/git-advanced-instructor-notes.pt.html",
+    "href": "git/git-advanced-instructor-notes.pt.html",
+    "title": "17  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nContenido pendiente de migración: ver https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo colaborativo de software",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "packages/code-quality.pt.html",
+    "href": "packages/code-quality.pt.html",
+    "title": "18  Calidad Codigo",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/calidad-codigo-2026 para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Calidad Codigo</span>"
+    ]
+  },
+  {
+    "objectID": "packages/code-quality-instructor-notes.pt.html",
+    "href": "packages/code-quality-instructor-notes.pt.html",
+    "title": "19  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/calidad-codigo-2026 para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "packages/mechanics-prereqs.pt.html",
+    "href": "packages/mechanics-prereqs.pt.html",
+    "title": "20  Mecanica Prereqs",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Mecanica Prereqs</span>"
+    ]
+  },
+  {
+    "objectID": "packages/mechanics-1.pt.html",
+    "href": "packages/mechanics-1.pt.html",
+    "title": "21  Mecanica 1",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Mecanica 1</span>"
+    ]
+  },
+  {
+    "objectID": "packages/mechanics-1-instructor-notes.pt.html",
+    "href": "packages/mechanics-1-instructor-notes.pt.html",
+    "title": "22  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "packages/mechanics-2.pt.html",
+    "href": "packages/mechanics-2.pt.html",
+    "title": "23  Mecanica 2",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Mecanica 2</span>"
+    ]
+  },
+  {
+    "objectID": "packages/mechanics-2-instructor-notes.pt.html",
+    "href": "packages/mechanics-2-instructor-notes.pt.html",
+    "title": "24  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "packages/mechanics-3.pt.html",
+    "href": "packages/mechanics-3.pt.html",
+    "title": "25  Mecanica 3",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Mecanica 3</span>"
+    ]
+  },
+  {
+    "objectID": "packages/mechanics-3-instructor-notes.pt.html",
+    "href": "packages/mechanics-3-instructor-notes.pt.html",
+    "title": "26  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-mechanics para el repo fuente de este capítulo. Hay mas repos pero esta es la version mas actualizada.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "packages/advanced.pt.html",
+    "href": "packages/advanced.pt.html",
+    "title": "27  Avanzado",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-rocket para el repo fuente de este capítulo (hay mas repos pero con versiones de las cohortes anteriores, la de 2026 es la mas actualizada y que incorpora mejoras y feedback).",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Avanzado</span>"
+    ]
+  },
+  {
+    "objectID": "packages/advanced-instructor-notes.pt.html",
+    "href": "packages/advanced-instructor-notes.pt.html",
+    "title": "28  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nFuente del contenido: ver https://github.com/ropensci-training/2026-pkg-dev-rocket para el repo fuente de este capítulo (hay mas repos pero con versiones de las cohortes anteriores, la de 2026 es la mas actualizada y que incorpora mejoras y feedback).",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "packages/packages-genai.pt.html",
+    "href": "packages/packages-genai.pt.html",
+    "title": "29  GenAI Paquetes",
+    "section": "",
+    "text": "Nota\n\n\n\nContenido pendiente de migración.\nEs contenido nuevo, por lo que aun no hay un repo a migrar.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>GenAI Paquetes</span>"
+    ]
+  },
+  {
+    "objectID": "packages/packages-genai-instructor-notes.pt.html",
+    "href": "packages/packages-genai-instructor-notes.pt.html",
+    "title": "30  Notas para docentes",
+    "section": "",
+    "text": "NotaBorrador\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo es actualmente un borrador de ideas y no recomendamos su lectura.",
+    "crumbs": [
+      "Desarrollo de paquetes de R",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html",
+    "href": "review/review-process.pt.html",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "",
+    "text": "32 Introducción al taller\nSobre ustedes 🏅🇪🇸 y sobre mí 👋.\nLicencia: Atribución/Reconocimiento-NoComercial 4.0 Internacional",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#objetivos-principales",
+    "href": "review/review-process.pt.html#objetivos-principales",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "32.1 Objetivos principales",
+    "text": "32.1 Objetivos principales\nDía 1\n\nFamiliarizarse con las etapas y cualidades del proceso\nPracticar proponer software para revisión\n\nDía 2\n\nPracticar enviar software para revisión",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#plan-para-el-dia-1",
+    "href": "review/review-process.pt.html#plan-para-el-dia-1",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "32.2 Plan para el dia 1",
+    "text": "32.2 Plan para el dia 1\n\nIntroducción al taller\nIntroducción al proceso de punta a punta\n\nComparación con la academia\nProponer y enviar software para revisión\n{pkgcheck}\nCódigo de conducta y comunicación\n\nPausa\nProponer software para revisión\n\nAbrir un “issue”\nComunicación amable y constructiva\n\nPreguntas y comentarios",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#proponer-software-para-revisión",
+    "href": "review/review-process.pt.html#proponer-software-para-revisión",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "33.1 Proponer software para revisión",
+    "text": "33.1 Proponer software para revisión\n\n\n\n\n\nflowchart LR\n    B((1-Abrir issue))\n    B --&gt; C{2-¿Dentro del alcance?}\n    C --&gt;|No| E{3-¿Excepción?}\n    C --&gt;|Sí| D[4-Enviar]\n    E --&gt;|Sí| D\n    E --&gt;|No| G((5-Cerrar issue))",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#enviar-software-para-revisión",
+    "href": "review/review-process.pt.html#enviar-software-para-revisión",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "33.2 Enviar software para revisión",
+    "text": "33.2 Enviar software para revisión\n\n\n\n\n\nflowchart LR\n    B((1-Abrir issue))\n    B --&gt; C[2-Revisar]\n    C --&gt; D{3-¿Listo?}\n    D --&gt;|No| C\n    D --&gt;|Sí| E((Publicar))",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#pkgcheck-uso-en-un-issue",
+    "href": "review/review-process.pt.html#pkgcheck-uso-en-un-issue",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "33.3 {pkgcheck}: Uso en un “issue”",
+    "text": "33.3 {pkgcheck}: Uso en un “issue”\n@ropensci-review-bot check package\nEjemplo\n\n\nComandos del bot",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#pkgcheck-uso-local",
+    "href": "review/review-process.pt.html#pkgcheck-uso-local",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "33.4 {pkgcheck}: Uso local",
+    "text": "33.4 {pkgcheck}: Uso local\n\n\n\n\n\n\nNotaInstalación\n\n\n\n  options (repos = c (\n    ropenscireviewtools = \"https://ropensci-review-tools.r-universe.dev\",\n    CRAN = \"https://cloud.r-project.org\"\n  ))\n  install.packages(\"pkgcheck\")\nTambién vas a necesitar ejecutar pkgstats::ctags_install() en Linux, o brew install global desde la terminal en MacOS.\n\n\nUso\n  paquete &lt;- \"/camino/al/paquete\"\n  resultados &lt;- pkgcheck::pkgcheck(paquete)\n  resultados\n  \n  summary(resultados)\n\n\nDocumentación de {pkgcheck}",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#código-de-conducta",
+    "href": "review/review-process.pt.html#código-de-conducta",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "33.5 Código de Conducta",
+    "text": "33.5 Código de Conducta\n\nLa comunidad de rOpenSci es lo más importante.\nNuestro objetivo es que las revisiones sean\n\nabiertas,\nno conflictivas,\n\ny con el objetivo de mejorar la calidad del software.\n\n\n¡Sé amable! y comportate con respeto.\n\n\n\nGuía para quienes hacen una revisión\nGuía para el equipo editorial\nCódigo de Conducta",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#comunicación-amable-y-constructiva",
+    "href": "review/review-process.pt.html#comunicación-amable-y-constructiva",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "33.6 Comunicación amable y constructiva",
+    "text": "33.6 Comunicación amable y constructiva\nOfrecer\n\nSeguridad\nSugerencia/Decisión\nSeguimiento\n\n\n\nCómo ganar amigos e influir sobre las personas\nConversaciones Cruciales: herramientas para comunicar mejor cuando más se necesita",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#comunicación-amable-y-constructiva-1",
+    "href": "review/review-process.pt.html#comunicación-amable-y-constructiva-1",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "33.7 Comunicación amable y constructiva",
+    "text": "33.7 Comunicación amable y constructiva\nDe parte de una autoría:\n\nNo encontré una categoría que se ajustara perfectamente, por lo que creé una categoría nueva.\n\n\n\n\n\n\n\nNota¿Qué puntaje le darías a cada respuesta de la editoría (1-10)?\n\n\n\n\n\nRespuesta 1\n\n@editor/a:\n\n@autor/a,\nLamentablemente nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.\n\n\n\n\nRespuesta 2\n\n@editor/a:\n\n@autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorías actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.\n\n\n\n\nRespuesta 3\n\n@editor/a:\n\n@autor/a gracias por tu consulta. El paquete parece muy interesante pero lamentablemente está fuera del alcance de las categorías actuales de rOpenSci. Nuestras categorías están pre-definidas. Esperamos ampliarlas gradualmente, pero no podemos acomodar paquetes individuales.\n\n\nTe recomendaría revisar y publicar el paquete en el Journal of Open Source Software.\n\n\nEspero que pronto podamos trabajar con vos en algún otro paquete.\n\n\n\n\n\n\nDecidir el alcance y el solapamiento",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#plan-para-el-día-2",
+    "href": "review/review-process.pt.html#plan-para-el-día-2",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "37.1 Plan para el día 2",
+    "text": "37.1 Plan para el día 2\n\nRepaso\nPreparar un paquete\nRevisar un paquete: Introducción\nPausa\nRevisar un paquete: Actividad\nResponder a una revisión\nPreguntas y respuestas",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#repaso-proponer-software",
+    "href": "review/review-process.pt.html#repaso-proponer-software",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "37.2 Repaso: Proponer software",
+    "text": "37.2 Repaso: Proponer software\nEl paquete karel enseña a programar. Su objetivo está fuera del alcance de rOpenSci. Fue propuesto para revisión en 2023, durante el programa de campeones/as.\n\n\n\n\n\n\nNota¿Es correcto que haya sido revisado en rOpenSci?\n\n\n\n\nNo porque no encaja en el alcance\nSí porque aunque no encaja en el alcance es una excepción\nSí porque rOpenSci no rechaza paquetes\n\n\n\n\n\nProponer software para revisión\n\n\n\n\n\n\nflowchart LR\n    B((1-Abrir issue))\n    B --&gt; C{2-¿Dentro del alcance?}\n    C --&gt;|No| E{3-¿Excepción?}\n    C --&gt;|Sí| D[4-Enviar]\n    E --&gt;|Sí| D\n    E --&gt;|No| G((5-Cerrar issue))",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#repaso-comunicación",
+    "href": "review/review-process.pt.html#repaso-comunicación",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "37.3 Repaso: Comunicación",
+    "text": "37.3 Repaso: Comunicación\n\n\n\n\n\n\nNota¿Por qué preferimos la segunda respuesta?\n\n\n\n\nDe hecho preferimos la primera porque comunica la misma decisión pero es más corta.\nPorque es más políticamente correcta.\nPorque demuestra que rOpenSci es un espacio seguro para hacer consultas, sugiere un foro alternativo, e invita futuras contribuciones.\n\n\n\nRespuesta 1\n\n\n@autor/a, Lamentablemente este paquete está fuera del alcance actual de rOpenSci.\n\n\n\n\nRespuesta 2\n\n\n@autor/a, Gracias por tu consulta. Tu paquete se ve muy interesante, pero lamentablemente parece no encajar en las categorías actuales de rOpenSci. Te recomendaría publicarlo en el Journal of Open Source Software, el r-multiverse u otros repositorios. Y si tenés otro paquete o querés explorar cómo contribuir de otra forma, será un gusto guiarte.",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#revisar-un-paquete",
+    "href": "review/review-process.pt.html#revisar-un-paquete",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "38.1 Revisar un paquete",
+    "text": "38.1 Revisar un paquete\n\n\n\n\n\n\nNotaProponé (solo) una mejora. Usá la plantilla de revisión.\n\n\n\nPodés usar tu paquete o alguno de estos – antes de la revisión:\n\n\n{agroclimatico}: Índices y Estadísticos Climáticos e Hidrológicos\n\ngit clone https://github.com/ropensci/agroclimatico\ncd agroclimatico\ngit checkout -b antes d537dd20\n\n\n\n{eph}: Encuesta Permanente de Hogares de Argentina\n\ngit clone https://github.com/ropensci/eph\ncd eph\ngit checkout -b antes 707cd24c\n\n\n\n{karel}: Aprendiendo programación en R\n\ngit clone https://github.com/ropensci/karel\ncd karel\ngit checkout -b antes 4b057e67\n\n\n\n\n\nEjemplos\n\n{eph}: Usar un estilizador de código automático (revisión - commit).\n\n\n{eph}: Mostrar el output de los ejemplos en README (revisión - commit).\n\nEn la sección “Modo de uso”, por favor mostrar los resultados así se ven sin necesidad de instalar el paquete y correr el código.\n\n\n{agroclimatico}: Renombrar funciones (revisión - commit).\n\npodría plantearse un ligero cambio de nombre para evitar la confusión\n\n\n{agroclimatico}: Agrupar funciones (revisión - commit).\n\nUna sugerencia para que quede más clara la funcionalidad global del paquete es agrupar las funciones en el índice por temáticas.\n\n\n{karel}: Expresar la necesidad del paquete en README (revisión - commit).\n\nAdd statement of need. The Who is Karel? section of the README hints at the need but does not describe it explicitly.",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process.pt.html#responder-a-una-revisión",
+    "href": "review/review-process.pt.html#responder-a-una-revisión",
+    "title": "31  Taller de revisión de software por pares de rOpenSci",
+    "section": "38.2 Responder a una revisión",
+    "text": "38.2 Responder a una revisión\nCombina habilidades que ya practicamos.\nEjemplos de revisión y respuesta en {agroclimatico}\n\n\nRevisión de @VeruGHub (revisora)\n\nSeguridad\n\nEn primer lugar, quiero agradecer la oportunidad de revisar este paquete y espero que los comentarios sirvan para mejorar en los puntos que los autores consideren oportunos.\n\nSugerencia/Decisión\n\nCreo que algunos aspectos formales de la documentación pueden ser mejorados. Para empezar, la funcionalidad del paquete no está completamente definida en la documentación (Readme) … Mejorar estas descripciones e incluir programación defensiva relativa a los argumentos (en general faltante) ayudaría mucho a los usuarios.\n\n\n\n\nRespuesta de @paocorrales (autora)\n\nSeguridad\n\nEn primer lugar, muchas gracias @pmnatural y @VeruGHub por la revisión y los comentarios.\n\nSugerencia/Decisión\n\nIncorporé los comentarios y sugerencias al paquete.\n\nSeguimiento\n\nEspero no haberme olvidado de nada, ¡aguardo sus comentarios!\n\n\nEjemplo de oposición a una sugerencia en {eph}\n\n\nRespuesta de @caropradier (autora)\n\nSeguridad\n\n@lidefi87 ¡gracias de nuevo por tus esfuerzos!\n\nSugerencia/Decisión\n\nRespecto al nombre de las funciones, intentaría no hacer modificaciones mayores para no perturbar el flujo de trabajo de nuestros usuarios actuales (aproximadamente 30 mil personas usan el paquete y quisiera evitar generarles inconvenientes si no se trata de algo fundamental para el funcionamiento del paquete). No obstante, estoy de acuerdo con que se trata de una buena práctica, y lo tendré presente al incorporar nuevas funciones.\n\n\n Responder a las preguntas del equipo de revisión",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Taller de revisión de software por pares de rOpenSci</span>"
+    ]
+  },
+  {
+    "objectID": "review/review-process-instructor-notes.pt.html",
+    "href": "review/review-process-instructor-notes.pt.html",
+    "title": "32  Notas para docentes",
+    "section": "",
+    "text": "NotaMigración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.\nContenido pendiente de migración: ver https://github.com/ropensci-training/software-review para el repo fuente de este capítulo.",
+    "crumbs": [
+      "Revisión de software",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html",
+    "href": "community/oss-contribution.pt.html",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "",
+    "text": "33.1 Objetivos de aprendizaje",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#objetivos-de-aprendizaje",
+    "href": "community/oss-contribution.pt.html#objetivos-de-aprendizaje",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "",
+    "text": "Reconocer que una contribución a un proyecto o comunidad de código abierto va mucho más allá de escribir código.\nDiferenciar los seis pasos del modelo Pathway to Inclusion (Camino hacia la Inclusión) y reconocer en qué paso se encuentra una persona respecto de un proyecto o comunidad.\nDistinguir las cuatro formas de participación del Modelo de Participación Comunitaria del CSCCE: transmitir/consumir, contribuir, colaborar y co-crear.\nIdentificar herramientas y prácticas concretas —usadas por rOpenSci— que ayudan a que más personas conozcan, entiendan, accedan, se sientan parte y se apropien de un proyecto o comunidad.\nAplicar estos conceptos al propio paquete de R: qué hacer para que sea fácil de descubrir, entender, y para que su repositorio sea amigable a la contribución y la colaboración.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#qué-es-en-realidad-una-contribución",
+    "href": "community/oss-contribution.pt.html#qué-es-en-realidad-una-contribución",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "33.2 ¿Qué es, en realidad, una contribución?",
+    "text": "33.2 ¿Qué es, en realidad, una contribución?\nCuando alguien dice “hice una contribución a un proyecto de código abierto”, lo primero que solemos imaginar es a una persona programando: alguien que aportó código de forma significativa y que, para eso, tiene que saber “un montón”. Esta asociación es tan común que muchas personas la dan por sentada, y sin embargo es una idea incompleta que puede terminar siendo una barrera de entrada.\nHay muchísimas otras formas de contribuir y de participar en un proyecto, y esas contribuciones son igual de significativas e importantes para que el proyecto avance. Por ejemplo, cuando rOpenSci organizó mini-hackathons para ayudar a que la gente contribuyera por primera vez, se ofrecían tareas de traducción, de documentación, y de arreglar configuraciones (como GitHub Actions) que no implicaban tocar el código de los paquetes. Aun así, la mayoría de las personas elegía igualmente una tarea relacionada con código, en parte porque ese espacio, con mentoría disponible, se sentía seguro para intentarlo.\n\n\n\n\n\n\nTipPara tener en cuenta\n\n\n\nSi estás pensando en cómo abrir tu propio proyecto a la participación de otras personas, vale la pena ofrecer explícitamente tareas que no sean de código (documentación, traducción, diseño, difusión, revisión). Aunque el código siga siendo la opción más elegida, nombrar otras formas de contribuir amplía quién se anima a sumarse.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#comunidades-de-práctica",
+    "href": "community/oss-contribution.pt.html#comunidades-de-práctica",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "33.3 Comunidades de práctica",
+    "text": "33.3 Comunidades de práctica\nAntes de hablar de cómo se contribuye, conviene definir a qué llamamos “comunidad”. Etienne Wenger acuñó el concepto de comunidad de práctica:\n\nUn grupo de personas que comparten una pasión por algo que saben cómo hacer, y que interactúan regularmente con el objetivo de aprender cómo hacerlo mejor.\n\nEsta definición tiene una implicancia importante: no hace falta ser experto o experta para participar. Alguna noción o interés hay que tener, pero el objetivo de la comunidad es justamente mejorar juntos, no llegar ya sabiendo todo. Las comunidades de práctica tampoco tienen por qué estar relacionadas con la programación: un equipo de natación, un club de conversación en un idioma, o un grupo docente que se junta a diseñar contenido son también comunidades de práctica, con la misma estructura de fondo —interacción regular en torno a algo que a todas las personas les interesa mejorar—.\nUn paquete de R, un proyecto de software libre o una organización como rOpenSci pueden pensarse, también, como el espacio de una o varias comunidades de práctica.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#el-camino-hacia-la-inclusión",
+    "href": "community/oss-contribution.pt.html#el-camino-hacia-la-inclusión",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "33.4 El camino hacia la inclusión",
+    "text": "33.4 El camino hacia la inclusión\n¿Cómo llega alguien a formar parte de una comunidad? El modelo Pathway to Inclusion (Camino hacia la Inclusión), propuesto por Alex Bayley, describe seis pasos que una persona atraviesa —sí o sí, en algún orden— para, eventualmente, llegar a ser parte de un proyecto o comunidad. Ninguno de estos pasos es automático, y es común que alguien se quede en el camino sin que eso signifique falta de interés: muchas veces hay barreras concretas que lo impiden.\n\nConciencia: escuché hablar de esto. Sé que existe un paquete, un proyecto o una organización como rOpenSci.\nComprensión: entiendo qué es y cómo sería involucrarme. Ya no alcanza con saber que existe: hace falta entender qué hace y de qué forma yo podría sumarme.\nIdentificación: me imagino haciendo esto, siendo parte. Es posible entender perfectamente de qué se trata algo y, aun así, sentir que “no es para mí”.\nAcceso: puedo hacerlo. Aquí entran en juego dimensiones físicas (accesibilidad), financieras (¿puedo pagar?, ¿me piden una visa?) y logísticas (¿el horario del evento es compatible con mi zona horaria?).\nPertenencia: siento que encajo. A diferencia de la identificación —que es potencial, “me imagino haciéndolo”— la pertenencia ya es real: lo hice, me sentí bien, me sentí segura o seguro, y sé que si algo no lo sé, lo voy a aprender participando.\nApropiación: me importa tanto que asumo responsabilidad. Es el paso en el que alguien pasa de participar a hacerse cargo de tareas concretas para sostener el proyecto o la comunidad.\n\nCada uno de estos pasos puede fallar por motivos distintos, y eso importa especialmente en organizaciones con un fuerte componente voluntario. Llegar al último paso —la apropiación— es clave para la sostenibilidad de largo plazo: es de ahí de donde salen los recursos humanos que reemplazan, con el tiempo, a quienes se retiran del proyecto.\nHistóricamente, los pasos de identificación y acceso fueron una barrera particular para personas de Latinoamérica y para mujeres u otras minorías de género dentro de las comunidades de código abierto en R. Reconocer esas barreras es el primer paso para desarrollar estrategias que ayuden a reducirlas —por ejemplo, dictar contenido en el propio idioma, en lugar de asumir que el inglés es suficiente—.\n\n33.4.1 Herramientas concretas para cada paso\nrOpenSci trabaja de forma explícita cada uno de estos seis pasos con herramientas y prácticas concretas. Verlas ayuda a pensar qué se podría aplicar a un proyecto propio.\n\n\n\n\n\n\n\n\nPaso\nQué ayuda a lograrlo\nEjemplos de rOpenSci\n\n\n\n\nConciencia\nQue la gente se entere de que el proyecto existe\nCampañas en redes sociales (por ejemplo, “un paquete al día”), presencia en conferencias, meetups y coworkings conjuntos con otras organizaciones\n\n\nComprensión\nExplicar claramente qué es y cómo involucrarse\nSitio web y README completos; documentación generada automáticamente con pkgdown\n\n\nIdentificación\nMostrar que otras personas como uno ya participaron\nSección de “casos de uso” en la web, con historias reportadas por usuarios; entrevistas y blog posts sobre experiencias de uso\n\n\nAcceso\nReducir barreras físicas, financieras y logísticas\nCódigo de conducta; rotación de zonas horarias en eventos recurrentes; grabaciones disponibles para quien no puede asistir en vivo\n\n\nPertenencia\nQue la participación sea posible en el propio idioma\nContenido, procesos y programas (como el peer review) disponibles en español, no solo en inglés\n\n\nApropiación\nFacilitar encontrar una tarea concreta para hacerse cargo\nIssues etiquetados como “se busca ayuda” o “good first issue”, listados y filtrables por paquete en la web\n\n\n\n\n\n\n\n\n\nTipPara explorar\n\n\n\nSi querés ver estas herramientas en funcionamiento, visitá la sección de casos de uso de rOpenSci y la lista de issues etiquetados como “help wanted”. Fijate qué tipo de información se pide y cómo está organizada: es un buen punto de partida para pensar cómo replicar algo similar en tu propio repositorio.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#el-modelo-de-participación-comunitaria-cscce",
+    "href": "community/oss-contribution.pt.html#el-modelo-de-participación-comunitaria-cscce",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "33.5 El Modelo de Participación Comunitaria (CSCCE)",
+    "text": "33.5 El Modelo de Participación Comunitaria (CSCCE)\nMientras que el Camino hacia la Inclusión explica cómo alguien llega a formar parte de una comunidad, el Modelo de Participación Comunitaria del CSCCE (Center for Scientific Collaboration and Community Engagement) describe cómo esa persona participa una vez que ya es parte. El modelo, construido a partir del estudio de numerosas comunidades de práctica con foco en STEM, propone cuatro formas de participación:\n\nTransmitir / Consumir: la comunidad transmite contenido (un newsletter, un blog, un canal de Slack) y las personas lo consumen, sin necesariamente escribir ni responder. Es, para la gran mayoría de las personas, la puerta de entrada natural: para poder identificarse con algo, primero hay que conocerlo y entenderlo, y eso pasa por consumir información.\nContribuir: la persona aporta algo de forma individual —traduce un texto, escribe un blog post, hace de mentor o mentora, revisa un paquete, sugiere a alguien para dar una charla—. Es importante notar que, otra vez, esto no se limita al código.\nColaborar: es similar a contribuir, pero se hace en conjunto con otras personas. Un programa como el de Campeones/as de rOpenSci se ubica más del lado de colaborar que de contribuir, justamente porque se trabaja en grupo.\nCo-crear: las personas se encuentran en el espacio de la comunidad para generar algo nuevo que, probablemente, no habría surgido si no se hubieran encontrado ahí —y que muchas veces termina teniendo valor incluso fuera de esa comunidad—.\n\n\n\n\nModelo de Participación Comunitaria del CSCCE: representa un espectro que va desde consumir/transmitir, pasando por contribuir y colaborar, hasta co-crear.\n\n\nNinguna de estas formas de participación vale “más” que otra: todas son necesarias para que una comunidad funcione. Es normal y esperable que la mayoría de las personas esté, la mayor parte del tiempo, del lado del consumo. Lo interesante es que muchas intervenciones (como un programa de mentoría o de embajadores) pueden recorrer, para una misma persona, todo el espectro a lo largo del tiempo.\n\n33.5.1 Un ejemplo: Joel y Mo\nUn caso real, contado por sus propios protagonistas en un blog post, ilustra bien cómo una misma relación puede pasar por distintos modos de participación:\nJoel Nitta iba a visitar Oslo, donde vive Mo, para dar un taller. La contactó por el Slack de rOpenSci para invitarla a tomar un café. Mo, que lo había visto dar una charla sobre el paquete targets en una Community Call de rOpenSci, le propuso algo más: ¿por qué no dar un taller sobre targets en su universidad? Joel se dio cuenta de que ese pedido era justo la motivación que necesitaba para actualizar los materiales de un taller que tenía pendiente, y aceptó encantado. El resultado fue un curso nuevo, con el formato de Carpentries, llamado “Teaching Targets With Penguins”, que hoy está disponible tanto para la comunidad de Carpentries como para quien quiera aprender targets desde rOpenSci.\nEn esta historia:\n\nEn la Community Call, Joel contribuía (dio una charla) y Mo consumía (participó como oyente).\nAl escribir juntos el blog post sobre la experiencia, ambos estaban colaborando.\nAl diseñar el taller con el formato de Carpentries —algo que no existía antes—, estaban co-creando.\n\nLa colaboración, como muestra este ejemplo, no ocurre solo entre individuos: también sucede entre organizaciones (en este caso, rOpenSci y Carpentries), y a menudo el resultado termina siendo útil más allá de la comunidad donde se originó.\n\n\n\n\n\n\nNota\n\n\n\nEn rOpenSci, a las personas que asumen un rol activo para que más gente se sume a la comunidad —difundiendo, invitando, presentando gente entre sí, o dando capacitaciones— se las llama “campeones/as” (del inglés champion, más cercano al sentido de “embajador/a” que al deportivo). Las actividades de campeones/as pueden ubicarse en cualquiera de los cuatro modos de participación: desde transmitir en redes sociales hasta co-crear una capacitación nueva para la comunidad.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#recursos-de-ropensci-para-participar",
+    "href": "community/oss-contribution.pt.html#recursos-de-ropensci-para-participar",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "33.6 Recursos de rOpenSci para participar",
+    "text": "33.6 Recursos de rOpenSci para participar\nrOpenSci documenta de forma extensa sus procesos de participación, tanto para facilitar el onboarding de personas nuevas como para que otras organizaciones puedan tomar ideas. Algunos de los recursos disponibles son:\n\nGuía de Contribución de la Comunidad rOpenSci: describe las distintas formas de participar, organizadas según lo que a cada persona le interesa (descubrir, conectar, aprender, construir, ayudar).\nGuía del Blog de rOpenSci: explica cómo escribir y editar contenido para el blog, que además está indexado por Google Scholar y puede vincularse al ORCID de quien escribe.\nPaquetes rOpenSci: Desarrollo, Mantenimiento y Revisión por Pares: la guía de referencia para desarrollo de paquetes y para el sistema de revisión por pares (peer review), con actualizaciones periódicas.\nGuía de localización y traducción de rOpenSci: describe cómo y por qué se traducen y localizan los recursos, respetando los acuerdos particulares que cada comunidad lingüística fue construyendo.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#aplicando-estos-conceptos-a-tu-propio-paquete",
+    "href": "community/oss-contribution.pt.html#aplicando-estos-conceptos-a-tu-propio-paquete",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "33.7 Aplicando estos conceptos a tu propio paquete",
+    "text": "33.7 Aplicando estos conceptos a tu propio paquete\nUna vez entendidos estos dos modelos, la pregunta natural es: ¿cómo se traduce todo esto en acciones concretas sobre un paquete de R?\n\n33.7.1 Transmitir: que la gente sepa que tu paquete existe\n\nREADME completo: explicá con claridad qué hace tu paquete, cómo se instala y cómo se empieza a usar. Incluí ejemplos o casos de uso, y enlaces a publicaciones, charlas o proyectos donde ya se haya usado.\nRepositorio fijado (pinned) en tu perfil de GitHub: para que quien visite tu perfil pueda encontrarlo rápidamente entre el resto de tus repositorios.\nR-universe: crear un universo genera automáticamente los binarios de tu paquete para que se pueda instalar con install.packages() de la misma forma que si estuviera en CRAN, además de generar artículos, exponer datasets y llevar estadísticas de uso.\nSitio web de documentación con pkgdown: si tu paquete pasa a ser parte de la suite de rOpenSci, este sitio se genera de forma automática; si no, podés configurarlo igual para tu propio paquete.\nDifusión en redes y foros específicos de R: Mastodon, LinkedIn, R-bloggers y R Weekly suelen tener secciones para anunciar nuevos paquetes.\nCharlas y Community Calls: presentar tu paquete en un grupo de usuarios de R, un capítulo de RLadies+, una conferencia de tu disciplina o una conferencia específica de R (como LatinR) ayuda a que se conozca.\nCRAN Task Views: si tu paquete encaja temáticamente en una de estas listas oficiales de CRAN, podés proponer con un pull request que se agregue.\n\n\n\n33.7.2 Contribuir y colaborar: hacer tu repositorio amigable\nPara que un repositorio invite a la contribución y la colaboración, conviene incluir al menos tres elementos:\n\nCódigo de conducta (CODE_OF_CONDUCT.md): se puede agregar fácilmente con usethis::use_code_of_conduct(), que usa como base el Contributor Covenant (disponible en muchos idiomas). Si tu paquete pasa el peer review de rOpenSci, se utiliza el código de conducta de rOpenSci, respaldado por su comité.\nLicencia OSI (LICENSE.md): una licencia compatible con software libre. MIT y GPL son de las más elegidas para paquetes de R.\nGuía de contribución (CONTRIBUTING.md): usethis::use_tidy_contributing() genera una plantilla a partir de la guía del tidyverse, que después podés adaptar a tus propias preferencias.\n\n\n\n\n\n\n\nTipEjercicio: preparar tu paquete para recibir contribuciones\n\n\n\nEn tu propio paquete (o en el paquete que estés usando en tus capacitaciones), probá agregar:\n\nUn código de conducta, con usethis::use_code_of_conduct().\nUna guía de contribución, con usethis::use_tidy_contributing() como punto de partida.\n\nAdaptá el contenido de la guía a tus propias decisiones: ¿qué estilo de código usás?, ¿preferís que primero se abra un issue antes de un pull request?, ¿cómo vas a reconocer las contribuciones que recibas (como autoría, como agradecimiento)?\n\n\nUna guía de contribución también es el lugar indicado para declarar el alcance de tu paquete —qué vas a desarrollar y qué no— y, opcionalmente, una declaración de ciclo de vida que explicite qué se va a trabajar a corto y a largo plazo, y qué directamente no está planeado. Ser explícito con estos límites no es un gesto poco amigable: al contrario, evita malentendidos y ahorra tener que responder la misma pregunta una y otra vez. Como suele decirse, claridad es amabilidad.\nEste mismo criterio aplica incluso cuando el paquete está construido sobre un dataset cerrado o que no va a cambiar (por ejemplo, datos de un censo o relevamiento ya finalizado): las contribuciones igual pueden orientarse a nuevas funciones que operen sobre esos datos —nuevos cálculos, nuevas salidas, nuevas visualizaciones— aunque el dataset en sí no se modifique. Definir de antemano un proceso para decidir qué pedidos se van a implementar (por ejemplo, revisar los issues abiertos una vez cada tantos meses) ayuda a manejar expectativas de ambos lados.\n\n\n33.7.3 Gestión de issues\nUna vez que el repositorio invita a la participación, conviene facilitar que esas contribuciones lleguen de forma ordenada:\n\nPlantillas de issue: ayudan a que quien reporta un error o pide una funcionalidad complete la información que necesitás para poder ayudar.\nEtiquetado de issues: etiquetas como help wanted o good first issue funcionan como una señal explícita hacia potenciales colaboradores, especialmente hacia quienes están dando sus primeros pasos.\nFijar (pin) issues: de la misma manera que se puede fijar un repositorio en el perfil, se pueden fijar hasta tres issues en la parte superior de un repositorio, lo cual ayuda a comunicar cuáles son las prioridades del proyecto.\n\n\n\n33.7.4 Recursos adicionales para colaborar y co-crear\n\nSección de la Guía de Desarrollo sobre trabajar con colaboradores.\nBlog post: Ideas de Marketing para tu Paquete.\nCommunity Call: Configura tu Paquete para Fomentar una Comunidad.\nRespuestas guardadas de GitHub, para reutilizar respuestas amables y frecuentes sin tener que reescribirlas cada vez.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution.pt.html#para-recordar",
+    "href": "community/oss-contribution.pt.html#para-recordar",
+    "title": "33  Cómo contribuir a proyectos y comunidades abiertas",
+    "section": "33.8 Para recordar",
+    "text": "33.8 Para recordar\n\nContribuir no es sinónimo de programar: hay muchas formas igual de valiosas de participar en un proyecto o comunidad.\nEl Camino hacia la Inclusión (conciencia, comprensión, identificación, acceso, pertenencia, apropiación) ayuda a entender en qué punto puede estar quedándose una persona que quiere sumarse a tu proyecto, y qué barrera concreta habría que trabajar.\nEl Modelo de Participación Comunitaria del CSCCE (transmitir/consumir, contribuir, colaborar, co-crear) ayuda a pensar en qué modo está participando alguien, y que ese modo puede cambiar con el tiempo, tanto a nivel individual como entre organizaciones.\nNinguna decisión sobre cómo recibir contribuciones está escrita en piedra: podés empezar con una forma que te resulte cómoda y ajustarla más adelante.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Cómo contribuir a proyectos y comunidades abiertas</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution-instructor-notes.pt.html",
+    "href": "community/oss-contribution-instructor-notes.pt.html",
+    "title": "34  Notas para docentes",
+    "section": "",
+    "text": "34.1 Previo a la formación\nEnvía una invitación al calendario con el enlace a la reunión y un enlace al documento compartido que van a usar durante el taller (para las preguntas de reflexión y los ejercicios).\nEn el documento compartido, agrega el enlace a la reunión y el resto del material (diapositivas, grabación de la sesión anterior si corresponde, etc.).\nHaz un recordatorio el día anterior y una hora antes.\nAntes de la sesión, revisa que el sitio web de casos de uso de rOpenSci, R-universe, la guía de contribución de la comunidad rOpenSci y una CRAN Task View de ejemplo carguen bien, porque vas a navegarlos en vivo durante la sesión.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution-instructor-notes.pt.html#previo-a-la-formación",
+    "href": "community/oss-contribution-instructor-notes.pt.html#previo-a-la-formación",
+    "title": "34  Notas para docentes",
+    "section": "",
+    "text": "TipRecordatorios\n\n\n\nUtiliza los diferentes canales que tengas disponibles (por ejemplo, Slack y correo electrónico). Intenta usar recordatorios independientes de la zona horaria, del estilo “Nos vemos en 50 minutos, aquí (enlace)”.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution-instructor-notes.pt.html#formación",
+    "href": "community/oss-contribution-instructor-notes.pt.html#formación",
+    "title": "34  Notas para docentes",
+    "section": "34.2 Formación",
+    "text": "34.2 Formación\n\n34.2.1 Hora de conectarse\nEmpieza la reunión unos minutos antes, permite que la gente entre y comprueba el vídeo y el audio. Comparte el documento que utilizarás como notas y preguntas compartidas en el chat.\nCuando lleguen todas las personas, recuerda las normas de participación: el código de conducta aplica a este encuentro y explica brevemente dónde está publicado el proceso para hacer un reporte o comunicarse con el comité.\n\n\n\n\n\n\nTipGrabación\n\n\n\nSi vas a grabar la sesión, este es un buen momento para pedir permiso. Deja claro cómo vas a usar la grabación y con quién la vas a compartir.\n\n\nPresenta la agenda de la sesión con tus propias palabras, por ejemplo:\n\nHoy la idea es hablar sobre contribuciones a proyectos y comunidades abiertas pensando en sus propios proyectos. Vamos a reflexionar sobre estas practicas y a presentarles ejemplos de cómo rOpenSci maneja las contribuciones, enmarcados en dos modelos de participación formales. Después vamos a bajar todo esto a lo que ustedes están desarrollando en su propio paquete.\n\nAvisa la duración estimada del taller (2 horas).\n\n\n\n\n\n\nTipFormato de participación\n\n\n\nAclara desde el inicio que pueden participar prendiendo el micrófono o usando el chat, y que vas a estar prestado atención a los dos canales. Si el grupo es chico, fomenta que se animen a hablar.\n\n\n\n\n34.2.2 Diapositiva 2 — Contribuciones: pregunta inicial\nAntes de mostrar las respuestas, pregunta y da tiempo para que piensen y compartan:\n\nCuando escuchan “hice una contribución a un proyecto” o “hice una contribución a una comunidad de código abierto”, ¿qué es lo primero que se les viene a la cabeza? ¿Qué se imaginan que hizo esa persona?\n\nDeja que dos o tres personas compartan antes de intervenir. Es muy probable que las respuestas giren en torno a “programar” o “aportar código de forma significativa” — esto es esperable, y es justamente el punto de partida de la reflexión.\nDespués de escuchar las respuestas, señala la sobrevaloración habitual del código y adelanta que van a ver que hay muchas otras formas válidas de contribuir. Podés usar el ejemplo de los mini-hackathons de rOpenSci: aunque se ofrecían tareas de traducción, documentación o configuración (GitHub Actions), la mayoría de las personas igual elegía tareas de código, en parte porque era un espacio seguro con mentoría disponible.\n\n\n34.2.3 Comunidad de práctica\nPresenta la definición formal de Etienne Wenger (diapositiva “Comunidad de Práctica”) y humanízala con un ejemplo personal, por ejemplo tu equipo de natación o tu club de tejido, para mostrar que una comunidad de práctica no tiene que estar relacionada con programación, y que no hace falta ser una persona experta para participar. Invita a quienes participan a pensar en sus propias comunidades de práctica no técnicas mientras avanzás.\n\n\n34.2.4 Camino hacia la Inclusión (los 6 pasos)\nPresenta el modelo Pathway to Inclusion de Alex Bayley. Vale la pena anticipar por qué este modelo es útil, con una anécdota propia (por ejemplo, cuando invitaste a mucha gente a alguna de tus comunidades y no todas las personas terminaron formando parte, y la pregunta de “¿qué pasó en el medio?”).\nRecorré los seis pasos uno por uno, usando la primera diapositiva de “Camino hacia la Inclusión” (definiciones) y de forma inmediata la segunda (ejemplos de rOpenSci para cada paso), para que cada paso quede asociado a un ejemplo concreto:\n\n\n\n\n\n\nTipLos seis pasos\n\n\n\n\nConciencia: escuché hablar de esto (por ejemplo, sé que un paquete o que rOpenSci existen).\nComprensión: entiendo qué es y cómo sería involucrarme.\nIdentificación: me imagino haciendo esto, siendo parte.\nAcceso: puedo hacerlo (física, financiera y logísticamente).\nPertenencia: siento que encajo, ya no es potencial sino real.\nApropiación: me importa tanto que asumo responsabilidad.\n\n\n\nPara el paso de acceso, es un buen momento para volver a mencionar el código de conducta como una de las herramientas que ayuda a que las personas se sientan seguras, y para nombrar las barreras físicas, financieras y logísticas (zonas horarias, por ejemplo).\nPara el paso de apropiación, conecta con la sostenibilidad del software libre: quién va a reemplazar a quienes en algún momento dejen de participar, y por qué llegar a este último paso importa tanto en comunidades con un fuerte componente voluntario.\nCierra el bloque señalando que la identificación y el acceso fueron, y siguen siendo, un obstáculo particular para personas de Latinoamérica y para mujeres u otras minorías de género, y que por eso el Programa de Campeon(a|e)s se dicta en castellano:\n\nReconocer las barreras es el primer paso para empezar a pensar y desarrollar estrategias para, en algún momento, ir sacándolas. El hecho de que este Programa esté en castellano tiene que ver con eso.\n\n\n\n\n\n\n\nTipPreguntas o comentarios\n\n\n\nAntes de seguir, dejá un espacio abierto: “¿Que preguntas o comentarios tienen?”. En esta parte suele surgir conversación espontánea sobre las barreras de acceso e inclusión en distintas comunidades; dale espacio, son ejemplos que enriquecen la charla y podés retomarlos más adelante.\n\n\n\n\n34.2.5 Herramientas de rOpenSci para cada paso del camino\nRecorré, paso por paso, ejemplos concretos de rOpenSci:\n\nConciencia: redes sociales (campañas como “un paquete al día”), conferencias, meetups y coworkings con otras organizaciones (RLadies+, R User Groups, Carpentries, Data Science Learning Community).\nComprensión: el sitio web y, sobre todo, el README de cada paquete; la documentación automática con pkgdown.\nIdentificación: la sección de “casos de uso” en la web de rOpenSci (mostrala en vivo) y la serie de entrevistas/blog posts de usuarios de R-universe (también podés mostrar un ejemplo en vivo).\nAcceso: código de conducta y rotación de zonas horarias en los eventos recurrentes.\nPertenencia: contenidos y procesos en distintos idiomas (peer review y Programa de Campeon(a|e)s en español).\nApropiación: issues etiquetados como “se busca ayuda” / “good first issue” en la web de rOpenSci (mostrá en vivo cómo se filtran por paquete).\n\n\n\n\n\n\n\nTipDemostraciones en vivo\n\n\n\nEste bloque tiene varias navegaciones en vivo (casos de uso, R-universe, issues etiquetados). Tené las pestañas abiertas de antemano para no perder tiempo buscándolas durante la sesión.\n\n\nSi el grupo lo pide, podés cerrar con una referencia a recursos propios más extensos sobre el tema, aclarando siempre si están en inglés y que contenido extra aportan (como mas ejemplos).\n\n\n34.2.6 Ejercicio de reflexión: comunidades de práctica propias\nPresenta las preguntas (podés dejarlas también en el documento compartido):\n\n¿Cuáles son sus comunidades de práctica relacionadas con R? ¿Qué actividad o herramienta les ayudó a integrarse en esa comunidad? ¿En qué etapa de los seis pasos se encuentran ahora? ¿Cuánto tiempo les tomó pasar de una etapa a otra?\n\nDales tiempo para pensar y compartir, ya sea de palabra, en el chat o en el documento. Aporta tu propio ejemplo para modelar el tipo de respuesta esperado, y toma nota de lo que compartan en el documento para poder retomarlo.\n\n\n\n\n\n\nTipSostener la conversación\n\n\n\nEs habitual que en esta ronda surjan reflexiones sobre motivación, disponibilidad de tiempo y burnout. Es un buen momento para transmitir que las ganas y posibilidades de participación cambian con el tiempo, y que eso no significa que la persona “pierda su lugar” en la comunidad — es una idea que suele resonar mucho y vale la pena dejarla explícita.\n\n\n\n\n34.2.7 El Modelo de Participación Comunitaria (CSCCE) - Slide N.XXX\nAclara la diferencia entre este modelo y el anterior: el primero explica cómo alguien llega a formar parte de una comunidad; este explica cómo alguien participa una vez que ya es parte.\nPresenta las cuatro formas de participación con ejemplos concretos, mostrando el diagrama:\n\nTransmitir / Consumir: leer el newsletter o el blog sin escribir ni responder.\nContribuir: aportar de forma individual (traducir, escribir un blog post, ser mentor/a o revisor/a) — remarca que esto no es solo código.\nColaborar: lo mismo, pero en conjunto con otras personas (el Programa de Campeon(a|e)s entra más en esta categoría).\nCo-crear: generar algo nuevo que no existiría si las personas no se hubieran encontrado en ese espacio.\n\n\n\n34.2.8 Ejemplo: Joel y Mo - Diapositiva N.XX\nContá la historia de Joel Nitta y Mo con tus propias palabras, marcando en qué momento cada persona estaba en un modo de participación distinto:\n\nEn la Community Call, Joel estaba contribuyendo porque fue disertante, y Mo estaba en consumo, participó y escuchó. En el blog post que escribieron juntos, estaban colaborando. Y el taller que armaron con el formato de Carpentries fue co-creación, porque generaron algo nuevo que no existía antes.\n\nCierra remarcando que la colaboración se puede pensar tanto a nivel individual como entre organizaciones (RLadies+, The Carpentries, LatinR, rOpenSci).\n\n\n\n\n\n\nNota\n\n\n\nEste es un buen punto para el recreo. Aclara la duración (por ejemplo, diez minutos) y retomá con las preguntas de reflexión sobre formas de participación.\n\n\n\n\n\n\n\n\nTipRecreo\n\n\n\nAvisa con antelación cuándo va a haber una pausa y cuánto va a durar: “Cortemos diez minutos, recargamos, y en diez minutos volvemos y seguimos”. Pausa la grabación para no tener tiempo muerto en el video.\n\n\n\n\n34.2.9 Retomando: formas de participar y el Programa de Campeon(a|e)s\nMientras el grupo se reincorpora, relanza las preguntas (podés dejarlas también en el documento):\n\n¿Cuál es la forma más habitual de participar en su comunidad? ¿Dónde ubicarían el Programa de Campeones en ese espectro de consumir, contribuir, colaborar o co-crear?\n\nDa tiempo para que compartan y aporta tu propio ejemplo si el grupo tarda en animarse (por ejemplo, comunidades en las que solo consumís contenido). Cuando alguien se ubique del lado del “consumo”, podés tranquilizar remarcando que el consumo es la puerta de entrada natural y que un Programa de Campeon(a|e)s, en realidad, suele recorrer todo el espectro.\nSi el grupo lo permite, podés profundizar en la distinción entre participación “transaccional” y “transformacional” que menciona el modelo, y en la idea de las “tres monedas” (bolsillo, corazón, cabeza) con las que se recompensa el trabajo comunitario voluntario — es un tema que suele generar buena conversación, pero es opcional según el tiempo disponible.\nAprovecha para comentar el origen del nombre “campeones/as” (viene de champion, más cercano a “embajador/a” que al sentido deportivo) y qué se espera de este rol: ayudar a que más personas se sumen, contando sobre la comunidad, invitando, presentando gente entre sí.\nRepasa ejemplos de actividades de campeon(a|e)s, ligados a los cuatro modos de participación (transmitir, contribuir, colaborar, co-crear), y aclara que buscamos también personas fuera de la propia comunidad de rOpenSci para sumar voces y miradas distintas.\n\n\n34.2.10 Recursos de rOpenSci para participar\nRecorré brevemente los recursos de la diapositiva “Ejemplos de rOpenSci” (guía de contribución, tips sheet/machete, guía del blog, guía de paquetes, guía de localización y traducción), explicando para qué sirve cada uno y por qué documentar estos procesos es valioso (facilita el onboarding, evita reinventar la rueda, sirve de ejemplo a otras comunidades).\nPregunta si ya participaron de alguna de estas opciones (podés mencionar ejemplos concretos si los conocés del grupo, como quién participó en los mini-hackathons o en algún coworking) y qué les gustaría probar. Aclara que cualquiera de estas actividades es válida como la actividad de outreach que se pide en el programa.\n\n\n\n\n\n\nTipFeedback abierto\n\n\n\nRecordá que estos recursos están en constante mejora, y que el feedback de quienes los difunden o los usan siempre es bienvenido — es un buen gesto dejarlo dicho explícitamente.\n\n\n\n\n34.2.11 Aplicándolo al propio paquete: Transmitir\nA partir de acá el foco pasa del ejemplo de rOpenSci al paquete o proyecto propio de cada participante. Recorré la diapositiva de “Transmitir” mostrando en vivo:\n\nTu perfil de GitHub y los repositorios fijados, como ejemplo de cómo facilitar que encuentren tu trabajo.\nUn README bien armado de un paquete de rOpenSci (qué hace, cómo se instala, ejemplos de uso, cómo reportar incidentes).\nR-universe: cómo instalar un paquete con install.packages() apuntando al universo correspondiente, y cómo buscar paquetes por tema, autor o datasets.\nUna CRAN Task View, mostrando cómo se listan los paquetes de un tema y cómo se puede proponer agregar uno nuevo.\n\nCompleta con los puntos de la segunda diapositiva de “Transmitir”: sitio web con pkgdown, redes como Mastodon/LinkedIn, foros como R-bloggers y R Weekly, charlas en RUGs o capítulos de RLadies+, Community Calls temáticas y conferencias de dominio o específicas de R.\n\n\n34.2.12 Aplicándolo al propio paquete: Contribuir / Colaborar\nPresenta los tres elementos básicos para que un repositorio sea amigable a la contribución: código de conducta (use_code_of_conduct() de usethis), licencia compatible con software libre, y guía de contribución (CONTRIBUTING.md, con use_tidy_contributing() como punto de partida).\n\n\n\n\n\n\nTipEjercicio: agregar código de conducta y guía de contribución\n\n\n\nSi no alcanza el tiempo, este ejercicio se deja como tarea para después de la sesión: en su propio paquete (o en el paquete usado en las capacitaciones anteriores), agregar un código de conducta y una guía de contribución usando las funciones de usethis. Si se hace como tarea, pedí que compartan cómo les fue por Slack.\n\n\nAl presentar la diapositiva “Guía de contribución”, enfatiza que hay decisiones de preferencia personal que cada quien debe tomar (estilo de código, flujo de trabajo issue-antes-de-PR, cómo se reconocen las contribuciones) y el valor de una declaración de alcance y de una declaración de ciclo de vida — la idea de “claridad es amabilidad” es un buen cierre para este punto.\nEn “Gestión de issues”, mostrá en vivo un ejemplo de plantilla de issue para ilustrar cómo una plantilla guía a quien reporta hacia la información que necesitás, y recordá la utilidad de etiquetar y fijar (pin) los issues más importantes.\nCierra con los “Recursos adicionales” de colaborar/co-crear (sección de la guía de desarrollo sobre trabajar con colaboradores, blog de marketing de paquetes, Community Call sobre configurar el paquete para fomentar comunidad, y respuestas guardadas de GitHub para no repetir texto).\n\n\n\n\n\n\nNota\n\n\n\nSi surge una pregunta sobre paquetes que no pueden o no quieren aceptar contribuciones de código es útil recordar que las contribuciones pueden orientarse hacia nuevas funciones sobre esos datos o sobre aspectos de documentacion.\n\n\n\n\n34.2.13 Cierre\nDeja un espacio final para preguntas o comentarios. Comparte (o comprometé a compartir después, por ejemplo por Slack) el enlace a las diapositivas.\nPide el feedback de la sesión a través de la encuesta habitual del programa, agradeciendo explícitamente los aportes anteriores:\n\nMuchas gracias por todo lo que nos han ido marcando en las encuestas, siempre es muy útil.\n\nCierra con calidez, mencionando la próxima fecha de encuentro si ya está definida.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "community/oss-contribution-instructor-notes.pt.html#después-de-la-formación",
+    "href": "community/oss-contribution-instructor-notes.pt.html#después-de-la-formación",
+    "title": "34  Notas para docentes",
+    "section": "34.3 Después de la formación",
+    "text": "34.3 Después de la formación\nDespués de la formación, envía un mensaje (correo electrónico, Slack) agradeciendo a las personas asistentes y compartiendo nuevamente los recursos esenciales:\n\nEl enlace a las diapositivas (y a la grabación, si corresponde).\nEl documento compartido con las preguntas de reflexión y los enlaces mencionados durante la sesión.\nEl enlace a la encuesta de feedback.\nUn recordatorio del ejercicio propuesto (agregar código de conducta y guía de contribución al propio paquete).\n\nRevisa la encuesta de feedback e identifica uno o dos puntos a mejorar para la próxima iteración de la formación.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Notas para docentes</span>"
+    ]
+  },
+  {
+    "objectID": "community/memorable-talk.pt.html",
+    "href": "community/memorable-talk.pt.html",
+    "title": "35  Charla Memorable",
+    "section": "",
+    "text": "NotaEn migración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Charla Memorable</span>"
+    ]
+  },
+  {
+    "objectID": "community/memorable-talk-tools.pt.html",
+    "href": "community/memorable-talk-tools.pt.html",
+    "title": "36  Charla Memorable Herramientas",
+    "section": "",
+    "text": "NotaEn migración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Charla Memorable Herramientas</span>"
+    ]
+  },
+  {
+    "objectID": "community/memorable-talk-instructor-notes.pt.html",
+    "href": "community/memorable-talk-instructor-notes.pt.html",
+    "title": "37  Charla Memorable Notas Instructor",
+    "section": "",
+    "text": "37.1 Previo a la formación\nEnvía una invitación al calendario con el enlace a la reunión y un enlace a las notas compartidas.\nEn el archivo de notas compartidas, añade el enlace a la reunión y el resto del material (como diapositivas, vídeos, etc.).\nHaz un recordatorio el día anterior y una hora antes.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Charla Memorable Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "community/memorable-talk-instructor-notes.pt.html#previo-a-la-formación",
+    "href": "community/memorable-talk-instructor-notes.pt.html#previo-a-la-formación",
+    "title": "37  Charla Memorable Notas Instructor",
+    "section": "",
+    "text": "TipRecordatorios\n\n\n\nUtiliza los diferentes canales que tengas. Por ejemplo, nosotros utilizamos Slack y el correo electrónico. Intenta utilizar recordatorios independientes de la zona horaria como “Nos vemos en 50 minutos, aquí (enlace)”",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Charla Memorable Notas Instructor</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event.pt.html",
+    "href": "community/wonderful-event.pt.html",
+    "title": "38  Cómo organizar un evento maravilloso",
+    "section": "",
+    "text": "NotaEn migración\n\n\n\nEstás leyendo la primera edición en progreso y en castellano de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.\nEste capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html",
+    "href": "community/wonderful-event-instructor-notes.pt.html",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "",
+    "text": "39.1 Previo a la formación\nEnvía una invitación al calendario con el enlace a la reunión y un enlace a las notas compartidas.\nEn el archivo de notas compartidas, añade el enlace a la reunión y el resto del material (como diapositivas, vídeos, etc.).\nHaz un recordatorio el día anterior y una hora antes.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html#previo-a-la-formación",
+    "href": "community/wonderful-event-instructor-notes.pt.html#previo-a-la-formación",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "",
+    "text": "TipRecordatorios\n\n\n\nUtiliza los diferentes canales que tengas. Por ejemplo, nosotros utilizamos Slack y el correo electrónico. Intenta utilizar recordatorios independientes de la zona horaria como “Nos vemos en 50 minutos, aquí (enlace)”",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html#formación",
+    "href": "community/wonderful-event-instructor-notes.pt.html#formación",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "39.2 Formación",
+    "text": "39.2 Formación\n\n39.2.1 Hora de conectarse.\nEmpieza la reunión unos minutos antes, permite que la gente entre y comprueba el vídeo y el audio. Asegúrate que las personas conectadas pueden escucharte y verte. Hazles saber que no pasa nada si no encienden la cámara. Comparte el documento que utilizarás como notas compartidas en el chat.\nCuando todas las personas participantes hayan llegado, recuérdales las normas de participación, como el código de conducta y cómo utilizarlo. Menciona un breve orden del día:\n\nHoy vamos a revisar el framework PACTo para planificación de eventos, seguido de una selección de consejos prácticos basados en evidencia desde la ciencia del aprendizaje. Vamos a tener un corte de 10 minutos cuando lleguemos a la hora de curso.\n\nEl hilo conductor es que comunicar y divulgar el trabajo propio es parte esencial de la formación en software de investigación, y que cada participante deberá organizar al menos una actividad de difusión antes de terminar el programa.\n\n\n\n\n\n\nTipDocumento compartido\n\n\n\nComparte el documento una última vez cuando ya estén todos los asistentes. También comparte el documento antes de cada ejercicio para asegurarte de que todos los y las participantes pueden acceder a él.\n\n\n\n\n\n\n\n\nTipGrabación\n\n\n\nSi vas a grabar la sesión, éste es un buen momento para pedir permiso. Deja claro cómo utilizarás la grabación y con quién la compartirás. Explica como remover el nombre de la imagen y deja claro que pueden apagar su camara.\n\n\n\n\n39.2.2 Comienza la formación\nPuedes empezar con el primer ejercicio llamado Tipo de Actividad. Mientras explicas el ejercicio y se realiza puedes decidir si quieres compartir en la pantalla: las diapositivas con los ejercicios, el documento compartido con los ejercicios, o no compartir la pantalla.\n\nVamos a arrancar con un ejercicio. La idea es que entren al documento compartido y que escriban al lado de su nombre, en el ejercicio 1: ¿qué tipo de actividad de difusión o comunicación piensan hacer como parte del programa? Y si son mentores o mentoras, por favor compartan qué tipo de actividad de comunicación y divulgación les gustaría que nuestros campeones y campeonas hicieran.\n\nPuedes aclarar que esta información también el útil para saber qué tipo de herramientas o apoyo podemos dar desde rOpenSci para esta actividad que van a realizar.\n\n\n\n\n\n\nTipActividades\n\n\n\nAclara siempre al principio de la actividad de cuánto tiempo disponemos para realizarla. Por ejemplo: “Utilizaremos 10 minutos para este ejercicio”., “Haremos una pausa de 10 minutos”\n\n\nDales uno o dos minutos para escribir en silencio. Luego puedes leer algunas de las respuestas en voz alta o añadir algunos comentarios en el documento en silencio. Anímales a leer las respuestas de sus compañeros/as y a hacer comentarios.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html#el-framework-pacto",
+    "href": "community/wonderful-event-instructor-notes.pt.html#el-framework-pacto",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "39.3 El Framework PACTo",
+    "text": "39.3 El Framework PACTo\n\n\n\n\n\n\nTipEjercicios\n\n\n\nEsta sección tiene 4 ejercicios que invitan a refleccionar sobre los temas presentación en relación de la experiencia de cada asistente. Si tienen que remover contenido porque no alcanza el tiempo, puedes quitar uno o dos ejercicios de esta sección.\n\n\nContinúa con la diapositiva 3 Marco de trabajo para eventos virtuales - PACTo y explica que es para eventos virtuales y fue desarrollado por el Centro de Community Management (CSCCE).\nAclara que el framework se llama PACT en inglés, que por suerte traduce bastante bien al castellano como “pacto” —un acuerdo que uno hace para organizar los eventos.\nMenciona los 4 aspectos para organizarlo de forma eficiente:\n\nP de Propósito\nA de Asistentes\nC de Comunidad (gestión de la comunidad)\nT de herramientas tecnológicas, de Tecnología que vamos a usar en esa reunión\n\n\n39.3.1 Propósito\nExplica este aspecto con las preguntas correspondientes que ayudan a reflexionar sobre el mismo. Presenta ejemplos cuando te sea posible. Luego presenta el ejercicio 2:\n\nUsando la Community Call “Software Libre de Investigacion en America Latina” vamos a contestar las tres preguntas del Propósito, usen el chat para compartir sus respuestas.\n\nPor el chat comparte el link a la pagina del evento “conversaciones con la comunidad” y tambien comparte en pantalla esa misma pagina para ayudar a los asistentes a encontrar la informacion que deben utilizar.\n\n\n39.3.2 Asistentes\nContinua con la explicacion sobre los Asistentes compartiendo las tres preguntas guias para este aspecto, dando ejemplos cuando las expliques y luego presenta el ejercicio 3.\n\nUsando la Conferencia LatinR, contestar las tres preguntas sobre Asistentes, usen el chat para compartir sus respuestas.\n\nPor el chat comparte el link a la pagina de LatinR y tambien comparte en pantalla esa misma pagina para ayudar a los asistentes a encontrar la informacion que deben utilizar.\n\n\n39.3.3 Comunidad\nA continuación presenta 3 preguntas guías para el aspecto de Comunidad, nuevamente con ejemplos cuando sea posible, seguido por la propuesta del ejercicio 4\n\nEn el documento compartido, busca este ejercicio y al lado de tu nombre, comparte alguna estrategia para mantener la concentración o la participación que consideres efectivo. Lee las respuestas del resto y comenta las mismas (si las usaste, si tambien te dieron resultado o alguna variante)\n\nDurante el ejercicio ve tomando las respuestas para comentar, invita a los asistentes a participar y conversen sobre acuerdos o diferencias.\n\n\n39.3.4 Tecnología\nTermina la presentación del marco con la sección de tecnología. Presenta las tres preguntas que ayudan a refleccionar sobre este aspecto, dando ejemplos concretos y luego presenta el ejercicio 5.\n\nTodos hemos usado herramientas para reuniones. Algunos tuvieron éxito, otros no. Rápido: denme ejemplos. ¿Qué herramienta usaron que funcionó bien? ¿Y otra que no fue útil?\n\nDurante el ejercicio ve tomando las respuestas para comentar, invita a los asistentes a participar y conversen sobre acuerdos o diferencias.\n\n\n\n\n\n\nTip\n\n\n\nEste es un buen momento para realizar un corte de 10 minutos.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html#consejos-prácticos-para-todo-tipo-de-eventos",
+    "href": "community/wonderful-event-instructor-notes.pt.html#consejos-prácticos-para-todo-tipo-de-eventos",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "39.4 Consejos prácticos para todo tipo de eventos",
+    "text": "39.4 Consejos prácticos para todo tipo de eventos\nPresenta los 8 consejos que son utiles para eventos online o presenciales.\n\n39.4.1 Ejercicio 6 - Ejercicio en grupos\nDivide a los asistentes en grupos de no mas de 3-4 personas. Antes de enviarlos a los grupos comparte la consiga en el chat y tambien en la pantalla. Pregunta si hay dudas y resuelvelas.\n\nEn grupo charlen entre ustedes para contestar estas preguntas: ¿Cuáles de los consejos anteriores podrías aplicar en tu evento? ¿Cómo lo harías? Usen el documento compartido y resuman su intercambio en el ejercicio 5, en la seccion que corresponde a su sala de grupo.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html#consejos-prácticos-para-eventos-online",
+    "href": "community/wonderful-event-instructor-notes.pt.html#consejos-prácticos-para-eventos-online",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "39.5 Consejos prácticos para eventos online",
+    "text": "39.5 Consejos prácticos para eventos online\nPresenta los 8 consejos que son utiles para eventos online.\nDivide a los asistentes en grupos de no mas de 3-4 personas. Antes de enviarlos a los grupos comparte la consiga en el chat y tambien en la pantalla. Pregunta si hay dudas y resuelvelas.\n\n\n\n\n\n\nTip\n\n\n\nMantener los mismos grupos ayuda a que las cosas fluyan mas rapido, pero mezclar las personas les da oportunidad de interactuar con otras personas.\n\n\n\nEjercicio 7: Trabajo en grupo ¿Cuáles de los consejos anteriores hemos usado en este y en los otros talleres de rOpenSci? Cuales de todos los consejos te gusto mas? Repasen todos los consejos e identifiquen cuáles se usaron en este taller hasta el momento Sinteticen el intercambio en el documento compartido en la seccion de su sala de grupo.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html#pide-devoluciones",
+    "href": "community/wonderful-event-instructor-notes.pt.html#pide-devoluciones",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "39.6 Pide devoluciones",
+    "text": "39.6 Pide devoluciones\nMuestra este consejo final y comparte el formulario de feedback para que lo completen.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  },
+  {
+    "objectID": "community/wonderful-event-instructor-notes.pt.html#después-de-la-formación",
+    "href": "community/wonderful-event-instructor-notes.pt.html#después-de-la-formación",
+    "title": "39  Notas del instructor — Cómo organizar un evento maravilloso",
+    "section": "39.7 Después de la formación",
+    "text": "39.7 Después de la formación\nDespués de la formación, envía un mensaje (correo electrónico, Slack) dando las gracias a los asistentes y volviendo a compartir los recursos esenciales:\n\nDocumento compartido (que tiene enlaces a las diapositivas, guía de tutoría, plantillas de reuniones, etc.).\nGrabación de la reunión (en caso de que la hayas grabado).\nLa encuesta de opinión (para tener una segunda oportunidad de rellenarla).\n\nRevisa la encuesta de opinión e identifica uno o dos puntos a mejorar para la próxima iteración de formación.",
+    "crumbs": [
+      "Gestión de comunidad y divulgación",
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Notas del instructor — Cómo organizar un evento maravilloso</span>"
+    ]
+  }
+]
