@@ -1,128 +1,107 @@
-# [Nome do(a) campeão(ã)] [Título do projeto]
+# \[Nombre Campeón-a\]\[Título del Proyecto\]
 
-### Programa de Campeões e Campeãs da rOpenSci, coorte (ano)
+### Programa de Campeon(a|e)s de rOpenSci cohorte (año)
 
-[Adicione aqui os links relevantes: GitHub do projeto, site, postagem no blog, artigos, etc.]
+\[Agrega aquí los enlaces pertinentes: github del proyecto, sitio web, blog post, artículos, etc.\]
 
-# Primeira reunião
+# Primera reunión
 
-### Reunião [preencher o número] [Preencher o mês]
+### Reunión \[completar número\] \[Completar mes\]
 
-*Verificar — como você está?*
+*Comprobar \-- ¿cómo estás?*
 
-### Pauta
+### Agenda
 
-- Apresentações: conhecer-se mutuamente
+* Presentaciones: conocerse mutuamente  
+* Momento ideas para que Campeones-as hablen de su proyecto con sus mentores-as.  
+  *   
+  *   
+  *   
+* Establece 1-2 objetivos para tu proyecto  
+  * ¿Dónde quiere que esté su proyecto al final del programa? (dentro de 10 meses)  
+  *   
+* Areas sobre las cuales se puede pensar y charlar::  
+  * *Para un nuevo proyecto de paquete:* una primera versión funcional del paquete siguiendo las recomendaciones de la guía de desarrollo de rOpenSci. Mejorar las funciones, pruebas, documentación, repositorio, funcionalidades. Generar la web del paquete o mejorarla.  
+  * *Para un paquete que se envia a revisión:* prepara el paquete para enviarlo al proceso de revisión, enviar el paquete a revisión y completar el proceso. Mejorar las funciones, las pruebas, la documentación, el repositorio, las funcionalidades, la gobernanza. Escribir un artículo para JOSS o JOSE sobre el paquete.  
+  * *Para convertirte en revisor:* [completa el formulario para revisar](https://airtable.com/app8dssb6a7PG6Vwj/shrnfDI2S9uuyxtDw), luego revisa [el listado de paquetes que estan esperando revision](https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) y charlen cuales pueden ser buenas opciones para revisar. Comentarle a la Community Manager sobre estas preferencias, es quien debe comunicarse con el equipo editor para acordar la revisión. [Leer la guia de revision de paquetes de rOpenSci](https://devguide.ropensci.org/es/index.es.html). Revisar al menos un paquete asignado.  
+  *   
+* Objetivos  
+  *    
+  *    
+* ¿Qué es lo que esperas de tu mentor/a?  
+  *     
+  *   
+*  Recordatorios y logistica de las reuniones  
+  * Este tiempo cada mes funciona para todes?   
+* ¿Algo mas?  
+  * 
 
-- Momento para que os Campeões e as Campeãs falem sobre os seus projetos com os mentores e as mentoras.  
-         \*  
-         \*  
-   
-        \*
+* Para la proxima reunion  
+  *    
+  *    
+  * 
 
-- Defina 1 ou 2 objetivos para o seu projeto
-  
-  - Onde você quer que o seu projeto esteja ao final do programa? (daqui a 10 meses)
-  - 
-- Áreas sobre as quais você pode refletir e discutir:
-  
-  - *Para um novo projeto de pacote:* uma primeira versão funcional do pacote seguindo as recomendações do guia de desenvolvimento da rOpenSci. Aprimorar as funções, os testes, a documentação, o repositório e as funcionalidades. Criar o site do pacote ou aprimorá-lo.
-  - *Para um pacote que será enviado para a revisão:* preparar o pacote para enviá-lo ao processo de revisão, enviá-lo para revisão e concluir o processo. Aprimorar as funções, os testes, a documentação, o repositório, as funcionalidades e a governança. Escreva um artigo sobre o pacote para a JOSS ou a JOSE.
-  - *Para se tornar uma pessoa revisora:* [preencha o formulário para revisão](https://airtable.com/app8dssb6a7PG6Vwj/shrnfDI2S9uuyxtDw), depois verifique [a lista de pacotes que estão aguardando revisão](https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 
-            
-             e converse sobre quais podem ser boas opções para a revisão. Comente essas preferências com o/a Community Manager, que entrará em contato com a equipe editorial para acertar a revisão. [Leia o guia de revisão de pacotes da rOpenSci](https://devguide.ropensci.org/es/index.es.html)           
-            . Revise pelo menos um pacote designado.
-  - 
-- Objetivos  
-         \*  
-         \*
+# Segunda a décima reunión
 
-- O que você espera do(a) seu(sua) mentor(a)?  
-         \*  
-         \*
+### Reunión \[completar número\] \[Completar mes\]
 
-- Lembretes e logística das reuniões
-
-- Esse horário mensal é bom todos(as)?
-
-- Mais alguma coisa?  
-         \*
-
-- Para a próxima reunião  
-         \*  
-         \*  
-         \*
-
-# Da segunda à décima reunião
-
-### Reunião [preencher o número] [Preencher o mês]
-
-*Verificar — como você está?*
+*Comprobar \-- ¿cómo estás?*
 
 Agenda
 
-- Destaques do mês anterior + Agradecimentos (tem alguém a quem você gostaria de agradecer ou demonstrar apreço?)  
-         \*  
-         \*
+* Lo más destacado del mes anterior \+ Reconocimientos (¿alguien a quien dar las gracias o apreciar?)  
+  *    
+  *   
+      
+* Revisar los objetivos y la hoja de ruta  
+  * ¿Estamos progresando? ¿Debemos ajustar algo?  
+  * En la reunión de **enero/febrero** Fijar 1-2 objetivos para las actividades de divulgación.  
+  * Analiza las posibles contribuciones por tipo (Eventos como “conversaciones con la comunidad”, webinarios, reuniones, conferencias (una charla o taller en useR\!, Posit, LatinR), artículo en el blog, tutorial, taller, charla, sesión de co-trabajo), por número, tener en cuenta cuándo y con quién (otra comunidad, grupo de R-Ladies, universidad, instituciones), por objetivo (desarrollar una nueva habilidad, probar algo nuevo, practicar una habilidad, organizar algo con otra comunidad).  
+* Cuándo es un mes con una reunion de la cohorte: Repasa esa reunion de cohorte: ¿algún pensamiento / pregunta / comentario tras la llamada pasada?  
+  *    
+  *    
+  *   
+* ¿En qué más podemos ayudar?  
+  *   
+  *   
+* Para la proxima reunion:  
+  *    
+  *    
+  * 
 
-- Revisar as metas e o plano de ação
-  
-  - Estamos progredindo? Precisamos ajustar alguma coisa?
-  - Na reunião de 
- **janeiro/fevereiro** Definir 1 ou 2 objetivos para as atividades de divulgação.
-  - Analisar as possíveis contribuições por tipo (eventos como “conversas com a comunidade”, webinários, reuniões, conferências (uma palestra ou oficina no useR!, Posit, LatinR), artigo no blog, tutorial, oficina, palestra, sessão de coworking)), por número, levando em conta quando e com quem (outra comunidade, grupo de R-Ladies, universidade, instituições), por objetivo (desenvolver uma nova habilidade, experimentar algo novo, praticar uma habilidade, organizar algo com outra comunidade).
+# Última reunión
 
-- Quando houver uma reunião mensal da coorte: revise essa reunião: alguma reflexão/pergunta/comentário após a última chamada?  
-         \*  
-         \*  
-   
-        \*
+### Reunión \[completar número\] \[Completar mes\]
 
-- Em que mais podemos ajudar?  
-         \*  
-         \*
-
-- Para a próxima reunião:  
-         \*  
-         \*  
-         \*
-
-# Última reunião
-
-### Reunião [preencher o número] [Preencher o mês]
-
-*Confirmar — como você está?*
+*Comprobar \-- ¿cómo estás?*
 
 Agenda
 
-- Comemore! Veja tudo o que você conquistou nos últimos meses!  
-         \*  
-         \*
-- Revise as metas desde o início do programa. Você está onde imaginava que estaria? Por que sim ou por que não?  
-         \*  
-   
-        \*
-- Orientação + Capacitação + Desenvolvimento do Projeto
-  - O que deu certo?  
-               \*  
-               \*  
-               \*
-  - O que poderia ter sido melhor?  
-               \*  
-               \*  
-               \*
-  - Gostaria de destacar alguém que tenha colaborado?  
-               \*  
-               \*  
-               \*
-  - Alguma coisa que devemos fazer de maneira diferente na próxima vez?  
-               \*  
-               \*  
-               \*
-- O que vem a seguir:  
-         \*  
-         \*
-
-*Modelos do programa de campeões e campeãs da rOpenSci — Adaptados e traduzidos por Yani Bellini Saibene a partir de material do Mozilla Open Leaders — CC-BY-NC — Versão 2026-2027*
-
-
+* ¡Celebrar\! ¡Mira todo lo que has conseguido en los últimos meses\!  
+  *    
+  *   
+* Repasa los objetivos desde el principio del programa. ¿Estás donde pensabas que estarías? ¿Por qué sí o por qué no?  
+  *    
+  *   
+* Mentoria \+ Capacitacion \+ Desarrollo del Proyecto  
+  * ¿Qué ha ido bien?  
+    *   
+    *    
+    *    
+  * ¿Qué podría ir mejor?  
+    *   
+    *    
+    *    
+  * ¿Destacar alguna persona que haya colaborado?  
+    *    
+    *    
+    *    
+  * ¿Algo que debamos hacer de forma diferente la próxima vez?  
+    *     
+    *    
+    *   
+* Que sigue:  
+  *    
+  * 
+  
+_Plantillas del programa de campeon(a|e)s de rOpenSci - Adaptadas y traducidas por Yani Bellini Saibene desde material de Mozilla Open Leaders - CC-BY-NC - Version 2026-2027_
