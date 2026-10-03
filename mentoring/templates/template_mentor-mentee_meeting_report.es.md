@@ -11,7 +11,7 @@ Mês da reunião
 Mentor(a)  
    Selecione o seu nome na lista
 
-Statusdareunião  
+Situação da reunião  
    Indique o status da reunião. Isso também nos ajudará a oferecer apoio.
 
 Notas  
