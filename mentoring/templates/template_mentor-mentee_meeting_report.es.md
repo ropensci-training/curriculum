@@ -1,6 +1,6 @@
 # 
 
-# **Programa de Campeões e Campeãs do rOpenSci |**    Relatório de Reuniões
+# **Programa de Campeões e Campeãs da rOpenSci |** Relatório de Reuniões
 
 Este formulário registra as reuniões entre campeões e mentores.  
    Isso nos ajuda a acompanhar as atividades e oferecer apoio, caso seja necessário.
