@@ -1,6 +1,6 @@
-## Programa de Campeões e Campeãs do rOpenSci 2026-2027
+## Programa de Campeões e Campeãs da rOpenSci 2026-2027
 
-## Oficina para mentores
+## Oficina para mentores(as)
 
 Documento compartilhado para exercícios, anotações e perguntas. Este documento estará disponível assim que o workshop for concluído.
 
@@ -10,10 +10,10 @@ Documento compartilhado para exercícios, anotações e perguntas. Este document
 ## Recursos
 
 - Apresentações: 
- [         2026 - rOpenSci - Orientação e Capacitação para Mentores]()
+ [2026 - rOpenSci - Orientação e Capacitação para Mentores(as)]()
 - [Guia de Mentoria](https://ropensci-org.github.io/champions-mentor-guidelines/es/index.es.html)
 - Modelos:  
- [         Modelo para reuniões de mentoria]()
+ [Modelo para reuniões de mentoria]()
 - [Calendário mensal]()
 - [Calendário compartilhado]()
 - [Código de Conduta](https://ropensci.org/es/c%C3%B3digo-de-conducta/)
@@ -21,11 +21,11 @@ Documento compartilhado para exercícios, anotações e perguntas. Este document
 ### Agenda
 
 - Orientação sobre como ser mentor(a) (70 minutos)
-- Mais algumas ferramentas para sua função de mentor(a) (20 minutos)
+- Mais algumas ferramentas para a sua função de mentor(a) (20 minutos)
 
 ### 1\) Pense em uma experiência que você tenha tido como mentor(a) ou como pessoa orientada. Procure seu nome e escreva a resposta às seguintes perguntas.
 
-**Duração:**    ~15 minutos (~5 a 7 minutos para responder, ~8 minutos para conversar)
+**Duração:** ~15 minutos (~5 a 7 minutos para responder, ~8 minutos para conversar)
 
 - #### O que funcionou bem / o que foi útil?
   
@@ -36,58 +36,58 @@ Documento compartilhado para exercícios, anotações e perguntas. Este document
 - #### Pense em um problema sobre o qual você gostaria de receber orientação neste momento
   
   -   -   -   - 
-### 2a) Assistam a este vídeo com um exemplo em que se utiliza o modelo GROW e tentem identificar as etapas do modelo.
+### 2a) Assista a este vídeo com um exemplo em que se utiliza o modelo GROW e tente identificar as etapas do modelo.
 
-**Duração:**    ~8 minutos (~1:42 minutos para assistir ao vídeo, ~6 minutos para conversar e responder)
+**Duração:** ~8 minutos (~1:42 minutos para assistir ao vídeo, ~6 minutos para conversar e responder)
 
-*Alguém pode compartilhar a tela com o vídeo ou cada um pode assisti-lo individualmente e, depois, refletir em conjunto. O vídeo está em inglês, mas é possível ativar as legendas traduzidas automaticamente para o espanhol.*
+*Alguém pode compartilhar a tela com o vídeo ou cada pessoa pode assisti-lo individualmente e, depois, refletir em conjunto. O vídeo está em inglês, mas é possível ativar as legendas traduzidas automaticamente para o português.*
 
-**Vídeo:** [     GROW para coaching e resolução de problemas (simulação ao vivo)](https://youtu.be/4dYLaoI5UFM)
+**Vídeo:** [GROW para coaching e resolução de problemas (simulação ao vivo)](https://youtu.be/4dYLaoI5UFM)
 
 Sala 1:
 
-- Goal (Objetivos):  
+- Objetivos:  
          \*
 - Realidade:  
          \*
 - Opções:  
          \*
-- Próximos Passos:  
+- Próximos passos:
          \*
 
 Sala 2:
 
-- Goal (Objetivos):  
+- Objetivos:  
          \*
 - Realidade:  
          \*
 - Opções:  
          \*
-- Way Forward (próximos passos):  
+- Próximos passos:  
          \*
 
-### 2b) Praticar o modelo GROW com seu colega de classe
+### 2b) Praticar o modelo GROW com seu/sua colega de classe
 
-**Duração:**    ~15 minutos
+**Duração:** ~15 minutos
 
-- ### Usando sua resposta à pergunta 
- **         Pense em um problema sobre o qual você gostaria de receber orientação agora mesmo, do exercício 1**       , pratique o modelo GROW com seu colega de classe.
+- ### Usando a sua resposta à pergunta 
+ **Pense em um problema do exercício 1 sobre o qual você gostaria de receber orientação agora mesmo*, pratique o modelo GROW com seu/sua colega de classe.
 
-- ### Decidam quem será o mentor e quem será o mentorado ou
+- ### Decidam quem será o(a) mentor(a) e quem será o(a) mentorado(a) ou
 
-- ### Revezem-se para ser o mentor e o mentorado.
+- ### Revezem-se para ser o(a) mentor(a) e o(a) mentorado(a).
 
 ### 3\) Você se sente preparado(a) para ser mentor(a)? Tem alguma dúvida? Você pode escrevê-las aqui:
 
-**Duração:**    ~5 minutos
+**Duração:** ~5 minutos
 
 - 
-### 4\) Vamos praticar como dar feedback: preencha nossa pesquisa anônima sobre este workshop.
+### 4\) Vamos praticar como opinar: preencha a nossa pesquisa anônima sobre este workshop.
 
-**Duração:**    ~5 minutos
+**Duração:** ~5 minutos
 
 > Link para a pesquisa
 
-*Programa rOpenSci Champions. Treinamento de mentores. Documento compartilhado. Yani Bellini Saibene (2023) - CC-BY-SA. Versão 2026-2027*
+*Programa Campeões e Campeãs da rOpenSci. Treinamento de mentores(as). Documento compartilhado. Yani Bellini Saibene (2023) - CC-BY-SA. Versão 2026-2027*
 
 
