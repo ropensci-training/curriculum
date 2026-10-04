@@ -38,6 +38,27 @@ Después de leer este capítulo, podrás:
 - Resolver los problemas más comunes que enfrentan los desarrolladores
 - Recuperarte de situaciones más complejas con confianza
 
+### Prerequisitos
+
+Para poder realizar este taller necesitas:
+
+* Tener Git instalado en la computadora: https://happygitwithr.com/install-git y https://happygitwithr.com/hello-git.
+
+TODO: cambiar link al libro de Yani y Pao que esta en castellano, dejar estos links en la version en ingles.
+
+* Tener un poco de experiencia con Git (git commit, git pull/push, ramas, GitHub u otra plataforma). Si querés repasar un poco, te recomendamos el workshop https://yabellini.netlify.app/courses/git_rstudio_course/.
+
+* Instalar {saperlipopette} en tu computadora. Lo usaremos para generar los ejercicios:
+
+```
+install.packages(
+  "saperlipopette",
+  repos = c("https://packages.ropensci.org", "https://cloud.r-project.org")
+)
+```
+Más información en https://docs.ropensci.org/saperlipopette/.
+
+* Si querés, instalá Positron, pero los ejercicios se pueden hacer en RStudio o con tus herramientas usuales para R y Git.
 
 ### ¿Por qué necesitamos Git?
 
@@ -138,3 +159,23 @@ La función `git_vaccinate()` crea un `.gitignore` global que previene accidenta
 
 La [documentación sobre git_sitrep](https://usethis.r-lib.org/reference/git_sitrep.html) contiene mucho mas detalles útiles sobre esta función.
 
+### 2. Nunca uses Vim como editor por defecto (a menos que lo domines)
+
+El problema: Git a veces abre un editor de texto para escribir mensajes de commit. Si tu editor está configurado como Vim y no lo conoces, es fácil quedar atrapado.
+
+**¿Cómo evitarlo?**
+
+Configura un editor que ya uses. Opciones comunes:
+
+```bash
+# Usar VS Code
+git config --global core.editor "code --wait"
+
+# Usar Nano (más fácil que Vim)
+git config --global core.editor "nano"
+
+# Usar RStudio (si estás en macOS)
+git config --global core.editor "open -a rstudio"
+```
+
+Verifica que funcione desde el terminal. Más información: https://docs.github.com/es/get-started/git-basics/associating-text-editors-with-git
