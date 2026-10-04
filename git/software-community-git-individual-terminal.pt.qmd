@@ -1,0 +1,466 @@
+---
+title: Como tirar o máximo proveito do Git
+---
+
+::: 
+   {.callout-note} 
+    
+ 
+
+## Migração
+
+Você está lendo a 
+ **     primeira edição em espanhol, ainda em desenvolvimento**,****    deste livro, baseada no currículo de treinamento desenvolvido para o programa rOpenSci.
+
+Este capítulo está sendo migrado dos materiais do currículo para o formato de livro e pode ainda não refletir a versão final do conteúdo.
+
+*Conteúdo pendente de migração:*    veja [     https://github.com/ropensci-training/git-developing-software-together
+](https://github.com/ropensci-training/git-developing-software-together)    e [https://github.com/ropensci-training/git-desarrollo-software
+](https://github.com/ropensci-training/git-desarrollo-software)    para ver os repositórios de código-fonte deste capítulo.
+   :::
+
+## Por que usar o Git?
+
+Você tem algo assim no seu computador?
+
+```
+/home/pao/Documents/thesis
+├── abstract.R
+├── thesis.Rmd
+├── thesis_reviwed.Rmd
+├── thesis_reviwed2.Rmd
+├── thesis_final.Rmd
+├── thesis_finalfinal.Rmd
+├── this_is_it.Rmd
+├── now_this_is_it_for_real_this_time_i_swear.Rmd
+└── FINAL.Rmd
+```
+
+Provavelmente todos nós temos, ou já tivemos algo assim em algum momento, porque precisamos salvar nosso trabalho, mas ainda assim ter acesso às versões anteriores.
+   Existe uma solução para isso.
+   Os sistemas de controle de versão gerenciam a evolução e as alterações de um conjunto de arquivos que vamos chamar de **repositório**   .
+   Se você já deu uma olhada no histórico de um arquivo do Google Docs, é algo parecido com isso, mas de uma forma bem mais controlada.
+   O Git é um sistema de controle de versão bem popular, mas existem outros.
+
+Se você trabalha sozinho, o Git é ótimo para acompanhar as alterações e recuperar versões anteriores dos seus arquivos.
+   Você também pode usar um **     repositório remoto**    (falamos mais sobre isso depois) para ter um backup e compartilhar seu trabalho.
+
+Se vocês trabalharem em equipe, podem aproveitar tudo isso e ainda usar o controle de versão como uma ferramenta para colaborar e organizar as várias versões do mesmo arquivo que estão nos diversos computadores que vocês usam.
+
+## Mas o que a gente quer dizer com controle de versão?
+
+Vamos imaginar que já temos um repositório funcionando ([     mais tarde](/reproducibility-with-r/materials/day2/01-git/#creating-a-new-repository)    vamos ver como criar um).
+   Quando você cria um novo arquivo como parte do repositório (ou *     repo*), esse arquivo está **     sem controle**    ou **     sem versão**   .
+   Isso significa que o git vai ignorar o arquivo e qualquer alteração que você fizer até que você ** adicioná-lo**    ao repo e começar a acompanhar suas alterações.
+
+
+    Nesse momento, o arquivo fica 
+ **     preparado**    e pronto para entrar no repositório.
+   Para fazer isso, você faz um *commit*    e 
+ **     salva**    essa versão do arquivo no repositório.
+   Esse fluxo de trabalho 
+ `modify then add then commit`    vai se repetir toda vez que você quiser salvar uma versão do arquivo.
+Não recomendamos fazer um commit toda vez que você salvar o arquivo ou alterar uma vírgula, e também não é uma boa ideia fazer um commit com um bilhão de alterações.
+   Com a prática e dependendo de como você trabalha, você vai encontrar um meio-termo confortável.
+
+![A figura mostra os estados de um arquivo: não rastreado ou rastreado. Quando está rastreado pelo repositório, o arquivo pode ser preparado, enviado ou modificado. Com a ação “add”, o arquivo é “preparado”; com a ação “commit”, o arquivo é “salvo” no repositório. Esse ciclo se repete toda vez que o arquivo é modificado.](images/file_cycle2.png)
+
+Então, mencionamos 
+   `add`    e 
+   `commit`   ; esses são comandos do Git.
+   Se você já tem experiência com a linha de comando, pode usar o Git por lá; os mesmos comandos também podem ser executados em uma interface gráfica, como [GitHub Desktop](https://desktop.github.com/)    ou 
+ [     GitKraken](https://www.gitkraken.com/)   .
+   Nesta versão dos materiais, vamos usar os comandos do git e a linha de comando ou o Terminal.
+
+::: 
+   {.alert .alert-dismissible .alert-primary}
+   Os principais comandos do git são:
+
+-  
+       `git add <file>` 
+         para adicionar um arquivo à área de preparação.
+-  
+       `git commit -m "A very descriptive message"` 
+         para fazer o commit dos arquivos na área de preparação.
+-  
+       `git status` 
+         para verificar o status de cada arquivo no repositório.
+         :::
+
+## Eu já falei sobre o repositório remoto?
+
+Sim, antes a gente falou sobre um 
+ **     fluxo de trabalho local**   .
+   O repositório (uma pasta oculta chamada 
+   `.git`   ) fica no seu computador e pronto.
+Mas você também pode conectar o **     repositório local**    a um **     repositório remoto**   .
+   Para este workshop, vamos usar [o     GitHub](https://www.github.com) 
+    
+     para hospedar repositórios remotos, mas tem outras opções que você pode explorar, como o [     GitLab](https://about.gitlab.com/)   .
+
+Vamos imaginar que temos um repositório local, fizemos alguns commits e queremos enviar essas alterações para o repositório remoto (vamos ver mais tarde como criar o repositório remoto).
+Para isso, a gente 
+ **     faz o push**    dos commits para o repositório remoto e, então, os dois repositórios ficam “em dia”, ou seja, têm a mesma versão dos arquivos.
+
+Mais tarde, um colega faz uma alteração em um arquivo no repositório local dele e faz o push para o repositório remoto.
+Agora, seu repositório local está “desatualizado” e você precisa baixar esses novos commits do repositório remoto para o seu computador.
+   Você **     faz o pull**    dos commits.
+
+![Modelo conceitual de um fluxo de trabalho usando projetos do RStudio e o git. Os arquivos são adicionados à área de preparação e, em seguida, confirmados no repositório local. Você pode enviar commits para o repositório remoto no GitHub e fazer o pull de novos commits do repositório remoto para o seu computador.](images/local_remote.png)
+
+Ferramentas como o GitHub também têm recursos que te ajudam a colaborar e gerenciar repositórios.
+   Por exemplo, você pode modificar arquivos e fazer commit dessas alterações usando a interface web.
+
+::: 
+   {.alert .alert-dismissible .alert-primary}
+   Os comandos do git para trabalhar com um repositório remoto são:
+
+-  
+       `git push` 
+         para enviar commits para o repositório remoto.
+-  
+       `git pull` 
+         para baixar commits do repositório remoto para o repositório local.
+         :::
+
+## Conheça o Git
+
+Antes de criar seu primeiro repositório, você precisa garantir que o Git te reconheça.
+   Se você seguiu as 
+ [     instruções pré-workshop](preparation.html)   , já tem o Git instalado no seu computador e possui uma conta no GitHub.
+
+Para se apresentar ao Git, ou seja, para que ele saiba seu nome e e-mail, você pode usar o pacote de linha de comando.
+
+::: 
+   {.alert .alert-dismissible .alert-primary} 
+    
+ 
+
+```bash
+git config --global user.name 'Jane Doe'
+git config --global user.email 'jane@example.com'
+```
+
+:::
+
+Substitua pelo seu nome e pelo e-mail associado à sua conta do GitHub.
+   É isso aí!
+
+## Criando um novo repositório
+
+Tem várias maneiras de começar um novo repositório: localmente no seu computador, usando a linha de comando ou uma interface, ou direto do GitHub (ou de serviços parecidos).
+Aqui vamos mostrar como criar um repositório pelo GitHub, associá-lo a um projeto do RStudio (ou simplesmente usá-lo sem o R ou o RStudio) e trabalhar com ele.
+   Mas lembre-se de que existem muitas outras maneiras de trabalhar com o git.
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### 1\. Crie um repositório online.
+
+- Acesse 
+ [         github.com](https://github.com)        e faça login.
+- No cabeçalho da página, vá até o novo menu “Criar novo” e selecione “Novo repositório”
+
+Na página “Criar um novo repositório”, preencha as informações necessárias:
+
+- Modelo do repositório: Sem modelo.
+- Nome do repositório: myrepo ou o nome que você quiser dar ao seu novo projeto.
+- Descrição: Qualquer descrição curta do projeto. Escreva isso pensando nas pessoas.
+- Visibilidade: Pública.
+- Sem arquivo README
+-  Modelo de \`.gitignore\`: Nenhum
+- Licença: Nenhuma
+
+Por fim, clica no botão “Criar repositório”.
+
+Antes de voltar para a linha de comando, copia o URL do repositório.
+
+    Um exemplo é 
+   `https://github.com/paocorrales/myrepo.git`
+   :::
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### 2\. Na linha de comando:
+
+- Navegue até a pasta pai que você quer usar para o seu repositório.
+- Digite 
+ `git clone <remote repository url>`        usando a URL que você acabou de copiar.
+
+Pode aparecer um aviso dizendo: “aviso: parece que você clonou um repositório vazio”.
+
+   Não se preocupe com isso.
+   Vamos criar um arquivo daqui a pouco.
+   :::
+
+A nova pasta no seu computador será um repositório Git, vinculado a um repositório remoto do GitHub.
+   Esse fluxo de trabalho também garante que toda a configuração entre os repositórios local e remoto seja feita corretamente.
+
+Nesse caso, ele não vai adicionar um 
+   `.gitignore`    arquivo.
+   Talvez você queira adicionar um no futuro, já que esse arquivo inclui uma lista de arquivos que não precisamos controlar (como arquivos de big data).
+
+::: 
+ {.alert .alert-dismissible .alert-primary}
+   Mais uma vez, esses são os comandos principais:
+
+Se você já tem um repositório remoto:
+
+- `git clone <repo url>`
+
+Se você quiser criar um repositório local do zero na pasta em que está agora:
+
+- `git init`
+  :::
+
+## Alterações locais
+
+É hora de colocar em prática algumas das coisas que a gente vem falando.
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### Adicionar, confirmar
+
+1. Cria um novo arquivo e salva-o. Pode ser qualquer tipo de arquivo.
+2. Verifica o status dos arquivos no repositório com 
+ `git status`       . O arquivo que você acabou de criar vai estar em “Arquivos não rastreados”
+3. Adicione o arquivo à área de preparação com 
+ `git add <file name>`       . Você pode conferir o status do repositório de novo pra ver o que mudou.
+4. Faça o commit do arquivo com 
+ `git commit -m <message>`       . Você vai precisar adicionar uma mensagem descritiva!
+5. Verifique o status do repositório de novo.
+
+Se você tiver feito o commit de todas as alterações no arquivo, vai aparecer uma mensagem dizendo “nada para fazer o commit, árvore de trabalho limpa”.
+   :::
+
+Se tudo deu certo, você começou a rastrear arquivos, fez alterações e as confirmou no repositório local.
+Você não vai ver nenhuma alteração no GitHub até enviar esses commits.
+   Você pode fazer isso no final do dia, se preferir, mas se trabalha com outras pessoas, pode ser uma boa ideia enviar tudo logo após cada commit.
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### Envie!
+
+1. Agora, envie os commits para o repositório remoto com 
+       `git push`       .
+
+Como é a primeira vez que você envia commits para o repositório remoto, o git vai criar automaticamente um novo branch.
+   Por enquanto, não vamos nos preocupar com branches.
+   :::
+
+## Alterações remotas
+
+Vamos voltar ao GitHub.
+   Se você atualizar a página, o repositório vai incluir os arquivos que você fez ocommitagora mesmo.
+   Se você clicar no link “commit” ou “commits”, dá pra acessar o histórico do repositório.
+Nessa visualização, dá pra explorar o repositório no “estado” de cada commit e ver as diferenças entre os arquivos.
+   Vamos voltar pra página de visualização.
+
+Na página principal do repositório, podemos tentar fazer alterações nos arquivos.
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### Criar um README
+
+1. Na página principal, vai até a parte de baixo, onde diz “Adicionar um README” (essa opção só aparece quando não há nenhum README no repositório).
+2. Não mude o nome do arquivo.
+3. Adicione algo ao conteúdo do arquivo. Os arquivos README geralmente são escritos em Markdown e contêm informações sobre o repositório.
+4. Clique no botão “Confirmar alterações...” para salvar e confirmar o arquivo.
+5. Adicione uma mensagem.
+6. Clique no botão “Confirmar arquivo”.
+7. Volte para a página principal; agora ela vai mostrar o conteúdo do README.
+         :::
+
+O novo arquivo e as alterações que você faz no GitHub ficam apenas no repositório remoto até você fazer um pull do repositório local.
+   Se você fizer alterações no repositório local enquanto ele não estiver atualizado, pode rolar conflitos de mesclagem, o que dá dor de cabeça.
+Isso acontece quando a versão de um arquivo no repositório local não é compatível com a versão no repositório remoto.
+   Nesses casos, o git não consegue decidir qual versão é a correta e você mesmo precisa resolver isso.
+
+Para evitar esse problema (na maioria das vezes), é bom fazer um pull antes de começar a fazer qualquer outra coisa.
+   
+
+    Na maioria das vezes, a linha de comando vai mostrar “Já está atualizado”, mas é bom criar esse hábito.
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### Fazer um pull do GitHub
+
+1. Volta pro Terminal.
+2. Digite 
+ `git pull`       .
+3. O Git vai baixar as novas alterações do GitHub e te dizer quantos arquivos foram alterados.
+
+Agora, os dois repositórios estão sincronizados.
+   :::
+
+## Como funciona um repositório do GitHub
+
+- *Arquivos Readme.*        Use um 
+       `README.md`        arquivo para explicar o que é o seu projeto e como usá-lo.
+  `README.md`        é o arquivo que aparece automaticamente quando você abre um repositório do GitHub.
+
+- *Licença.*        A licença informa às pessoas como elas podem usar o conteúdo do seu repositório.
+         Geralmente, usamos licenças permissivas, e as pessoas podem fazer praticamente qualquer coisa com os materiais.
+  Exemplos são a Licença MIT ou a Apache.
+         Alguns recursos extras:
+  
+  - [Escolha uma licença de código aberto](https://choosealicense.com/)            faz exatamente o que o nome diz e te ajuda a escolher uma licença.
+  - [Licenças de Software em Linguagem Simples](https://tldrlegal.com/)            explica a linguagem jurídica das licenças em termos simples
+
+- *Guia de contribuição.*        Um arquivo chamado 
+       `CONTRIBUTING.md`        e diretrizes para colaboradores, pra que saibam o que devem fazer se quiserem te ajudar.
+
+- *Código de Conduta.*        Bons projetos têm códigos de conduta para garantir que as pessoas sejam bem tratadas.
+         O GitHub tem um assistente de Código de Conduta para facilitar a criação de um.
+
+- *Issues.*        Permite que você gerencie o projeto.
+
+## Colaborando com outras pessoas
+
+Ao colaborar em um projeto, você pode se deparar com uma dessas duas situações
+
+- Você tem permissão de gravação no repositório em que está trabalhando.
+- Você não tem permissão de gravação no repositório.
+
+A primeira situação é a mais comum quando se trabalha em equipe em um projeto de longo prazo.
+   Você pode clonar o repositório seguindo [     essas mesmas instruções](/reproducibility-with-r/materials/day2/01-git/#creating-a-new-repository)    e usar o mesmo fluxo de trabalho de antes.
+Quando você tentar enviar suas alterações para o repositório remoto, o GitHub vai verificar se você tem permissão para modificar o repositório.
+   A única diferença entre isso e trabalhar sozinho é que você precisa se comunicar bem para que duas pessoas não fiquem trabalhando na mesma coisa.
+Mas isso vale tanto com o Git quanto sem ele.
+   Às vezes, cada um trabalha em seu próprio branch para evitar causar problemas.
+   Você pode ler mais sobre branches no [     Capítulo 22 do livro “Happy Git with R”
+](https://happygitwithr.com/git-branches)   
+    .
+
+A segunda situação é comum quando você contribui para projetos de desconhecidos, como corrigir bugs em pacotes de código aberto.
+
+    Nesse caso, você precisa primeiro *     forkar*    o repositório, o que cria um repositório remoto vinculado à sua conta do GitHub, ao qual você terá acesso total.
+Agora você trabalha nesse fork usando o fluxo de trabalho normal: modificar, adicionar, fazer commit e enviar.
+Mas, para que suas alterações sejam integradas ao repositório original, você precisa criar um *     pull request*    (ou *     PR*   ).
+Isso vai avisar o dono do repositório original que você fez algumas alterações que acha que deveriam ser mescladas.
+   O dono pode então aceitar, rejeitar ou pedir modificações.
+
+    Assim que ele aceitar sua solicitação de pull, suas alterações ficarão salvas no repositório original.
+
+![Modelo conceitual do fluxo de trabalho remoto. Um repositório remoto externo pode ser bifurcado para um repositório remoto de sua propriedade com o comando “fork”. O repositório remoto é copiado para um repositório local com o comando “clone”. Os arquivos dentro do repositório local e do repositório remoto são sincronizados com os comandos \`push\` e \`pull\`. O repositório remoto de sua propriedade pode ser mesclado ao repositório remoto externo por meio de uma solicitação de pull.](images/pull-request.png)
+
+### Vamos plantar algumas árvores
+
+Como um exemplo divertido, vamos colaborar com a galeria Flametree, que foi lançada recentemente, e fazer algumas pull requests pelo caminho.
+
+Nesse exemplo, vamos continuar trabalhando no Terminal, em vez de usar a interface web do GitHub.
+   
+
+    Para isso, precisamos do GitHub CLI, uma interface de linha de comando para o GitHub.
+Você encontra instruções sobre 
+ [     como baixar o GitHub CLI na seção de preparação](preparation.html)   .
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### Faça um fork do repositório
+
+1. Acesse [       
+          github.com/paocorrales/flametree\_gallery
+](https://github.com/paocorrales/flametree_gallery)        e copie a URL do repositório; você vai precisar dela para fazer o fork.
+2. Vá até o diretório onde quer salvar o novo repositório.
+3. No Terminal, digite: 
+       `gh repo fork https://github.com/paocorrales/flametree_gallery.git`
+     
+
+O Terminal vai clonar o fork no seu computador e mostrar:
+
+\```* [new branch]      main       -> upstream/main ✓ Cloned fork ! Repository paocorrales/flametree_gallery set as the default repository. To learn more about the default repository, run: gh repo set-default --help```
+
+Agora, você tem uma cópia do repositório na sua conta do GitHub e no seu computador.
+   Está tudo pronto para começar a trabalhar como antes.
+
+Esse repositório é uma cópia do repositório original.
+
+   É um projeto bem pequeno, com poucos arquivos.
+`template_script.R`   contém o código necessário para criar imagens lindas de árvores a partir de código R (podes ignorar o resto dos arquivos).
+
+Ele usa o 
+   [*flametree*](https://github.com/djnavarro/flametree) 
+     criada por [     Danielle Navarro](https://djnavarro.net/)   .
+   Como isso funciona não faz parte dos tópicos do workshop (infelizmente!), mas é uma boa desculpa pra praticar como fazer pull requests.
+
+### Faça uma alteração no repositório
+
+1. Faça uma cópia do 
+ `template_script.R`        e mude o nome dele para 
+       `<your-name.R>` 
+     
+
+2. Altere o valor das três primeiras variáveis no script:
+  
+  -  
+           `name` 
+             seu nome.
+  -  
+           `seed` 
+             tem algumas coisas aleatórias rolando por lá.
+  -  
+           `shades` 
+             Escolha quatro cores.
+
+3. Salve o arquivo, **         adicione**        ele à área de preparação e **         faça o commit**        dele (*         inclua apenas o arquivo .R que você criou*       ).
+
+4. Envie para o seu repositório remoto.
+         :::
+
+Nesse ponto, você fez uma alteração no seu repositório local (que é uma cópia do repositório bifurcado) e enviou essas alterações para o seu repositório remoto no GitHub.
+
+   O repositório original não sabe disso.
+
+Se você quiser contribuir com as alterações que fez para o repositório original, é hora de fazer uma solicitação de pull.
+
+::: 
+   {.alert .alert-dismissible .alert-light} 
+    
+ 
+
+### Faça uma solicitação de pull
+
+1. No terminal, digite 
+ `gh pr create --title "Pull request title" --body "Pull request body"`       , coloque um título e escreva uma mensagem no corpo da solicitação de pull. O terminal vai mostrar o link da solicitação na web. É bom anotar esse número.
+2. Você também pode adicionar comentários depois de abrir a solicitação de pull com 
+       `gh pr comment <number of pr> --body "Some comment"`
+     
+
+E pronto!
+   :::
+
+O(s) dono(s) do repositório vai(vão) receber um e-mail.
+   Eles podem revisar a solicitação de pull, comentar nela e, por fim, aceitar a contribuição.
+   Quando isso acontecer, as alterações que você fez vão aparecer no repositório.
+
+A 
+ [     lista de comandos do GitHub para trabalhar com pull requests](https://cli.github.com/manual/gh_pr)    é enorme!
+
+## Recursos
+
+[Happy git with R, de Jenny Bryan](https://happygitwithr.com)
+
+[Oficina sobre o Git desenvolvida por Yanina Bellini Saibene e Marysol Gatti (em espanhol)](https://master--yabellini.netlify.app/es/courses/tallerdegitconr%3E)
+
+
