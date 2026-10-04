@@ -160,13 +160,15 @@ La función `git_vaccinate()` crea un `.gitignore` global que previene accidenta
 
 La [documentación sobre git_sitrep](https://usethis.r-lib.org/reference/git_sitrep.html) contiene mucho mas detalles útiles sobre esta función.
 
-###24. Saber dónde estás en cada momento
+### 2. Saber dónde estás en cada momento
 
-Antes de hacer cualquier cosa importante, pregúntate:
+Antes de hacer cualquier cosa importante, **siempre** verifica dónde estás. Especialmente:
 
 **¿En qué rama estoy?**
 
-Para eso podes revisar el panel de Git en RStudio o Positron, el prompt de la terminal suele mostrar en que rama estamos.  De esta manera nos aseguramos estar en la rama con la cual queremos trabajar.
+Para eso podes revisar el panel de Git en RStudio (panel superior derecho) o en Positron el badge de rama en la esquina inferior izquierda. El prompt de la terminal suele mostrar en que rama estamos. 
+
+De esta manera nos aseguramos estar en la rama con la cual queremos trabajar.
 
 TODO: agregar captura de pantalla.
 
