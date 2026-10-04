@@ -33,7 +33,7 @@ La diferencia entre un Git que funciona y uno que no está a menudo en:
 Después de leer este capítulo, podrás:
 
 - Configurar Git de forma segura para evitar problemas comunes
-- Identificar en qué punto del flujo de Git te encuentras (staging area, rama, estado local vs remoto)
+- Identificar en qué punto del flujo de Git te encuentras
 - Prevenir situaciones problemáticas mediante buenas prácticas
 - Resolver los problemas más comunes que enfrentan los desarrolladores
 - Recuperarte de situaciones más complejas con confianza
@@ -48,7 +48,7 @@ TODO: cambiar link al libro de Yani y Pao que esta en castellano, dejar estos li
 
 * Tener un poco de experiencia con Git (git commit, git pull/push, ramas, GitHub u otra plataforma). Si querés repasar un poco, te recomendamos el workshop https://yabellini.netlify.app/courses/git_rstudio_course/.
 
-* Instalar {saperlipopette} en tu computadora. Lo usaremos para generar los ejercicios:
+* Instalar {saperlipopette} en tu computadora:
 
 ```
 install.packages(
@@ -56,6 +56,8 @@ install.packages(
   repos = c("https://packages.ropensci.org", "https://cloud.r-project.org")
 )
 ```
+
+`saperlipopette`, un paquete de R que crea ejercicios prácticos seguros en carpetas temporales. Así puedes experimentar con Git sin miedo a romper tus proyectos reales.
 Más información en https://docs.ropensci.org/saperlipopette/.
 
 * Si querés, instalá Positron, pero los ejercicios se pueden hacer en RStudio o con tus herramientas usuales para R y Git.
