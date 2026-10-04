@@ -150,7 +150,6 @@ Output típico:
   ```
 :::
 
-
 #### Vacunate
 
 La función `git_vaccinate()` crea un `.gitignore` global que previene accidentalmente hacer commit de:
@@ -184,6 +183,7 @@ Tengo que chequear si mis dos repositorios estan sincronizados, por ejemplo, es 
 
 Entonces, antes de tomar una acción, siempre verifiquemos nuestro estado para asegurarnos que estamos haciendo la tarea en el repo, rama y archivos adecuados.
 
+
 ### 3. Nunca uses Vim como editor por defecto (a menos que lo domines)
 
 El problema: Git a veces abre un editor de texto para escribir mensajes de commit. Si tu editor está configurado como Vim y no lo conoces, es fácil quedar atrapado.
@@ -200,4 +200,41 @@ git config --global core.editor "code --wait"
 git config --global core.editor "open -a rstudio"
 ```
 
-Verifica que funcione desde el terminal. Más información: https://docs.github.com/es/get-started/git-basics/associating-text-editors-with-git
+Verifica que funcione desde el terminal. 
+
+TODO: chequear si hay un ejercicio con saperlipopete.
+
+## Resolución de problemas comunes
+
+### Como vamos a trabajar
+
+Vamos a usar `saperlipopette`, un paquete de R que crea **ejercicios Git en carpetas temporales**. Cada función del paquete genera un escenario problemático diferente que debes resolver.
+
+**Ventajas:**
+- ✓ No rompees tus proyectos importantes
+- ✓ Puedes experimentar sin miedo
+- ✓ Tienes las instrucciones en R
+- ✓ Las soluciones son reales — aprendes Git de verdad
+
+#### Cómo funciona
+
+Típicamente:
+
+1. Creas una carpeta temporal con un escenario usando las funciones del paquete, por ejemplo:
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_one_small_change(carpeta)
+```
+
+2. Vas a la carpeta creada.
+3. Se abre **una nueva sesion** con esa carpeta
+4. Lees las instrucciones
+5. Usas terminal/Git/tu herramienta favorita para resolver
+6. Verificas tu solución
+7. Cierras la sesion de ejercicio.
+
+Cada ejercicio es un "rompecabezas": tienes un problema real, lees las instrucciones, y tienes que solucionarlo usando Git. El paquete también tiene la función `tip()` para obtener ayuda si lo necesitamos.
+
+
