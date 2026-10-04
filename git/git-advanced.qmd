@@ -156,10 +156,31 @@ La función `git_vaccinate()` crea un `.gitignore` global que previene accidenta
   - Datos temporales (`.RData`)
   - Archivos de sistema (`.DS_Store`)
 
-
 La [documentación sobre git_sitrep](https://usethis.r-lib.org/reference/git_sitrep.html) contiene mucho mas detalles útiles sobre esta función.
 
-### 2. Nunca uses Vim como editor por defecto (a menos que lo domines)
+###24. Saber dónde estás en cada momento
+
+Antes de hacer cualquier cosa importante, pregúntate:
+
+**¿En qué rama estoy?**
+
+Para eso podes revisar el panel de Git en RStudio o Positron, el prompt de la terminal suele mostrar en que rama estamos.  De esta manera nos aseguramos estar en la rama con la cual queremos trabajar.
+
+TODO: agregar captura de pantalla.
+
+**¿Qué archivos cambié?**
+
+En ese mismo panel de Git se pueden chequear los archivos modificados, en _staging_, etc. De esta manera tambien sabemos que modificaciones estaremos confirmando cuando hagamos un _commit_
+
+TODO: agregar captura de pantalla.
+
+**Remote vs local**
+
+Tengo que chequear si mis dos repositorios estan sincronizados, por ejemplo, es una buena practica traer todos los cambios del repositorio remoto al local haciendo un _pull_ antes de empezar a trabajar.
+
+Entonces, antes de tomar una acción, siempre verifiquemos nuestro estado para asegurarnos que estamos haciendo la tarea en el repo, rama y archivos adecuados.
+
+### 3. Nunca uses Vim como editor por defecto (a menos que lo domines)
 
 El problema: Git a veces abre un editor de texto para escribir mensajes de commit. Si tu editor está configurado como Vim y no lo conoces, es fácil quedar atrapado.
 
@@ -170,9 +191,6 @@ Configura un editor que ya uses. Opciones comunes:
 ```bash
 # Usar VS Code
 git config --global core.editor "code --wait"
-
-# Usar Nano (más fácil que Vim)
-git config --global core.editor "nano"
 
 # Usar RStudio (si estás en macOS)
 git config --global core.editor "open -a rstudio"
