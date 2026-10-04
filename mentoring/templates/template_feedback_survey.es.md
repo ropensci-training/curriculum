@@ -1,22 +1,20 @@
-# Comentários sobre o evento do Programa de Campeões e Campeãs da rOpenSci
+# Comentarios sobre el evento del Programa de Campeon(e|a)s de rOpenSci
 
-Pedimos que você nos envie um breve comentário anônimo sobre os eventos e as reuniões para que possamos melhorá-los.
+Te pedimos que nos envíes un breve comentario anónimo sobre los eventos y reuniones para poder mejorarlas.
 
-### Sobre qual reunião você está dando a sua opinião?
+### ¿Sobre qué reunión estás dando tu opinión?
 
-Use o nome da reunião (você também pode incluir a data)
+Usa el nombre de la reunión (también podes agregar la fecha)
 
-O que você mais gostou?  
-(por exemplo, algo que devemos manter, algo positivo que fizemos)
+¿Qué es lo que más te ha gustado?  
+(por ejemplo, algo que tenemos que mantener, algo positivo que hicimos)
 
-O que você menos gostou?  
-(por exemplo, algo que você gostaria que mudasse ou melhorasse)
+¿Qué es lo que menos te ha gustado?  
+(por ejemplo, algo que te gustaría que cambiara o mejorara)
 
-Você pode avaliar esta reunião?  
-   em uma escala de 1 (pior) a 5 (melhor).
+¿Puedes calificar esta reunión?  
+en una escala del 1-peor al 5-mejor.
 
-Em qual turma do programa você participa?
+¿En que cohorte del programa participas?  
 
-*Programa Campeões e Campeãs da rOpenSci. Treinamento de mentores(as). Pesquisa de opinião. Yani Bellini Saibene (2023) - CC-BY-SA. Versão 2026-2027*
-
-
+_rOpenSci Champions Program. Mentors training. Feedback Survey. Yani Bellini Saibene (2023) - CC-BY-SA. Version 2026-2027_
