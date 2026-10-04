@@ -1,5 +1,7 @@
 ---
-title: "Git Avanzado"
+title: "¡Miércoles, Git! — Prevención y Resolución de Problemas Comunes"
+subtitle: "Un capítulo práctico sobre Git para desarrolladores"
+author: "Maëlle Salmon"
 ---
 
 ::: {.callout-note}
@@ -11,3 +13,30 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 
 *Contenido pendiente de migración:* ver https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.
 :::
+
+## Introducción
+
+Todas las personas que usamos git hemos experimentado momentos de frustración: un _commit_ en la rama equivocada, cambios perdidos, o un error que no sabes cómo deshacer. Y muchas veces la documentación o la ayuda no son lo suficientemente claras para darnos el soporte que necesitamos.
+
+La buena noticia es que Git es mucho menos peligroso de lo que parece. Fue diseñado para recuperación y control de versiones, asi que proporciona herramientas para prevenir muchos problemas y recuperarte de casi cualquier situación.
+
+Hay un acuerdo general de que Git no es precisamente la tecnología más fácil de usar del mundo, pero si ya pudiste aprender un lenguaje de programación, seguro puedes aprender lo básico de Git. 
+
+La diferencia entre un Git que funciona y uno que no está a menudo en:
+
+1. **Prevención:** Conocer buenas prácticas antes de que ocurran los problemas
+2. **Orientación situacional:** Saber exactamente dónde estás en el flujo de Git
+3. **Recuperación:** Entender que casi siempre hay una forma de arreglar nuestro problema
+
+### Objetivos de aprendizaje
+
+Después de leer este capítulo, podrás:
+
+- Configurar Git de forma segura para evitar problemas comunes
+- Identificar en qué punto del flujo de Git te encuentras (staging area, rama, estado local vs remoto)
+- Prevenir situaciones problemáticas mediante buenas prácticas
+- Resolver los problemas más comunes que enfrentan los desarrolladores
+- Recuperarte de situaciones más complejas con confianza
+
+
+
