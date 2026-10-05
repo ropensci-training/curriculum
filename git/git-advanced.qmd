@@ -238,3 +238,55 @@ saperlipopette::exo_one_small_change(carpeta)
 Cada ejercicio es un "rompecabezas": tienes un problema real, lees las instrucciones, y tienes que solucionarlo usando Git. El paquete también tiene la función `tip()` para obtener ayuda si lo necesitamos.
 
 
+### Problema 1: "Mi último commit me da vergüenza"
+
+**Situación:** Acabas de hacer un commit, pero:
+- El mensaje tiene un typo
+- Olvidaste incluir un archivo
+- Quieres cambiar el código
+
+**Solución: `git commit --amend`**
+
+```bash
+# Si solo quieres cambiar el mensaje
+git commit --amend -m "Nuevo mensaje correcto"
+
+# Si quieres cambiar el código o añadir archivos
+git add archivo_olvidado.R
+git commit --amend
+# Se abrirá tu editor; puedes cambiar el mensaje si quieres
+```
+
+::: {.callout-note}
+#### Ejercicio 1: Cambios menores en el último commit
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_one_small_change(carpeta)
+```
+
+- Vas a la carpeta indicada
+- Lees las instrucciones
+- Usas `git commit --amend` para solucionarlo
+- Verificas tu solución
+
+:::
+
+::: {.callout-note}
+#### Ejercicio 2: Cambiar el mensaje del último commit
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_latest_message(carpeta)
+```
+
+Similar al anterior, pero el problema es el mensaje del commit.
+
+:::
+
+
+
+
+
