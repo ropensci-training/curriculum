@@ -286,6 +286,76 @@ Similar al anterior, pero el problema es el mensaje del commit.
 
 :::
 
+### Problema 2: "Cambié de idea sobre estos cambios"
+
+Hiciste cambios, pero ahora te das cuenta de que no son lo que querías.
+
+#### Opción A: Cambios no están en _staging_
+
+```bash
+# Ver qué cambió
+git diff
+
+# Descartar todos los cambios (⚠️ no recuperable)
+git checkout -- .
+
+# O descartar solo un archivo
+git checkout -- script.R
+```
+
+#### Opción B: Cambios están en _staging_ pero no hicimos _commit_
+
+```bash
+# Sacar del staging (los cambios permanecen)
+git reset HEAD archivo.R
+
+# Luego descarta si quieres
+git checkout -- archivo.R
+```
+
+#### Opción C: Ya hiciste commit, pero quieres deshacer
+
+```bash
+# Opción 1: Deshacer pero mantener los cambios
+git reset HEAD~1          # Último commit se deshace, cambios permanecen
+
+# Opción 2: Deshacer y perder cambios (⚠️ cuidado)
+git reset --hard HEAD~1
+
+# Opción 3: Crea un nuevo commit que deshace (seguro, deja historial)
+git revert HEAD           # Crea un nuevo commit inverso
+```
+
+
+::: {.callout-note}
+#### Ejercicio 3: Deshacer un commit
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_undo_commit(carpeta)
+```
+
+Practicaás cómo deshacer cambios que ya committeaste, manteniendo opciones diferentes.
+
+:::
+
+
+::: {.callout-note}
+#### Ejercicio 4: Revertir cambios en un archivo
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_revert_file(carpeta)
+```
+
+Practicas cómo deshacer cambios en un archivo específico.
+
+:::
+
+
+
 
 
 
