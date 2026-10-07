@@ -479,7 +479,202 @@ saperlipopette::exo_restore_file(carpeta)
 Practicas cómo restaurar un archivo a su versión anterior sin afectar otros archivos del mismo commit.
 :::
 
+### Problema 5: "Necesito la versión anterior de este archivo"
+
+**Situación:** Alguien cambió un archivo y quieres la versión de hace 3 commits.
+
+```bash
+# Ver el historial de un archivo
+git log -- archivo.R
+
+# Restaurar a una versión anterior
+git checkout HASH -- archivo.R
+
+# O simplemente deshacer el último cambio en ese archivo
+git checkout HEAD~1 -- archivo.R
+```
 
 
+## Parte 4: Situaciones más complejas
+
+### Conflictos de _merge_ (o _merge conflicts_)
+
+**¿Qué es?** Cuando dos personas editan la misma línea de un archivo, Git no sabe qué versión mantener.
+
+**Apariencia:**
+```
+<<<<<<< HEAD
+versión_tuya()
+=======
+versión_de_otro()
+>>>>>>> rama-de-otro
+```
+
+**Cómo resolver:**
+1. Manualmente edita el archivo, manteniendo lo que quieres
+2. Elimina los marcadores de conflicto (`<<<<`, `====`, `>>>>`)
+3. Haz `git add archivo.R` y `git commit`
+
+**Prevención:** Comunícate con tu equipo, usa ramas, haz merge frecuente.
+
+### Situaciones extremas: rebase y time_machine
+
+Para situaciones muy complicadas donde necesitas reescribir historial:
+
+```r
+# Ejercicio avanzado
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_time_machine(carpeta)
+```
+
+Este es el ejercicio más desafiante. Solo inténtalo después de haber practicado los anteriores.
+
+## Parte 5: Mejores prácticas
+
+### 1. Commits frecuentes y descriptivos
+
+Mejor:
+```bash
+git commit -m "Agregar validación de entrada en función parse_data()"
+```
+
+Evita:
+```bash
+git commit -m "cambios"  # Demasiado vago
+```
+
+### 2. Ramas para cada feature
+
+```bash
+# Rama por feature
+git checkout -b feature/autenticación
+
+# Rama por bugfix
+git checkout -b fix/login-error
+
+# Rama experimental
+git checkout -b experiment/new-algorithm
+```
+
+### 3. Antes de push, verifica
+
+```bash
+# ¿Qué cambios estoy por subir?
+git log origin/main..HEAD
+
+# ¿Hay conflictos con main?
+git fetch origin
+git merge --no-commit --no-ff origin/main
+git merge --abort  # Si no te gustan los cambios
+
+# ¿Mi código funciona?
+# (Ejecuta tests locales)
+```
+
+### 4. Mensajes de commit claros
+
+Formato útil:
+```
+<tipo>: <descripción breve (50 caracteres)>
+
+<Explicación más larga si es necesario>
+
+Fixes #123  # Si resuelve un issue
+```
+
+Tipos comunes: `feat:`, `fix:`, `refactor:`, `test:`, `docs:`
+
+
+## Parte 6: Resumen de ejercicios
+
+Aquí está la lista completa de ejercicios con `saperlipopette`. Te recomendamos hacerlos en este orden:
+
+| # | Ejercicio | Comando | Dificultad | Tiempo |
+|---|-----------|---------|-----------|--------|
+| 1 | Cambios menores | `exo_one_small_change()` | Fácil | 5 min |
+| 2 | Mensaje incorrecto | `exo_latest_message()` | Fácil | 5 min |
+| 3 | Deshacer commit | `exo_undo_commit()` | Media | 8 min |
+| 4 | Revertir archivo | `exo_revert_file()` | Media | 8 min |
+| 5 | Commit en main | `exo_committed_to_main()` | Media | 10 min |
+| 6 | Rama equivocada | `exo_committed_to_wrong()` | Media | 10 min |
+| 7 | Deshacer commit antiguo | `exo_revert_commit()` | Media | 10 min |
+| 8 | Restaurar archivo | `exo_restore_file()` | Media | 10 min |
+| 9 | Time machine | `exo_time_machine()` | Difícil | 15 min |
+
+::: {.callout-tip}
+#### Sugerencia
+
+Practica 1-2 ejercicios por sesión de estudio. No intentes hacerlos todos de una.
+:::
+
+## Resumen y puntos clave
+
+### Lo más importante
+
+1. **Git no es tan malo.** Fue diseñado para recuperación, no para destrucción.
+
+2. **Prevención > solución:**
+   - Configura bien tu editor
+   - Usa `.gitignore`
+   - Verifica con `git status` antes de push
+   - Usa ramas para nuevos cambios
+
+3. **Cuando algo sale mal:**
+   - Mantén la calma
+   - Ejecuta `git status` para orientarte
+   - Busca la solución (generalmente `git reset`, `git revert`, o `git commit --amend`)
+   - No hagas `git push --force` sin antes analizar bien la situación
+
+4. **Practica con seguridad:**
+   - Usa `saperlipopette` para practicar
+   - No rompes tus proyectos reales
+   - Aprendes Git de verdad, con práctica real, no solo la teoría
+
+### Recursos adicionales
+
+- **Happy Git and GitHub for the useR:** https://happygitwithr.com/
+  - Excelente guía práctica para usuarios de R
+
+- **"Oh Shit, Git!":** https://ohshitgit.com/
+  - Soluciones rápidas para problemas comunes
+
+- **Pro Git Book:** https://git-scm.com/book/en/v2
+  - Referencia completa y profunda
+
+- **Julia Evans' Zines:** https://wizardzines.com/
+  - Visualizaciones hermosas de cómo funciona Git
+
+- **Documentación de saperlipopette:** https://docs.ropensci.org/saperlipopette/
+  - Documentación completa con todos los ejercicios
+
+### El mensaje final
+
+Git es una herramienta creada por desarrolladores, para desarrolladores. Tiene sus peculiaridades, pero es muy útil. La curva de aprendizaje es porque hay mucho poder disponible.
+
+Lo importante es **practicar en escenarios seguros** y eso es exactamente lo que `saperlipopette` te permite hacer.
+
+Cada persona experimentada en desarrollo de software ha estado en algún momento atrapado en Git. Todos aprendimos. Y tú también puedes.
+
+
+## Preguntas de repaso
+
+Usa estas preguntas para verificar tu comprensión. Intenta responder sin mirar atrás:
+
+1. **Conceptos básicos:** ¿Cuál es la diferencia entre el directorio de trabajo, el staging area y el repositorio local?
+
+2. **Prevención:** ¿Qué hace `usethis::git_vaccinate()` y por qué es útil?
+
+3. **Ubicación:** ¿Cómo verificarías en RStudio o Positron en qué rama estás?
+
+4. **Enmienda:** ¿Qué comando usarías si necesitas cambiar el mensaje del último commit que acabas de hacer?
+
+5. **Deshacer:** ¿Cuál es la diferencia entre `git reset HEAD~1` y `git reset --hard HEAD~1`?
+
+6. **Rama equivocada:** Si hiciste 3 commits en `main` pero deberían estar en `feature/nuevo`, ¿qué pasos seguirías?
+
+7. **Verificación:** Antes de hacer `git push`, ¿qué comando ejecutarías para verificar que todo está bien?
+
+8. **saperlipopette:** ¿Por qué usarías `saperlipopette` en lugar de practicar directamente en tus proyectos reales?
 
 
