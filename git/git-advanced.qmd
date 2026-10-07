@@ -202,7 +202,7 @@ git config --global core.editor "open -a rstudio"
 
 Verifica que funcione desde el terminal. 
 
-TODO: chequear si hay un ejercicio con saperlipopete.
+> TODO: chequear si hay un ejercicio con saperlipopete.
 
 ## Resolución de problemas comunes
 
@@ -274,7 +274,7 @@ saperlipopette::exo_one_small_change(carpeta)
 :::
 
 ::: {.callout-note}
-#### Ejercicio 2: Cambiar el mensaje del último commit
+#### Ejercicio 2: Cambiar el mensaje del último _commit_
 
 ```r
 withr::local_language("es")
@@ -282,13 +282,13 @@ carpeta <- withr::local_tempdir()
 saperlipopette::exo_latest_message(carpeta)
 ```
 
-Similar al anterior, pero el problema es el mensaje del commit.
+Similar al anterior, pero el problema es el mensaje del _commit_.
 
 :::
 
 ### Problema 2: "Cambié de idea sobre estos cambios"
 
-Hiciste cambios, pero ahora te das cuenta de que no son lo que querías.
+**Situación:** Hiciste cambios, pero ahora te das cuenta de que no son lo que querías.
 
 #### Opción A: Cambios no están en _staging_
 
@@ -313,7 +313,7 @@ git reset HEAD archivo.R
 git checkout -- archivo.R
 ```
 
-#### Opción C: Ya hiciste commit, pero quieres deshacer
+#### Opción C: Ya hiciste _commit_, pero quieres deshacer
 
 ```bash
 # Opción 1: Deshacer pero mantener los cambios
@@ -328,7 +328,7 @@ git revert HEAD           # Crea un nuevo commit inverso
 
 
 ::: {.callout-note}
-#### Ejercicio 3: Deshacer un commit
+#### Ejercicio 3: Deshacer un _commit_
 
 ```r
 withr::local_language("es")
@@ -336,7 +336,7 @@ carpeta <- withr::local_tempdir()
 saperlipopette::exo_undo_commit(carpeta)
 ```
 
-Practicaás cómo deshacer cambios que ya committeaste, manteniendo opciones diferentes.
+Practicas cómo deshacer cambios que ya hiciste _commit_, manteniendo opciones diferentes.
 
 :::
 
@@ -352,6 +352,52 @@ saperlipopette::exo_revert_file(carpeta)
 
 Practicas cómo deshacer cambios en un archivo específico.
 
+:::
+
+### Problema 3: "Hice el _commit_ en la rama equivocada"
+
+**Situación:** Trabajaste en `main` pero deberías haber creado una rama `feature/nueva-cosa`.
+
+**Solución paso a paso:**
+
+```bash
+# Paso 1: Deshacer el último _commit_ en main (mantiene cambios)
+git reset HEAD~1
+
+# Paso 2: Crear la rama correcta y cambiar a ella
+git checkout -b feature/nueva-cosa
+
+# Paso 3: Agregar los cambios a _staging_ y hacer _commit_
+git add .
+git commit -m "Implementar nueva cosa"
+
+# Paso 4: Cambiar de vuelta a main y verificar que esté limpio
+git checkout main
+git status  # Debería estar limpio
+```
+
+::: {.callout-note}
+#### Ejercicio 5: _Commit_ accidental en main
+
+Practicas cómo mover un _commit_ de main a una rama nueva.
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_committed_to_main(carpeta)
+```
+:::
+
+::: {.callout-note}
+#### Ejercicio 6: _Commit_ en rama equivocada (más complejo)
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_committed_to_wrong(carpeta)
+```
+
+Variante más compleja donde el commit está en una rama incorrecta.
 :::
 
 
