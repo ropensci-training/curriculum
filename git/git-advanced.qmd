@@ -400,7 +400,84 @@ saperlipopette::exo_committed_to_wrong(carpeta)
 Variante más compleja donde el commit está en una rama incorrecta.
 :::
 
+### Problema 4: "Mis cambios eran equivocados"
 
+**Situación:** El _commit_ problemático **no es el último**. Hiciste varios _commits_ después, pero uno de los anteriores rompió algo o tiene cambios que quieres deshacer.
+
+Tenemos dos formas de manejar esta situación:
+
+#### Situación A: Deshacer un _commit_ completo en la mitad del historial
+
+**Escenario:** Hace 5 _commits_ hiciste un _commit_ con mensaje "Fix reparar las cosas" que rompió tu código. Este _commit_ está en la mitad del historial, no al final.
+
+**Solución: `git revert`**
+
+```bash
+# Paso 1: Ver el historial para identificar el commit problemático
+git log --oneline
+
+# Paso 2: Copiar el ID del commit que quieres deshacer
+# Ejemplo: abc123d Fix reparar las cosas
+
+# Paso 3: Usar git revert para crear un nuevo commit que invierte los cambios
+git revert abc123d
+
+# Git abrirá tu editor. Por defecto dice "Revert Fix reparar las cosas"
+# Puedes mantener el mensaje o editarlo. Guarda y cierra.
+```
+
+**Resultado:** Se crea un **nuevo _commit_** que deshace los cambios del _commit_ original. Esto es seguro porque no reescribe la historia, sino que agrega un nuevo _commit_ inverso.
+
+**Importante:** `git revert` funciona mejor cuando ese _commit_ contiene **solo** los cambios que quieres deshacer. Si el _commit_ tiene múltiples cambios y algunos sí quieres mantener, usa la siguiente estrategia.
+
+#### Situación B: Deshacer cambios a un archivo específico cuando el _commit_ cambió múltiples archivos
+
+**Escenario:** Un _commit_ antiguo modificó dos archivos: `brap.txt` y `fix.txt`. Quieres que `brap.txt` vuelva a su estado anterior, pero mantener los cambios en `fix.txt`.
+
+**Solución: `git checkout` para restaurar un archivo específico**
+
+```bash
+# Paso 1: Ver el historial
+git log --oneline
+
+# Paso 2: Identificar el commit ANTES del problemático
+# Ejemplo: si el commit problemático es abc123d, necesitas el anterior (def456e)
+
+# Paso 3: Restaurar el archivo a su estado en ese commit anterior
+git checkout def456e -- brap.txt
+
+# El archivo está ahora automáticamente en staging (staged)
+
+# Paso 4: Hacer un nuevo commit con este cambio
+git commit -m "Restaurar brap.txt a su estado anterior"
+```
+
+**Resultado:** El archivo `brap.txt` vuelve a su versión anterior, mientras que `fix.txt` sigue como estaba.
+
+
+::: {.callout-note}
+#### Ejercicio 7: Deshacer un commit con git revert
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_revert_commit(carpeta)
+```
+
+Practicas cómo identificar un commit problemático en la mitad del historial y deshacerlo de forma segura con `git revert`.
+:::
+
+::: {.callout-note}
+#### Ejercicio 8: Restaurar un archivo específico
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_restore_file(carpeta)
+```
+
+Practicas cómo restaurar un archivo a su versión anterior sin afectar otros archivos del mismo commit.
+:::
 
 
 
