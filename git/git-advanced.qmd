@@ -115,7 +115,7 @@ Una rama (branch) es como una línea alternativa de desarrollo. La rama por defe
 
 Esta sección te brindara las herramientas para prevenir algunos problemas. Puedes aplicarlas a tu forma habitual de trabajar. Los ejemplos son con Git en R usando la consola, la terminal, RStudio o Positron.
 
-### 1. Configurar Git correctamente
+### Configurar Git correctamente
 
 Antes de hacer cualquier cosa, verifica tu configuración:
 
@@ -159,7 +159,7 @@ La función `git_vaccinate()` crea un `.gitignore` global que previene accidenta
 
 La [documentación sobre git_sitrep](https://usethis.r-lib.org/reference/git_sitrep.html) contiene mucho mas detalles útiles sobre esta función.
 
-### 2. Saber dónde estás en cada momento
+### Saber dónde estás en cada momento
 
 Antes de hacer cualquier cosa importante, **siempre** verifica dónde estás. Especialmente:
 
@@ -169,13 +169,17 @@ Para eso podes revisar el panel de Git en RStudio (panel superior derecho) o en 
 
 De esta manera nos aseguramos estar en la rama con la cual queremos trabajar.
 
+::: {.callout-note}
 TODO: agregar captura de pantalla.
+:::
 
 **¿Qué archivos cambié?**
 
 En ese mismo panel de Git se pueden chequear los archivos modificados, en _staging_, etc. De esta manera tambien sabemos que modificaciones estaremos confirmando cuando hagamos un _commit_
 
+::: {.callout-note}
 TODO: agregar captura de pantalla.
+:::
 
 **Remote vs local**
 
@@ -184,7 +188,7 @@ Tengo que chequear si mis dos repositorios estan sincronizados, por ejemplo, es 
 Entonces, antes de tomar una acción, siempre verifiquemos nuestro estado para asegurarnos que estamos haciendo la tarea en el repo, rama y archivos adecuados.
 
 
-### 3. Nunca uses Vim como editor por defecto (a menos que lo domines)
+### Nunca uses Vim como editor por defecto (a menos que lo domines)
 
 El problema: Git a veces abre un editor de texto para escribir mensajes de commit. Si tu editor está configurado como Vim y no lo conoces, es fácil quedar atrapado.
 
@@ -202,7 +206,9 @@ git config --global core.editor "open -a rstudio"
 
 Verifica que funcione desde el terminal. 
 
-> TODO: chequear si hay un ejercicio con saperlipopete.
+::: {.callout-note}
+TODO: chequear si hay un ejercicio con saperlipopete.
+:::
 
 ## Resolución de problemas comunes
 
@@ -237,6 +243,9 @@ saperlipopette::exo_one_small_change(carpeta)
 
 Cada ejercicio es un "rompecabezas": tienes un problema real, lees las instrucciones, y tienes que solucionarlo usando Git. El paquete también tiene la función `tip()` para obtener ayuda si lo necesitamos.
 
+::: {.callout-note}
+TODO: agregar imagen de como funciona saperlippopete
+:::
 
 ### Problema 1: "Mi último commit me da vergüenza"
 
@@ -494,9 +503,9 @@ git checkout HASH -- archivo.R
 git checkout HEAD~1 -- archivo.R
 ```
 
-## Situaciones más complejas
+### Situaciones más complejas
 
-### Conflictos de _merge_ (o _merge conflicts_)
+#### Conflictos de _merge_ (o _merge conflicts_)
 
 **¿Qué es?** Cuando dos personas editan la misma línea de un archivo, Git no sabe qué versión mantener.
 
@@ -533,7 +542,7 @@ Este es el ejercicio más desafiante. Solo inténtalo después de haber practica
 
 ## Mejores prácticas
 
-### 1. Commits frecuentes y descriptivos
+### Commits frecuentes y descriptivos
 
 Mejor:
 ```bash
@@ -545,7 +554,7 @@ Evita:
 git commit -m "cambios"  # Demasiado vago
 ```
 
-### 2. Ramas para cada feature
+### Ramas para cada feature
 
 ```bash
 # Rama por feature
@@ -558,7 +567,7 @@ git checkout -b fix/login-error
 git checkout -b experiment/new-algorithm
 ```
 
-### 3. Antes de push, verifica
+### Antes de push, verifica
 
 ```bash
 # ¿Qué cambios estoy por subir?
@@ -573,7 +582,7 @@ git merge --abort  # Si no te gustan los cambios
 # (Ejecuta tests locales)
 ```
 
-### 4. Mensajes de commit claros
+### Mensajes de commit claros
 
 Formato útil:
 ```
@@ -649,7 +658,7 @@ Practica 1-2 ejercicios por sesión de estudio. No intentes hacerlos todos de un
 - **Documentación de saperlipopette:** https://docs.ropensci.org/saperlipopette/
   - Documentación completa con todos los ejercicios
 
-### El mensaje final
+## El mensaje final
 
 Git es una herramienta creada por desarrolladores, para desarrolladores. Tiene sus peculiaridades, pero es muy útil. La curva de aprendizaje es porque hay mucho poder disponible.
 
