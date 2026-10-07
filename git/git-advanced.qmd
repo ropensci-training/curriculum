@@ -79,12 +79,12 @@ TODO: agregar ejercicio de pensar un problema con git y reflexion
 
 :::
 
-### Repaso de conceptos clave
+## Repaso de conceptos clave
 
 En el taller [desarrollo de software en comunidad]() vimos y practicamos estos conceptos claves, los refrescamos aqui:
 
 
-#### 1. El directorio o carpeta de trabajo
+### El directorio o carpeta de trabajo
 
 Es tu carpeta actual con tus archivos. Aquí es donde trabajas y modificas archivos.
 
@@ -95,19 +95,19 @@ Mi-Proyecto/
 └── resultados.qmd
 ```
 
-#### 2. La _staging area_ (area de preparación)
+### La _staging area_ (area de preparación)
 
 Cuando haces cambios en tu directorio de trabajo, Git los ve como "modificados pero no confirmados". El _staging area_ es donde le indicamos a Git que debe monitorear estos archivos y los cambios que hacemos en ellos.
 
-#### 3. El repositorio local
+### El repositorio local
 
 El repositorio local es la copia en nuestra computadora de nuestro proyecto.  Alli se guardan todos los cambios que vamos siguiendo y que confirmamos por medio de un _commit_.
 
-#### 4. El repositorio remoto 
+### El repositorio remoto 
 
 El repositorio remoto es la copia de nuestro proyecto que esta en un servidor (usaremos GitHub como ejemplo) y es la copia a la que tienen acceso las personas que colaboran con nosotros.
 
-### 5. Ramas: trabajar en paralelo
+### Ramas: trabajar en paralelo
 
 Una rama (branch) es como una línea alternativa de desarrollo. La rama por defecto es `main` pero podemos tener muchas ramas en las cuales trabajamos diferentes aspectos de nuestro software, donde experimentamos cosas y que una vez probadas podemos incorporar en la rama principal.
 
@@ -494,8 +494,7 @@ git checkout HASH -- archivo.R
 git checkout HEAD~1 -- archivo.R
 ```
 
-
-## Parte 4: Situaciones más complejas
+## Situaciones más complejas
 
 ### Conflictos de _merge_ (o _merge conflicts_)
 
@@ -517,7 +516,8 @@ versión_de_otro()
 
 **Prevención:** Comunícate con tu equipo, usa ramas, haz merge frecuente.
 
-### Situaciones extremas: rebase y time_machine
+::: {.callout-note}
+#### Ejercicio 9: Situaciones extremas: rebase y time_machine
 
 Para situaciones muy complicadas donde necesitas reescribir historial:
 
@@ -529,8 +529,9 @@ saperlipopette::exo_time_machine(carpeta)
 ```
 
 Este es el ejercicio más desafiante. Solo inténtalo después de haber practicado los anteriores.
+:::
 
-## Parte 5: Mejores prácticas
+## Mejores prácticas
 
 ### 1. Commits frecuentes y descriptivos
 
@@ -586,7 +587,7 @@ Fixes #123  # Si resuelve un issue
 Tipos comunes: `feat:`, `fix:`, `refactor:`, `test:`, `docs:`
 
 
-## Parte 6: Resumen de ejercicios
+## Resumen de ejercicios
 
 Aquí está la lista completa de ejercicios con `saperlipopette`. Te recomendamos hacerlos en este orden:
 
