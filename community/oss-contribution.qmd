@@ -201,8 +201,11 @@ Una vez que el repositorio invita a la participación, conviene facilitar que es
 ## Para recordar
 
 -   Contribuir no es sinónimo de programar: hay muchas formas igual de valiosas de participar en un proyecto o comunidad.
+
 -   El Camino hacia la Inclusión (conciencia, comprensión, identificación, acceso, pertenencia, apropiación) ayuda a entender en qué punto puede estar quedándose una persona que quiere sumarse a tu proyecto, y qué barrera concreta habría que trabajar.
+
 -   El Modelo de Participación Comunitaria del CSCCE (transmitir/consumir, contribuir, colaborar, co-crear) ayuda a pensar en qué modo está participando alguien, y que ese modo puede cambiar con el tiempo, tanto a nivel individual como entre organizaciones.
+
 -   Ninguna decisión sobre cómo recibir contribuciones está escrita en piedra: podés empezar con una forma que te resulte cómoda y ajustarla más adelante.
 
 
