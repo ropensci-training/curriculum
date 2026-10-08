@@ -16,48 +16,54 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 
 ## Objetivos de aprendizaje
 
--   Reconocer que una contribución a un proyecto o comunidad de código abierto va mucho más allá de escribir código.
--   Diferenciar los seis pasos del modelo *Pathway to Inclusion* (Camino hacia la Inclusión) y reconocer en qué paso se encuentra una persona respecto de un proyecto o comunidad.
+-   Reconocer diferentes tipos de contribuciones a un proyecto o comunidad de código abierto.
+-   Diferenciar los seis pasos del modelo "Camino hacia la Inclusión" y reconocer en qué paso se encuentra una persona respecto de un proyecto o comunidad.
 -   Distinguir las cuatro formas de participación del Modelo de Participación Comunitaria del CSCCE: transmitir/consumir, contribuir, colaborar y co-crear.
--   Identificar herramientas y prácticas concretas —usadas por rOpenSci— que ayudan a que más personas conozcan, entiendan, accedan, se sientan parte y se apropien de un proyecto o comunidad.
+-   Identificar herramientas y prácticas concretas que ayudan a que más personas conozcan, entiendan, accedan, se sientan parte y se apropien de un proyecto o comunidad.
 -   Aplicar estos conceptos al propio paquete de R: qué hacer para que sea fácil de descubrir, entender, y para que su repositorio sea amigable a la contribución y la colaboración.
 
 ## ¿Qué es, en realidad, una contribución?
 
 Cuando alguien dice "hice una contribución a un proyecto de código abierto", lo primero que solemos imaginar es a una persona programando: alguien que aportó código de forma significativa y que, para eso, tiene que saber "un montón". Esta asociación es tan común que muchas personas la dan por sentada, y sin embargo es una idea incompleta que puede terminar siendo una barrera de entrada.
 
-Hay muchísimas otras formas de contribuir y de participar en un proyecto, y esas contribuciones son igual de significativas e importantes para que el proyecto avance. Por ejemplo, cuando rOpenSci organizó mini-hackathons para ayudar a que la gente contribuyera por primera vez, se ofrecían tareas de traducción, de documentación, y de arreglar configuraciones (como GitHub Actions) que no implicaban tocar el código de los paquetes. Aun así, la mayoría de las personas elegía igualmente una tarea relacionada con código, en parte porque ese espacio, con mentoría disponible, se sentía seguro para intentarlo.
+Hay muchas otras formas de contribuir y de participar en un proyecto, y esas contribuciones son igual de significativas e importantes para que el proyecto avance. Por ejemplo, cuando rOpenSci organizó mini-hackathons para ayudar a que la gente contribuyera por primera vez, se ofrecían tareas de traducción, de documentación, y de arreglar configuraciones (como GitHub Actions) que no implicaban tocar el código de los paquetes. Aun así, la mayoría de las personas elegía igualmente una tarea relacionada con código, en parte porque ese espacio, con mentoría disponible, se sentía seguro para intentarlo.
 
 ::: callout-tip
 ## Para tener en cuenta
 
-Si estás pensando en cómo abrir tu propio proyecto a la participación de otras personas, vale la pena ofrecer explícitamente tareas que no sean de código (documentación, traducción, diseño, difusión, revisión). Aunque el código siga siendo la opción más elegida, nombrar otras formas de contribuir amplía quién se anima a sumarse.
+Si estás pensando en cómo abrir tu propio proyecto a la participación de otras personas, vale la pena ofrecer explícitamente tareas que no sean de código (documentación, traducción, diseño, difusión, revisión). Incluso si el código es la opción más elegida, nombrar otras formas de contribuir amplía quién se anima a sumarse.
 :::
 
-## Comunidades de práctica
-
-Antes de hablar de cómo se contribuye, conviene definir a qué llamamos "comunidad". Etienne Wenger acuñó el concepto de **comunidad de práctica**:
+Antes de hablar de cómo se contribuye, conviene definir a qué llamamos "comunidad". _Etienne Wenger_ acuñó el concepto de **comunidad de práctica**:
 
 > Un grupo de personas que comparten una pasión por algo que saben cómo hacer, y que interactúan regularmente con el objetivo de aprender cómo hacerlo mejor.
 
-Esta definición tiene una implicancia importante: no hace falta ser experto o experta para participar. Alguna noción o interés hay que tener, pero el objetivo de la comunidad es justamente mejorar juntos, no llegar ya sabiendo todo. Las comunidades de práctica tampoco tienen por qué estar relacionadas con la programación: un equipo de natación, un club de conversación en un idioma, o un grupo docente que se junta a diseñar contenido son también comunidades de práctica, con la misma estructura de fondo —interacción regular en torno a algo que a todas las personas les interesa mejorar—.
+Esta definición tiene una implicancia importante: no hace falta ser una persona experta para participar. Alguna noción o interés hay que tener, pero el objetivo de la comunidad es justamente mejorar juntos, no llegar ya sabiendo todo. 
+Las comunidades de práctica tampoco tienen por qué estar relacionadas con la programación: un equipo de natación, un club de conversación en un idioma, o un grupo docente que se junta a diseñar contenido son también comunidades de práctica, con la misma estructura de fondo: interacción regular en torno a algo que a todas las personas les interesa mejorar.
 
-Un paquete de R, un proyecto de software libre o una organización como rOpenSci pueden pensarse, también, como el espacio de una o varias comunidades de práctica.
+Un paquete de R, un proyecto de software libre o una organización como rOpenSci pueden pensarse como el espacio de una o varias comunidades de práctica.
 
 ## El camino hacia la inclusión
 
-¿Cómo llega alguien a formar parte de una comunidad? El modelo *Pathway to Inclusion* (Camino hacia la Inclusión), propuesto por Alex Bayley, describe seis pasos que una persona atraviesa —sí o sí, en algún orden— para, eventualmente, llegar a ser parte de un proyecto o comunidad. Ninguno de estos pasos es automático, y es común que alguien se quede en el camino sin que eso signifique falta de interés: muchas veces hay barreras concretas que lo impiden.
+¿Cómo llega alguien a formar parte de una comunidad? El modelo *Pathway to Inclusion* (Camino hacia la Inclusión), propuesto por Alex Bayley, describe seis pasos que una persona sí o sí atraviesa para, eventualmente, llegar a ser parte de un proyecto o comunidad. Ninguno de estos pasos es automático, y es común que alguien se quede en el camino sin que eso signifique falta de interés: muchas veces hay barreras concretas que lo impiden.
 
 1.  **Conciencia**: escuché hablar de esto. Sé que existe un paquete, un proyecto o una organización como rOpenSci.
-2.  **Comprensión**: entiendo qué es y cómo sería involucrarme. Ya no alcanza con saber que existe: hace falta entender qué hace y de qué forma yo podría sumarme.
+
+2.  **Comprensión**: entiendo qué es y cómo sería involucrarme. No alcanza con saber que existe: hace falta entender qué hace y de qué forma yo podría sumarme.
+
 3.  **Identificación**: me imagino haciendo esto, siendo parte. Es posible entender perfectamente de qué se trata algo y, aun así, sentir que "no es para mí".
-4.  **Acceso**: puedo hacerlo. Aquí entran en juego dimensiones físicas (accesibilidad), financieras (¿puedo pagar?, ¿me piden una visa?) y logísticas (¿el horario del evento es compatible con mi zona horaria?).
-5.  **Pertenencia**: siento que encajo. A diferencia de la identificación —que es potencial, "me imagino haciéndolo"— la pertenencia ya es real: lo hice, me sentí bien, me sentí segura o seguro, y sé que si algo no lo sé, lo voy a aprender participando.
+
+4.  **Acceso**: puedo hacerlo. Aquí entran en juego dimensiones físicas (accesibilidad), financieras (¿puedo pagar?) y logísticas (¿me piden una visa?, ¿el horario del evento es compatible con mi zona horaria?).
+
+5.  **Pertenencia**: siento que encajo. A diferencia de la identificación (que es potencial) la pertenencia ya es real: lo hice, me sentí bien, a salvo y sé que es un espacio donde voy a aprender participando.
+
 6.  **Apropiación**: me importa tanto que asumo responsabilidad. Es el paso en el que alguien pasa de participar a hacerse cargo de tareas concretas para sostener el proyecto o la comunidad.
 
-Cada uno de estos pasos puede fallar por motivos distintos, y eso importa especialmente en organizaciones con un fuerte componente voluntario. Llegar al último paso —la apropiación— es clave para la sostenibilidad de largo plazo: es de ahí de donde salen los recursos humanos que reemplazan, con el tiempo, a quienes se retiran del proyecto.
+Cada uno de estos pasos puede fallar por motivos distintos, y eso importa especialmente en organizaciones con un fuerte componente voluntario. 
+Llegar al último paso, la apropiación, es clave para la sostenibilidad de largo plazo: es de ahí de donde salen los recursos humanos que reemplazan, con el tiempo, a quienes se retiran del proyecto.
 
-Históricamente, los pasos de identificación y acceso fueron una barrera particular para personas de Latinoamérica y para mujeres u otras minorías de género dentro de las comunidades de código abierto en R. Reconocer esas barreras es el primer paso para desarrollar estrategias que ayuden a reducirlas —por ejemplo, dictar contenido en el propio idioma, en lugar de asumir que el inglés es suficiente—.
+Históricamente, los pasos de identificación y acceso fueron una barrera particular para personas de Latinoamérica y para mujeres u otras minorías de género dentro de las comunidades de código abierto en R. 
+Reconocer esas barreras es el primer paso para desarrollar estrategias que ayuden a reducirlas, por ejemplo, dictar contenido en el propio idioma, en lugar de asumir que el inglés es suficiente.
 
 ### Herramientas concretas para cada paso
 
