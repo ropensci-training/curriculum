@@ -1,5 +1,6 @@
 ---
-title: "Notas para docentes"
+title: "¡Miércoles, Git! - Notas para Docentes"
+author: "Yanina Bellini Saibene y Maëlle Salmon"
 ---
 
 ::: {.callout-note}
@@ -11,3 +12,445 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 
 *Contenido pendiente de migración:* ver https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.
 :::
+
+::: {.callout-note}
+## Sobre este documento
+
+Este documento contiene notas detalladas para instructores que deseen impartir el taller "¡Miércoles, Git!": un taller práctico sobre resolución de problemas comunes en Git. Las notas incluyen estructura de la sesión, tiempos sugeridos, consejos de facilitación y orientación para cada sección.
+
+**Duración estimada:** 2 horas
+:::
+
+
+## Antes de la formación
+
+### Preparación previa (1-2 semanas antes)
+
+- Envía una invitación al calendario con:
+  - Enlace a la reunión
+  - Enlace a las notas compartidas (Google Doc o similar)
+  - Enlace a las diapositivas
+  
+- En las notas compartidas, agrega:
+  - Enlace de la reunión
+  - Enlace a las diapositivas
+  - Información sobre requisitos técnicos
+
+::: {.callout-tip}
+### Requisitos técnicos para los participantes
+
+Antes del taller, pide a los participantes que verifiquen que tienen:
+- Git instalado y configurado
+- Un terminal/línea de comandos funcional
+- R y RStudio o Positron (para poder usar `saperlipopette`)
+- Instalar el paquete de R `saperlipopette`
+- Acceso a un navegador web (para consultar recursos)
+
+Pueden usar `usethis::git_sitrep()` para verificar su configuración de Git.
+:::
+
+### Recordatorios (1 día y 1 hora antes)
+
+- Usa múltiples canales (por ejemplo: email y Slack)
+- Formúlalos de forma independiente de zonas horarias: *"Nos vemos en 50 minutos, aquí está el enlace..."*
+- Confirma con las personas que van a facilitar el taller contigo. 
+
+## Durante la formación
+
+### Hora de conexión (10 minutos antes)
+
+Conectate 10 minutos antes de la hora programada:
+
+- Prueba tu video, audio y conexión a internet
+- Verifica que el navegador tenga las pestañas de recursos abiertas
+- Ten a mano las notas compartidas y las diapositivas
+- Comparte el documento de notas compartidas en el chat una vez que los primeros participantes se conecten
+
+::: {.callout-tip}
+
+Mientras llegan las personas participantes:
+- Permíteles que prueben su audio y video
+- Hazles saber que está bien si no quieren encender la cámara
+- Comparte nuevamente el documento de notas compartidas
+- Crea un ambiente acogedor con conversación informal
+:::
+
+### Apertura (5 minutos)
+
+Comienza con:
+
+> "Les damos la bienvenida a '¡Miércoles, Git!', un taller sobre cómo resolver esos momentos en que Git nos causa estrés. Soy [tu nombre] y con [co-facilitador/a] vamos a guiarlos a través de diferentes escenarios y como resolverlos.
+>
+> Hoy haremos dos cosas: primero, hablaremos de prevención: cómo evitar que las cosas se salgan de control. Luego, practicaremos cómo salir de situaciones difíciles. Todo esto lo haremos en un ambiente seguro, creando ejercicios en carpetas temporales para que no rompamos nuestros proyectos importantes."
+
+Recuerda brevemente:
+- Código de conducta
+- Como pueden participar, por ejemplo por micrófono, por chat o por ambos canales
+- No hay preguntas tontas; Git es complejo!
+
+### Sección 1: Entendimiento básico (15 minutos)
+
+#### ¿Por qué Git?
+
+Pregunta al grupo:
+
+> "¿Quién aquí ha perdido cambios importantes en un archivo? ¿O ha querido volver a una versión anterior de algo?"
+
+Espera respuestas. Luego muestra la diapositiva sobre historia y ramas.
+
+Presenta la pregunta clave:
+
+> "Git puede ser difícil, pero piénsenlo: muchos de ustedes programan. Aprender lo básico de Git es más fácil que aprender un lenguaje de programación."
+
+*Tiempo: 5 minutos*
+
+#### ¿Difícil o fácil?
+
+Facilita la siguiente discusión:
+
+> "A veces, Git duele. ¿Alguien quiere compartir algo feo que le pasó con Git?"
+
+Recopila respuestas (usa el documento compartido). Típicamente escucharás:
+- "Hice commits en la rama equivocada"
+- "Subí datos secretos accidentalmente"
+- "Tuve conflictos que no pude resolver"
+
+Esto normaliza que Git es difícil para todos y establece el propósito del taller.
+
+*Tiempo estimado: 5-8 minutos*
+
+### Sección 2: Prevención (20 minutos)
+
+#### Configuración y verificación
+
+Muestra el comando:
+
+```r
+usethis::git_sitrep(tool = "git", scope = "user")
+```
+
+**Qué buscar en el output:**
+- Nombre y email configurados correctamente
+- Protocolo: preferiblemente HTTPS
+- _Vaccinated_: FALSE es común; explicar brevemente qué es
+
+::: {.callout-tip}
+### Sobre git_vaccinate()
+
+La "vacunación" de Git (mediante `usethis::git_vaccinate()`) configura un `.gitignore` global que evita accidentalmente hacer commit de archivos sensibles como `.Rhistory`, `.RData`, o tokens.
+
+Menciona que es una buena práctica, pero que también es responsabilidad individual verificar qué se incluye en cada _commit._
+:::
+
+*Tiempo: 10 minutos*
+
+#### Puntos clave de prevención
+
+Enfatiza tres cosas:
+
+1. **Saber dónde estás:**
+   - ¿En qué rama estoy? → `git status` o consulta la IDE (RStudio, Positron) o el prompt del terminal
+   - ¿Qué archivos cambié? → `git status` te lo muestra
+   - ¿Qué está en _staging_ vs cambios sin confirmar? → `git status`
+
+2. **No usar Vim como editor por defecto** (a menos que ya lo domines)
+   - Vim es poderoso pero requiere curva de aprendizaje
+   - Es fácil quedar atrapado
+   - Mejor configurar un editor que ya conoces (RStudio, Positron, VS Code)
+
+3. **Usar `.gitignore` efectivamente**
+   - `.gitignore` global (`~/.gitignore`): archivos que nunca quieres versionar (historiales, datos temporales)
+   - `.gitignore` por proyecto: archivos específicos del proyecto
+
+*Tiempo: 10 minutos*
+
+### Sobre saperlipopette
+
+Para esta sección, necesitas que los participantes comprendan qué es `saperlipopette` antes de hacer los ejercicios.
+
+::: {.callout-note}
+## ¿Qué es saperlipopette?
+
+`saperlipopette` es un paquete de R que crea **ejercicios Git en carpetas temporales**. Cada función del paquete genera un escenario problemático diferente que los participantes deben resolver.
+
+**Ventajas principales:**
+- ✓ No rompen sus proyectos importantes
+- ✓ Pueden experimentar sin miedo
+- ✓ Las instrucciones están en R
+- ✓ Las soluciones son reales — aprenden Git de verdad, no solo teoría
+
+**Cómo funciona:**
+
+Típicamente:
+
+1. Los participantes crean una carpeta temporal con un escenario Git problemático
+2. Van a esa carpeta
+3. Leen las instrucciones en R
+4. Usan terminal, Git, o su herramienta favorita para resolver el problema
+5. Verifican su solución
+
+Cada ejercicio es un "rompecabezas": tienen un problema, leen las instrucciones, y tienen que solucionarlo usando Git.
+
+**Instalación:**
+
+```r
+install.packages(
+  'saperlipopette',
+  repos = c('https://packages.ropensci.org', 'https://cloud.r-project.org')
+)
+```
+
+:::
+
+::: {.callout-tip}
+## Cómo facilitar los ejercicios de saperlipopette
+
+Durante el taller, cuando presentes un ejercicio:
+
+1. **Explica el contexto:** "Ahora vamos a practicar [problema específico] en un entorno seguro."
+
+2. **Ejecuta el comando juntos:** Muestra cómo ejecutar `saperlipopette::exo_nombre_ejercicio(carpeta)` y como resolver el ejercisio. 
+
+3. **Crea sala de grupos para que puedan trabajar en conjunto:** Los participantes van a la sala de grupos, donde ejecutan la funcion indicada, luego van a la carpeta temporal, leen las instrucciones, y resuelven el problema. Típicamente toma 8-10 minutos por ejercicio.
+
+4. **Comparte la solución:** Después del tiempo de práctica y cuando todas las personas estan nuevamente en la sala principal preguntas si pudieron resolverlo, si tuvieron probelmas y si tienen preguntas. Si hay problemas y preguntas lo usas como una oportunidad de entender mejor el tema.
+
+5. **Celebra los logros**
+
+:::
+
+### Sección 3: Arreglando el editor de Git (10 minutos)
+
+Explicar que aunque esta parte no es muy divertida, lo tenemos que hacer para que nadie tenga problemas con Vim:
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_check_editor(carpeta)
+```
+
+Luego de ejecutar esto, los participantes pueden:
+
+1. Identificar su sistema operativo (Windows, macOS, Linux)
+2. Elegir un editor que conocen
+3. Verificar que funciona desde el terminal
+4. Consultar: https://docs.github.com/es/get-started/git-basics/associating-text-editors-with-git
+
+**Si alguien lo logra, celebra:** "¡Muy bien! Esto va a hacer la experiencia de Git mucho mejor."
+
+*Tiempo: 10 minutos*
+
+### Descanso (5 minutos)
+
+Ofrece un descanso rápido:
+
+> "Pausa de 5 minutos. Levántate, estira, toma agua. Nos vemos en 5."
+
+### Sección 4: Problemas comunes - Parte 1 (20 minutos)
+
+#### "Mi último commit me da vergüenza"
+
+Introduce el problema:
+
+> "Hemos todos estado ahí: hiciste un commit con un mensaje typo, o con cambios accidentales, o simplemente no es lo que querías haber hecho. Hoy vamos a practicar cómo arreglarlo."
+
+**Ejercicio 1: Cambios menores en el último commit**
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_one_small_change(carpeta)
+```
+
+- Explica que el ejercicio crea una carpeta temporal con un escenario
+- Los participantes irán a esa carpeta, leerán las instrucciones en R
+- Usarán sus herramientas habituales (terminal, RStudio, etc.) para resolver el problema
+- **Tiempo para el ejercicio:** 8 minutos
+
+Después del ejercicio, pregunta:
+
+> "¿Quién quiere compartir qué comando usó?"
+
+Típicamente escucharás sobre `git commit --amend`.
+
+**Solución sugerida:**
+```bash
+git commit --amend -m "Nuevo mensaje"
+# o solo
+git commit --amend
+# para editar en tu editor configurado
+```
+
+*Tiempo ejercicio: 8 minutos | Tiempo explicación: 3 minutos*
+
+**Ejercicio 2: Cambiar el mensaje del último commit**
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_latest_message(carpeta)
+```
+
+Sigue el mismo patrón: 8 minutos de ejercicio, luego discusión.
+
+Este ejercicio refuerza `git commit --amend`.
+
+*Tiempo total Sección 4: 20 minutos*
+
+### Sección 5: Problemas comunes - Parte 2 (20 minutos)
+
+#### "Mis cambios eran equivocados"
+
+Introduce:
+
+> "A veces haces cambios y luego realizas el commit, pero después te das cuenta de que no son lo que querías. Aquí vamos a practicar deshacer esto."
+
+**Ejercicio 3: Deshacer un commit**
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_undo_commit(carpeta)
+```
+
+- **Tiempo para el ejercicio:** 8 minutos
+- Después, pregunta qué comandos intentaron
+
+Posibles soluciones:
+```bash
+git reset HEAD~1           # Deshacer, mantener cambios
+git revert HEAD            # Crear nuevo commit que deshace
+git reset --hard HEAD~1    # Deshacer y perder cambios (¡cuidado!)
+```
+
+*Tiempo ejercicio: 8 minutos | Tiempo explicación: 3 minutos*
+
+**Ejercicio 4: Revertir cambios en un archivo**
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_revert_file(carpeta)
+```
+
+Este ejercicio se enfoca en deshacer cambios en un archivo específico.
+
+Solución típica:
+```bash
+git checkout HEAD -- nombre_archivo.R
+# o (en versiones nuevas de Git)
+git restore nombre_archivo.R
+```
+
+*Tiempo total Sección 5: 20 minutos*
+
+### Sección 6: Problemas avanzados (15 minutos)
+
+#### "Hice el commit en la rama equivocada"
+
+Introduce:
+
+> "Es fácil olvidar cambiar de rama y hacer commits en main en lugar de en tu rama de feature. Veamos cómo arreglarlo."
+
+**Ejercicio 5: Commit accidental en main**
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_committed_to_main(carpeta)
+```
+
+Solución típica:
+```bash
+git reset HEAD~1           # Deshacer el commit en main
+git checkout -b feature    # Crear la rama feature
+git commit -m "mensaje"    # Hacer el commit en la rama correcta
+```
+
+*Tiempo ejercicio: 8 minutos | Tiempo explicación: 3 minutos*
+
+#### Situaciones extremas
+
+Menciona brevemente:
+
+> "También existen situaciones más complejas donde necesitas `rebase -i` u otras operaciones avanzadas. Hemos creado un ejercicio para eso también, pero está disponible si quieren practicar después del taller."
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_time_machine(carpeta)
+```
+
+*Tiempo: 2 minutos (mención solamente, no ejercicio práctico)*
+
+### Conclusión (5 minutos)
+
+Resume los puntos clave:
+
+> "Hoy hemos cubierto dos cosas fundamentales:
+>
+> 1. **Prevención:** Saber dónde estás en Git, configurar correctamente tu editor, usar `.gitignore`
+> 2. **Recuperación:** Saber que casi siempre hay una forma de arreglar las cosas — git es un sistema de control de versiones muy poderoso, pero también muy forgiving.
+>
+> El mensaje principal: Git no es tan terrible como parece. La mayoría de los problemas pueden prevenirse o arreglarse."
+
+Comparte recursos adicionales:
+
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/) — Jenny Bryan
+- ["Oh Shit, Git!"](https://ohshitgit.com/) — Katie Sylor-Miller
+- [Zines de Julia Evans sobre Git](https://wizardzines.com/)
+- [saperlipopette documentation](https://docs.ropensci.org/saperlipopette/)
+
+*Tiempo: 5 minutos*
+
+## Después de la formación
+
+### Dentro de las 24 horas
+
+Envía un email o mensaje en Slack a todos los participantes:
+
+> "¡Gracias por participar en '¡Miércoles, Git!' !
+>
+> Aquí están los recursos clave:
+> - Notas compartidas: [enlace]
+> - Grabación: [enlace si aplica]
+> - saperlipopette: https://docs.ropensci.org/saperlipopette/
+> - Recursos de Git: [enlace a documento con recursos]
+> - Encuesta de feedbak: [enlace]
+>
+> Si alguno de ustedes quiere practicar más, saperlipopette tiene ejercicios adicionales disponibles. ¡Que disfruten resolviendo problemas de Git!"
+
+### Feedback y mejora
+
+Si solicitaste feedback a través de encuestas:
+
+- Revisa las respuestas
+- Identifica 1-2 puntos de mejora para la próxima edición
+- Anota qué funcionó bien
+- Considera qué ejercicios resonaron más con el grupo
+
+## Tips de facilitación
+
+### Gestión del tiempo
+
+- Usa un timer si es necesario
+- Sé flexible: si un grupo tiene una buena pregunta, tómate el tiempo
+
+### Participación
+
+- Monitorea tanto documento compartido como el chat y el audio
+- Si alguien no ha hablado, invítalo: *"¿[Nombre], qué comando intentaste?"*
+- Celebra los logros pequeños: *"¡Perfecto! ¡Lo lograste!"*
+- Normaliza los errores: *"Eso también me pasó a mí..."*
+
+### Problemas técnicos
+
+- Si alguien tiene problemas con `saperlipopette`, no es culpa de Git, es herramienta de práctica
+- La persona que te acompaña dando la clase puede encargarse de ayudarla a resolverlo.
+
+
+### Energía del grupo
+
+- El descanso se hace cuando llegamos cerca de la hora.
+- Usa emojis y mensajes positivos en el chat
+- Cuenta historias personales sobre situaciones de Git complicadas. Esto normaliza los errores que podemos cometer.

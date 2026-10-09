@@ -1,5 +1,7 @@
 ---
-title: "Git Avanzado"
+title: "¡Miércoles, Git! — Prevención y Resolución de Problemas Comunes"
+subtitle: "Un capítulo práctico sobre Git para desarrolladores"
+author: "Maëlle Salmon y Yanina Bellini Saibene"
 ---
 
 ::: {.callout-note}
@@ -11,3 +13,678 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 
 *Contenido pendiente de migración:* ver https://github.com/ropensci-training/mierda-git-mejor para el repo fuente de este capítulo.
 :::
+
+## Introducción
+
+Todas las personas que usamos git hemos experimentado momentos de frustración: un _commit_ en la rama equivocada, cambios perdidos, o un error que no sabes cómo deshacer. Y muchas veces la documentación o la ayuda no son lo suficientemente claras para darnos el soporte que necesitamos.
+
+La buena noticia es que Git es mucho menos peligroso de lo que parece. Fue diseñado para recuperación y control de versiones, asi que proporciona herramientas para prevenir muchos problemas y recuperarte de casi cualquier situación.
+
+Hay un acuerdo general de que Git no es precisamente la tecnología más fácil de usar del mundo, pero si ya estas programando, seguro puedes aprender lo básico de Git. 
+
+La diferencia entre un Git que funciona y uno que no está a menudo en:
+
+1. **Prevención:** Conocer buenas prácticas antes de que ocurran los problemas
+2. **Orientación situacional:** Saber exactamente dónde estás en el flujo de Git
+3. **Recuperación:** Entender que casi siempre hay una forma de arreglar nuestro problema
+
+### Objetivos de aprendizaje
+
+Después de leer este capítulo, podrás:
+
+- Configurar Git de forma segura para evitar problemas comunes
+- Identificar en qué punto del flujo de Git te encuentras
+- Prevenir situaciones problemáticas mediante buenas prácticas
+- Resolver los problemas más comunes que enfrentan los desarrolladores
+- Recuperarte de situaciones más complejas con confianza
+
+### Prerequisitos
+
+Para poder realizar este taller necesitas:
+
+* Tener Git instalado en la computadora: https://happygitwithr.com/install-git y https://happygitwithr.com/hello-git.
+
+TODO: cambiar link al libro de Yani y Pao que esta en castellano, dejar estos links en la version en ingles.
+
+* Tener un poco de experiencia con Git (git commit, git pull/push, ramas, GitHub u otra plataforma). Si querés repasar un poco, te recomendamos el workshop https://yabellini.netlify.app/courses/git_rstudio_course/.
+
+* Instalar {saperlipopette} en tu computadora:
+
+```
+install.packages(
+  "saperlipopette",
+  repos = c("https://packages.ropensci.org", "https://cloud.r-project.org")
+)
+```
+
+`saperlipopette`, un paquete de R que crea ejercicios prácticos seguros en carpetas temporales. Así puedes experimentar con Git sin miedo a romper tus proyectos reales.
+Más información en https://docs.ropensci.org/saperlipopette/.
+
+* Si querés, instalá Positron, pero los ejercicios se pueden hacer en RStudio o con tus herramientas usuales para R y Git.
+
+### ¿Por qué necesitamos Git?
+
+En un proyecto de software libre es muy común trabajar entre varias personas, a veces estas personas son parte del equipo, otras veces son personas que usan nuestro software. Git es una herramienta para un problema fundamental en el desarrollo de software: **¿cómo mantengo un historial de cambios y cómo trabajo con otros sin perder trabajo?**
+
+Git soluciona esto mediante:
+
+- **Historial completo:** Cada cambio queda registrado con quién lo hizo y cuándo
+- **Ramas:** Trabajar en paralelo sin interferir con otras personas
+- **Recuperación:** Puedes volver a cualquier punto anterior en la historia
+- **Colaboración:** Múltiples personas pueden trabajar en el mismo proyecto
+
+::: {.callout-note}
+
+TODO: agregar ejercicio de pensar un problema con git y reflexion
+
+:::
+
+## Repaso de conceptos clave
+
+En el taller [desarrollo de software en comunidad]() vimos y practicamos estos conceptos claves, los refrescamos aqui:
+
+
+### El directorio o carpeta de trabajo
+
+Es tu carpeta actual con tus archivos. Aquí es donde trabajas y modificas archivos.
+
+```
+Mi-Proyecto/
+├── script.R          
+├── datos.csv
+└── resultados.qmd
+```
+
+### La _staging area_ (area de preparación)
+
+Cuando haces cambios en tu directorio de trabajo, Git los ve como "modificados pero no confirmados". El _staging area_ es donde le indicamos a Git que debe monitorear estos archivos y los cambios que hacemos en ellos.
+
+### El repositorio local
+
+El repositorio local es la copia en nuestra computadora de nuestro proyecto.  Alli se guardan todos los cambios que vamos siguiendo y que confirmamos por medio de un _commit_.
+
+### El repositorio remoto 
+
+El repositorio remoto es la copia de nuestro proyecto que esta en un servidor (usaremos GitHub como ejemplo) y es la copia a la que tienen acceso las personas que colaboran con nosotros.
+
+### Ramas: trabajar en paralelo
+
+Una rama (branch) es como una línea alternativa de desarrollo. La rama por defecto es `main` pero podemos tener muchas ramas en las cuales trabajamos diferentes aspectos de nuestro software, donde experimentamos cosas y que una vez probadas podemos incorporar en la rama principal.
+
+## Prevención, o cómo evitar problemas
+
+Esta sección te brindara las herramientas para prevenir algunos problemas. Puedes aplicarlas a tu forma habitual de trabajar. Los ejemplos son con Git en R usando la consola, la terminal, RStudio o Positron.
+
+### Configurar Git correctamente
+
+Antes de hacer cualquier cosa, verifica tu configuración:
+
+```r
+usethis::git_sitrep(tool = "git", scope = "user")
+```
+
+Output típico:
+```
+── Git global (user)
+• Name: "Tu Nombre"
+• Email: "tu.email@ejemplo.com"
+• Global (user-level) gitignore file: ~/.gitignore
+• Vaccinated: FALSE
+ℹ See `usethis::git_vaccinate()` to learn more.
+• Default Git protocol: "https"
+• Default initial branch name: "main"
+```
+
+::: {.callout-tip}
+## Qué verificar
+
+- **Nombre y email:** Deben ser correctos. Aparecerán en todos tus commits.
+- **Protocolo:** Debería ser HTTPS (más fácil) o SSH (más seguro)
+- **Rama inicial:** `main` es lo recomendado; algunos proyectos todavía usan `master`. Si tenes este nombre podes cambiarlo con:
+  ```r
+  usethis::git_default_branch_rename(from = "master", to = "main")
+  ```
+- **Vaccinated:** Debería ser TRUE. Si es FALSE, ejecuta:
+  ```r
+  usethis::git_vaccinate()
+  ```
+:::
+
+#### Vacunate
+
+La función `git_vaccinate()` crea un `.gitignore` global que previene accidentalmente hacer commit de:
+  - Historiales de R (`.Rhistory`)
+  - Datos temporales (`.RData`)
+  - Archivos de sistema (`.DS_Store`)
+
+La [documentación sobre git_sitrep](https://usethis.r-lib.org/reference/git_sitrep.html) contiene mucho mas detalles útiles sobre esta función.
+
+### Saber dónde estás en cada momento
+
+Antes de hacer cualquier cosa importante, **siempre** verifica dónde estás. Especialmente:
+
+**¿En qué rama estoy?**
+
+Para eso podes revisar el panel de Git en RStudio (panel superior derecho) o en Positron el badge de rama en la esquina inferior izquierda. El prompt de la terminal suele mostrar en que rama estamos. 
+
+De esta manera nos aseguramos estar en la rama con la cual queremos trabajar.
+
+::: {.callout-note}
+TODO: agregar captura de pantalla.
+:::
+
+**¿Qué archivos cambié?**
+
+En ese mismo panel de Git se pueden chequear los archivos modificados, en _staging_, etc. De esta manera tambien sabemos que modificaciones estaremos confirmando cuando hagamos un _commit_
+
+::: {.callout-note}
+TODO: agregar captura de pantalla.
+:::
+
+**Remote vs local**
+
+Tengo que chequear si mis dos repositorios estan sincronizados, por ejemplo, es una buena practica traer todos los cambios del repositorio remoto al local haciendo un _pull_ antes de empezar a trabajar.
+
+Entonces, antes de tomar una acción, siempre verifiquemos nuestro estado para asegurarnos que estamos haciendo la tarea en el repo, rama y archivos adecuados.
+
+
+### Nunca uses Vim como editor por defecto (a menos que lo domines)
+
+El problema: Git a veces abre un editor de texto para escribir mensajes de commit. Si tu editor está configurado como Vim y no lo conoces, es fácil quedar atrapado.
+
+**¿Cómo evitarlo?**
+
+Configura un editor que ya uses. Opciones comunes:
+
+```bash
+# Usar VS Code
+git config --global core.editor "code --wait"
+
+# Usar RStudio (si estás en macOS)
+git config --global core.editor "open -a rstudio"
+```
+
+Verifica que funcione desde el terminal. 
+
+::: {.callout-note}
+TODO: chequear si hay un ejercicio con saperlipopete.
+:::
+
+## Resolución de problemas comunes
+
+### Como vamos a trabajar
+
+Vamos a usar `saperlipopette`, un paquete de R que crea **ejercicios Git en carpetas temporales**. Cada función del paquete genera un escenario problemático diferente que debes resolver.
+
+**Ventajas:**
+- ✓ No rompees tus proyectos importantes
+- ✓ Puedes experimentar sin miedo
+- ✓ Tienes las instrucciones en R
+- ✓ Las soluciones son reales — aprendes Git de verdad
+
+#### Cómo funciona
+
+Típicamente:
+
+1. Creas una carpeta temporal con un escenario usando las funciones del paquete, por ejemplo:
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_one_small_change(carpeta)
+```
+
+2. Vas a la carpeta creada.
+3. Se abre **una nueva sesion** con esa carpeta
+4. Lees las instrucciones
+5. Usas terminal/Git/tu herramienta favorita para resolver
+6. Verificas tu solución
+7. Cierras la sesion de ejercicio.
+
+Cada ejercicio es un "rompecabezas": tienes un problema real, lees las instrucciones, y tienes que solucionarlo usando Git. El paquete también tiene la función `tip()` para obtener ayuda si lo necesitamos.
+
+::: {.callout-note}
+TODO: agregar imagen de como funciona saperlippopete
+:::
+
+### Problema 1: "Mi último commit me da vergüenza"
+
+**Situación:** Acabas de hacer un commit, pero:
+- El mensaje tiene un typo
+- Olvidaste incluir un archivo
+- Quieres cambiar el código
+
+**Solución: `git commit --amend`**
+
+```bash
+# Si solo quieres cambiar el mensaje
+git commit --amend -m "Nuevo mensaje correcto"
+
+# Si quieres cambiar el código o añadir archivos
+git add archivo_olvidado.R
+git commit --amend
+# Se abrirá tu editor; puedes cambiar el mensaje si quieres
+```
+
+::: {.callout-note}
+#### Ejercicio 1: Cambios menores en el último commit
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_one_small_change(carpeta)
+```
+
+- Vas a la carpeta indicada
+- Lees las instrucciones
+- Usas `git commit --amend` para solucionarlo
+- Verificas tu solución
+
+:::
+
+::: {.callout-note}
+#### Ejercicio 2: Cambiar el mensaje del último _commit_
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_latest_message(carpeta)
+```
+
+Similar al anterior, pero el problema es el mensaje del _commit_.
+
+:::
+
+### Problema 2: "Cambié de idea sobre estos cambios"
+
+**Situación:** Hiciste cambios, pero ahora te das cuenta de que no son lo que querías.
+
+#### Opción A: Cambios no están en _staging_
+
+```bash
+# Ver qué cambió
+git diff
+
+# Descartar todos los cambios (⚠️ no recuperable)
+git checkout -- .
+
+# O descartar solo un archivo
+git checkout -- script.R
+```
+
+#### Opción B: Cambios están en _staging_ pero no hicimos _commit_
+
+```bash
+# Sacar del staging (los cambios permanecen)
+git reset HEAD archivo.R
+
+# Luego descarta si quieres
+git checkout -- archivo.R
+```
+
+#### Opción C: Ya hiciste _commit_, pero quieres deshacer
+
+```bash
+# Opción 1: Deshacer pero mantener los cambios
+git reset HEAD~1          # Último commit se deshace, cambios permanecen
+
+# Opción 2: Deshacer y perder cambios (⚠️ cuidado)
+git reset --hard HEAD~1
+
+# Opción 3: Crea un nuevo commit que deshace (seguro, deja historial)
+git revert HEAD           # Crea un nuevo commit inverso
+```
+
+
+::: {.callout-note}
+#### Ejercicio 3: Deshacer un _commit_
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_undo_commit(carpeta)
+```
+
+Practicas cómo deshacer cambios que ya hiciste _commit_, manteniendo opciones diferentes.
+
+:::
+
+
+::: {.callout-note}
+#### Ejercicio 4: Revertir cambios en un archivo
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_revert_file(carpeta)
+```
+
+Practicas cómo deshacer cambios en un archivo específico.
+
+:::
+
+### Problema 3: "Hice el _commit_ en la rama equivocada"
+
+**Situación:** Trabajaste en `main` pero deberías haber creado una rama `feature/nueva-cosa`.
+
+**Solución paso a paso:**
+
+```bash
+# Paso 1: Deshacer el último _commit_ en main (mantiene cambios)
+git reset HEAD~1
+
+# Paso 2: Crear la rama correcta y cambiar a ella
+git checkout -b feature/nueva-cosa
+
+# Paso 3: Agregar los cambios a _staging_ y hacer _commit_
+git add .
+git commit -m "Implementar nueva cosa"
+
+# Paso 4: Cambiar de vuelta a main y verificar que esté limpio
+git checkout main
+git status  # Debería estar limpio
+```
+
+::: {.callout-note}
+#### Ejercicio 5: _Commit_ accidental en main
+
+Practicas cómo mover un _commit_ de main a una rama nueva.
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_committed_to_main(carpeta)
+```
+:::
+
+::: {.callout-note}
+#### Ejercicio 6: _Commit_ en rama equivocada (más complejo)
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_committed_to_wrong(carpeta)
+```
+
+Variante más compleja donde el commit está en una rama incorrecta.
+:::
+
+### Problema 4: "Mis cambios eran equivocados"
+
+**Situación:** El _commit_ problemático **no es el último**. Hiciste varios _commits_ después, pero uno de los anteriores rompió algo o tiene cambios que quieres deshacer.
+
+Tenemos dos formas de manejar esta situación:
+
+#### Situación A: Deshacer un _commit_ completo en la mitad del historial
+
+**Escenario:** Hace 5 _commits_ hiciste un _commit_ con mensaje "Fix reparar las cosas" que rompió tu código. Este _commit_ está en la mitad del historial, no al final.
+
+**Solución: `git revert`**
+
+```bash
+# Paso 1: Ver el historial para identificar el commit problemático
+git log --oneline
+
+# Paso 2: Copiar el ID del commit que quieres deshacer
+# Ejemplo: abc123d Fix reparar las cosas
+
+# Paso 3: Usar git revert para crear un nuevo commit que invierte los cambios
+git revert abc123d
+
+# Git abrirá tu editor. Por defecto dice "Revert Fix reparar las cosas"
+# Puedes mantener el mensaje o editarlo. Guarda y cierra.
+```
+
+**Resultado:** Se crea un **nuevo _commit_** que deshace los cambios del _commit_ original. Esto es seguro porque no reescribe la historia, sino que agrega un nuevo _commit_ inverso.
+
+**Importante:** `git revert` funciona mejor cuando ese _commit_ contiene **solo** los cambios que quieres deshacer. Si el _commit_ tiene múltiples cambios y algunos sí quieres mantener, usa la siguiente estrategia.
+
+#### Situación B: Deshacer cambios a un archivo específico cuando el _commit_ cambió múltiples archivos
+
+**Escenario:** Un _commit_ antiguo modificó dos archivos: `brap.txt` y `fix.txt`. Quieres que `brap.txt` vuelva a su estado anterior, pero mantener los cambios en `fix.txt`.
+
+**Solución: `git checkout` para restaurar un archivo específico**
+
+```bash
+# Paso 1: Ver el historial
+git log --oneline
+
+# Paso 2: Identificar el commit ANTES del problemático
+# Ejemplo: si el commit problemático es abc123d, necesitas el anterior (def456e)
+
+# Paso 3: Restaurar el archivo a su estado en ese commit anterior
+git checkout def456e -- brap.txt
+
+# El archivo está ahora automáticamente en staging (staged)
+
+# Paso 4: Hacer un nuevo commit con este cambio
+git commit -m "Restaurar brap.txt a su estado anterior"
+```
+
+**Resultado:** El archivo `brap.txt` vuelve a su versión anterior, mientras que `fix.txt` sigue como estaba.
+
+
+::: {.callout-note}
+#### Ejercicio 7: Deshacer un commit con git revert
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_revert_commit(carpeta)
+```
+
+Practicas cómo identificar un commit problemático en la mitad del historial y deshacerlo de forma segura con `git revert`.
+:::
+
+::: {.callout-note}
+#### Ejercicio 8: Restaurar un archivo específico
+
+```r
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_restore_file(carpeta)
+```
+
+Practicas cómo restaurar un archivo a su versión anterior sin afectar otros archivos del mismo commit.
+:::
+
+### Problema 5: "Necesito la versión anterior de este archivo"
+
+**Situación:** Alguien cambió un archivo y quieres la versión de hace 3 commits.
+
+```bash
+# Ver el historial de un archivo
+git log -- archivo.R
+
+# Restaurar a una versión anterior
+git checkout HASH -- archivo.R
+
+# O simplemente deshacer el último cambio en ese archivo
+git checkout HEAD~1 -- archivo.R
+```
+
+### Situaciones más complejas
+
+#### Conflictos de _merge_ (o _merge conflicts_)
+
+**¿Qué es?** Cuando dos personas editan la misma línea de un archivo, Git no sabe qué versión mantener.
+
+**Apariencia:**
+```
+<<<<<<< HEAD
+versión_tuya()
+=======
+versión_de_otro()
+>>>>>>> rama-de-otro
+```
+
+**Cómo resolver:**
+1. Manualmente edita el archivo, manteniendo lo que quieres
+2. Elimina los marcadores de conflicto (`<<<<`, `====`, `>>>>`)
+3. Haz `git add archivo.R` y `git commit`
+
+**Prevención:** Comunícate con tu equipo, usa ramas, haz merge frecuente.
+
+::: {.callout-note}
+#### Ejercicio 9: Situaciones extremas: rebase y time_machine
+
+Para situaciones muy complicadas donde necesitas reescribir historial:
+
+```r
+# Ejercicio avanzado
+withr::local_language("es")
+carpeta <- withr::local_tempdir()
+saperlipopette::exo_time_machine(carpeta)
+```
+
+Este es el ejercicio más desafiante. Solo inténtalo después de haber practicado los anteriores.
+:::
+
+## Mejores prácticas
+
+### Commits frecuentes y descriptivos
+
+Mejor:
+```bash
+git commit -m "Agregar validación de entrada en función parse_data()"
+```
+
+Evita:
+```bash
+git commit -m "cambios"  # Demasiado vago
+```
+
+### Ramas para cada feature
+
+```bash
+# Rama por feature
+git checkout -b feature/autenticación
+
+# Rama por bugfix
+git checkout -b fix/login-error
+
+# Rama experimental
+git checkout -b experiment/new-algorithm
+```
+
+### Antes de push, verifica
+
+```bash
+# ¿Qué cambios estoy por subir?
+git log origin/main..HEAD
+
+# ¿Hay conflictos con main?
+git fetch origin
+git merge --no-commit --no-ff origin/main
+git merge --abort  # Si no te gustan los cambios
+
+# ¿Mi código funciona?
+# (Ejecuta tests locales)
+```
+
+### Mensajes de commit claros
+
+Formato útil:
+```
+<tipo>: <descripción breve (50 caracteres)>
+
+<Explicación más larga si es necesario>
+
+Fixes #123  # Si resuelve un issue
+```
+
+Tipos comunes: `feat:`, `fix:`, `refactor:`, `test:`, `docs:`
+
+
+## Resumen de ejercicios
+
+Aquí está la lista completa de ejercicios con `saperlipopette`. Te recomendamos hacerlos en este orden:
+
+| # | Ejercicio | Comando | Dificultad | Tiempo |
+|---|-----------|---------|-----------|--------|
+| 1 | Cambios menores | `exo_one_small_change()` | Fácil | 5 min |
+| 2 | Mensaje incorrecto | `exo_latest_message()` | Fácil | 5 min |
+| 3 | Deshacer commit | `exo_undo_commit()` | Media | 8 min |
+| 4 | Revertir archivo | `exo_revert_file()` | Media | 8 min |
+| 5 | Commit en main | `exo_committed_to_main()` | Media | 10 min |
+| 6 | Rama equivocada | `exo_committed_to_wrong()` | Media | 10 min |
+| 7 | Deshacer commit antiguo | `exo_revert_commit()` | Media | 10 min |
+| 8 | Restaurar archivo | `exo_restore_file()` | Media | 10 min |
+| 9 | Time machine | `exo_time_machine()` | Difícil | 15 min |
+
+::: {.callout-tip}
+#### Sugerencia
+
+Practica 1-2 ejercicios por sesión de estudio. No intentes hacerlos todos de una.
+:::
+
+## Resumen y puntos clave
+
+### Lo más importante
+
+1. **Git no es tan malo.** Fue diseñado para recuperación, no para destrucción.
+
+2. **Prevención > solución:**
+   - Configura bien tu editor
+   - Usa `.gitignore`
+   - Verifica con `git status` antes de push
+   - Usa ramas para nuevos cambios
+
+3. **Cuando algo sale mal:**
+   - Mantén la calma
+   - Ejecuta `git status` para orientarte
+   - Busca la solución (generalmente `git reset`, `git revert`, o `git commit --amend`)
+   - No hagas `git push --force` sin antes analizar bien la situación
+
+4. **Practica con seguridad:**
+   - Usa `saperlipopette` para practicar
+   - No rompes tus proyectos reales
+   - Aprendes Git de verdad, con práctica real, no solo la teoría
+
+### Recursos adicionales
+
+- **Happy Git and GitHub for the useR:** https://happygitwithr.com/
+  - Excelente guía práctica para usuarios de R
+
+- **"Oh Shit, Git!":** https://ohshitgit.com/
+  - Soluciones rápidas para problemas comunes
+
+- **Pro Git Book:** https://git-scm.com/book/en/v2
+  - Referencia completa y profunda
+
+- **Julia Evans' Zines:** https://wizardzines.com/
+  - Visualizaciones hermosas de cómo funciona Git
+
+- **Documentación de saperlipopette:** https://docs.ropensci.org/saperlipopette/
+  - Documentación completa con todos los ejercicios
+
+## El mensaje final
+
+Git es una herramienta creada por desarrolladores, para desarrolladores. Tiene sus peculiaridades, pero es muy útil. La curva de aprendizaje es porque hay mucho poder disponible.
+
+Lo importante es **practicar en escenarios seguros** y eso es exactamente lo que `saperlipopette` te permite hacer.
+
+Cada persona experimentada en desarrollo de software ha estado en algún momento atrapado en Git. Todos aprendimos. Y tú también puedes.
+
+
+## Preguntas de repaso
+
+Usa estas preguntas para verificar tu comprensión. Intenta responder sin mirar atrás:
+
+1. **Conceptos básicos:** ¿Cuál es la diferencia entre el directorio de trabajo, el staging area y el repositorio local?
+
+2. **Prevención:** ¿Qué hace `usethis::git_vaccinate()` y por qué es útil?
+
+3. **Ubicación:** ¿Cómo verificarías en RStudio o Positron en qué rama estás?
+
+4. **Enmienda:** ¿Qué comando usarías si necesitas cambiar el mensaje del último commit que acabas de hacer?
+
+5. **Deshacer:** ¿Cuál es la diferencia entre `git reset HEAD~1` y `git reset --hard HEAD~1`?
+
+6. **Rama equivocada:** Si hiciste 3 commits en `main` pero deberían estar en `feature/nuevo`, ¿qué pasos seguirías?
+
+7. **Verificación:** Antes de hacer `git push`, ¿qué comando ejecutarías para verificar que todo está bien?
+
+8. **saperlipopette:** ¿Por qué usarías `saperlipopette` en lugar de practicar directamente en tus proyectos reales?
+
+
