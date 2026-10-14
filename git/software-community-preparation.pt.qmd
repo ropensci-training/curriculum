@@ -1,0 +1,144 @@
+---
+title: O que você precisa fazer antes do workshop
+---
+
+::: 
+   {.callout-note} 
+    
+ 
+
+## Migração
+
+Você está lendo a 
+ **     primeira edição, ainda em andamento e em espanhol******    deste livro, baseada no currículo de formação do programa rOpenSci.
+
+Este capítulo está sendo migrado dos materiais do currículo para o formato do livro e pode ainda não refletir a versão final do conteúdo.
+
+*Conteúdo pendente de migração:*    consulte [     https://github.com/ropensci-training/git-developing-software-together](https://github.com/ropensci-training/git-developing-software-together) 
+    
+     e [   
+      https://github.com/ropensci-training/git-desarrollo-software
+](https://github.com/ropensci-training/git-desarrollo-software)    para o repositório de código-fonte deste capítulo.
+   :::
+
+Siga estas instruções para garantir que você tenha tudo o que é necessário para o curso.
+
+Talvez você já tenha algumas dessas ferramentas instaladas; se não as usa há muito tempo, certifique-se de atualizá-las.
+
+## Instale o R e o RStudio 
+   {.unnumbered}
+   
+ 
+
+Vamos usar o R (linguagem de programação) e o RStudio como IDE (Ambiente Integrado de Desenvolvimento).
+   Se você ainda não os instalou, por favor [     siga as instruções nesta página da Posit (em inglês) para fazê-lo.](https://posit.co/download/rstudio-desktop/)
+
+## Instale o Git 
+   {.unnumbered}
+   
+ 
+
+O Git é uma ferramenta de controle de versões; vamos usá-la para trabalhar de forma colaborativa.
+
+Na página do 
+ [     Git](https://git-scm.com/downloads) você poderá baixar o instalador para o seu sistema operacional.
+
+Nessa mesma página 
+ [     há um guia de instalação para cada sistema operacional em espanhol](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalación-de-Git)   .
+
+## Crie uma conta no GitHub 
+   {.unnumbered}
+   
+ 
+
+O GitHub é uma das plataformas e repositórios mais conhecidos e utilizados mundialmente por desenvolvedores de software.
+   Vamos usá-lo para publicar nosso código.
+
+- Acesse 
+ [https://github.com/
+](https://github.com/)       .
+
+- Clique em 
+ *         Registrarse*        ou *         Sign up*       .
+
+- Siga as instruções para criar sua conta pessoal.
+
+- Uma das etapas envolve confirmar que você é uma pessoa e, em seguida, validar o endereço de e-mail usado para criar a conta.
+
+## Configuração do Git e do GitHub 
+   {.unnumbered}
+   
+ 
+
+Agora que você já tem o Git instalado e uma conta no GitHub, é importante concluir a configuração necessária para que você possa trabalhar.
+
+Existem várias maneiras de fazer isso; neste caso, faremos a partir do R usando o pacote 
+   [*usethis*](https://usethis.r-lib.org) 
+     \* e 
+ [     gitcreds](https://cran.r-project.org/web/packages/gitcreds/index.html)   \*.
+
+1. Abra o RStudio e instale *o         usethis*        executando o seguinte código no 
+ **         console**       :
+
+```r
+install.packages("usethis")
+```
+
+2. Configure seu nome e e-mail:
+
+```r
+usethis::use_git_config(user.name = "Juan Perez",
+               user.email = "juan@ejemplo.org")
+```
+
+Substitua por seu nome e pelo e-mail associado à sua conta do GitHub.
+   O git usará essas informações para registrar quem fez alterações em um arquivo.
+
+Veremos isso durante as oficinas sobre Git e GitHub, desenvolvimento de pacotes e revisão de código.
+
+3. Configure seu PAT
+
+O PAT, ou “personal access token”, mais conhecido como token, é uma espécie de senha que você precisará configurar no seu computador para poder fazer alterações no GitHub.
+
+Primeiro, você precisará criar o token:
+
+```r
+usethis::create_github_token()
+```
+
+A janela do GitHub será aberta e, nela, você deverá seguir as etapas para criar o token e copiá-lo (muito importante!).
+   Por precaução, **     não feche esta janela**   .
+
+Agora execute o código a seguir para configurar o token no seu computador:
+
+```r
+gitcreds::gitcreds_set()
+```
+
+Optei por criar/salvar o token.
+   Se você usa o Ubuntu, o processo não termina aqui; será necessário seguir as etapas descritas [     neste guia](https://blog.djnavarro.net/posts/2021-08-08_git-credential-helpers/)    para salvar o token de forma permanente.
+
+4. *Proteja*        sua instalação do Git:
+
+```r
+usethis::git_vaccinate() 
+```
+
+Essa função adiciona alguns arquivos e configurações consideradas boas práticas.
+
+Veremos mais detalhes durante o workshop de desenvolvimento de pacotes.
+   Você também pode ler a documentação do comando para saber mais.
+
+5. Verifique se está tudo em ordem:
+
+```r
+usethis::git_sitrep() 
+```
+
+Esta função retorna o status da sua configuração do Git e do GitHub.
+
+Verifique se seu nome e e-mail estão corretos, se aparece 
+ `Vaccinated: TRUE`    e se 
+ `Personal access token for "https://github.com": <discovered>`    está exatamente como nessa mensagem.
+
+
