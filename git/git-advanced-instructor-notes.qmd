@@ -96,7 +96,12 @@ Pregunta al grupo:
 
 > "¿Quién aquí ha perdido cambios importantes en un archivo? ¿O ha querido volver a una versión anterior de algo?"
 
-Espera respuestas. Luego muestra la diapositiva sobre historia y ramas.
+Espera las respuestas. 
+Aunque el silencio pueda resultar incómodo, es necesario darles tiempo a las personas para que piensen, escriban y envíen su respuesta.  
+En el formato online, conviene decir explícitamente que vas a guardar silencio para darles tiempo para pensar y responder. 
+De esta manera, queda claro que el silencio es para realizar el ejercicio y que quienes participan saben qué está pasando. 
+
+Luego muestra la diapositiva sobre historia y ramas.
 
 Presenta la pregunta clave:
 
