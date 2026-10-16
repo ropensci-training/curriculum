@@ -42,7 +42,7 @@ Después de leer este capítulo, podrás:
 
 Para poder realizar este taller necesitas:
 
-* Tener Git instalado en la computadora: https://happygitwithr.com/install-git y https://happygitwithr.com/hello-git.
+* [Tener Git instalado en la computadora](https://intro-programacion.netlify.app/a_instalacion#instalando-git)
 
 TODO: cambiar link al libro de Yani y Pao que esta en castellano, dejar estos links en la version en ingles.
 
