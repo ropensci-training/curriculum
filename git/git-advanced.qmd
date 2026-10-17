@@ -74,7 +74,10 @@ Git soluciona esto mediante:
 
 ::: {.callout-note}
 
-TODO: agregar ejercicio de pensar un problema con git y reflexion
+## Ejercicio de Reflexión
+
+A veces, Git duele. Piensa en alguna ocasión en la que experimentaste un momento confuso o frustrante con Git.
+
 
 :::
 
