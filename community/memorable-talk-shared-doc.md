@@ -69,7 +69,7 @@ Mientras nos acomodamos, por favor, agregá tu nombre. Contanos: si trajiste una
 
 Te invitamos a [completar una encuesta anónima para mejorar este taller]()
 
-¡Muchas gracias\!
+¡Muchas gracias!
 
 ## Notas: 
 
