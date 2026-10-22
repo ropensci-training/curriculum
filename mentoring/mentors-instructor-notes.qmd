@@ -1,5 +1,5 @@
 ---
-title: "Mentoría - Notas para docentes"
+title: "Mentoría"
 ---
 
 ::: {.callout-note}
