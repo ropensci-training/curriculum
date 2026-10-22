@@ -1,5 +1,7 @@
 ---
-title: "Charla Memorable"
+title: Creando y dando una charla inolvidable
+subtitle: De la idea a la acción
+author: Alejandra Bellini y Yanina Bellini Saibene
 ---
 
 ::: {.callout-note}
@@ -8,4 +10,565 @@ title: "Charla Memorable"
 Estás leyendo la **primera edición en progreso y en castellano** de este libro, basada en el currículum de formación del programa de Campones/as de rOpenSci.
 
 Este capítulo está siendo migrado desde los materiales del currículum al formato del libro y puede no reflejar todavía la versión final del contenido. 
+:::
+
+
+## Objetivos de aprendizaje
+
+-   Reconocer que comunicar bien es una habilidad que se aprende y se entrena con práctica, y que no existe una única fórmula para una buena charla.
+-   Definir la idea principal y el objetivo de una charla a partir de lo que sabés del evento y de tu audiencia, usando una guía de trabajo.
+-   Identificar las tres partes de una charla (inicio, cuerpo y cierre) y elegir recursos para potenciar cada una.
+-   Aplicar el storytelling para conectar con tu audiencia y transformar una emoción en una acción.
+-   Mejorar tu oratoria.
+
+## ¿Por qué hablar de charlas?
+
+Escribir buen código, mantener un paquete o liderar un proyecto es solo una parte del trabajo.
+La otra parte es lograr que alguien entienda qué hacemos y por qué importa.
+A veces tenemos ideas muy lindas, pero si no se las podemos contar a otras personas no podemos compartir lo que queremos ni conseguir lo que necesitamos para llevar adelante los procesos: financiamiento, gente que se sume a un proyecto, aliados para encarar algo nuevo.
+Que alguien entienda cuál es nuestra idea es lo que determina, muchas veces, el éxito o el fracaso de algo.
+
+Y hay una buena noticia: **nadie nace siendo un excelente orador, se hace, se construye**.
+Pensá en la primera vez que te subiste a un auto para manejar.
+Seguramente estabas nervioso/a, no sabías dónde mirar ni qué hacer, hasta que de a poquito, con práctica y repetición, te transformaste en una persona que maneja con seguridad.
+Con las charlas pasa lo mismo: la práctica y la repetición son lo que te transforma en una buena oradora o un buen orador.
+
+::: ejercicio
+**Ejercicio 1. Antes de empezar**
+
+Respondé por escrito, en un documento o en una nota:
+
+-   ¿Tenés una idea de charla?
+-   ¿Diste alguna charla alguna vez? ¿Cómo te fue?
+
+Guardá tus respuestas: te van a servir para ver cuánto cambia tu mirada al terminar el capítulo.
+:::
+
+## ¿Existe una fórmula para una buena charla?
+
+Si preguntás esto en un grupo, vas a recibir respuestas como estas: "no creo que haya una fórmula exacta, pero sí técnicas que se pueden emplear", "hay que tomar en cuenta al público al que va dirigida", "hay que tomar en cuenta el tiempo y la profundidad".
+Todas apuntan en la dirección correcta.
+
+Las charlas TED fueron durante mucho tiempo un formato que se intentó replicar en distintos contextos.
+Su creador, Chris Anderson, tiene una idea muy linda sobre este tema: no hay una fórmula única.
+Lo que hay es una tarea inicial para quien habla:
+
+> La primera tarea como orador/speaker es ofrecer a su auditorio un extraordinario regalo: un objeto precioso y extraño llamado IDEA".
+>
+> --- Chris Anderson
+
+Cada persona puede armar **su propia fórmula**, según lo que quiere comunicar y cómo lo quiere comunicar.
+En este capítulo vamos a construir una fórmula con tres ingredientes que se apoyan en un objetivo:
+
+```
+IDEA  +  ESTRUCTURA  +  ORATORIA
+              \
+           OBJETIVO
+```
+
+-   **Idea**: qué quiero compartir con la audiencia.
+-   **Estructura**: cómo organizo lo que quiero contar (inicio, cuerpo y cierre).
+-   **Oratoria**: cómo lo comunico con mi voz, mi cuerpo y mis recursos.
+-   **Objetivo**: para qué quiero compartir esa idea.
+
+## Paso 1: empezamos con los datos que sabemos
+
+El primer desafío es encontrar la idea cuando todavía no la tenemos clara.
+Es la famosa hoja en blanco.
+Para vencerla, empezamos por lo que ya sabemos.
+Por simple que parezca, completar estos datos ordena el trabajo que tenemos por delante.
+Los vas a encontrar en la *Guía de trabajo para romper la hoja en blanco* de la [caja de herramientas](#caja-de-herramientas).
+
+| Dato | Por qué importa |
+|----------------------|--------------------------------------------------|
+| **Nombre y fecha del evento** | Definen dónde voy a llevar mi idea y cuánto tiempo tengo para prepararla y practicarla. También te hacen preguntar si podés tener feedback de las personas que organizan, si vas a recibir formación o si alguien te va a acompañar. |
+| **Temática general del evento** | Te ubica en un contexto: ¿es un panel, una charla de 5 minutos, de media hora, de una hora? |
+| **Mi área/temática** | ¿Por qué estoy yo en este evento? ¿Qué aporto? |
+| **Público del evento** | Es fundamental. Define el lenguaje y la forma en la que voy a hablar. |
+| **Tiempo de la charla** | No es lo mismo explicar en 5 minutos, en media hora o en 2 horas, ni que haya o no espacio para preguntas y feedback. Lo que puedo contar depende de este dato. |
+| **Algún pedido especial del organizador** | Siempre hay que tenerlo en cuenta. |
+
+### El público define el mensaje
+
+**Siempre hay que tener en cuenta a la audiencia**. Hacerme la pregunta: ¿A quién le voy a hablar? No podemos hablarles a todos de la misma manera porque no todos tienen la misma información. De mi audiencia dependerá el lenguaje, el tono, el nivel de tecnicismos o la necesidad de modificar el discurso para hacerlo accesible. 
+
+Un ejemplo que usamos en el taller: cuando se habla del fenómeno de El Niño, los meteorólogos necesitan metáforas y figuras para explicar cuestiones muy técnicas a la gente común, que necesita prepararse y saber qué hacer.
+Pero también tienen que dar información técnica a productores agropecuarios que deben planificar su siembra y sus cosechas.
+**No preparan el mismo mensaje para el público general que para los productores.**
+
+Si al público general le explicás un montón de cosas técnicas, lo perdés: aunque tengas toda la información, no pudiste detectar cuál era el dato necesario y preciso para esa audiencia.
+En cambio, en un congreso de especialistas que quieren entender por qué el fenómeno se da de cierta manera, sí vas a llevar toda la investigación con sus tecnicismos, porque eso es lo que van a buscar.
+
+::: tip
+**Averiguá con quiénes compartís el evento.**
+Si participan más personas, conocer qué van a contar te permite destacar algo propio y no repetirte.
+Si algo de lo que vas a decir lo desarrolla otra persona, podés mencionarlo y presentar tu charla como un complemento de la suya.
+:::
+
+### La idea principal
+
+¿Qué pasa si tenés muchas ideas y un montón de información?
+Escribí todas las ideas que tengas, no importa cuántas sean.
+Después, **jerarquizalas** de la más importante a la menos importante, porque casi siempre vas a tener que dejar algunas afuera.
+
+La jerarquía te pone en la punta de la pirámide la idea que sí o sí querés que tu audiencia se lleve.
+Si tenés una hora, vas a poder desarrollar varias.
+Si tenés 5 minutos, esta es la que no puede faltar, la que tenés que decir aunque te quedes sin tiempo.
+
+Algunas pautas para trabajar con la idea principal:
+
+1.  Podés tener más de una idea: escribilas y jerarquizalas.
+2.  Es más efectivo focalizar en una sola idea, que debe ser el hilo conductor. Podés agregar mucha otra información, pero tiene que ayudarte a construir esa idea.
+3.  Construí la idea parte por parte a lo largo de la charla, **de lo conocido a lo desconocido** y de lo menos complejo a lo más complejo. Es muy probable que quien te escucha no sepa lo que le vas a contar.
+4.  Todo tiene que estar conectado de alguna manera con la idea principal.
+
+
+### El objetivo
+
+La idea está estrechamente ligada con el objetivo: **¿qué quiero lograr con esta charla, además de compartir una idea?**
+Algunos objetivos posibles son:
+
+1.  Sumar gente a un proyecto: mostrar lo maravilloso que es e inspirar a que se sumen.
+2.  Contar una innovación: explicar un formato o un proceso nuevo para que se entienda.
+3.  Replicar experiencias exitosas: mostrar una experiencia y presentarla de la forma más general posible para que otras personas la tomen y la repliquen en otros contextos.
+4.  Mostrar resultados.
+5.  Inspirar: que quienes salgan de la charla salgan a mejorar el mundo.
+6.  Enseñar procesos.
+
+También puede ser alinear varios proyectos para que vayan en una misma dirección; en ese caso necesito comunicar cuál es la visión y cuál es la misión.
+La idea tiene que estar ligada a mi objetivo: **el para qué, el para quién y el porqué**.
+
+Como ejemplo y para que quede claro, así se ve esto aplicado a la charla que dio origen a este capítulo:
+
+-   **Idea:** todos podemos crear y ofrecer una charla inolvidable.
+-   **Objetivo:** mostrar la estructura de una charla y ofrecer herramientas para desarrollar una fórmula propia exitosa.
+-   **Emoción:** inspirar y convencer de que todas las personas pueden dar una charla, con práctica y herramientas útiles.
+-   **¿Cómo?** Creando una fórmula y desarrollando cada parte para que las personas asistentes puedan seguir el paso a paso y crear su charla. Los ejemplos y los casos prácticos son fundamentales.
+
+::: ejercicio
+**Ejercicio 2. Describí tu idea**
+
+Hacé una copia de la *Guía de trabajo para romper la hoja en blanco* y completá, con frases breves y concretas:
+
+1.  Nombre del evento.
+2.  Fecha del evento.
+3.  Temática general.
+4.  Mi área/temática.
+5.  Público del evento.
+6.  Tiempo de la charla.
+7.  Algún pedido especial del organizador.
+
+Si no tenés una charla pendiente, imaginá que te piden contar tu experiencia en un programa o comunidad de la que participás.
+Si podés, hacelo con otras personas: es más rápido y la devolución es mejor.
+Dedicale entre 5 y 7 minutos.
+
+Después, respondé: ¿cuál es la idea principal? ¿cuál es el objetivo? ¿cuál es la audiencia? ¿qué emoción querés provocar? ¿qué querés que se lleven?
+:::
+
+### Ejemplos de la guía completada
+
+En el taller, varios grupos completaron la guía con ideas propias.
+Estos ejemplos te pueden dar una pista de cómo se ve:
+
+**Contar la experiencia de participar en un programa de campeones.**
+Evento a fines de noviembre, tema general sobre los avances de los paquetes y la experiencia como campeonas.
+Un grupo diverso (evaluación de software, herramientas de gestión de software, salud y educación), público general de todos los niveles y tiempo por definir.
+Cuando les preguntamos qué emoción querían transmitir, la respuesta fue *enamorar al público* de forma gradual, para que se sume al programa y también apoye a otras personas a crecer.
+
+**Un taller sobre creación de paquetes en R.**
+Evento en noviembre, con temática de ciencia abierta, buenas prácticas de programación, colaboración con GitHub y revisión de software científico.
+Público de personas usuarias de R interesadas en crear paquetes, 90 a 120 minutos, modalidad virtual.
+El pedido al organizador: enviar instrucciones previas para que las personas lleguen con las herramientas ya instaladas.
+Lo que más valoramos de este ejemplo es que, más que una charla, es un **taller**: está pensado para que la audiencia participe y trabaje.
+Y eso hay que saberlo desde el principio, porque cambia cómo se diseña todo lo demás.
+
+**Gestión de proyectos para científicos, en un grupo de investigación.**
+Evento: la reunión semanal del grupo, donde se aprenden cosas nuevas.
+La fecha se define pensando en que estén presentes los líderes del grupo, porque el efecto buscado es un cambio cultural.
+Una hora (más como guía que como restricción) y libertad total de contenido.
+Había muchos problemas posibles que abordar, pero la persona los jerarquizó: el objetivo es presentar entre 3 y 4 herramientas clave de inicio y planificación de proyectos, que resuelven dolores de cabeza que aparecen al final.
+**Esa jerarquización es fundamental para la charla**: se empieza por lo más crítico y, si después hay más tiempo o más charlas, se avanza.
+
+**Presentar un proyecto de investigación a estudiantes de posgrado.**
+Un ejemplo de otra edición del taller: evento de una hora (45 minutos de presentación y 15 de preguntas y comentarios) frente a estudiantes de una maestría en ciencias ambientales y de la vida, para presentar un proyecto de biología computacional que usa datos genómicos.
+
+::: tip
+No siempre vas a poder elegir el tiempo.
+A veces te invitan a participar de una conferencia y tenés 15 minutos para contar todo.
+Ahí es donde se vuelve importante entender y elegir qué es lo que realmente querés compartir.
+:::
+
+## Paso 2: seguimos con las partes de la charla
+
+Con la idea y el objetivo claros, necesitamos una **estructura**: cómo organizo lo que quiero contar.
+Vamos a ver el ABC de las estructuras.
+Más adelante podés jugar y cambiar el orden, pero para jugar primero hay que conocer la estructura base: **inicio, cuerpo y cierre**.
+
+| Parte | Qué hace | Pregunta que responde |
+|----------------------|------------------------|-----------------------|
+| **Inicio** | Capta la atención. Es lo primero que la audiencia escucha, así que debe ser potente. | ¿Por qué me tienen que seguir escuchando? |
+| **Cuerpo** | Contiene toda la información de la idea que quiero compartir. Es la parte más variable. | ¿Cómo mantengo la atención? |
+| **Cierre** | Es lo último que van a escuchar. Debe ser tan potente como el inicio. | ¿Qué quiero que se lleven de mi charla? |
+
+### Inicio: ¿por qué me tienen que seguir escuchando?
+
+Hay muchísimas maneras de empezar, y la que elijas depende de lo que quieras contar.
+Estas son algunas:
+
+1.  **Una pregunta.** Sembrás la curiosidad e involucrás a la audiencia en tu misma duda. Como señaló una participante del taller, de lo que se trata es de no salir a responder preguntas que nadie se hizo, sino de sembrar primero la curiosidad y después llegar a la respuesta.
+2.  **Una anécdota.** Por ejemplo, un diálogo de WhatsApp en el que alguien te planteó un problema que no sabías que existía. Esa conversación fue el inicio y a partir de ahí se les ocurrió una solución: la mostrás y contás cómo llegaste de ahí a lo que presentás.
+3.  **Un número o una estadística muy fuerte** que plantea un problema. Un dato como "6 de cada 10 estudiantes de tercer grado no entienden lo que leen" puede ser el inicio de un programa de lectura, de un proyecto de financiamiento o de muchas otras cosas. (Verificá siempre la fuente de cualquier dato que uses.)
+4.  **Una foto, una imagen, un gráfico o un video.**
+5.  **Un problema.**
+6.  **Un objeto.**
+
+Algunos ejemplos que vimos:
+
+-   **Un objeto y un contraste.** Una abogada que desarrollaba una aplicación para hacer presentaciones judiciales llegó a su charla con una pila gigante de hojas de presentaciones judiciales en papel y un celular. Empezó diciendo: "hoy les voy a mostrar cómo pasamos de esto, y de todos los árboles que matamos con esto, a esto". La reacción es inmediata: *quiero saber cómo lo hicieron*. Lo importante no es si la aplicación era buenísima o no, sino que **la forma en la que se cuenta determina muchas veces el éxito o el fracaso de lo que se quiere explicar**.
+-   **Una metáfora como hilo conductor.** En un evento de una empresa fintech, equipos que no tenían nada que ver entre sí (producto, desarrollo, comunicación, marketing) necesitaban comunicar que podían trabajar juntos. Encontraron la figura del **puente**: conecta, nos hace llegar a lugares donde antes no habíamos llegado y es un avance tecnológico. Y además la charla la dio una persona de cada área, juntas, para mostrar lo que querían decir.
+-   **Un objeto en la mano.** En una charla sobre cómo transformarse en una buena comunicadora, el orador llegó con un bolso supercargado. Contó que cuando no nos animamos a hablar en público muchas veces es por todo lo que venimos cargando, y fue sacando del bolso, una por una, esas cosas (la persona que nos dijo que hablábamos feo, la que nos dijo que nunca íbamos a comunicar bien) hasta dejarlo vacío. Tuvo la atención de todos porque queríamos saber qué más iba a sacar, y si había algo que nosotros también teníamos que sacar de nuestro bolso. Es un objeto muy simple.
+-   **Una receta de cocina.** Para explicar a programadores cómo usar *templates*, dos personas armaron la charla como una receta, con su paso a paso hasta el producto final, y se pusieron delantales para transformarse en cocineros. Presentaron primero a un desarrollador cansado y abrumado que no podía resolver sus problemas y que, gracias al template, terminaba feliz y en armonía. Es un detalle, pero hace que la charla sea más agradable y conecte.
+
+::: ejercicio
+**Ejercicio. Probá tus inicios**
+
+Tomá la idea principal que definiste y escribí un posible inicio de cada tipo: una pregunta, una anécdota, un número, una imagen, un problema y un objeto.
+No hace falta que todos sean buenos.
+El ejercicio es probar si hay otra manera de contar lo que querés contar.
+
+Si desarrollás software, preguntate: ¿hay algo que haya pasado con el paquete que desarrollás que sea lindo de contar? ¿una anécdota, una historia, un resultado, un cambio, un problema resuelto?
+Quizás ahí esté tu inicio.
+:::
+
+::: callout-tip
+## Más ejemplos
+
+La caja de herramientas incluye un listado de charlas con inicios y cierres diferentes, para mirar y comparar.
+Entre ellas hay charlas TED sobre la conquista del espacio, sobre qué hace único a un gran comunicador, sobre el secreto de la comunicación efectiva y sobre cómo vencer el miedo a hablar en público.
+:::
+
+### Cuerpo: ¿cómo mantengo la atención?
+
+En el cuerpo de la charla desarrollás toda la información de tu idea: datos, gráficos, historias, experiencias, videos, fotos.
+Es la parte más variable, porque depende de lo que vayas a contar.
+No es lo mismo explicar un proceso que necesariamente va a ser paso 1, paso 2, paso 3, que contar una experiencia con una historia de vida que podés relatar de mil maneras.
+
+Lo más importante es que **tenga un hilo conductor**: una lógica, un orden que fluya.
+Si no, no se entiende.
+Siempre que puedas, andá **de menor a mayor**, construyendo la idea junto con quienes te escuchan.
+Y no te olvides de que, para mantener la atención, vas a necesitar ir usando estrategias a lo largo de toda la charla: no es fácil, pero tampoco imposible.
+
+#### ¿Se entiende lo que explico?
+
+Antes de cargar de contenido a la estructura de tu charla, conviene preguntarse si quien te escucha entiende lo que vos entendés.
+Este es un juego que sirve para comprobarlo.
+
+::: ejercicio
+**Dibujá lo que te digo**
+
+Necesitás papel, lápiz y otra persona que lea las instrucciones (o un grupo de personas, para comparar al final).
+Quienes dibujan **no pueden preguntar ni mirar lo que hacen los demás**.
+Quien lee solo puede repetir cada instrucción, sin aclarar nada.
+
+1.  En el centro de la hoja, dibujen una figura geométrica de 3 lados iguales.
+2.  Dibujen un círculo que esté en contacto con las líneas de esa figura.
+3.  Por encima del vértice superior, tracen 3 líneas curvas horizontales, una por encima de la otra.
+4.  Desde la base de la primera figura que dibujaron, extiendan 3 líneas hasta el borde inferior de la hoja.
+5.  Coloquen un punto en cada una de esas 3 líneas.
+
+Al final, comparen los dibujos.
+:::
+
+Todas las personas recibieron las mismas instrucciones y tuvieron el mismo tiempo, y sin embargo los dibujos son distintos.
+En el taller, por ejemplo, las curvas de arriba se dibujaron como olas, como platos, como semicírculos o enganchadas unas con otras, y algunas personas dibujaron el círculo por dentro del triángulo y otras por fuera.
+
+Hay una trampita: hay muchas cosas que quien da las instrucciones no dice.
+No dice cuánto mide cada lado, ni de qué tamaño es la hoja, ni si el círculo va adentro o afuera.
+Y esa es justamente la lección:
+
+-   **No siempre lo que yo explico es lo que el otro entiende.** Yo lo entiendo porque ya lo sé, pero necesito que la otra persona lo entienda.
+-   El mensaje depende de las dos partes: quien comunica y quien recibe. Cada persona interpreta distinto según su contexto.
+-   Por eso es tan importante conocer a la audiencia: no es lo mismo estudiantes de secundaria que colegas, expertos en un congreso, una entrevista para un medio o redes.
+-   Cuanto más claro soy con las instrucciones, más asertivo es mi mensaje. Y vale la pena probar la explicación con algunas personas para ver si me entienden.
+- La información que no doy o está ausente, la completa mi audiencia con su propio conocimiento. 
+
+::: callout-note
+## Un chiste que lo explica
+
+En el chat del taller apareció un chiste muy conocido entre quienes programamos: alguien le pide a un programador "si hay huevos, traé 4, y si hay leche, traé 2", y vuelve con 2 huevos y ninguna leche.
+Programar es una forma de comunicar instrucciones muy exactas; si no, error.
+Pero las personas que nos escuchan no son computadoras, y lo que para nosotros es obvio no siempre lo es para otras.
+:::
+
+### Storytelling: la estrategia más importante
+
+Una de las estrategias más usadas en comunicación, y que quizás haya que incorporar de a poco al mundo científico, es el **storytelling**: el arte de contar una historia.
+Siempre hay una historia para contar, no en el sentido de una historia para llorar o para reírse, sino en el sentido de que hubo un proceso para llegar a donde estamos.
+Un proceso, una experiencia, una anécdota, un desarrollo.
+Nos encanta el "había una vez": está muy arraigado en nosotros.
+
+Contar una historia:
+
+1.  Conecta con emociones.
+2.  No es solo información.
+3.  Está ligada a nuestro objetivo.
+4.  Puede apoyarse en mi experiencia y mis emociones, o en experiencias de otras personas (siempre pidiendo permiso para compartirlas si no son mías).
+5.  Encuentra las necesidades de mi comunidad: es **pertinente**. ¿Esto que voy a contar le sirve a esta comunidad? ¿Es importante en este momento?
+
+Cuando hablamos de emoción no hablamos de hacer llorar o reír.
+Hablamos de que alguien piense "esto también es para mí" o "me gustaría formar parte de esto" o "voy a encontrar la manera de ayudar para que este proyecto se lleve adelante".
+
+Un buen storytelling hace cuatro cosas:
+
+1.  Me **identifica**.
+2.  **Despierta emociones**.
+3.  Me **hace sentir**.
+4.  **Provoca la acción**.
+
+#### Ejemplos
+
+-   **Una pregunta que nos pasa a todos.** Un científico argentino empieza un video explicando qué es la ciencia con una situación cotidiana: la gente lo para en la calle y le pregunta para qué sirve la ciencia. A partir de esa pregunta construye la respuesta, desde algo muy simple, y la va complejizando.
+-   **Una situación con la que nos identificamos.** Una divulgadora científica explica la isla de calor urbano con una frase que atrapa: dos personas en la misma ciudad, a unas cuadras de distancia, pueden estar a hasta 5 grados de diferencia. Seguramente a todos nos pasó que en un lugar llovía y en otro no. Ahí hay algo con lo que nos identificamos, y queremos saber qué pasó y por qué. Es un video pensado para redes, con otro lenguaje y otro ritmo, pero sigue siendo una historia al servicio de aprender ciencia.
+-   **Una historia real que consigue fondos.** En el chat del taller se mencionó un caso de investigadores que abrieron una cuenta al estilo de una plataforma de contenido para adultos, pero con marmotas ([OnlyMarms](https://www.dw.com/es/cient%C3%ADficos-abren-onlymarms-un-onlyfans-sobre-marmotas/a-78147631)), y consiguieron fondos para investigación. Un buen ejemplo de pensar de otra manera cómo contar lo que queremos contar.
+
+::: ejercicio
+**La experiencia de los toallones**
+
+Este es un experimento que se hizo en un hotel en Estados Unidos para lograr que las personas reutilicen las toallas.
+Se pusieron tres carteles distintos en tres habitaciones:
+
+1.  "Si reutilizás las toallas, ayudás al medio ambiente."
+2.  "El 70% de los huéspedes del hotel reutiliza las toallas."
+3.  "El 70% de los huéspedes de esta habitación, la 204, reutiliza las toallas."
+
+¿Cuál creés que fue el más efectivo? ¿Por qué?
+Escribí tu respuesta antes de seguir leyendo.
+:::
+
+El más efectivo fue el **tercer cartel**.
+Si las personas tuvieran conciencia ambiental, el primero sería suficiente, pero por lo general el turismo que va a este hotel no la tiene.
+El tercer cartel tiene un impacto directo y personal: si yo no reutilizo las toallas, estoy dentro del 30% que no lo hace en esta misma habitación.
+El mensaje está muy relacionado con la acción que voy a tomar.
+Cuanto más conectado estoy con la información, más probable es que haya acción en relación a lo que se quiere conseguir.
+
+Esto es lo que usan las redes sociales con sus algoritmos: no todas las personas reaccionamos a lo mismo, así que se busca personalizar el mensaje.
+Como se comentó en el taller, hay por ejemplo pruebas A/B de redes sociales que mostraron que las personas a las que se les mostraba que sus conocidos habían votado eran más propensas a ir a votar.
+Y una misma campaña puede apelar a sentimientos distintos según a quién le habla.
+Conocer estas herramientas te sirve para comunicar mejor, pero **la idea es usarlas desde un buen lugar**: promovemos una comunicación ética, que conecta con las personas para decirles "mirá, si estuvieras en esta situación esto trajo mejores resultados".
+Muchas veces llegan mensajes de personas que quizás no tienen tanto conocimiento pero comunican bien; si vos que tenés mucho conocimiento aprendés a comunicar bien, vas a ser súper efectivo/a.
+
+Un buen storytelling está **basado en los sentidos, en la experiencia (propia o de otra persona) y es personal y cercano**.
+Se puede resumir en tres verbos: **sentir, saber, hacer**.
+
+#### La plantilla de Pixar
+
+Un ejercicio muy usado en literatura y en comunicación oral, que podés practicar con lo que querés contar, es la plantilla de Pixar.
+Si mirás cualquier película de Pixar o Disney para niños, vas a ver esta estructura de seis partes:
+
+```
+Había una vez ...                 (una situación)
+Todos los días ...                (lo que pasaba habitualmente)
+Hasta que un día ...              (pasa otra cosa)
+Debido a eso ...                  (algo cambia)
+Debido a eso ...                  (se logra algo; puede repetirse muchas veces)
+Y finalmente ...                  (un resultado)
+```
+
+Un ejemplo con ciencia: *Había una vez un grupo de científicos que necesitaban financiamiento para un proyecto que iba a solucionar los problemas del mundo.
+Todos los días iban a contar su idea, pero no lograban que ninguna organización los acompañara con la financiación que necesitaban.
+Hasta que un día hicieron un curso en el que aprendieron cómo comunicar de manera efectiva.
+Debido a eso, prepararon una charla maravillosa para las organizaciones.
+Debido a eso, consiguieron la primera organización que los apoyó y pudieron desarrollar el proyecto.
+Y finalmente, a partir de ese día, el mundo se transformó en un lugar mejor.*
+
+::: ejercicio
+**Tu historia con la plantilla de Pixar**
+
+Completá las seis partes con la historia detrás de tu proyecto, de tu paquete o de tu idea de charla.
+Aunque a veces parezca que no se puede aplicar en el trabajo científico o técnico, si lo practicás y jugás con la plantilla, en algún momento te sale.
+:::
+
+### Slides y recursos
+
+Antes de armar nada, preguntate:
+
+1.  ¿Qué herramientas necesito? (computadora, presentación, sonido, papel y lápiz para una actividad...). Organizalo de antemano para no perder tiempo ni quedarte sin poder hacer una actividad que es importante para vos.
+2.  ¿Qué recursos voy a elegir?
+3.  ¿Cómo diseño el apoyo visual?
+
+**La audiencia aprende mejor con elementos visuales.**
+Cuando hay un apoyo visual es mucho más fácil seguir un razonamiento, sobre todo si es complejo.
+Pero lo que ponés en pantalla no tiene que competir con lo que decís: la audiencia viene a escucharte a vos.
+Si cargás las slides de información, la gente se pone a leer y deja de escucharte.
+
+Las slides **no están diseñadas para contar todo**:
+
+-   1 slide = 1 concepto.
+-   Refuerzan la historia.
+-   Son un complemento.
+-   Solo datos relevantes.
+-   El texto debe ser limitado.
+
+Es normal cargar las slides de más, porque queremos compartir, mostrar, contar.
+Después podés ir separando y ordenando.
+Y pedirle a alguien que te las revise: quien no te escucha no tiene todo el conocimiento ni toda la información que tenés vos.
+Un profesor que lee las transparencias es inolvidable, sí, pero no de la manera que buscamos.
+
+### Cierre: ¿qué quiero que se lleven de mi charla?
+
+El final es lo último que se van a llevar, así que tiene que ser tan potente como el inicio y tiene que estar conectado  al inicio. Algunas opciones:
+
+-   Un **llamado a la acción**.
+-   Una **frase motivadora o inspiradora**.
+-   Las dos.
+-   Una **conclusión** de lo que presentaste.
+-   Tus datos de **contacto**.
+-   Una instancia de preguntas y respuestas o un debate.
+
+Lo vas a decidir en función de tu objetivo y del lugar donde das la charla.
+Si querés que la gente accione, que se mueva a hacer algo, tu cierre tiene que dejar claro qué.
+
+En inglés se usa el término *take-home message* (muy común en las publicaciones científicas): es el mensaje que queda, lo que se llevan. No recordamos todo el detalle de las charlas a las que vamos, pero siempre tiene que haber un concepto con el que nos quedamos.
+
+::: {.callout tip}
+
+### Contale tu charla a alguien. 
+Cuando todo está conectado, la charla fluye y vas de una slide a otra sin esfuerzo. Cuando practicás, te das cuenta de si hay un momento en el que algo se desconecta, algo no tiene que ver con lo anterior o falta un puente entre una cosa y otra. Contársela a alguien es la mejor manera de detectarlo.
+
+:::
+
+## Paso 3: oratoria
+
+Ya tenemos la idea, el objetivo y la estructura.
+Falta el cómo: **¿cómo lo voy a comunicar?** Tengo mi voz, mi cuerpo y mis manos.
+La oratoria es el arte de hablar y combina comunicación verbal y no verbal.
+**Todo lo que hacés comunica**: la postura, la mirada, las manos, hasta cómo caminás.
+
+::: ejercicio
+**Ejercicio 3. Grabá un video de un minuto**
+
+1.  Agarrá el celular y **grabá un video tuyo de un minuto como máximo**. Hacelo con la cámara de atrás, para que no te veas mientras grabás.
+2.  Presentate: decí tu nombre, a qué te dedicás y por qué estás haciendo este ejercicio. No mucho más que eso.
+3.  Reproducilo **dos veces**: la primera con el volumen en cero, mirándote para observar qué hacés con la cara, con las manos y con el cuerpo; la segunda sin mirar, solo escuchándote, para prestar atención a cómo hablás.
+4.  *(Opcional)* Desgrabá el texto de lo que dijiste para analizar tu discurso. Vas a identificar muletillas, repeticiones y formas de decir las cosas que podrías explicar mejor.
+5.  Anotá lo que viste y lo que escuchaste. Si lo hacés en grupo, compartan los videos y tomen nota entre todas las personas antes de reflexionar juntas.
+:::
+
+### Lo que suele aparecer
+
+En el taller, las personas notaron cosas como estas, y es muy probable que a vos también te pase:
+
+-   Mover la cabeza como un robot o tensionarse.
+-   Mirar hacia arriba o mover los ojos cuando estamos pensando, y que eso desconcentre.
+-   Sentirse más cómodo/a en una computadora dando clases que grabándose con el celular.
+-   Ponerse nervioso/a y olvidarse de las palabras.
+-   Descubrir muletillas.
+-   Sorprenderse con la propia voz.
+
+Eso último tiene una explicación: lo que nosotros escuchamos de nuestra voz no es lo que escucha el resto, porque tenemos oídos internos y externos.
+Nos autopercibimos distinto.
+Por eso es importante grabarse: hay muchas cosas que hacemos de las que no somos conscientes (el movimiento de las manos, del cuerpo, del rostro), y **la única manera de corregir o mejorar es ser conscientes de lo que hacemos**.
+Ese es el primer paso.
+
+Y no es solo una habilidad de escenario.
+Quienes dan clases, por ejemplo, van manejando cada vez mejor esos espacios con la práctica.
+La única manera de transformarse en buenos comunicadores es la **práctica**, la **repetición** y el **autoconocimiento**.
+Pensalo como aprender a tocar un instrumento: una persona se transforma en una gran instrumentista practicando, no hay otra manera.
+Y, como dijo una participante, también hay que ser pacientes y buenos con uno mismo: es mucho de prueba y error.
+
+### Muletillas, silencios y manos
+
+-   **Las muletillas** son nuestro cerebro buscando la información que necesita y que todavía no le llegó: usamos un lugar común o repetimos palabras mientras nos organizamos. Para evitarlas, lo mejor muchas veces es **el silencio**. Callarte y esperar no es un error: incluso puede atrapar a quien te escucha. Un buen truco para practicar es hacerlo con los audios de WhatsApp: si te trabás o das vueltas sobre un concepto, en lugar de mandarlo, borralo y empezá de nuevo, diciéndolo bien, sin muletillas ni repeticiones. Después escuchate.
+-   **Las manos** suelen ir en la **caja mágica**, la zona del torso por delante del cuerpo, que se extiede entre el cuello y la cintura, donde las manos se mueven con naturalidad. Si las tenés quietas o escondidas, pueden ser un elemento distractor. Nunca sabemos muy bien qué hacer con las manos, así que lo que importa es que sean amigables y te ayuden a contar lo que querés contar.
+-   **El cuerpo** también libera tensiones. Si aleteás, movés mucho la cabeza o la mirada, es normal; cuando te volvés consciente, podés modificarlo.
+-   **La respiración y la voz.** Aprender a respirar para tener aire y hablar con un buen tono, con seguridad, y evitar gritar. Las clases de teatro, como mencionó una participante, ayudan mucho a liberar el cuerpo y sacar tensión. Para profundizar hay talleres específicos de oratoria.
+
+### Recursos y ensayo
+
+Antes de dar tu charla, averiguá con qué recursos vas a contar:
+
+-   ¿Hay micrófono de vincha, de mano? ¿Dónde voy a estar parado/a?
+-   ¿Tengo un lugar donde ir viendo mi presentación?
+-   ¿Es virtual o presencial?
+
+Y **ensayá**, en la modalidad que corresponda (presencial o virtual), y **ensayá el tiempo**: si son 5 minutos, son 5 minutos; si son 10, son 10.
+
+### Algunos consejos
+
+-   **No te aprendas la charla de memoria.** Nadie tiene tu guión. Nadie sabe lo que ibas a decir, así que si se te olvida una parte, la podés retomar después y no pasa nada. La audiencia no te está tomando examen.
+-   La charla puede ser más interesante para unas personas que para otras, y está bien que sea así.
+-   **Buscá una cara amigable en el público.** Cuando hablás y ves que alguien te hace un gesto de aprobación, te sentís mejor y avanzás con más seguridad. Si podés, llevá un grupo de personas que esté para aplaudirte y acompañarte.
+-   **Practicá, practicá, practicá**, con amigos y con cronómetro. Es la mejor manera de sentir seguridad.
+
+::: callout-tip
+## Cuando no ves caras (o ves caras que no entusiasman)
+
+Dar una charla virtual por videollamada tiene sus propios desafíos.
+Si nadie prende la cámara, puede costar saber cómo va; y si ves una cara sin entusiasmo, es común pensar que lo que estás contando no es interesante, resumir, apurarte y ponerte nervioso/a.
+Algunas ideas:
+
+-   Buscá esa cara que está disfrutando y hablale a esa persona. Seguramente lo que vas a contar es interesante, y esa persona justifica el esfuerzo.
+-   Una persona que no prende la cámara puede estar participando de todas las otras maneras, y eso vale mucho: está en su casa, en su trabajo, en su contexto.
+-   Enseñá a usar las herramientas de interacción de la videollamada (por ejemplo, los botones de sí y no): generan participación.
+-   En un espacio presencial, los *post-its* de colores (por ejemplo, rojo para "necesito ayuda" y azul para "ya terminé") ayudan a que personas que no quieren hablar se sientan más cómodas y respondan mejor.
+:::
+
+## Practicar y pedir feedback
+
+Cuando tengas una versión de tu charla, mostrásela a alguien.
+Para eso necesitás saber **pedir** feedback y **dar** feedback.
+La caja de herramientas incluye una guía con tres simples pasos:
+
+1.  **Pedí feedback.** La mayoría de las personas no lo ofrece abiertamente. Cuando lo pedís, definís tus expectativas: por ejemplo, algo concreto sobre lo que querés recibir comentarios.
+2.  **Hacé comentarios y recibí comentarios sobre esos comentarios.** Así clarificás lo que no entendiste, pedís ideas sobre pasos concretos para mejorar y además ayudás a la otra persona a ser mejor cuando critica.
+3.  **Autocriticate mientras trabajás.** Una vez que sabés cómo criticar, podés hacerlo con tu propio trabajo mientras lo hacés. En términos musicales, escuchás tu propia música mientras la tocás.
+
+Una **buena crítica constructiva** es específica (da pistas claras de lo que está bien y de lo que hay que mejorar), balancea lo positivo y lo negativo y ofrece un próximo paso a seguir.
+Algunas personas conocen el modo "sándwich" para dar feedback; la guía propone, además, una rúbrica.
+
+| | Positivo | Negativo |
+|--------------------|--------------------|--------------------|
+| **Contenido** | | |
+| **Interacción** | | |
+| **Presentación** | | |
+
+: Rúbrica de 3x2 para dar feedback sobre una charla.
+
+Separa lo positivo de lo negativo y el contenido (lo que se dice) de la presentación (cómo se dice) y del nivel de interacción con la audiencia.
+No siempre está claro en qué categoría entra cada cosa, pero ayuda a organizar los comentarios, compararlos y no olvidarse de prestar atención a las tres grandes categorías.
+Si pedís feedback, podés compartirla con la persona a la que se lo pedís; si das feedback, podés usarla para ordenarte.
+
+Dar y recibir feedback es una habilidad que se practica.
+
+## Caja de herramientas {#caja-de-herramientas}
+
+Reunimos materiales para que puedas empezar a trabajar en tu charla:
+
+1.  **Guía de trabajo para romper la hoja en blanco.** Cinco puntos para completar antes de preparar la charla: información general del evento, tu charla (idea, objetivo, emoción y lo que querés que se lleven), tus tres ideas principales, el inicio de cada una y el cierre. Disponible con licencia CC BY 4.0: Bellini, A. (2026). [Guía de trabajo para romper la hoja en blanco](https://doi.org/10.5281/zenodo.18404216).
+2.  **Herramientas para dar y recibir feedback.** Los tres pasos y la rúbrica que vimos en la sección anterior. Su fuente es [Enseñando Tecnología en Comunidad](https://yabellini.github.io/t3es/).
+3.  **Recursos tecnológicos para armar charlas.** Una lista curada de herramientas gratuitas o de código abierto: para grabarte hablando y grabar la pantalla (como Zoom, OBS Studio o QuickTime Player), para editar videos e imágenes, para descargar imágenes, íconos y emojis con licencia libre, fuentes, teleprompters, subtítulos, plantillas de slides, y un árbol de decisión para elegir tipos de gráficos ([From Data to Viz](https://www.data-to-viz.com)). Si programás en R, [Quarto](https://quarto.org/docs/gallery/#presentations) es una excelente herramienta para crear tus slides. Bellini Saibene, Y. y Bellini, A. (2026). [Recursos tecnológicos para armar charlas](https://doi.org/10.5281/zenodo.18395057).
+4.  **Listado de charlas con ejemplos diferentes de inicios y cierres.**
+
+::: tip
+Si usás imágenes en tus slides, no te olvides de agregar texto alternativo para hacer tu charla más accesible.
+Y si grabás un video, generar los subtítulos aumenta su accesibilidad (pero revisalos: los nombres de personas y lugares y las palabras en inglés suelen transcribirse mal).
+:::
+
+## Para llevarte
+
+Armar tu propia fórmula para una charla inolvidable es posible, y todas las personas pueden hacerlo:
+
+-   **Nadie nace siendo un excelente orador, se hace.** Con práctica y herramientas, podés dar charlas inolvidables.
+-   Empezá por **la idea**: escribí tus ideas, jerarquizalas y quedate con la que no puede faltar. Definí qué querés lograr (el para qué, el para quién y el porqué).
+-   Conocé a tu **audiencia** y al contexto del evento: de eso depende el lenguaje, la profundidad y lo que vas a contar.
+-   Armá la **estructura**: un inicio que capte la atención, un cuerpo con un hilo conductor y un cierre potente. Una slide, un concepto.
+-   Usá el **storytelling** para conectar con emociones y provocar acción: sentir, saber, hacer.
+-   Cuidá tu **oratoria**: grabate, observate y escuchate, usá el silencio contra las muletillas y no te aprendas la charla de memoria.
+-   **Practicá** con amigos y con cronómetro, y pedí **feedback**.
+
+::: ejercicio
+**Ahora sí: armá tu charla**
+
+Con la guía de trabajo completa, tu inicio elegido, el cuerpo con un hilo conductor, el cierre y un video de práctica, pedile feedback a una persona usando la rúbrica de 3x2.
+Después de ajustar, volvé a practicar con cronómetro.
 :::

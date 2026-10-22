@@ -1,5 +1,6 @@
 ---
-title: "Charla Memorable Notas Instructor"
+title: "Creando y dando una charla inolvidable. De la idea a la acción"
+subtitle: "Notas para docentes"
 ---
 
 ::: {.callout-note}
@@ -13,15 +14,451 @@ Este capítulo es actualmente un borrador de ideas y no recomendamos su lectura.
 
 ## Previo a la formación
 
+::: {.callout-tip}
+Esta formación funciona mejor con **dos personas**: una que presenta y guía los ejercicios, y otra que acompaña (gestiona el chat, las salas de grupos y el tiempo, y aporta ejemplos).
+:::
+
 Envía una invitación al calendario con el enlace a la reunión y un enlace a las notas compartidas.
 
-En el archivo de notas compartidas, añade el enlace a la reunión y el resto del material (como diapositivas, vídeos, etc.).
+En el archivo de notas compartidas, añade el enlace a la reunión, las diapositivas y la caja de herramientas. Deja preparada una sección para cada ejercicio:
+
+- Una lista para que cada persona agregue su nombre, si trajo una idea de charla, si alguna vez dio una charla y cómo le fue (ejercicio 1).
+- Un espacio por grupo con los siete datos de la *Guía de trabajo* (ejercicio 2).
+- Un espacio por grupo para las conclusiones del ejercicio de oratoria (ejercicio 3).
+- Una lista con los videos de ejemplo de inicios y cierres.
+- El enlace a la encuesta anónima de opinión, al final.
+
+Comparte también la *Guía de trabajo para romper la hoja en blanco* como documento que cada grupo pueda **copiar** antes de completar.
 
 Haz un recordatorio el día anterior y una hora antes.
 
 ::: {.callout-tip}
 
-## Recordatorios
+## Avisa qué van a necesitar
 
-Utiliza los diferentes canales que tengas. Por ejemplo, nosotros utilizamos Slack y el correo electrónico.  Intenta utilizar recordatorios independientes de la zona horaria como *"Nos vemos en 50 minutos, aquí (enlace)"*
+En el recordatorio, cuenta que van a necesitar **papel, lápiz y un celular** (para grabarse), y que en algún momento se les va a pedir que enciendan la cámara. Si lo adviertes antes, nadie pierde tiempo buscando materiales durante la sesión.
 :::
+
+Prepara de antemano lo que vas a mostrar y prueba el sonido:
+
+- El video de Chris Anderson sobre el secreto de las charlas TED. Si lo muestras compartiendo la pantalla, prueba que se **escuche el audio** y los subtítulos. En la edición que grabamos los subtítulos en español iban desfasados del audio. Si la audiencia entiende inglés, recomiéndales escucharlo en inglés y, a quienes no lo entienden, que lean los subtítulos sin tratar de seguir el audio.
+- Los videos de ejemplo del cuerpo y del storytelling (el video del puente, el video sobre qué es la ciencia y el video sobre la isla de calor urbano). Todos incluyen audio.
+- Las cinco instrucciones del ejercicio del dibujo, escritas para leerlas en voz alta.
+
+Decide cuántos grupos vas a armar para el ejercicio 2. En la edición que grabamos fueron tres grupos de 2 o 3 personas. Puedes crear los grupos al azar.
+
+## Formación
+
+Esta formación dura aproximadamente **110 minutos**, incluido un receso de 5 minutos. En la edición que grabamos el tiempo se distribuyó así:
+
+| Bloque | Duración aproximada |
+|----------------------------------------|-----------------------|
+| Bienvenida y ejercicio 1 | 4 minutos |
+| ¿Existe una fórmula? Video de Chris Anderson | 3 minutos |
+| Guía de trabajo: datos, idea y objetivo | 10 minutos |
+| Ejercicio 2: armamos la guía en grupos y la compartimos | 15 minutos |
+| Estructura, inicio y cuerpo (con ejemplos) | 13 minutos |
+| Ejercicio del dibujo | 8 minutos |
+| Receso | 5 a 6 minutos |
+| Storytelling y plantilla de Pixar | 15 minutos |
+| Cuerpo (slides) y cierre | 4 minutos |
+| Ejercicio 3: oratoria | 20 minutos |
+| Caja de herramientas, preguntas y encuesta | 11 minutos |
+
+::: {.callout-tip}
+
+## Cuida el tiempo de la última parte
+
+En la edición que grabamos la última parte (tips de oratoria, caja de herramientas y cierre) quedó apurada. Si vas justo/a de tiempo, haz solo las dos primeras partes del ejercicio 3 (mirar sin sonido y escuchar sin imagen), como hicimos en esa edición, y deja la desgrabación como tarea. También puedes acortar la devolución de los grupos del ejercicio 2.
+:::
+
+### Hora de conectarse
+
+Empieza la reunión unos minutos antes, permite que la gente entre y comprueba el video y el audio. Asegúrate de que las personas conectadas pueden escucharte y verte. Hazles saber que no pasa nada si no encienden la cámara, pero que habrá un momento (el ejercicio del dibujo) en el que se les pedirá encenderla.
+
+Comparte el documento de notas compartidas en el chat. Mientras llegan, invita a las personas a agregar su nombre en la lista de presentación.
+
+Cuando lleguen todos/as, recuérdales las normas de participación, como el código de conducta y cómo utilizarlo. Si la formación es parte de un programa más grande (por ejemplo un programa de campeones), la persona que acompaña puede presentar a quien dicta el taller, contar quién es y por qué la comunicación es parte de la formación integral de quienes desarrollan software:
+
+> Hoy [nombre] nos va a dar herramientas para generar charlas que nos permitan contar lo que queremos contar de manera efectiva. La parte de comunicación es muy importante en lo que hacemos, pero a veces no recibimos formación sobre eso.
+
+::: {.callout-tip}
+
+## Documento compartido
+
+Las personas no pueden ver lo que se compartió en el chat antes de que se sumaran a la reunión. Si hay quien llega tarde, vuelve a compartir el enlace del documento. También comparte el documento antes de cada ejercicio para asegurarte de que todos/as pueden acceder a él.
+:::
+
+::: {.callout-tip}
+
+## Grabación
+
+Si vas a grabar la sesión, éste es un buen momento para pedir permiso. Deja claro cómo utilizarás la grabación y con quién la compartirás. Si lo prometes, comparte después las diapositivas, los documentos y el video.
+:::
+
+Aclara que la sesión es participativa y que pueden interrumpirte cuando quieran:
+
+> La idea es que vayamos construyendo este aprendizaje juntos. Pregunten todo lo necesario, no se queden con dudas. Yo sé de comunicación, pero ustedes son quienes conocen las temáticas específicas de lo que hacen; cuanto más pregunten, más vamos a aprender.
+
+### Comienza la formación: ejercicio 1
+
+Usa la **diapositiva dos** para el primer ejercicio.
+
+> Empezamos con un ejercicio. Por favor, agrega al lado de tu nombre en el documento compartido: ¿tienes una idea de charla?, ¿diste alguna charla?, ¿cómo te fue?
+
+Dales un par de minutos para escribir. Luego lee algunas respuestas en voz alta y comenta lo que aparece. Es normal que haya personas que ya hayan dado muchas charlas y personas que nunca dieron una. Menciona que quienes tienen más experiencia también suelen tener nervios en ciertos momentos (por ejemplo, en la sección de preguntas y respuestas).
+
+Rescata el **primer aprendizaje de la sesión**:
+
+> Nadie nace siendo un excelente orador, se hace. Piensen la primera vez que se subieron a un auto para manejar: estaban nerviosos, no sabían dónde mirar. Con práctica y repetición se transformaron en buenos conductores. Con la comunicación pasa lo mismo. Lo que vamos a ver hoy es para que lo puedan repetir y poner en práctica todas las veces que puedan.
+
+Y por qué importa:
+
+> A veces tenemos ideas lindas, pero si no se las podemos contar a alguien, no podemos compartir eso que queremos ni conseguir lo que necesitamos para llevar adelante los procesos, por ejemplo financiamiento o gente que nos acompañe en un proyecto.
+
+### ¿Existe una fórmula para una buena charla?
+
+Continúa con la **diapositiva tres**. Antes de mostrar nada, haz la pregunta:
+
+> ¿Existe una fórmula para crear una buena charla? Pueden escribir en el chat o activar el micrófono y contestar.
+
+Dales tiempo para pensar. Lee en voz alta lo que aparezca en el chat y retoma lo que dicen. En la edición que grabamos aparecieron respuestas como "no hay una fórmula exacta, pero sí técnicas", "hay que tomar en cuenta el público", "el tiempo de la charla y la profundidad". Todas apuntan en la dirección correcta: dilo, y anticipa que el tema del público lo van a ver en un momento.
+
+Muestra la **diapositiva cuatro** con la respuesta de Chris Anderson y reproduce el video. Cuenta que quien creó el formato de las charlas TED tiene un concepto muy lindo sobre si existe o no una fórmula. La conclusión es:
+
+> No hay una fórmula. Cada uno de nosotros puede armar su propia fórmula según lo que queremos comunicar y cómo lo queremos comunicar.
+
+Lee la cita de la nota compartida: *"La primera tarea como orador/speaker es ofrecer a su auditorio un extraordinario regalo: un objeto precioso y extraño llamado IDEA".*
+
+Presenta la fórmula que van a construir juntos, con las **diapositivas cinco a ocho**: IDEA, más ESTRUCTURA, más ORATORIA, apoyadas en un OBJETIVO. Empieza por la idea, y plantea el primer desafío: *¿cómo encuentro mi idea?* La respuesta es una Guía de Trabajo para romper la hoja en blanco.
+
+### Paso 1: empezamos con los datos que sabemos
+
+Con la **diapositiva nueve** y la **diez**, explica los siete datos de la guía. Para cada uno, da la razón por la que importa:
+
+- *Nombre y fecha del evento*: me dicen dónde voy a llevar mi idea y cuánto tiempo tengo para prepararla y practicarla. ¿Puedo tener feedback de las personas que organizan? ¿Voy a recibir formación? ¿Me van a acompañar?
+- *Temática general y mi área*: ¿por qué estoy yo dentro de esto? ¿Es un panel, una charla de 5 minutos, de media hora, de una hora?
+- *Público del evento*: es fundamental. Define el lenguaje y la forma en la que voy a hablar.
+- *Tiempo de la charla*: lo que puedo contar depende del tiempo. No es lo mismo 5 minutos que media hora o 2 horas, con o sin preguntas y respuestas.
+- *Pedido especial del organizador*: siempre hay que tenerlo en cuenta.
+
+Para el público, usa el ejemplo de los meteorólogos:
+
+> Con el fenómeno de El Niño, los meteorólogos necesitan metáforas y figuras para explicar cuestiones muy técnicas a la gente común que tiene que prepararse. Pero también tienen que dar información técnica a productores agropecuarios que deben preparar su siembra y sus cosechas. No preparan el mismo mensaje para el público general que para los productores. Si al público general le explican un montón de cosas técnicas, lo pierden. En cambio, en un congreso de especialistas sí van a llevar toda la investigación, porque es lo que van a buscar.
+
+::: {.callout-tip}
+
+## Aportes de la audiencia
+
+En la edición que grabamos, una persona sugirió agregar un punto: saber con quiénes comparto el evento, para destacar algo propio y no repetirme. Es un excelente aporte. Valídalo y agrega que además, si otra persona va a desarrollar algo que aparece en mi charla, puedo mencionarlo y presentar mi charla como un complemento de la suya.
+:::
+
+Continúa con la **diapositiva once**, sobre la idea principal:
+
+> ¿Qué pasa si tengo muchas ideas? Las escribo todas y las jerarquizo, de la más importante a la menos importante. Si tengo una hora desarrollo varias; si tengo 5 minutos, ésta es la que no puede faltar. En la punta de la pirámide está la idea que quiero que la gente se lleve sí o sí.
+
+Insiste en estos puntos (están en la diapositiva):
+
+- Es mejor focalizar en una sola idea, que será el hilo conductor.
+- Hay que construir la idea parte por parte, de lo conocido a lo desconocido, de lo menos a lo más complejo.
+- Todo debe estar conectado con la idea principal.
+
+Si alguien menciona el término en inglés *take-home message*, aprovéchalo: es el mensaje que queda, lo que se llevan. Es lo que van a reforzar en el cierre.
+
+Sugiere un truco para probar si la charla funciona: **contársela a alguien**.
+
+> Si todo está conectado, la charla fluye: voy de una slide a otra sin problemas. Cuando practico me doy cuenta si hay un momento en el que me desconecté, si hay un puente que no está funcionando entre una cosa y otra.
+
+Pasa a la **diapositiva doce** y la **trece** sobre el objetivo: *¿qué quiero lograr con mi charla, además de compartir una idea?* Repasa las opciones (sumar gente a un proyecto, contar una innovación, replicar experiencias exitosas, mostrar resultados, inspirar, enseñar procesos) y da un ejemplo de cada una. Agrega que la idea debe estar ligada al objetivo: el para qué, el para quién y el porqué.
+
+Muestra la **diapositiva catorce** con el ejemplo de la propia charla y léelo en voz alta:
+
+> Mi idea principal es que todos podemos crear y ofrecer una charla inolvidable. Mi objetivo es mostrar la estructura de una charla y ofrecer herramientas para desarrollar una fórmula propia. La emoción: inspirar y convencer a todos de que pueden dar una charla, con práctica y herramientas útiles. ¿Cómo? Creando una fórmula y desarrollando cada parte, con ejemplos y casos prácticos.
+
+### Ejercicio 2: armamos nuestra guía
+
+Muestra la **diapositiva quince**.
+
+> Ahora lo practicamos. Van a trabajar en grupos y usar el documento compartido para completar los siete datos de la guía. Pueden usar una charla que tengan que dar, con una idea propia. Si no tienen una, imaginen que tienen que contar su experiencia en el programa. Tienen entre 5 y 7 minutos.
+
+Aclara siempre cuánto tiempo disponen. En la edición que grabamos acordamos 8 minutos para que llegaran bien.
+
+Crea salas de grupos de 2 o 3 personas (por ejemplo, tres salas). Comparte la **diapositiva dieciséis** mientras trabajan. Recorre las salas si puedes, y avisa cuando quede poco tiempo.
+
+Al volver, pide que cada grupo cuente brevemente:
+
+> ¿Cómo les fue? ¿Fue fácil o difícil pensar la idea? Cuéntennos los siete datos.
+
+Por cada grupo, pregunta por la **emoción**:
+
+> Si tuvieran que elegir una emoción que les gustaría transmitir a las personas que las van a escuchar, ¿cuál sería?
+
+Para cada grupo, haz una devolución que resalte algo distinto. En la edición que grabamos, por ejemplo:
+
+- **Un grupo que contaría su experiencia en el programa**: la emoción era enamorar al público, de forma gradual, para que se sumen y apoyen a otras personas. Dile: "Ahora vamos a trabajar en eso: cómo logramos que al final de la charla haya una acción".
+- **Un grupo que pensó un taller sobre creación de paquetes**: pensó en las personas de la audiencia (que lleguen con las herramientas instaladas) y eso es lo que hace efectivo el mensaje. Resalta que lo que describieron tiene características de **taller** y que hay que tener claro si es una charla o un taller. Señala también que no siempre se puede elegir el tiempo: a veces te invitan a una conferencia y tienes 15 minutos, y ahí hay que decidir qué contar.
+- **Un grupo que pensó una charla para su grupo de investigación**: el tema no era su área principal. Resalta el momento en que la persona **jerarquizó** sus ideas (de varios problemas posibles, elige 3 o 4 herramientas clave para el inicio y planificación de proyectos). Dilo explícitamente: "Eso que acabas de hacer es fundamental. Empezamos con lo más crítico; si después hay más tiempo, avanzamos".
+
+Si hay más de tres grupos, dale la oportunidad de compartir a todos y elige destacar lo que cada grupo aporta de diferente.
+
+### Paso 2: las partes de una charla
+
+Continúa con las **diapositivas diecisiete a veinte**.
+
+> Si tenemos la idea y el objetivo claros, tenemos que avanzar en la estructura: cómo organizo lo que quiero contar. Vamos a ver el ABC de las estructuras. Eso no significa que después no puedan jugar y cambiar el orden. Pero primero necesitamos aprender la estructura base.
+
+Presenta las tres partes con las preguntas que responden:
+
+- **Inicio**: capta la atención. ¿Por qué me tienen que seguir escuchando?
+- **Cuerpo**: contiene toda la información de mi idea. ¿Cómo mantengo la atención?
+- **Cierre**: es lo último que se llevan. ¿Qué quiero que se lleven de mi charla?
+
+#### Inicio
+
+Pasa a la **diapositiva veintiuno** y a los ejemplos de las **diapositivas veintidós a veinticinco**. Haz una pregunta antes de mostrar las seis formas de empezar:
+
+> ¿Cómo logro que quienes vinieron a ver esta idea que quiero contarles se queden conmigo?
+
+Muestra las formas: pregunta, anécdota, número o estadística, foto/imagen/gráfico/video, problema y objeto. Da un ejemplo de cada una.
+
+- Pregunta: recuerda cómo empezó la sesión (con una pregunta, "¿existe una fórmula?"). Si alguien comenta que le generó curiosidad, úsalo: de eso se trata, de sembrar la curiosidad antes de dar la respuesta.
+- Anécdota: un diálogo de WhatsApp con un problema que no sabíamos que existía; ese chat fue el inicio de la solución que vamos a presentar.
+- Número: un dato fuerte que plantea un problema (por ejemplo, "6 de cada 10 estudiantes de tercer grado no entienden lo que leen") puede ser el inicio de muchas charlas. Recuerda verificar la fuente de cualquier dato.
+- Imagen: dos fotos de un mismo jugador, una feliz y otra triste. No hace falta decir cuál es cuál.
+- Objeto: la abogada que llegó con una pila gigante de papeles y un celular, y empezó diciendo: "hoy les voy a mostrar cómo pasamos de esto, y de todos los árboles que matamos con esto, a esto". Subraya: "No hablo de si la aplicación era buenísima o no, sino de que la forma en la que se cuenta determina el éxito o el fracaso de lo que se explica".
+
+Cierra con los dos videos de ejemplo:
+
+- **El puente**: un evento de una empresa donde equipos de producto, desarrollo, comunicación y marketing tenían que comunicar que podían trabajar juntos. Encontraron el concepto del puente como hilo conductor, y una persona de cada área dio la charla.
+- **El bolso**: una charla sobre cómo transformarse en un buen comunicador. El orador llega con un bolso cargado y va sacando las cosas que cargamos y nos frenan para comunicar. Pregunta: "¿Por qué funciona? Porque queremos saber qué más va a sacar, y si hay algo que nosotros también tenemos que sacar". Es un objeto muy simple.
+
+Anímalos a pensar: "Hagamos el ejercicio de intentar pensar si no hay otra manera de contar lo que quiero contar. Por ejemplo, ustedes que desarrollan paquetes, ¿no habrá algo que haya pasado que sea lindo de contar? Una anécdota, una historia, un resultado, un cambio, un problema resuelto".
+
+Menciona que en la caja de herramientas hay un listado de charlas con ejemplos de inicios y cierres para ver después.
+
+#### Cuerpo
+
+Continúa con la **diapositiva veintiséis**, y los ejemplos de las **diapositivas veintisiete y veintiocho**.
+
+> En el cuerpo ordeno toda la información. Tiene que tener una lógica y fluir. Siempre que pueda, voy de menor a mayor, porque es muy probable que quien me escucha no sepa lo que voy a contar. Es muy variable: no es lo mismo explicar un proceso (paso 1, paso 2, paso 3) que contar una experiencia que puedo contar de mil maneras. Lo más importante es que tenga un hilo conductor.
+
+Cuenta el ejemplo de la receta de cocina: dos personas que explicaron a programadores cómo usar *templates* armaron la charla como una receta, con su paso a paso para llegar al producto final. Se pusieron delantales y se transformaron en cocineros. Además presentaron a un desarrollador cansado y abrumado que, gracias al template, terminaba feliz y en armonía. Es un detalle que hace que la charla sea más agradable y conecte.
+
+### Ejercicio del dibujo: ¿se entiende lo que explico?
+
+Este ejercicio **no usa diapositivas**. Deja de compartir pantalla.
+
+> Necesito que busquen papel y lápiz. Van a tener que seguir exactamente las instrucciones que les voy a decir. No pueden preguntar nada ni mirar lo que hace otra persona. Son cinco instrucciones. Al final van a tener que encender la cámara y mostrar su dibujo.
+
+Lee las instrucciones **dos veces cada una**, sin agregar ningún detalle ni aclaración:
+
+1. En el centro de la hoja, dibujen una figura geométrica de tres lados iguales.
+2. Ahora dibujen un círculo que esté en contacto con las líneas de esa figura que acaban de dibujar.
+3. Por encima del vértice superior, tracen tres líneas curvas horizontales, una por encima de la otra.
+4. Desde la base de la figura, la primera que dibujaron, extiendan tres líneas hasta el borde inferior de la hoja.
+5. Por último, coloquen un punto en cada una de esas tres líneas.
+
+Pide que todos muestren el dibujo con la cámara. Comenta las diferencias que veas: las líneas curvas de arriba pueden aparecer como olas, como platos, como semicírculos, o enganchadas entre sí; el círculo puede estar dentro o fuera del triángulo. Si alguien menciona el parecido con cómo programamos, aprovéchalo (en el chat apareció el chiste de quien pide "si hay huevos, trae 4, y si hay leche, trae 2" y vuelve con 2 huevos y sin leche).
+
+Pregunta:
+
+> ¿Qué pasó? ¿Por qué creen que hacemos este ejercicio?
+
+Dales tiempo para pensar y compartir. Después, cierra con estos mensajes:
+
+- Hay una trampita: no digo cuánto mide cada lado, ni el tamaño de la hoja, ni si el círculo va adentro o afuera. Yo lo entiendo porque ya lo sé, pero necesito que el otro lo entienda.
+- Todos recibieron las mismas instrucciones y tuvieron el mismo tiempo, y sin embargo los dibujos son diferentes. **No siempre lo que yo explico es lo que el otro entiende.**
+- El mensaje depende de las dos partes: quien comunica y quien recibe. Por eso es tan importante conocer a la audiencia (estudiantes de secundaria, colegas, expertos en un congreso, una entrevista, redes).
+- Cuanto más claro soy con las instrucciones, más asertivo es mi mensaje. Una buena idea es probar la charla con algunas personas, para ver si me entienden.
+
+::: {.callout-tip}
+
+## Receso
+
+Este es un buen momento para hacer una pausa. Avisa cuánto dura (*"Hacemos un receso de 5 minutos y volvemos"*) y a qué hora vuelven. Pide que escriban en el chat un "ya volví" para saber cuándo retomar.
+:::
+
+### Paso 3: storytelling
+
+Al volver, resume lo que hicieron con la **diapositiva veintinueve**:
+
+> Todos recibieron las mismas instrucciones y no todos decodificaron lo mismo. Hay una estrategia que se usa muchísimo y que quizás haya que incorporar de a poco al mundo científico: el storytelling, el arte de contar una historia.
+
+Explica que siempre hay una historia para contar, aunque no sea una historia para llorar o reírse: hay un proceso que se hizo para llegar a donde estamos. Y a todos nos encanta el "había una vez".
+
+Muestra los ejemplos de las **diapositivas treinta a treinta y dos**:
+
+- **Video sobre qué es la ciencia**: empieza con una pregunta que le hace la gente en la calle ("¿para qué sirve la ciencia?") y desde ahí construye la respuesta, de lo simple a lo complejo. Resalta que parte de una pregunta.
+- **Video sobre la isla de calor urbano**: es un video para redes, con otro lenguaje y otro ritmo (habla muy rápido), pero el inicio atrapa: dos personas en la misma ciudad, a unas cuadras, pueden tener diferencias de hasta 5 grados. Pregunta a la audiencia: ¿por qué atrapa? Porque es algo con lo que nos identificamos, y queremos saber qué pasó.
+
+Pasa a las **diapositivas treinta y tres y treinta y cuatro** sobre qué es el buen storytelling: conecta con emociones, no es solo información, está ligado a mi objetivo, puedo usar mi experiencia o la de otros (pidiendo permiso) y responde a las necesidades de mi comunidad (pertinencia). Un buen storytelling me identifica, despierta emociones, me hace sentir y provoca la acción.
+
+::: {.callout-note}
+Aclara que no hablas de hacer llorar o reír. Hablas de que alguien piense "esto también es para mí", "me gustaría formar parte de esto" o "voy a encontrar la manera de ayudar para que este proyecto se lleve adelante".
+:::
+
+Para ilustrar, usa un ejemplo con el objetivo de la sesión: si el objetivo es que alguien se sume al programa, contar cómo llegué, cómo me enteré, qué me pasó cuando participé, qué cambió y para qué me sirvió. La persona puede empatizar y pensar: si yo pude, quizás ella también.
+
+#### Ejemplo/ejercicio: los toallones
+
+Muestra la **diapositiva treinta y cinco**.
+
+> Este es un experimento que se hizo en un hotel en Estados Unidos para lograr que las personas reutilicen las toallas. Pusieron tres carteles en tres habitaciones. El primero decía: "si reutilizas las toallas, ayudas al medio ambiente". El segundo: "el 70% de los huéspedes del hotel reutiliza las toallas". El tercero: "el 70% de los huéspedes de esta habitación, la 204, reutiliza las toallas". ¿Cuál creen que fue el más efectivo? Escriban en el chat el número.
+
+Lee en voz alta lo que escriban. En la edición que grabamos las respuestas se repartieron entre el primero, el segundo y el tercero. Luego pregunta *por qué*:
+
+> ¿Alguien se anima a decirme por qué? Pueden escribirlo o abrir el micrófono.
+
+Si nadie se anima, espera unos segundos: suele haber una o dos personas que lo explican con el argumento de la identificación. Una respuesta típica es "porque la persona se identifica con la acción".
+
+Da la respuesta: el más efectivo fue el **tercero**. Si el turismo tuviera conciencia ambiental, el primero sería suficiente; pero por lo general no la tiene. El tercero tiene un impacto directo: si yo no reutilizo las toallas, estoy dentro del 30% que no lo hace en mi habitación. El mensaje está muy ligado a la acción que voy a tomar.
+
+::: {.callout-tip}
+
+## Aportes de la persona que acompaña
+
+La persona que co-facilita puede enriquecer este momento: explicar que las redes sociales usan algoritmos porque no todas las personas reaccionamos a lo mismo, que se busca personalizar el mensaje, y mencionar ejemplos como las pruebas A/B en redes que mostraron que ver que los conocidos habían votado hacía más probable ir a votar. Tras eso, vuelve al foco: **estas herramientas se usan desde una comunicación ética**, para conectar con las personas desde un buen lugar. Quien tiene mucho conocimiento y aprende a comunicar bien es súper efectivo.
+:::
+
+Muestra la **diapositiva treinta y seis**:
+
+> El buen storytelling está basado en los sentidos, en la experiencia, en la experiencia de otra persona, y es personal y cercano. Se resume en tres verbos: sentir, saber, hacer.
+
+#### Plantilla de Pixar
+
+Presenta la plantilla de Pixar como un ejercicio para que guarden y practiquen. Si no está en tus diapositivas, escríbela en el chat o en el documento compartido:
+
+> Había una vez... Todos los días... Hasta que un día... Debido a eso... Debido a eso... Y finalmente...
+
+Lee un ejemplo con ciencia:
+
+> Había una vez un grupo de científicos que necesitaban financiamiento para un proyecto maravilloso. Todos los días iban a contar su idea, pero ninguna organización los acompañaba. Hasta que un día hicieron un curso en el que aprendieron cómo comunicar de manera efectiva. Debido a eso, prepararon una charla maravillosa. Debido a eso, consiguieron la primera organización que los apoyó. Y finalmente, desarrollaron el proyecto y el mundo se transformó en un lugar mejor.
+
+Aunque parezca que no se puede aplicar a lo científico o técnico, si practican y juegan con la plantilla, en algún momento les va a salir.
+
+::: {.callout-note}
+Si en el chat alguien comparte una historia real que consiguió fondos para investigación (en una edición se mencionó un caso), léela en voz alta y comenta que es un buen ejemplo de pensar de otra manera cómo contar lo que queremos contar.
+:::
+
+### Cuerpo (continuación) y cierre
+
+Retoma las **diapositivas treinta y siete a cuarenta y tres** sobre herramientas, recursos y slides.
+
+> Cuando armo una charla tengo que organizar los elementos que necesito: ¿qué herramientas necesito (computadora, presentación, sonido, papel y lápiz)? ¿qué recursos elijo? ¿cómo diseño el apoyo visual? Hoy les tuve que avisar que iban a usar papel y lápiz; todo eso hay que organizarlo de antemano para no perder tiempo ni quedarnos sin poder hacer una actividad importante.
+
+Remarca los puntos sobre las slides, apoyándote en la animación de la diapositiva:
+
+- La audiencia aprende mejor con elementos visuales.
+- Las slides no están diseñadas para contar todo; no pueden competir con lo que yo digo, si no la audiencia lee y deja de escucharme.
+- 1 slide = 1 concepto. Refuerzan la historia. Son un complemento. Solo datos relevantes. El texto debe ser limitado.
+- Es normal cargar las slides de más. Después se pueden separar y ordenar, y conviene pedirle a alguien que las revise.
+
+Pasa a las **diapositivas cuarenta y cuatro y cuarenta y cinco**, sobre el cierre:
+
+> El final es lo último que se van a llevar. Tiene que ser tan potente como el inicio. Siempre tiene que ver con el inicio, pero tiene que cerrar de manera completa lo que compartí.
+
+Muestra las opciones: un llamado a la acción, una frase motivadora o inspiradora, las dos, una conclusión, el contacto, y preguntas y respuestas o debate. Se decide según el objetivo y el lugar donde se da la charla.
+
+### Oratoria
+
+Muestra la **diapositiva cuarenta y seis**, que cierra la fórmula con la oratoria.
+
+> La última pata de la fórmula. Tenemos la idea, el objetivo y la estructura. ¿Cómo lo voy a comunicar? Tengo mi voz, mi cuerpo, mis manos.
+
+Usa las **diapositivas cuarenta y siete y cuarenta y ocho** para el ejercicio 3. Explica que van a hacer solo las dos primeras partes por tiempo.
+
+> Agarren el celular y graben un video de ustedes, de un minuto como máximo. No lo graben con la cámara de adelante, para no verse mientras graban: usen la cámara de atrás. Preséntense: nombre, a qué se dedican y por qué están en este taller. No mucho más que eso.
+>
+> Cuando lo graben, van a mirarlo de dos maneras. Primero, bajen todo el volumen y solo obsérvense: qué hacen con la cara, con las manos, con el cuerpo. Después, súbanlo y no se miren: solo escúchense. Presten atención a cómo hablan.
+
+Dales 10 minutos. Si quieres, puedes pedirles que escriban en el chat una frase cuando terminen. Deja de compartir pantalla y avisa a qué hora vuelven.
+
+::: {.callout-tip}
+
+## Individual o en grupos
+
+La diapositiva propone grabar de forma individual y luego compartir los videos en grupos para tomar nota y reflexionar todos juntos. En la edición que grabamos, por tiempo, la devolución fue **individual y en plenaria**: cada persona contó cómo se vio y cómo se escuchó. Si tienes más tiempo, usa salas de grupos.
+:::
+
+Al volver, invita a compartir:
+
+> ¿Quién quiere empezar a contar cómo le fue, qué vio cuando se miró y qué notó cuando se escuchó?
+
+Escucha primero a varias personas y recién después haz la devolución. En la edición que grabamos aparecieron comentarios como: mover la cabeza como un robot o tensionarse, mirar hacia arriba o mover mucho los ojos mientras se piensa, sorprenderse con la propia voz, ponerse nervioso/a y olvidar las palabras. Valida cada comentario y resalta lo positivo (por ejemplo, voces agradables o el hablar pausado). Cuando alguien diga que modula mejor que antes, pregunta por qué: probablemente fue por la práctica.
+
+Usa la **diapositiva cuarenta y nueve** para la devolución:
+
+- **La única manera de transformarse en buenos comunicadores es la práctica y el autoconocimiento.** Grabarse sirve porque hay un montón de cosas que hacemos de las que no somos conscientes (manos, cuerpo, rostro, mirada). Solo si somos conscientes podemos corregir o mejorar.
+- **¿Por qué nos sorprende la propia voz?** Porque lo que nosotros escuchamos no es lo que escucha el resto: tenemos oídos internos y externos. Nos autopercibimos distinto.
+- **La tercera parte del ejercicio** (que no hicimos) es desgrabar el video. Así se identifican muletillas, repeticiones o formas de explicar mejor un concepto.
+- **Un truco con los audios de WhatsApp**: si te trabas o das vueltas, borra y vuelve a grabar diciéndolo bien, sin muletillas ni repeticiones. Después escúchate.
+- **Muletillas y silencios**: las muletillas son nuestro cerebro buscando información. Para evitarlas, muchas veces lo mejor es el silencio. Callarse y esperar incluso puede atrapar a quien escucha.
+- **La caja mágica**: las manos se mueven en la zona del torso frente al cuerpo; si están quietas o escondidas pueden distraer. Si no sabes qué hacer con ellas, haz que sean amigables.
+- **El cuerpo y la respiración**: el cuerpo también libera tensiones. Aprender a respirar y tener un buen tono ayuda a hablar con seguridad. Las clases de teatro ayudan mucho; y cuidado con gritar, porque te quedas sin voz.
+- **Sé buena/o contigo**: es prueba y error, y paciencia.
+
+Si hay una persona que dice que teme que le pase con público real lo mismo que le pasó con el celular, responde: **ser consciente es lo que permite corregirlo**.
+
+Continúa con las **diapositivas cincuenta y cincuenta y una**:
+
+> Antes de dar tu charla, averigua con qué recursos cuentas: micrófono de vincha o de mano, dónde vas a estar, dónde vas a ver tu presentación. Ensaya en la modalidad que corresponda (presencial o virtual) y ensaya el tiempo.
+
+Cierra con los consejos de oratoria:
+
+- **No te aprendas la charla de memoria.** Nadie tiene tu guión. Nadie sabe lo que ibas a decir. Si olvidas algo, lo retomas después y no pasa nada. "No me están tomando examen".
+- La charla puede ser más interesante para unas personas que para otras.
+- **Busca una cara amigable en el público.** Lleva un grupo que esté para aplaudirte y acompañarte.
+- **Practica, practica, practica**, con amigos y con cronómetro. Si son 5 minutos, son 5 minutos.
+
+::: {.callout-tip}
+
+## Cuando no se ven las caras
+
+En una sesión virtual es común que alguien pregunte qué hacer cuando no ve las caras de la audiencia o cuando ve caras sin entusiasmo y empieza a resumir, apurarse y ponerse nervioso/a. Una respuesta que funcionó: buscar la cara de quien disfruta y hablarle a esa persona; y recordar que quien no enciende la cámara puede estar participando de todas las otras maneras. Si otra persona de la audiencia comparte su experiencia, léela: por ejemplo, enseñar a usar las herramientas de la videollamada (el "sí" y el "no") genera interacción, y en presencial los post-its de colores ayudan a que quienes no quieren hablar se sientan cómodos y respondan mejor.
+:::
+
+### Caja de herramientas, dudas y cierre
+
+Muestra la **diapositiva cincuenta y dos** con la fórmula completa, y la **cincuenta y tres** con la caja de herramientas. Presenta brevemente cada recurso:
+
+1. **Guía de trabajo** para romper la hoja en blanco: lo básico para empezar a trabajar en una charla.
+2. **Guía para dar y recibir feedback**: cómo pedir feedback y cómo darlo de manera positiva, con una rúbrica. Si estás preparando una charla y necesitas mostrársela a alguien, tienes que aprender a pedir y dar feedback.
+3. **Listado de herramientas digitales** para armar charlas: emojis gratuitos, íconos, fuentes, teleprompters y más. Explica qué es un teleprompter: el texto que necesitas, por ejemplo, para grabar un video.
+4. **Listado de charlas** con ejemplos de inicios y cierres diferentes.
+
+Muestra la **diapositiva cincuenta y cuatro** y abre el espacio de preguntas:
+
+> Este es el momento en que preguntan todo lo que quieran sobre esta charla.
+
+::: {.callout-tip}
+
+## Preguntas sobre cómo seguir practicando
+
+En la edición que grabamos alguien preguntó si habrá instancias para practicar y recibir feedback entre pares. Prepárate para responder. Si formas parte de un programa más grande, menciona las instancias que ya existan (reuniones de grupo, espacios con mentores/as) y la posibilidad de organizar nuevas, entre dos o tres personas o de a una. Si en la próxima sesión retomas el feedback, anúncialo.
+:::
+
+Pide que completen la **encuesta anónima** que está al final del documento compartido. Explica para qué sirve: saber qué les sirvió, qué les gustaría profundizar y qué cambiarían, para que estos espacios sean útiles para ellas y ellos. Comparte el enlace en el chat y menciona que está en las notas compartidas. Dales 5 minutos.
+
+::: {.callout-tip}
+
+## Comprobación de finalización
+
+Para este ejercicio final, también puedes pedir que escriban en el chat *"¡Listo!"* o *"¡Terminado!"* cuando terminen. De este modo, lo sabrás y podrás dar por terminada la actividad cuando todos hayan acabado.
+:::
+
+Agradece la participación y el respeto, y cierra con la idea principal:
+
+> Todos pueden dar una charla inolvidable. Con práctica y con herramientas, absolutamente todos.
+
+## Después de la formación
+
+Después de la formación, envía un mensaje (correo electrónico, Slack) dando las gracias a los asistentes y volviendo a compartir los recursos esenciales:
+
+- Documento compartido (que tiene enlaces a las diapositivas, la caja de herramientas, los videos de ejemplo, etc.).
+- Las diapositivas.
+- Grabación de la reunión (en caso de que la hayas grabado).
+- La encuesta de opinión (para tener una segunda oportunidad de rellenarla).
+
+Revisa la encuesta de opinión e identifica uno o dos puntos a mejorar para la próxima iteración de la formación.
+
+Anima a las personas a poner en práctica lo aprendido: completar la *Guía de trabajo* para una charla real, grabarse nuevamente y pedir feedback usando la rúbrica.
