@@ -1,5 +1,5 @@
 ---
-title: "Mentoring - Instructors Notes"
+title: "Mentoring"
 ---
 
 ::: {.callout-note}
