@@ -1,5 +1,5 @@
 ---
-title: "Software Comunidad Git Equipo"
+title: "Git para trabajar en equipo"
 ---
 
 ::: {.callout-note}
@@ -12,3 +12,356 @@ Este capítulo está siendo migrado desde los materiales del currículum al form
 *Contenido pendiente de migración:* ver https://github.com/ropensci-training/git-developing-software-together y https://github.com/ropensci-training/git-desarrollo-software para el repo fuente de este capítulo.
 
 :::
+
+## Objetivos de aprendizaje
+
+-   Aplicar conceptos de flujos de trabajo usando Git básicos al trabajo
+    colaborativo utilizando GitHub.
+-   Comprender como los conflictos de versiones se generan y como resolverlos.
+-   Identificar las diferencias entre branchs y forks e identificar
+    situaciones en las que utilizar cada una.
+-   Comprender el uso y el rol de las branchs y los pull requests en la
+    colaboración en un proyecto.
+-   Gestiona pull requests como responsable o líder de un proyecto.
+
+## Colaborando con otras personas
+
+En este encuentro vamos a ver como es el flujo de trabajo
+colaborativo entre personas para desarrollar software. En el taller anterior vimos como trabajar con git de manera individual:
+
+```bash         
+Modificar un archivo --> Add --> Commit --> Push
+```
+
+Así que cada vez hagas un push, git comparará los archivos en el repositorio 
+remoto con la versión que actualizaste localmente y actualizará el repo remoto para
+que todo esté sincronizado. 
+
+Pero cuando se trabaja con otras personas hay casos que potencialmente pueden crear conflictos de _merge_ o versiones. 
+Aunque el nombre sugiera lo contrario, un conflicto 
+de merge no es necesariamente un error, ocurre cuando la versión de un archivo en el 
+repositorio local no es compatible con su versión en el repositorio remoto. 
+A veces, Git es capaz de combinar los dos conjuntos de cambios sin ningún problema. 
+Pero a veces esto no es posible, y requiere que una persona intervenga y decida cómo 
+deben combinarse los múltiples cambios, ¿mantiene la versión A, la versión B o una combinación de ambas?
+
+## Identificando conflictos de versiones
+
+Imaginá que alguien en tu equipo trabaja sobre el archivo `01_lectura-limpieza-datos.R` en un proyecto/repositorio donde estan trabajando a la par:
+
+```r
+# Carga de librerias
+library(readr)
+library(dplyr)
+
+# Lectura de datos 
+temperatura_raw <- read.csv("datos/temperatura_La-Pampa.csv") |>
+  filter(temp_max > 45) # filtro valores incorrectos
+
+```
+
+Al mismo tiempo, vos también decidiste trabajar en la limpieza de los datos pero en vez de leer el archivo con `read.csv()`, usaste la función `read_csv()` que está en el paquete `readr`. Cuando intentás hacer push de la nueva versión del archivo al repositorio remoto te encontrás con este mensaje:
+
+```bash
+>>> /usr/bin/git push origin HEAD:refs/heads/master
+To github.com:paocorrales/taller-git.git
+ ! [rejected]        HEAD -> master (fetch first)
+error: failed to push some refs to 'github.com:paocorrales/taller-git.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+El mensaje nos aconseja hacer pull antes de intentar hacer push para actualizar
+el repositorio primero el repositorio local antes de enviar los cambios an GitHub. 
+Al hacer pull nos encontramos con el siguiente 
+problema:
+
+```bash
+>>> /usr/bin/git pull
+From github.com:paocorrales/taller-git
+   6e63458..d7d2a6c  master     -> origin/master
+Auto-merging 01_lectura-limpieza-datos.R
+CONFLICT (content): Merge conflict in 01_lectura-limpieza-datos.R
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+El mensaje dice que hay conflictos con el contenido de `01_lectura-limpieza-datos.R` 
+y que el merge automático falló. La buena noticia es que ya sabemos cuál es el 
+archivo que da problemas. Aquí, hacer commits con pequeños cambios ayuda mucho.
+
+Ahora, si revisamos el archivo `01_lectura-limpieza-datos.R`, el contenido cambió:
+
+```r
+# Carga de librerias
+library(readr)
+library(dplyr)
+
+# Lectura de datos 
+<<<<<<< HEAD
+      temperatura_raw <- read_csv("datos/temperatura_La-Pampa.csv") |>
+=======
+      temperatura_raw <- read.csv("datos/temperatura_La-Pampa.csv") |>
+>>>>>>> d7d2a6cf0e03652e1ff52e7cf5eb2da96fe69312
+  filter(temp_max > 45) # filtro valores incorrectos
+```
+
+Estos simbolos `<<<<<<<`, `=======` y `>>>>>>>` fueron agregados por git para resaltar 
+el contenido que está generando conflictos. Todo lo que hay entre `<<<<<<< HEAD` y 
+`=======` corresponde a la versión local, y el contenido entre `=======` y `>>>>>>>`
+es la versión actualmente en GitHub. La cadena larga es el identificador del commit en Github y `HEAD` 
+refiere al último commit en el repo local.
+
+Para arreglar el conflicto será necesario:
+
+1. Eliminar las lineas que agrego git.
+2. Elegir una de las 2 versiones en conflicto o generar una nueva versión que incluya todos los cambios.
+3. Guardar el archivo y hacer un nuevo commit, que normalmente tiene como mensaje "arregla conflicto de merge" o algo similar.
+
+Algunas herramientas como GitHub Desktop y GitKraken tienen una interfaz gráfica
+que permite resolver estos conflictos de manera rápida, sin embargo el mecanismo
+en el fondo es el mismo.
+
+Los conflictos de merge pueden suceder aún si no estás trabajando con otras personas. 
+Por ejemplo, si cambiaste algo en GitHub, olvidaste hacer `pull`
+localmente y luego cambiaste el mismo archivo en tu compu. Cuando intentes hacer `push` te vas a encontrar con problemas.
+Aunque los conflictos son parte de trabajar con
+control de versiones, vamos a tratar de evitarlos en la medida de lo posible.
+
+A continuación veremos algunas estrategías para trabajar incluyendo el uso de branches (ramas) y pull requests (solicitudes de cambios).
+
+### 1. Primero, hace `pull`
+
+Es recomendable hacer `pull` antes de empezar a trabajar con los archivos de un repositorio, ya que así empezarás a trabajar con la versión más actualizada del repositorio. 
+
+### 2. Cada persona trabaja en archivos diferentes
+
+Si trabajas en equipo, la forma más fácil de evitar conflictos de merge es pedir a cada persona que trabaje en archivos diferentes y que no editen los archivos asignados a otras personas. Esto funciona pero tiene limitaciones.
+
+A largo plazo, es posible que tengas que trabajar en el código de otra persona y, en esos casos, la comunicación entre los miembros del equipo es fundamental.
+
+### 3. Las personas se turnan
+
+Es posible que más de una persona esté trabajando en el mismo archivo, ya sea un script o documentación. Por lo general, ese será un trabajo que requiere tiempo y se puede dividir entre muchas personas. Una solución es turnarse: vos trabajás en el archivo por la mañana y tu compañero/a lo hace por la tarde. De nuevo, esto tiene limitaciones y no va en línea con el espíritu de trabajar con git.
+
+### 4. Las personas trabajan en branchs 
+
+Aquí es donde aprovechamos al máximo lo que git tiene para ofrecer.
+
+
+Las branchs (ramas en inglés) parecen un concepto nuevo, pero en realidad, siempre estás trabajando en una rama sin darte cuenta. La branch "predeterminada" en general se llama *main* (o *master* en configuraciones mas viejas) porque es la principal, y todo este tiempo estuviste "agregando commits a la branch main". 
+
+Una **branch** en git es una etiqueta que apunta a un *commit* específico en el repositorio a partir de la cual se crean otras versiones paralelas. 
+Trabajar en una branch te permite modificar archivos sin modificar los mismos archivos en otras branchs, porque esencialmente estás trabajando en un conjunto de archivos independientes (como una realidad paralela).
+Cuando quieras pasar los cambios de tu branch a la branch main, tendrás que hacer un **merge** para combinar las ramas.
+
+!["Diagrama de un árbol git que muestra la branch principal con 4 commits y una branch secundaria llamada función que comienza desde el commit 2 en la branch main y tiene 2 nuevos commits, independientes de la principal."](images/branch.png)
+
+Hay diferentes formas de utilizar branchs. Quizás cada persona del equipo tiene una branch y trabaja en ella hasta que llega el momento de hacer un merge a la branch *main*. O quizás, y esto es más común, cada branch represente un nuevo desarrollo que se agrega al paquete. Por ejemplo, si agregás una nueva función, creás una branch, desarrollas el código y luego haces un merge para incorporar la función al paquete. 
+
+Trabajar con branchs no eliminará los conflictos del todo. Es posible que estos aparezcan cuando intentes hacer merge entre tu branch con la branch principal. Pero esto pasará una sola vez y solo cuando lo decidas.
+
+Antes de revisar cómo es el flujo de trabajo con branchs, hay un nuevo concepto que debemos mencionar: un **pull request** o _PR_ es una herramienta de GitHub que te permite realizar cambios en una branch y luego solicitar a quien mantiene el repositorio que haga _merge_ de esos cambios en la branch principal.
+Los pull request pueden surgir de *forks* (que presentaremos más adelante) o de otras branchs dentro del repositorio. 
+Permiten a quienes mantienen y colaboran en un proyecto, revisar, discutir, solicitar y aprobar los cambios y sumarlos al repositorio cuando estan listos.
+
+
+### Escenario 1: Usamos branchs
+
+La primera situación es la más común cuando se trabaja en equipo en un proyecto a largo plazo.
+Puedes *clonar* el repositorio siguiendo [estas mismas instrucciones](https://paocorrales.github.io/git-desarrollo-software/01_git-solo.html#github-repo-primero-proyecto-de-rstudio-despues) y utilizar el mismo flujo de trabajo que antes.
+Cuando intentes enviar tus cambios al repositorio remoto, GitHub comprobará si tienes permisos para modificar el repositorio.
+Hasta acá estamos en la situación anterior, donde la comunicación es clave para no pisar el trabajo de otras personas (y para trabajar en general!) y evitar conflictos de merge. 
+
+Sin embargo es posible incorporar branches para trabajar de manera paralela.
+Este diagrama muestra el flujo de trabajo cuando se desea contribuir al repositorio utilizando branchs y además, **asumimos que tenés permisos de escritura en el repositorio remoto**:
+
+![](images/no_fork.png)
+
+1.  Cloná el repositorio en tu computadora
+2.  Crear una nueva _branch_.
+3.  Edita archivos, agregalos y hacé commits en esa _branch._
+4.  Cuando los cambios estén hechos y listos, envía un _pull request_ al
+    repositorio remoto para comparar tus cambios en tu _branch_ con main.
+5.  El _pull request_ es aceptado y se hace _merge_ o hay que hacer nuevos
+    cambios (vuelve al paso 3).
+6.  Una vez que el PR es aceptado y se hace merge, la branch principal tiene los cambios actualizados y ya se puede eliminar la branch donde estabas trabajando (hay complementos del naveador como Refined GitHub para que esto ocurra de forma automatica).
+7.  El proceso puede repetirse varias veces, en paralelo o en secuencia dependiendo del tamaño del equipo.
+
+Puedes leer más sobre las ramas en el [capítulo 22 de Happy git with R](https://happygitwithr.com/git-branches). Y vamos a ver mas sobre esto en los proximos talleres. 
+
+### Escenario 2: Usamos forks y branchs.
+
+**Si no tenés permisos de escritura en el repositorio remoto,** tendrás que utilizar **forks**. Esto es muy habitual cuando querés colaborar en un proyecto del que no formas parte.
+
+La segunda situación es habitual cuando se contribuye a proyectos de desconocidos, como la corrección de errores en paquetes de código abierto.
+
+Un **fork** es una copia del repositorio de otra persona o equipo que se almacenará en tu cuenta de GitHub. Tanto el repositorio original como el fork se encuentran en GitHub, la diferencia es que puedes modificar y actualizar la versión que se encuentra en tu cuenta.
+
+![](images/si_fork.png)
+
+1.  Crear un fork del repositorio principal (si aún no lo tenés).
+2.  Clonar el repositorio en tu computadora.
+3.  Crear una nueva branch en tu copia del repositorio.
+4.  Realizar ediciones y cambios en los archivos y envíalos (add -> commit -> push) a la nueva branch.
+5.  Cuando esté todo listo, abrí el pull request. Si te piden nuevos
+    cambios tendrás que volver al paso 4.
+6.  Si el PR aceptado y fusionado, la branch principal en el repositorio
+    principal se actualizará y la nueva branch se puede borrar.
+7.  Finalmente podés sincronizar tu fork del repositorio con el
+    repositorio principal.
+
+
+## Cómo trabajar
+
+Un reto que surge a menudo es saber cómo y cuándo usar branchs. ¿Hacés
+todos cambios cambios allí y luego abris un PR a la branch main? ¿creás
+una branch, haces PR y y la borras inmediatamente después? ¿Qué cambios
+haces en la nueva branch? La respuesta a estas preguntas dependen del
+contexto, del equipo, del paquete en el que estés trabajando, de cuáles
+sean tus objetivos para el paquete, etc. Sin embargo, te damos algunos
+consejos:
+
+1.  Cuando haces cambios pequeños y enfocados con un error u objetivo
+    específico (por ejemplo, actualizar la documentación para arreglar
+    un error de tipeo) creá un nueva branch y abrí un PR. Cuanto más
+    pequeños sean los cambios más fácil será revisarlos y aceptarlos.
+2.  Si hacés grandes cambios, lo mejor es que estén relacionados a un
+    problema u objetivo, de modo que al revisar el PR sea más fácil
+    seguirlo y entenderlo. Dividí tus contribuciones por problema u objetivo.
+3.  Haz cambios relacionados con un issue específico y agregá
+    comentarios en el issue para mantener a todo el mundo al tanto.
+
+
+Vamos a mostrar algunos ejemplos de cómo utilizar los flujos de trabajo
+que vimos recién en distintas situaciones.
+
+1.  **Desarrollando software de manera individual** En este caso, probablemente tengas que pensar si tenés que hacer una branch, ya que podés trabajar fácilmente con git sin hacer nunca una branch. Sin embargo, si quisieras experimentar con el código (o texto) sin modificar la branch main, estarás en el escenario 1.
+    
+2.  **Desarrollando software de manera individual pero otras personas colaboran** Si estás trabajando en un paquete R de código abierto y
+    hay personas que ocacionalmente contribuyen a tu paquete, como
+    resposanble de mantenerlo y desarrollarlo recibirás issues y PR que
+    tendrás que revisar y responder. En este caso es muy importante
+    utilizar branches para reducir la posibilidad de que hagas un cambio
+    en _main_ que puedan afectar a usuarios de tu paquete.
+    
+3.  **Colaborando en un proyecto del que no sos parte** Si contribuís
+    ocasionalmente con un paquete de R, tendrás que usar el flujo de
+    trabajo del escenario 2. Tendrás que hacer un fork del repositorio
+    del paquete, hacer cambios en nuevas branchs, y abrir PR para
+    proponer esos cambios en el paquete. Este escenario es el más
+    habitual en el mundo de los paquetes R de código abierto, ya que la
+    mayoría de los paquetes son mantenidos por una o varias personas.
+    
+4.  **Como miembro de un equipo** Si tenés permisos de escritura en el
+    repositorio y formás parte de un equipo que trabaja en ese
+    repositorio, podés trabajar siguiendo el flujo de trabajo en el
+    escenario 1. Harás cambios en los archivos creando primero una
+    branch y, cuando el cambio esté listo, enviarás los cambios al
+    repositorio remoto abriendo un PR para que otras personas en el
+    equipo puedan revisar tu propuesta.
+
+
+## Plantemos árboles!
+
+Como ejemplo y ejercicio colaboraremos con la recientemente abierta
+galeria de arte Flametree, y haremos PRs en el camino.
+
+::: ejercicio
+**Fork del repositorio**
+
+1.  Ingresá a
+    [github.com/paocorrales/flametree_gallery](https://github.com/paocorrales/flametree_gallery)
+2.  Hacé un fork del repositorio utilizando el botón "Fork" de la
+    esquina superior derecha.
+
+![Captura de pantalla de un repositorio mostrando dónde está el botón
+"Fork".](images/fork.png)
+
+Ahora tenés una copia del repositorio en tu cuenta de GitHub.
+
+3.  Copia la url del repositorio y clónalo en tu computadora siguiendo
+    las instrucciones [para crear un nuevo repositorio que vimos en la
+    sección de git trabajando de manera individual.](01_git-solo.qmd)
+
+![Captura de pantalla de un repositorio fork*eado* mostrando dónde
+copiar la url para clonar el repositorio.](images/clone.png)
+:::
+
+Ahora tenés un proyecto RStudio (que también es un repositorio) que es
+una copia del que está en el repositorio original. Es un proyecto muy
+pequeño con unos pocos archivos. `template_script.R` incluye el código
+necesario para crear bellas imágenes como ésta:
+
+![Imagen de árboles creada con R](images/tree_pao.png)
+
+Utiliza el paquete de R
+[*flametree*](https://github.com/djnavarro/flametree) creado por
+[Danielle Navarro](https://djnavarro.net/). No vamos a discutir en
+profundidad cómo funciona este paquete, pero es una buena excusa para
+practicar pull requests.
+
+**Crea tu branch de trabajo**
+
+1. En la pestaña de git en RStudio, hace click en el botón "New Branch"
+2. Escribí el nombre de la nueva branch y creala. El nombre puede ser cualquier cosa pero sin espacios! 
+3. Automáticamente RStudio va a cambiar a la nueva branch para que puedas trabajar. 
+
+Siempre podés navegar entre branches usando el menu desplegable a la derecha de "New Branch". 
+
+::: ejercicio
+**Hacé un cambio en el repositorio local**
+
+1.  Hacé una copia del archivo `template_script.R` y cámbiale el nombre
+    a `<tu-nombre.R>`
+
+2.  Cambiá el valor de las 3 primeras variables del script:
+
+-   `name`: tu nombre.
+-   `seed`: porque hay cosas aleatorias en el código.
+-   `shades`: elegí 4 colores que te gusten.
+
+Podés ejecutar el código si querés ver tu árbol (necesitarás instalar el
+paquete).
+
+3.  Guardá el archivo, **add** al área de preparación y hacé un
+    **commit** (*incluí sólo el archivo .R que creaste*).
+4.  Hacé **push** a tu repositorio remoto.
+:::
+
+Hasta este punto hiciste el cambio en tu repositorio local (que es una
+copia del repositorio principal) y subiste esos cambios a tu repositorio
+remoto en GitHub. El repositorio original no se enteró de estos cambios
+porque hasta este punto todo el trabajo lo hiciste en tu repositorio.
+
+Si querés contribuir con los cambios que hiciste (el archivo .R con el
+código para crear tu árbol) en el repositorio original, es hora de hacer
+un pull request.
+
+::: ejercicio
+**Hacé un pull request**
+
+1.  Entrá a tu repositorio en GitHub, ahí encontrarás tu último commit y
+    un mensaje como este:
+
+![Captura de pantalla de un repositorio bifurcado en GitHub con un nuevo
+commit. Muestra cómo iniciar un nuevo pull request.](images/pr1.png)
+
+2.  Hacé click en "Open pull request".
+3.  Y hacé click en "Create pull request".
+4.  Ahora completá el pull request con un título y un mensaje y luego
+    termina el PR.
+
+![Captura de pantalla de GitHub que muestra cómo añadir un título, un
+mensaje y finalizar un pull request](images/pr2.png)
+
+¡Listo!
+:::
+
+Quien esté a cargo del repositorio recibirá un correo electrónico.
+Pueden revisar el pull request, hacer comentarios y, finalmente, aceptar
+la contribución. Cuando esto ocurra, los cambios que hayas hecho
+aparecerán en el repositorio.
+

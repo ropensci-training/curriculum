@@ -4,6 +4,7 @@
 .Ruserdata
 .positai
 
+_book/
 /.quarto/
 **/*.quarto_ipynb
 _book

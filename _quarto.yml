@@ -1,5 +1,6 @@
 project:
   type: book
+#  pre-render: quarto render git/slides/git_initial.qmd
 
 book:
   title: "Curriculum del Programa de Campeon(a|e)s de rOpenSci"
@@ -18,47 +19,47 @@ book:
         - mentoring/mentors.qmd
         - mentoring/mentors-schedule.qmd
         - mentoring/mentors-materials.qmd
-        - mentoring/mentors-instructor-notes.qmd
     - part: "Desarrollo colaborativo de software"
       chapters:
         - git/software-community-intro.qmd
         - git/software-community-preparation.qmd
         - git/software-community-git-individual.qmd
         - git/software-community-git-team.qmd
-        - git/software-community-git-instructor-notes.qmd
         - git/git-history.qmd
-        - git/git-history-instructor-notes.qmd
         - git/git-advanced.qmd
-        - git/git-advanced-instructor-notes.qmd
     - part: "Desarrollo de paquetes de R"
       chapters:
         - packages/code-quality.qmd
-        - packages/code-quality-instructor-notes.qmd
         - packages/mechanics-prereqs.qmd
         - packages/mechanics-1.qmd
-        - packages/mechanics-1-instructor-notes.qmd
         - packages/mechanics-2.qmd
-        - packages/mechanics-2-instructor-notes.qmd
         - packages/mechanics-3.qmd
-        - packages/mechanics-3-instructor-notes.qmd
         - packages/advanced.qmd
-        - packages/advanced-instructor-notes.qmd
         - packages/packages-genai.qmd
-        - packages/packages-genai-instructor-notes.qmd
     - part: "Revisión de software"
       chapters:
         - review/review-process.qmd
-        - review/review-process-instructor-notes.qmd
-        - review/review-workshop.qmd
-        - review/review-workshop-instructor-notes.qmd
     - part: "Gestión de comunidad y divulgación"
       chapters:
         - community/oss-contribution.qmd
-        - community/oss-contribution-instructor-notes.qmd
         - community/memorable-talk.qmd
         - community/memorable-talk-tools.qmd
-        - community/memorable-talk-instructor-notes.qmd
         - community/wonderful-event.qmd
+    - part: "Notas para Docentes"
+      chapters:
+        - mentoring/mentors-instructor-notes.qmd
+        - git/software-community-git-instructor-notes.qmd
+        - git/git-history-instructor-notes.qmd
+        - git/git-advanced-instructor-notes.qmd
+        - packages/code-quality-instructor-notes.qmd
+        - packages/mechanics-1-instructor-notes.qmd
+        - packages/mechanics-2-instructor-notes.qmd
+        - packages/mechanics-3-instructor-notes.qmd
+        - packages/advanced-instructor-notes.qmd
+        - packages/packages-genai-instructor-notes.qmd
+        - review/review-process-instructor-notes.qmd
+        - community/oss-contribution-instructor-notes.qmd
+        - community/memorable-talk-instructor-notes.qmd
         - community/wonderful-event-instructor-notes.qmd
   #   - part: "Appendices"
   #     chapters:

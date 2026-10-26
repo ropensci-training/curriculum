@@ -1,0 +1,195 @@
+---
+title: "Developing Software Together"
+format: 
+  revealjs:
+    theme: default
+    self-contained: true
+    fontsize: "18.5pt"
+---
+
+# Hi and welcome!
+
+
+------------------------------------------------------------------------
+
+## About this workshop
+
+::: columns
+::: {.column width="40%"}
+-   Why using git
+-   How to use git (and GitHub)
+-   How to work git in the context of writing R code
+-   How to collaborate with others
+:::
+
+::: {.column width="60%"}
+```{r}
+#| echo: false
+#| fig-alt: "Ilustration from Alison Horst that show the working directory (as a building), how files are added to the staging area and commited to the local repository (another building). The commites are pushed and pull from the remote repository (a different building) all contcted with arrows."
+
+knitr::include_graphics("https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/68739659-fb6f-41e8-9813-32e1de3d82c0_rw_1920.png?h=4b046efe7664ab833358c241b10bd8e6")
+```
+:::
+:::
+
+
+------------------------------------------------------------------------
+
+## How to git
+
+Choose your own adventure:
+
+::: columns
+::: {.column width="50%"}
+Git from Rstudio
+
+```{r}
+#| echo: false
+#| fig-alt: "Screenshot of the Studio IDE for git. It shows 3 files added to the staging area an the space to write the commit message."
+
+knitr::include_graphics("images/add3.png")
+```
+:::
+
+::: {.column width="50%"}
+Git from the terminal
+
+```{r}
+#| echo: false
+#| fig-alt: "Screenshot of the terminal."
+
+knitr::include_graphics("images/terminal.png")
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+Do you have something like this in your computer?
+
+```         
+/home/pao/Documents/thesis
+├── abstract.R
+├── thesis.Rmd
+├── thesis_reviwed.Rmd
+├── thesis_reviwed2.Rmd
+├── thesis_final.Rmd
+├── thesis_finalfinal.Rmd
+├── this_is_it.Rmd
+├── now_this_is_it_for_real_this_time_i_swear.Rmd
+└── FINAL.Rmd
+```
+
+------------------------------------------------------------------------
+
+## Control version cycle
+
+![The figure shows the states of a file: untracked or tracked. When it is tracked by the repository, the file can be staged, committed or modified. With the add action the file is "staged", with the commit action the file is "saved" to the repository. This cycles repeats teach time the file is modified.](images/file_cycle2.png)
+
+------------------------------------------------------------------------
+
+## Our workflow
+
+![Concept model of a workflow using RStudio projects and git. Files are added to the staging area, and then committed to the local repository. You can push commits to the remote repository and pull new commits to your computer.](images/local_remote.png)
+
+## Introduce yourself to git
+
+``` r
+library(usethis) 
+use_git_config(user.name = "Jane Doe",  # Your name!
+               user.email = "jane@example.org")  # Your email (the one you use on GitHub)
+```
+
+## Create an online repository
+
+1.  Go to github.com and log in.
+2.  On the top right corner, click on the "+" bottom and then "New repository"
+3.  Then:
+    -   Repository template: No template.
+
+    -   Repository name: myrepo or whatever you wish to name your new project.
+
+    -   Description: Any short description of the project. Write this for humans.
+
+    -   Public.
+
+    -   Initialize this repository with: nothing (we can set up everything from R).
+
+Before going back to RStudio, copy the url for the repository. For example https://github.com/paocorrales/myrepo.git
+
+## Clone the repository locally.
+
+1.  File \> New Project \> Version Control \> Git. In the "repository URL" paste the URL of your new GitHub repository https://github.com/paocorrales/myrepo.git.
+2.  Choose the folder where you want to create the project.
+3.  Choose "Open in new session".
+4.  And Click on "Create Project".
+
+## Commit local changes
+
+1.  Create a new RMarkdown file and save it.
+2.  Add it to the staging area and commit the file. You'll need to add a descriptive message!
+3.  Make a change on the file, it can be anything. Save it.
+4.  Repeat step 2.
+5.  Now push!
+
+## Making remote changes
+
+1.  On the main repository page, click on the green bottom that says "Add a README".
+2.  Add something to the file. READMEs usually are written in Markdown and contain information about the repo.
+3.  At the end of the page add a message on the first line and click on "Commit changes...".
+4.  Come back to the main page to see the README.
+
+## Getting remote changes
+
+1.  Go back to RStudio.
+2.  To the the Git pane.
+3.  Click on the light blue arrow that says "Pull".
+4.  Check the README file on the Files tab.
+
+------------------------------------------------------------------------
+
+## Working with others
+
+![Concep model of the remote workflow. A foreign remote repository can be forked to an owned remote repository with a "fork". The remote repository is copied into a local repository with a "clone". Files inside the local repository and the remote repository are synced with push and pull. The owned remote repository can be merged into the foreign remote repository with a pull request.](images/pull-request.png)
+
+## Planting trees
+
+### Fork the repository
+
+1.  Go to [github.com/paocorrales/flametree_gallery](https://github.com/paocorrales/flametree_gallery)
+2.  Fork the repository using the "Fork" button on the top right corner.
+
+Now, you have a copy of the repo in your GitHub account.
+
+3.  Copy the url of the repo and clone it to your computer
+
+## Planting trees
+
+### Make a change in the repo
+
+1.  Make a copy of the `template_script.R` file and change it's name to `<your-name.R>`
+
+2.  Change the value of the first 3 variables in the script:
+
+    -   `name` your name.
+    -   `seed` there are some random things happening there.
+    -   `shades` choose 4 colors that you like.
+
+You can run the code if you want :)
+
+3.  Save the file, **add** it to the staging area and **commit** it (*include only the .R file you created*).
+4.  Push it to your remote repository.
+
+## Planting trees
+
+### Make a pull request
+
+1.  Go to your repo in GitHub, you will see that you made the last commit and a message like this:
+
+![](images/pr1.png){fig-align="center" width="783"}
+
+2.  Click on "Open pull request".
+3.  And click on "Create pull request".
+4.  We are almost there. Complete the pull request with a title and a message and then finish the PR.
+
+And that's it!

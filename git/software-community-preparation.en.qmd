@@ -1,0 +1,40 @@
+---
+title: "What you need to do before the workshop"
+---
+
+::: {.callout-note}
+## Migration
+
+You are reading the **first work-in-progress edition in Spanish** of this book, based on the training curriculum developed for the rOpenSci program.
+
+This chapter is currently being migrated from the curriculum materials into the book format and may not yet reflect the final version of the content.
+
+*Content pending migration:* see https://github.com/ropensci-training/git-developing-software-together and https://github.com/ropensci-training/git-desarrollo-software for the source repositories for this chapter.
+:::
+
+During the workshop we will use Git for version control and GitHub as a remote repository.
+Details on how to do this are best described in Jenny Bryan's fantastic [Happy Git with R book](https://happygitwithr.com/install-intro.html).
+The core steps are:
+
+1.  Install git on your machine.\
+    The instructions depend on your Operating System.
+    Follow the instructions at <https://happygitwithr.com/install-git.html>.
+
+2.  Create a GitHub account.\
+    Go to [github.com](github.com) and create your free account.
+
+3.  Set up git so it can work with GitHUb.\
+    This can be, unfortunately, a rather involved process so be patient.
+    Again, the excellent Happy Git with R is your friend.
+    Follow the instructions in [this chapter](https://happygitwithr.com/https-pat.html) to set up your GitHub Personal Access Token (from R or RStudio).\
+    If you are on linux, we highly recommend [this post by Danielle Navarro](https://blog.djnavarro.net/posts/2021-08-08_git-credential-helpers/).
+    It covers some of the same territory with more detail, and it can be cathartic to read someone who shares your pain.
+
+4.  (Optional) In this workshop we will be using RStudio as a simple git GUI, but in the future you might want to use a more full-fledge client.
+    Again, Happy Git with R [recommends a few](https://happygitwithr.com/git-client.html#recommended-git-clients).
+    We like [GitKraken](https://www.gitkraken.com/), which is free, feature-rich, and multi-platform.
+
+5.  (Optional) If you want to work only from the Terminal, you will need GitHub Cli.
+    Find [how to download it in this README](https://github.com/cli/cli#installation).
+    After the installation, Run [`gh auth login`](https://cli.github.com/manual/gh_auth_login) to authenticate with your GitHub account.
+
