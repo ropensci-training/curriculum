@@ -1,5 +1,5 @@
 ---
-title: "Materiales del curso"
+title: "Funciones y habilidades de mentoría"
 ---
 
 ::: {.callout-note}
@@ -11,3 +11,144 @@ Este capítulo debería ser legible, pero está siendo objeto de un pulido final
 **Fuente del contenido migrado:** este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
 :::
 
+## Descripción de funciones
+
+Las personas mentoras desempeñarán un papel vital en el Programa
+seleccionando, aconsejando e inspirando a su campeón o campeona.
+También conectarán a sus a sus aprendices con personas, 
+programas y organizaciones, recomendándoles recursos,
+lecturas, formación y experiencias.
+También van a proveer feedback sobre el proyecto del campeón o campeona.
+
+Trabajarás con la persona que mentorees para desarrollar su proyecto.
+
+Mentor(e|a)s también pueden apoyar a los Campeon(e|a)s en la realización de otras actividades
+entre las que se incluyen: dar una charla, escribir artículos o notas técnicas para el blog de rOpenSci y enseñar a otras personas
+ de la comunidad.
+
+::: {.callout-tip}
+En el programa de campeones de rOpenSci el rol dura un año. Se espera que el compromiso de tiempo total sea de aproximadamente **2-4 horas al mes**
+:::
+
+# Habilidades de mentoría
+
+::: {.callout-note}
+
+Reflexión sobre la tutoría. 
+
+Por favor, piensa en una experiencia que hayas tenido como mentor/a o cuando recibiste mentorías. Contesta estas preguntas:
+
+* ¿Qué salió bien / qué fue útil?
+* ¿Cómo fue esa relación? 
+* ¿En qué te ayudó? 
+* ¿Qué cosa útil dijo/hizo tu mentor/a o tu aprendiz?
+
+* ¿Qué no funcionó? 
+* ¿Qué necesitabas y tu mentor/a o aprendiz no pudo ayudarte o no te entendió?
+
+Piensa y anota en un problema sobre el que te gustaría recibir tutoría ahora mismo.
+
+:::
+
+## Escucha activa
+
+Consejos para la escucha activa:
+
+- Suspende el juicio y escucha.
+
+- Presta toda tu atención a quien habla (no ensayes lo que 
+  vas a decir/contestar)
+
+- Anima a la quien habla con señales verbales y no verbales.
+
+## Preguntas efectivas
+
+Las preguntas nos permiten
+
+- Acceder a la información y analizarla.
+
+- Estimular el pensamiento y la creatividad.
+
+- Aprender mediante el debate.
+
+Ver el modelo [*GROW (CRECE en Inglés)*](#grow-model) para ver ejemplos.
+
+## Dar retroalimentación (feedback)
+
+Es más fácil dar y recibir opiniones cuando ambas partes comparten
+expectativas sobre lo que está y no está dentro del alcance y sobre cómo los comentarios
+deben formularse los comentarios.
+
+Consejos para dar retroalimentación:
+
+- Intenta ser útil.
+
+- Ve a lo concreto. Céntrate en comportamientos observables.
+
+- Habla por ti.
+
+- Equilibra los elogios y los comentarios críticos: es importante decirle a las personas lo que
+  deben seguir haciendo, así como lo que deben cambiar.
+
+## Modelo _GROW_ {#grow-model}
+
+**Objetivo:** Acuerda un tema y un objetivo o una o dos metas a más largo plazo.
+
+**Realidad:** autoevaluación, ejemplos concretos.
+
+**Opciones:** sugerencias ofrecidas y elecciones realizadas.
+
+**Camino a seguir:** próximos pasos.
+
+Consejos para el modelo _GROW_:
+
+- "Pregunta" en lugar de "habla".
+
+- Ilustra y comprueba la comprensión.
+
+- ¡Piensa de forma creativa!
+
+- No necesitas ser una persona experta en la situación: estás 
+  facilitando.
+
+Ejemplos de preguntas:
+
+META u OBJETIVOS
+
+- ¿Qué quieres conseguir?
+
+- ¿Qué ocurrirá cuando lo hayas conseguido?
+
+- Los OBJETIVOS pueden ser _SMART_ (inteligentes en Inglés): Específicos, Mensurables, Alcanzables, Realistas y Temporales.
+
+REALIDAD
+
+- ¿Qué está ocurriendo en este momento?
+
+- ¿Qué te impide seguir adelante?
+
+- ¿Qué has intentado?
+
+- ¿Qué ha pasado?
+
+- ¿Qué has aprendido?
+
+OPCIONES
+
+- ¿Qué podrías hacer? ¿Qué otra cosa más podrías hacer?
+
+- ¿Cuáles son las ventajas/desventajas de cada opción?
+
+- ¿Quieres que te haga sugerencias?
+
+- ¿Qué opciones te gustan más?
+
+CAMINO A SEGUIR
+
+- ¿Qué vas a hacer?
+
+- ¿Cuál será el primer paso?
+
+- ¿Cuándo exactamente vas a empezar y terminar cada paso?
+
+- ¿Qué apoyo necesitas y de quién?
