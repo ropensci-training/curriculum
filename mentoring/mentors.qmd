@@ -45,6 +45,22 @@ Durante esta formación y orientación, Fausti adquirirá habilidades de mentore
 - ¿Cuáles son las herramientas útiles para guiar a alguien en un proyecto?
 - ¿Cómo se organiza el programa?
 
+## Recursos
+
+Estos materiales de capacitación utilizan:
+
+- un juego de [diapositivas](,
+- un [documento compartido]() con los ejercicios para resolver durante la clase, para tomar notas compartidas y también para compartir recursos.
+- una [encuesta de opinión]()
+
+También proporcionamos a los mentores y mentoras herramientas para desempeñar sus funciones:
+
+- [Directrices para mentores/as del Programa rOpenSci Champions](https://ropensci-org.github.io/champions-mentor-guidelines/)
+- [Plantillas de reuniones]()
+- [Formulario de informe de reunión]()
+- [Cronograma Mensual de Mentoría]()
+
+
 ## Fuentes
 
 Utilizamos diferentes fuentes para construir esta formación y el material. Damos las gracias a estas organizaciones y a sus autores por compartir su material bajo una licencia abierta que podemos reutilizar y remezclar.
