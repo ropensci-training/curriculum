@@ -47,6 +47,21 @@ During this training and orientation, Fausti will gain mentoring skills (active 
 - What are useful tools when guiding someone through a project?
 - How the program is organize?
 
+## Resources
+
+This training use:
+
+* a set of [slides](),
+* a [shared document]() with the exercises to solve during the class, to take shared notes, and share resources.
+* a [feedback survey]()
+
+We also provide mentors with tools for their roles:
+
+* [rOpenSci Champions Program Mentor Guidelines](https://ropensci-org.github.io/champions-mentor-guidelines/)
+* [Meeting Templates]()
+* [Meeting report form]()
+* [Mentor Monthly Charter]()
+
 ## Sources
 
 We use different sources to build this training and the material. We thank these organizations and their authors for sharing their material under an open license that we can reuse and remix.
