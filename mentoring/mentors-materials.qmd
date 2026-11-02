@@ -14,17 +14,15 @@ Este capítulo debería ser legible, pero está siendo objeto de un pulido final
 ## Descripción de funciones
 
 Las personas mentoras desempeñarán un papel vital en el Programa
-seleccionando, aconsejando e inspirando a su campeón o campeona.
+seleccionando, 
+aconsejando e inspirando a las personas que deben mentorear.
 También conectarán a sus a sus aprendices con personas, 
 programas y organizaciones, recomendándoles recursos,
 lecturas, formación y experiencias.
 También van a proveer feedback sobre el proyecto del campeón o campeona.
 
-Trabajarás con la persona que mentorees para desarrollar su proyecto.
-
-Mentor(e|a)s también pueden apoyar a los Campeon(e|a)s en la realización de otras actividades
-entre las que se incluyen: dar una charla, escribir artículos o notas técnicas para el blog de rOpenSci y enseñar a otras personas
- de la comunidad.
+Trabajarás con la persona que mentorees para desarrollar su proyecto y prestaras tu apoyo en la realización de otras actividades entre las que se incluyen: dar una charla, 
+escribir artículos o notas técnicas para el blog de rOpenSci y enseñar a otras personas de la comunidad.
 
 ::: {.callout-tip}
 En el programa de campeones de rOpenSci el rol dura un año. Se espera que el compromiso de tiempo total sea de aproximadamente **2-4 horas al mes**
@@ -32,21 +30,19 @@ En el programa de campeones de rOpenSci el rol dura un año. Se espera que el co
 
 # Habilidades de mentoría
 
+Casi todas las personas hemos estado alguna vez de uno u otro lado de una relación de mentoría, aunque no la hayamos llamado así: una directora de tesis, un compañero de trabajo con más experiencia, alguien de una comunidad que nos ayudó a enviar nuestra primera contribución a un proyecto. Antes de hablar de técnicas empecemos por nuestra propia experienca.
+
 ::: {.callout-note}
 
-Reflexión sobre la tutoría. 
+## Ejercicio 1. Reflexión sobre la mentoría (10 minutos)
 
-Por favor, piensa en una experiencia que hayas tenido como mentor/a o cuando recibiste mentorías. Contesta estas preguntas:
+Piensa en una experiencia que hayas tenido como mentor/a o cuando recibiste mentorías. Contesta estas preguntas por escrito:
 
-* ¿Qué salió bien / qué fue útil?
-* ¿Cómo fue esa relación? 
-* ¿En qué te ayudó? 
-* ¿Qué cosa útil dijo/hizo tu mentor/a o tu aprendiz?
+1. **¿Qué salió bien o qué fue útil?** ¿Cómo era la relación? ¿En qué te ayudó? ¿Qué cosa útil dijo o hizo tu mentor/a o tu aprendiz? ¿Por qué esa experiencia funcionó?
+2. **¿Qué no funcionó?** ¿Qué necesitabas y tu mentor/a o aprendiz no pudo darte, o no entendió?
+3. **Piensa en un problema sobre el que te gustaría recibir mentoría ahora mismo.** Guarda esta respuesta: la usaremos más adelante, en el Ejercicio 6.
 
-* ¿Qué no funcionó? 
-* ¿Qué necesitabas y tu mentor/a o aprendiz no pudo ayudarte o no te entendió?
-
-Piensa y anota en un problema sobre el que te gustaría recibir tutoría ahora mismo.
+Si trabajas en grupo, escribe las respuestas en un documento compartido (cada persona junto a su nombre) y luego lean y comenten las respuestas de las demás.
 
 :::
 
