@@ -1,0 +1,148 @@
+---
+title: "Mentoring Roles and Skills"
+---
+
+::: {.callout-note}
+## Being refined
+
+You are reading the **first edition in progress and in Spanish** of this book, based on the training curriculum of the rOpenSci Champions Program. 
+This chapter should be readable, but it is undergoing final polishing.
+
+*Source of the migrated content:* this chapter originates from the
+ [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors) repository.
+:::
+
+## Role Description
+
+Mentors will play a vital role in the rOpenSci Champions Program by advising and inspiring their mentees. Mentors will also connect their mentees to people, programs, and organizations; recommend, resources, readings, training, and experiences; and provide feedback on the mentee’s project.
+
+You'll work with your mentee to develop their project.
+
+Mentors may also support Champions with delivering other activities including: giving a talk, writing blog posts, and teaching other community members.
+
+::: {.callout-tip}
+The rOpenSci Champions Program is a year long. The total time commitment is expected to be approximately **2-4 hours per month**.
+:::
+
+# Mentorship Skills
+
+::: {.callout-note}
+### Mentorship Reflection
+
+Please think of an experience you've had as a mentor or when you were mentored. Answer these questions:
+
+* What went well / what was helpful?
+* What was that relationship like? 
+* How did it help you? 
+* What is one helpful thing your mentor/mentee said/did?
+
+* What didn’t work? 
+* What you needed, and your mentor/mentee couldn’t help you? or didn’t understand you?
+
+Think and write down of a problem you’d like mentoring on right now.
+
+:::
+
+## Active Listening
+
+Tips for active listening:
+
+- Suspend judgment and listen.
+
+- Give your full attention to the speaker (don’t rehearse what you’re
+  going to say).
+
+- Encourage the speaker with verbal and nonverbal cues.
+
+## Effective Questioning
+
+Questions let us:
+
+- Access & analyze information.
+
+- Stimulate thinking & creativity.
+
+- Learn through discussion.
+
+See the [*GROW*](#grow-model) model for examples.
+
+## Giving Feedback
+
+Feedback is easier to give and receive when both parties share
+expectations about what is and isn’t in scope and about how comments
+ought to be phrased.
+
+Tips for giving feedback:
+
+- Try to be helpful.
+
+- Be specific. Focus on observable behavior.
+
+- Speak for yourself.
+
+- Balance praise & critical feedback: it’s important to tell people what
+  they should keep doing as well as what they should change.
+
+## GROW Model {#grow-model}
+
+**Goal:** Agree on a topic & objective or longer-term goals.
+
+**Reality:** self-assessment, specific examples.
+
+**Options:** suggestions offered & choices made.
+
+**Way forward:** next steps.
+
+GROW model tips:
+
+- ‘Ask’ rather than ‘tell’.
+
+- Illustrate and check understanding.
+
+- Think creatively!
+
+- You don’t need to be an expert in the situation - you’re acting as a
+  facilitator.
+
+Sample Questions:
+
+GOAL
+
+- What do you want to achieve?
+
+- What will be happening when you have succeeded?
+
+- GOALS can be SMART (Specific, Measurable, Achievable, Realistic, Time
+  bound).
+
+REALITY
+
+- What is happening at the moment?
+
+- What stops you from moving on?
+
+- What have you tried?
+
+- What happened?
+
+- What have you learned?
+
+OPTIONS
+
+- What could you do? What else?
+
+- What are the advantages/ disadvantages of each option?
+
+- Would you like suggestions from me?
+
+- What options do you like the most?
+
+WAY FORWARD
+
+- What will you do?
+
+- What will be the first step?
+
+- When precisely are you going to start and finish each step?
+
+- What support do you need and from whom?

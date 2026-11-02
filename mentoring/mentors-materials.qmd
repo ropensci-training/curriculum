@@ -1,5 +1,5 @@
 ---
-title: "Materiales del curso"
+title: "Funciones y habilidades de mentoría"
 ---
 
 ::: {.callout-note}
@@ -11,17 +11,140 @@ Este capítulo debería ser legible, pero está siendo objeto de un pulido final
 **Fuente del contenido migrado:** este capítulo proviene del repositorio [ropensci-mentors](https://github.com/ropensci-training/ropensci-mentors). 
 :::
 
-Estos materiales de capacitación utilizan:
+## Descripción de funciones
 
-- un juego de [diapositivas](https://docs.google.com/presentation/d/1qAv8IfSMRRGbQlwOkyM7QvnYQSEvL-cUFPj72ixNgN4/edit?usp=sharing),
-- un [documento compartido](https://docs.google.com/document/d/1Grv1yegKh0QmucLqYHLh7tPZCwn3Xhy3paiepzsa9Ow/edit?usp=sharing) con los ejercicios para resolver durante la clase, para tomar notas compartidas y también para compartir recursos.
-- una [encuesta de opinión](https://docs.google.com/document/d/1gDe3IcVLoQTl15pFaCOvchIZJpCi3pBlBMjYeUGfqyY/edit?usp=sharing)
+Las personas mentoras desempeñarán un papel vital en el Programa
+seleccionando, 
+aconsejando e inspirando a las personas que deben mentorear.
+También conectarán a sus a sus aprendices con personas, 
+programas y organizaciones, recomendándoles recursos,
+lecturas, formación y experiencias.
+También van a proveer feedback sobre el proyecto del campeón o campeona.
 
-También proporcionamos a los mentores y mentoras herramientas para desempeñar sus funciones:
+Trabajarás con la persona que mentorees para desarrollar su proyecto y prestaras tu apoyo en la realización de otras actividades entre las que se incluyen: dar una charla, 
+escribir artículos o notas técnicas para el blog de rOpenSci y enseñar a otras personas de la comunidad.
 
-- [Directrices para mentores/as del Programa rOpenSci Champions](https://ropensci-org.github.io/champions-mentor-guidelines/)
-- [Plantillas de reuniones](https://docs.google.com/document/d/1vjmfbjv9ABJ6fkbtQRMFPydJZ3ypKOIpZ-xf7_iBhvo/edit?usp=sharing)
-- [Formulario de informe de reunión](https://docs.google.com/document/d/1PXYXF5wmrzSiNFylvfGgAvLDh87OZOd7B0qJzeO8VBQ/edit?usp=sharing)
-- [Carta/Acta Mensual de Mentor/a](https://docs.google.com/document/d/1-HZRNp4lc7s0NJhKPfGRe8I9dxohBkDyjUC35KINHCQ/edit?usp=sharing)
+::: {.callout-tip}
+En el programa de campeones de rOpenSci el rol dura un año. Se espera que el compromiso de tiempo total sea de aproximadamente **2-4 horas al mes**
+:::
 
+# Habilidades de mentoría
 
+Casi todas las personas hemos estado alguna vez de uno u otro lado de una relación de mentoría, aunque no la hayamos llamado así: una directora de tesis, un compañero de trabajo con más experiencia, alguien de una comunidad que nos ayudó a enviar nuestra primera contribución a un proyecto. Antes de hablar de técnicas empecemos por nuestra propia experienca.
+
+::: {.callout-note}
+
+## Ejercicio 1. Reflexión sobre la mentoría (10 minutos)
+
+Piensa en una experiencia que hayas tenido como mentor/a o cuando recibiste mentorías. Contesta estas preguntas por escrito:
+
+1. **¿Qué salió bien o qué fue útil?** ¿Cómo era la relación? ¿En qué te ayudó? ¿Qué cosa útil dijo o hizo tu mentor/a o tu aprendiz? ¿Por qué esa experiencia funcionó?
+2. **¿Qué no funcionó?** ¿Qué necesitabas y tu mentor/a o aprendiz no pudo darte, o no entendió?
+3. **Piensa en un problema sobre el que te gustaría recibir mentoría ahora mismo.** Guarda esta respuesta: la usaremos más adelante, en el Ejercicio 6.
+
+Si trabajas en grupo, escribe las respuestas en un documento compartido (cada persona junto a su nombre) y luego lean y comenten las respuestas de las demás.
+
+:::
+
+## Escucha activa
+
+Consejos para la escucha activa:
+
+- Suspende el juicio y escucha.
+
+- Presta toda tu atención a quien habla (no ensayes lo que 
+  vas a decir/contestar)
+
+- Anima a la quien habla con señales verbales y no verbales.
+
+## Preguntas efectivas
+
+Las preguntas nos permiten
+
+- Acceder a la información y analizarla.
+
+- Estimular el pensamiento y la creatividad.
+
+- Aprender mediante el debate.
+
+Ver el modelo [*GROW (CRECE en Inglés)*](#grow-model) para ver ejemplos.
+
+## Dar retroalimentación (feedback)
+
+Es más fácil dar y recibir opiniones cuando ambas partes comparten
+expectativas sobre lo que está y no está dentro del alcance y sobre cómo los comentarios
+deben formularse los comentarios.
+
+Consejos para dar retroalimentación:
+
+- Intenta ser útil.
+
+- Ve a lo concreto. Céntrate en comportamientos observables.
+
+- Habla por ti.
+
+- Equilibra los elogios y los comentarios críticos: es importante decirle a las personas lo que
+  deben seguir haciendo, así como lo que deben cambiar.
+
+## Modelo _GROW_ {#grow-model}
+
+**Objetivo:** Acuerda un tema y un objetivo o una o dos metas a más largo plazo.
+
+**Realidad:** autoevaluación, ejemplos concretos.
+
+**Opciones:** sugerencias ofrecidas y elecciones realizadas.
+
+**Camino a seguir:** próximos pasos.
+
+Consejos para el modelo _GROW_:
+
+- "Pregunta" en lugar de "habla".
+
+- Ilustra y comprueba la comprensión.
+
+- ¡Piensa de forma creativa!
+
+- No necesitas ser una persona experta en la situación: estás 
+  facilitando.
+
+Ejemplos de preguntas:
+
+META u OBJETIVOS
+
+- ¿Qué quieres conseguir?
+
+- ¿Qué ocurrirá cuando lo hayas conseguido?
+
+- Los OBJETIVOS pueden ser _SMART_ (inteligentes en Inglés): Específicos, Mensurables, Alcanzables, Realistas y Temporales.
+
+REALIDAD
+
+- ¿Qué está ocurriendo en este momento?
+
+- ¿Qué te impide seguir adelante?
+
+- ¿Qué has intentado?
+
+- ¿Qué ha pasado?
+
+- ¿Qué has aprendido?
+
+OPCIONES
+
+- ¿Qué podrías hacer? ¿Qué otra cosa más podrías hacer?
+
+- ¿Cuáles son las ventajas/desventajas de cada opción?
+
+- ¿Quieres que te haga sugerencias?
+
+- ¿Qué opciones te gustan más?
+
+CAMINO A SEGUIR
+
+- ¿Qué vas a hacer?
+
+- ¿Cuál será el primer paso?
+
+- ¿Cuándo exactamente vas a empezar y terminar cada paso?
+
+- ¿Qué apoyo necesitas y de quién?
