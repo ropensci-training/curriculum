@@ -37,13 +37,13 @@ Durante esta formación y orientación, Fausti adquirirá habilidades de mentore
 
 ## Objetivos de aprendizaje
 
-- ¿Qué hace un mentor?
-- ¿Cómo puedo escuchar activamente a mi campeona?
+- ¿Qué hace una persona mentora?
+- ¿Cómo puedo escuchar activamente a la persona a la que acompaño?
 - ¿Cómo puedo hacer preguntas eficaces?
-- ¿Cómo doy un buen feedback?
-- ¿Cómo establezco expectativas para mí y para el campeon?
+- ¿Cómo doy un buen *feedback*?
+- ¿Cómo establezco expectativas para mí y para la persona que mentoreo?
 - ¿Cuáles son las herramientas útiles para guiar a alguien en un proyecto?
-- ¿Cómo se organiza el programa?
+- ¿Cómo se organiza un programa de mentoría como el de rOpenSci?
 
 ## Recursos
 
