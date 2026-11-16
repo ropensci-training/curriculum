@@ -1,0 +1,497 @@
+---
+format:
+  revealjs:  
+    highlight-style: a11y
+    auto-stretch: true
+    hash-type: number
+    slide-number: false
+    controls: auto
+    progress: false
+    from: markdown+emoji
+    theme: [custom.scss]
+    center: false
+    menu:
+      width: full
+---
+
+## {background-image="cogs.jpg"}
+
+```{r}
+#| echo: false
+get_pic <- function(id, alt, width) {
+  info <- httr::GET(
+    paste0("https://api.pexels.com/v1/photos/", id),
+    httr::add_headers(Authorization = Sys.getenv("PEXELS_KEY"))
+  ) |>
+    httr::content()
+  download.file(info$src$large, paste0(id, ".jpeg"))
+  cat("```{=html}\n")
+  cat(glue::glue(
+    '<div style="display:grid; margin-top: 3rem;"><figure>
+    <img src="{id}.jpeg"
+         alt="{alt}" width="{width}"/> <figcaption>
+            <p>Picture by <a href="{info$url}">{info$photographer} on Pexels</a>.</p>
+        </figcaption>
+</figure></div>'
+  ))
+  cat("\n```\n")
+}
+```
+::: r-fit-text
+::: {style="font-size:2.5em; padding: 0.5em 1em; background-color: rgba(255, 255, 255, .8);"}
+¡Código hermoso, <br/>porque lo valemos!
+:::
+:::
+
+::: {.absolute left="5%" bottom="5%"  style="font-size:1.2em; padding: 0.5em 1em; background-color: rgba(255, 255, 255, .8);"}
+Maëlle Salmon
+
+<https://codigo-hermoso-2026.netlify.app/>
+:::
+
+::: {.notes}
+Cogs <https://www.pexels.com/photo/colorful-toothed-wheels-171198/>
+:::
+
+## Por qué escribir código hermoso
+
+> **Teorema fundamental de la legibilidad**: "El código debe escribirse de manera que se minimice el tiempo que le llevaría a otra persona entenderlo."
+
+(Traducido) The Art of Readable Code, Dustin Boswell y Trevor Foucher.
+
+## Código con las proporciones adecuadas
+
+::: {.incremental}
+
+- Espaciado regular entre elementos
+
+- Que no sea muy ancho
+
+- Que no sea muy largo: párrafos, funciones que existan o que creaste
+
+- Que no sea muy "manchado": la cantidad justa de comentarios
+
+:::
+
+## Espaciado regular
+
+:scream:
+
+```{r, eval=FALSE, echo=TRUE}
+starwars%>%
+  select(name,height, mass,homeworld) %>%
+  mutate(
+    mass= NULL,
+    height =height *0.0328084 # convert to feet
+  )
+
+```
+
+## Espaciado regular
+
+:relieved:
+
+```{r, eval=FALSE, echo=TRUE}
+starwars %>%
+  select(name, height, mass, homeworld) %>%
+  mutate(
+    mass = NULL,
+    height = height * 0.0328084 # convert to feet
+  )
+
+```
+
+## Espaciado regular
+
+Seguí las normas, siempre las mismas normas, las mismas que siguen tus amigos y amigas. Por ejemplo: <https://style.tidyverse.org/> ¿Cómo lo hacés?
+
+::: {.incremental}
+
+- Te acostumbrás.
+
+- La herramienta Air!
+
+:::
+
+## [Air](https://posit-dev.github.io/air/)
+
+Una herramienta externa programada en Rust por Lionel Henry y Davis Vaughan.
+
+. . .
+
+Se usa en Positron o RStudio IDE o la CLI o en GitHub Actions o...
+
+## Demo de Air en Positron {.center}
+
+:blue_heart: Arreglar cuando guardas el archivo.
+
+<https://posit-dev.github.io/air/editor-vscode.html>
+
+## Demo de Air en RStudio {.center}
+
+:blue_heart: Arreglar cuando guardas el archivo.
+
+<https://posit-dev.github.io/air/editor-rstudio.html>
+
+
+## Air en GitHub Actions {.center}
+
+:blue_heart: Sugerencias en PRs.                                                
+<https://www.tidyverse.org/blog/2025/06/air-0-7-0/#github-action>
+
+## No muy ancho
+
+No más de 80 caracteres por línea, o algo similar.
+
+:::{.incremental}
+
+- Air ayuda
+- Ajuste de Positron (`"editor.rulers": [80]` en `settings.json`)
+- Ajuste de RStudio (Code > Show > Show Margin).
+
+:::
+
+## Código no muy largo: párrafos
+
+Como en la prosa, un párrafo para una idea.
+
+```{r, eval=FALSE, echo=TRUE}
+cabeza <- obtener_metadatos(sitio)
+cabeza_texto <- textea(cabeza)
+
+cuerpo <- arma_contenido(sitio)
+cuerpo_texto <- textea(cuerpo)
+```
+
+## Código no muy largo: funciones
+
+Mantén el cuerpo de la función principal no demasiado largo delegando cosas a funciones con nombres adecuados.
+
+```{r, eval=FALSE, echo=TRUE}
+arma_contenido <- function(sitio) {
+  titulo <- crea_titulo(sitio)
+  pagina <- crea_pagina(sitio)
+  combina_elementos(titulo = titulo, pagina = pagina)
+}
+
+```
+
+## Aparte: navegar entre funciones en el IDE de RStudio
+
+Demostración
+
+- Entrar + clic
+
+- Barra de búsqueda
+
+
+## Aparte: navegar entre funciones en Positron
+
+Demostración
+
+- Entrar + clic
+
+- Ctrl + T (o Ctrl + P si `"search.quickOpen.includeSymbols": true` en `settings.json`)
+
+## Código no muy largo: ¡no reinventes la rueda!
+
+:raised_eyebrow:
+
+```{r, echo=TRUE}
+vector1 <- c("a", "b", "c")
+vector2 <- c("b", "c")
+vector1[!(vector1 %in% vector2)]
+```
+
+## Código no muy largo: ¡no reinventes la rueda!
+
+:grin:
+
+```{r, echo=TRUE}
+vector1 <- c("a", "b", "c")
+vector2 <- c("b", "c")
+setdiff(vector1, vector2)
+```
+
+## Cómo ampliar tu vocabulario de R
+
+::: {.incremental}
+
+- Leé el código de otras personas ;
+- Pedí a otras personas que lean tu código;
+- ¡Compartí tus aprendizajes! <https://masalmon.eu/tags/useful-functions/>
+
+:::
+
+## Tan pocos comentarios como sea posible
+
+Antes pensaba...
+
+```{r, eval=FALSE, echo=TRUE}
+# starwars data
+starwars %>%
+  # select name and mass
+  select(name, mass) %>%
+  mutate(
+    # add mass2 as double of mass
+    mass2 = mass * 2,
+    # add mass2_squared as squared mass2
+    mass2_squared = mass2 * mass2
+  )
+```
+
+Es inútil y aburrido escribir, ¡e incluso puede ser peligroso!
+
+## El menor número posible de comentarios
+
+Un comentario = ¡como una alerta!
+
+Si hay demasiados, dejamos de leerlos.
+
+## ¿Comentario o no?
+
+::: {.incremental}
+
+- Cambiá el nombre de una variable en lugar de comentar lo que es.
+
+- Cambiá la estructura de un código complicado en lugar de comentar lo que hace.
+
+:::
+
+## Variables o funciones explicativas
+
+Meh:
+
+```{r, eval=FALSE, echo=TRUE}
+# Use string if x is not missing and a non empty string
+if (!is.na(x) && nzchar(x)) {
+  use_string(x)
+}
+```
+
+## Variables o funciones explicativas
+
+Yupi
+
+```{r, eval=FALSE, echo=TRUE}
+x_is_not_empty_string <- (!is.na(x) && nzchar(x))
+if (x_is_not_empty_string) {
+  use_string(x)
+}
+```
+
+Es posible definir una *función* en lugar de una variable, si es necesario.
+
+## Buenos comentarios
+
+::: {.incremental}
+
+- Documentar funciones con roxygen2 (y [devtag](https://github.com/moodymudskipper/devtag));
+
+- Cosas que te gustaría señalar a un revisor de código, como por ejemplo `# This query can not be done via GraphQL, so have to use v3 REST API`
+
+- Comentarios que proporcionen un índice. Demostración.
+
+:::
+
+## Código con proporciones adecuadas
+
+- Espaciado uniforme entre elementos
+
+- No muy ancho
+
+- No muy largo: párrafos, funciones externas o internas
+
+- Sin muchas "manchas": la cantidad justa de comentarios
+
+## Código claro
+
+::: {.incremental}
+
+- Nombres autoexplicativos.
+
+- Consejos de lógica: usa `return()` pronto, `switch()`.
+
+- Menos código.
+
+:::
+
+## Nombres autoexplicativos
+
+::: {.incremental}
+
+- Seguí la moda.
+
+- Felienne Hermans aconseja elegir los conceptos que van en el nombre, las palabras para decirlo, y luego juntarlos.
+
+- "Cuanto mayor sea la distancia entre la declaración de un nombre y sus usos, más largo debe ser el nombre" (Andrew Gerrand).
+
+- Está claro si la persona que revisa tu código está de acuerdo :wink:
+
+:::
+
+## Renombrar funciones
+
+Incluso podés cambiar el nombre de las funciones existentes si eso aclara las cosas.
+
+```{r, eval=FALSE, echo=TRUE}
+# In utils.R
+remove_extension <- function(path) {
+  tools::file_path_sans_ext(path)
+}
+
+# In other scripts
+remove_extension(path)
+```
+
+## Simplificar la lógica: usar `return()` pronto
+
+Meh
+
+```{r, eval=FALSE, echo=TRUE}
+do_thing <- function(x) {
+  if (is.na(x)) {
+    NA
+  } else {
+    x + 1
+  }
+}
+```
+
+## Simplificar la lógica: usar `return()` pronto
+
+¡Mejor!
+
+```{r, eval=FALSE, echo=TRUE}
+do_thing <- function(x) {
+  if (is.na(x)) {
+    return(NA)
+  }
+
+  x + 1
+}
+```
+
+## Simplificando la lógica: `switch()`
+
+Meh
+
+```{r, eval=FALSE, echo=TRUE}
+if (type == "mean") {
+  mean(x)
+} else if (type == "median") {
+  median(x)
+} else if (type == "trimmed") {
+  mean(x, trim = .1)
+}
+```
+
+## Simplificando la lógica: `switch()`
+
+¡Mejor!
+
+```{r, eval=FALSE, echo=TRUE}
+switch(
+    type, 
+    mean = mean(x), 
+    median = median(x), 
+    trimmed = mean(x, trim = .1)
+)
+```
+
+Incluso podés especificar un valor por defecto (¡o error!) para otros valores del primer argumento.
+
+## ¡Menos código, menos problemas!
+
+- Mantén acotado el alcance de forma estricta.
+
+- Utilizá dependencias externas de confianza.
+
+## Código claro
+
+- Nombres autoexplicativos.
+
+- Consejos de lógica: usar `return()` pronto, `switch()`.
+
+- Menos código.
+
+## ¿Cómo podés mejorar tu código?
+
+::: {.incremental}
+
+- Limpieza de primavera ;
+
+- [Jarl](https://jarl.etiennebacher.com/), [lintr](https://lintr.r-lib.org/), [flir](https://flir.etiennebacher.com/) ;
+
+- Revisión humana.
+
+:::
+
+## Demo de Jarl
+
+- CLI
+
+- En Positron :smile_cat:
+
+- [Documentación](https://jarl.etiennebacher.com/getting-started)
+
+## lintr, un paquete fantástico
+
+¡Miremos la documentación!
+
+<https://lintr.r-lib.org/reference/index.html>
+
+## Limpieza de primavera
+
+- ¿Una vez al año? <https://www.tidyverse.org/blog/2023/06/spring-cleaning-2023/>
+
+- ¿Más regularmente?
+
+- ¿Hacer una pequeña mejora cada vez que añadimos una nueva función?
+
+## Revisión humana
+
+. . .
+
+¡Leé el código de tus colegas y viceversa! <https://code-review.tidyverse.org/> + <https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1>
+
+. . .
+
+Revisión por pares de paquetes en rOpenSci <https://ropensci.org/software-review/>
+
+## Conclusión
+
+> **Teorema fundamental de la legibilidad**: "El código debe escribirse de manera que se minimice el tiempo que le llevaría a otra persona entenderlo."
+
+(Traducido) The Art of Readable Code, Dustin Boswell y Trevor Foucher.
+
+. . .
+
+Necesidad de mantenimiento del código y de tus conocimientos.
+
+## Referencias / recursos adicionales
+
+- Charla de Jenny Bryan [Code feels, code smells](https://github.com/jennybc/code-smells-and-feels)
+
+- Libro [The Art of Readable Code](https://www.oreilly.com/library/view/the-art-of/9781449318482/) de Dustin Boswell y Trevor Foucher
+
+- Libro [Tidy Design de Hadley Wickham](https://design.tidyverse.org/)
+
+- Libro [A philosophy of software design por John Ousterhout](https://masalmon.eu/2023/10/19/reading-notes-philosophy-software-design/)
+
+- Entrada de blog [A Better R Programming Experience Thanks to Tree-sitter](https://ropensci.org/blog/2026/04/02/tree-sitter-overview/)
+
+## ¡Muchas gracias!
+
+¡A tod@s vosotr@s y a Yani!
+
+<https://codigo-hermoso-2026.netlify.app/>
+
+```{r merci}
+#| results: "asis"
+#| cache: true
+#| echo: false
+get_pic(id = 1887992, alt = "Thank you", 300)
+```
+
+
