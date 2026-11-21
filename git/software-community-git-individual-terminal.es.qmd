@@ -100,12 +100,12 @@ Para presentarte a Git, es decir, para decirle tu nombre y tu correo, puedes usa
 
 ::: {.alert .alert-dismissible .alert-primary}
 ```bash
-git config --global user.name 'Jane Doe'
-git config --global user.email 'jane@example.com'
+git config --global user.name "tu nombre"
+git config --global user.email 'correo@ejemplo.com'
 ```
 :::
 
-Reemplaza `Jane Doe` por tu nombre y `jane@example.com` por el correo asociado a tu cuenta de GitHub.
+Reemplaza `tu nombre` por tu nombre y `correo@ejemplo.com` por el correo asociado a tu cuenta de GitHub.
 ¡Y listo!
 
 ## Crear un nuevo repositorio
@@ -244,8 +244,8 @@ Ahora los dos repositorios están sincronizados.
   Algunos ejemplos son la licencia MIT y la Apache.
   Algunos recursos más:
 
-  - [Choose an open source license](https://choosealicense.com/) ya explica con el nombre para qué sirve, y te ayuda a elegir una licencia.
-  - [Software Licenses in Plain English](https://tldrlegal.com/) explica la jerga legal de las licencias en términos sencillos.
+  - [_Choose an open source license_(Elige una licencia de código abierto)](https://choosealicense.com/) ya explica con el nombre para qué sirve, y te ayuda a elegir una licencia.
+  - [_Software Licenses in Plain English_(Licencias de software en lenguaje sencillo)](https://tldrlegal.com/) explica la jerga legal de las licencias en términos sencillos.
 
 - *Guía para colaborar.* Un archivo `CONTRIBUTING.md`, con indicaciones para que quienes quieran colaborar sepan qué hacer.
 
@@ -267,21 +267,21 @@ Cuando intentes hacer push de tus cambios al repositorio remoto, GitHub comprueb
 La única diferencia con trabajar en solitario es que hay que comunicarse bien para que dos personas no trabajen en lo mismo.
 Esto pasa uses Git o no.
 A veces cada persona trabaja en su propia rama para no romper nada.
-Puedes leer más sobre las ramas en [el capítulo 22 de "Happy Git with R"](https://happygitwithr.com/git-branches).
+Puedes leer más sobre las ramas en [el capítulo 22 de *"Happy Git with R"*](https://happygitwithr.com/git-branches).
 
 La segunda situación es habitual cuando colaboras en proyectos de personas que no conoces, como al corregir errores en paquetes de código abierto.
-En ese caso, primero tienes que *hacer un fork* del repositorio. El fork es un repositorio remoto vinculado a tu cuenta de GitHub, con acceso completo.
-Ahora trabajas en ese fork con el flujo de siempre: modificar, add, commit y push.
+En ese caso, primero tienes que *hacer un fork* del repositorio. El *fork* es un repositorio remoto vinculado a tu cuenta de GitHub, con acceso completo.
+Ahora trabajas en ese fork con el flujo de siempre: modificar, *add*, *commit* y *push*.
 Para que tus cambios entren en el repositorio original, tienes que crear un *pull request* (o *PR*).
 Así le avisas a quien mantiene el repositorio original de que hiciste cambios que, en tu opinión, habría que fusionar.
 Esa persona puede aceptar, rechazar o pedir modificaciones.
-Cuando acepta el pull request, tus modificaciones quedan en el repositorio original.
+Cuando acepta el *pull request*, tus modificaciones quedan en el repositorio original.
 
 ![Modelo conceptual del flujo de trabajo remoto. Un repositorio remoto ajeno se copia a un repositorio remoto propio con un fork. El repositorio remoto se copia a un repositorio local con clone. Los archivos del repositorio local y del remoto se sincronizan con push y pull. El repositorio remoto propio se fusiona con el repositorio remoto ajeno mediante un pull request.](images/pull-request.png)
 
 ### Vamos a plantar algunos árboles
 
-Como ejemplo, vamos a colaborar con la galería de Flametree, abierta hace poco, y de paso vamos a hacer algunos pull requests.
+Como ejemplo, vamos a colaborar con la galería de Flametree, abierta hace poco, y de paso vamos a hacer algunos *pull requests*.
 
 Para este ejemplo seguimos trabajando desde la terminal, en lugar de usar la interfaz web de GitHub.
 Para eso necesitamos GitHub CLI, una interfaz de línea de comandos para GitHub.
