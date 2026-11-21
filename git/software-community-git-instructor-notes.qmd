@@ -1,5 +1,5 @@
 ---
-title: "Notas para docentes"
+title: "Git para desarrollar software en equipo"
 ---
 
 ::: {.callout-note}

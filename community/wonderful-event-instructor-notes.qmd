@@ -1,5 +1,5 @@
 ---
-title: "Notas del instructor — Cómo organizar un evento maravilloso"
+title: "Cómo organizar un evento maravilloso"
 ---
 
 ::: {.callout-note}
